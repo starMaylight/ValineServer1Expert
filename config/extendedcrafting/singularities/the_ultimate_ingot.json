@@ -1,0 +1,8 @@
+{
+    "name": "The Ultimate Ingot",
+    "colors": ["ffd700", "98fb98"],
+    "ingredient": {
+        "item": "extendedcrafting:the_ultimate_ingot"
+    },
+    "materialCount": 500
+}

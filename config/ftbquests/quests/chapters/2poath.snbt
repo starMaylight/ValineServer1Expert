@@ -1,0 +1,472 @@
+{
+	id: "0D5B17C42FC1CD74"
+	group: "76C8668A0FE5C01C"
+	order_index: 1
+	filename: "2poath"
+	title: "2.Powah"
+	subtitle: [
+		"発電mod以外の認識がない"
+		"「エネルギ－を生産する。生産し続ける。あふれ続けるまで。」"
+		"「彼らは止まらない。止まれない。おのれの存在意義を果たすために」"
+		"「たとえ手段と目的が入れ替わろうと、上位互換が出てこようと。」"
+	]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -0.5d
+			y: 0.0d
+			subtitle: "&0まっくろどんどろん"
+			description: ["&0謎の液体と色々混ぜた謎の物質"]
+			dependencies: ["4990A3F842936A2E"]
+			id: "29E312412F223BBF"
+			tasks: [{
+				id: "3DB3D5F7421F9E32"
+				type: "item"
+				item: "powah:dielectric_paste"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 0.0d
+			subtitle: "绝对安全！！！可耐1000度高温！！！"
+			dependencies: ["29E312412F223BBF"]
+			id: "78D942318AB8C4D3"
+			tasks: [{
+				id: "064C7415C8151FFF"
+				type: "item"
+				item: "powah:dielectric_casing"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 0.0d
+			subtitle: "ガラス光らせる必要あった?"
+			dependencies: ["78D942318AB8C4D3"]
+			id: "09010818F7149ACE"
+			tasks: [
+				{
+					id: "5D4B74F648E285EC"
+					type: "item"
+					item: "powah:energizing_orb"
+				}
+				{
+					id: "1E755112D3C54694"
+					type: "item"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "powah:energizing_rod_starter"
+									Count: 1b
+								}
+								{
+									id: "powah:energizing_rod_basic"
+									Count: 1b
+								}
+								{
+									id: "powah:energizing_rod_hardened"
+									Count: 1b
+								}
+								{
+									id: "powah:energizing_rod_blazing"
+									Count: 1b
+								}
+								{
+									id: "powah:energizing_rod_niotic"
+									Count: 1b
+								}
+								{
+									id: "powah:energizing_rod_spirited"
+									Count: 1b
+								}
+								{
+									id: "powah:energizing_rod_nitro"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 5.0d
+			y: 2.0d
+			shape: "square"
+			subtitle: "雪合戦の時間だーーーーー！"
+			dependencies: ["09010818F7149ACE"]
+			optional: true
+			id: "3403D117842A13E8"
+			tasks: [{
+				id: "6B4A920B5E2AD8B5"
+				type: "item"
+				item: "powah:charged_snowball"
+			}]
+			rewards: [{
+				id: "07E35CB84ACD0E21"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: -0.5d
+			y: 3.0d
+			subtitle: "エンダーマンを生贄に！！！"
+			dependencies: ["29E312412F223BBF"]
+			id: "3E254658C54C5FDD"
+			tasks: [
+				{
+					id: "78C64411907FD9AA"
+					type: "item"
+					item: "powah:lens_of_ender"
+				}
+				{
+					id: "08550F8426B88C52"
+					type: "item"
+					item: "powah:photoelectric_pane"
+				}
+			]
+		}
+		{
+			title: "Powah Reactor"
+			x: 2.5d
+			y: 2.0d
+			shape: "square"
+			subtitle: "爆発しないリアクターは本当にリアクターなのか"
+			dependencies: ["78D942318AB8C4D3"]
+			optional: true
+			id: "554BC913BE799727"
+			tasks: [{
+				id: "340DA854BC99B561"
+				type: "item"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "powah:reactor_starter"
+								Count: 1b
+							}
+							{
+								id: "powah:reactor_basic"
+								Count: 1b
+							}
+							{
+								id: "powah:reactor_hardened"
+								Count: 1b
+							}
+							{
+								id: "powah:reactor_blazing"
+								Count: 1b
+							}
+							{
+								id: "powah:reactor_niotic"
+								Count: 1b
+							}
+							{
+								id: "powah:reactor_spirited"
+								Count: 1b
+							}
+							{
+								id: "powah:reactor_nitro"
+								Count: 1b
+							}
+						]
+					}
+				}
+				count: 35L
+			}]
+			rewards: [{
+				id: "062BCE4DF35CB625"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+		}
+		{
+			x: 10.5d
+			y: 0.0d
+			subtitle: "&4ケツイ"
+			dependencies: [
+				"654631B7EAD6A143"
+				"712B065186CACA7A"
+				"273A517D4DAC4CC7"
+				"1F66FF1FC63C8662"
+			]
+			id: "1A99ED970EF87A08"
+			tasks: [{
+				id: "54FAA80B3B816686"
+				type: "item"
+				item: "powah:crystal_nitro"
+			}]
+			rewards: [{
+				id: "76B327B4FC2BDDC6"
+				type: "item"
+				team_reward: true
+				item: {
+					id: "botania:ender_dagger"
+					Count: 1b
+					tag: {
+						RepairCost: 3
+						Damage: 0
+						Enchantments: [
+							{
+								lvl: 5s
+								id: "minecraft:sharpness"
+							}
+							{
+								lvl: 1s
+								id: "minecraft:vanishing_curse"
+							}
+						]
+						display: {
+							Name: "{\"text\":\"本物のナイフ\"}"
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 8.0d
+			y: -2.5d
+			subtitle: "週間ブレイズを作ろう"
+			dependencies: ["09010818F7149ACE"]
+			id: "654631B7EAD6A143"
+			tasks: [{
+				id: "15569DD0B6F5FD38"
+				type: "item"
+				item: "powah:crystal_blazing"
+			}]
+			rewards: [
+				{
+					id: "47B0457A07C562A2"
+					type: "item"
+					team_reward: true
+					item: "botania:fel_pumpkin"
+				}
+				{
+					id: "10F843419F4BAC61"
+					type: "item"
+					team_reward: true
+					item: "minecraft:iron_bars"
+					count: 2
+				}
+			]
+		}
+		{
+			x: 8.0d
+			y: -0.5d
+			subtitle: "※きゅうりは入っていません"
+			dependencies: ["09010818F7149ACE"]
+			id: "712B065186CACA7A"
+			tasks: [{
+				id: "6E03F43CA1086F5A"
+				type: "item"
+				item: "powah:crystal_niotic"
+			}]
+			rewards: [{
+				id: "6986F14335CC3299"
+				type: "item"
+				team_reward: true
+				item: "avaritia:diamond_singularity"
+			}]
+		}
+		{
+			x: 8.0d
+			y: 0.5d
+			subtitle: "もうこれCrystalized Lapisでいいだろ"
+			dependencies: ["09010818F7149ACE"]
+			id: "273A517D4DAC4CC7"
+			tasks: [{
+				id: "7F2E5FEAE185036B"
+				type: "item"
+				item: "powah:crystal_spirited"
+			}]
+			rewards: [{
+				id: "24942D5E67C073A9"
+				type: "item"
+				team_reward: true
+				item: "avaritia:lapis_singularity"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -1.5d
+			subtitle: "EnderIO辺りにあったやつ"
+			dependencies: ["09010818F7149ACE"]
+			id: "1F66FF1FC63C8662"
+			tasks: [{
+				id: "1329FFCA288CC64D"
+				type: "item"
+				item: "powah:steel_energized"
+			}]
+			rewards: [{
+				id: "037DB92127BEE4CC"
+				type: "item"
+				team_reward: true
+				item: "avaritia:fluxed_singularity"
+			}]
+		}
+		{
+			x: 8.0d
+			y: 2.0d
+			subtitle: "エンダーガーディアン辺りのコア"
+			dependencies: ["09010818F7149ACE"]
+			id: "2A17D83FF534272E"
+			tasks: [{
+				id: "44DBFC4C50135A8B"
+				type: "item"
+				item: "powah:ender_core"
+			}]
+		}
+		{
+			x: 13.0d
+			y: 0.0d
+			subtitle: "こんなんあったっけ?"
+			dependencies: [
+				"2A17D83FF534272E"
+				"1A99ED970EF87A08"
+			]
+			id: "07F8CCBD97F18ACD"
+			tasks: [{
+				id: "57DDE14567E3BDE6"
+				type: "item"
+				item: "powah:ender_gate_nitro"
+			}]
+		}
+		{
+			x: 15.5d
+			y: 3.0d
+			subtitle: "たぶんワープとかで送ってる"
+			dependencies: [
+				"07F8CCBD97F18ACD"
+				"3E254658C54C5FDD"
+			]
+			id: "79CD8F3A8C2814E3"
+			tasks: [{
+				id: "010843971C673D5A"
+				type: "item"
+				item: "valine_s1ex:high_node_item_circuit"
+			}]
+			rewards: [{
+				id: "6088208A6D873CEB"
+				type: "item"
+				item: "minecraft:firework_rocket"
+			}]
+		}
+		{
+			x: 15.5d
+			y: 0.0d
+			subtitle: "これ使うやつほとんど液体使わないとかいう"
+			dependencies: [
+				"07F8CCBD97F18ACD"
+				"4C9249601318BF42"
+			]
+			id: "692A7A94904230FF"
+			tasks: [{
+				id: "704DA121BE33A9A8"
+				type: "item"
+				item: "valine_s1ex:high_node_fluid_circuit"
+			}]
+			rewards: [{
+				id: "023C257B95A673D4"
+				type: "command"
+				title: "Adastraのロケット完成音"
+				team_reward: true
+				command: "/playsound minecraft:item.totem.use player @p"
+			}]
+		}
+		{
+			x: 10.5d
+			y: -2.5d
+			shape: "heart"
+			subtitle: "エッセンスからのクラフト...どこ..."
+			dependencies: ["1A99ED970EF87A08"]
+			size: 1.5d
+			id: "6AB5AB1149D5E6B4"
+			tasks: [{
+				id: "49AA53896631948C"
+				type: "item"
+				item: "powah:nitro_crystal_block"
+			}]
+		}
+		{
+			title: "Powah Solar"
+			x: -0.5d
+			y: 5.5d
+			shape: "square"
+			subtitle: "強いかって言われると..."
+			dependencies: ["3E254658C54C5FDD"]
+			optional: true
+			id: "47A4C11A87976273"
+			tasks: [{
+				id: "73C0487723C20A24"
+				type: "item"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "powah:solar_panel_starter"
+								Count: 1b
+							}
+							{
+								id: "powah:solar_panel_basic"
+								Count: 1b
+							}
+							{
+								id: "powah:solar_panel_hardened"
+								Count: 1b
+							}
+							{
+								id: "powah:solar_panel_blazing"
+								Count: 1b
+							}
+							{
+								id: "powah:solar_panel_niotic"
+								Count: 1b
+							}
+							{
+								id: "powah:solar_panel_spirited"
+								Count: 1b
+							}
+							{
+								id: "powah:solar_panel_nitro"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "1D3B39F6397D159B"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+		}
+	]
+	quest_links: [
+		{
+			linked_quest: "4990A3F842936A2E"
+			x: -3.5d
+			y: 0.0d
+			id: "21A50CAB6C28B836"
+		}
+		{
+			linked_quest: "3CD54C516F9647EF"
+			x: 15.5d
+			y: -3.0d
+			id: "3EA7B56744B83753"
+		}
+		{
+			linked_quest: "4C9249601318BF42"
+			x: 13.0d
+			y: -3.0d
+			id: "32F5842BDF16FB8D"
+		}
+	]
+}

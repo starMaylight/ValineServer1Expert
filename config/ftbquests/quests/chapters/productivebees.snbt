@@ -1,0 +1,809 @@
+{
+	id: "7A6E3431A9AE0951"
+	group: "025D71E464BF6EDC"
+	order_index: 2
+	filename: "productivebees"
+	title: "ProductiveBees"
+	icon: {
+		id: "productivebees:bee_nest_diamond_helmet"
+		Count: 1b
+		tag: {
+			Damage: 0
+		}
+	}
+	subtitle: ["ブンブンブン 蜂が飛ぶ"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -34.5d
+			y: 5.0d
+			shape: "square"
+			dependencies: ["244E3D30E386690B"]
+			optional: true
+			id: "596BBEFEB40FF128"
+			tasks: [{
+				id: "283F4E56A891B989"
+				type: "item"
+				item: "productivebees:oak_wood_nest"
+			}]
+		}
+		{
+			x: -31.5d
+			y: 5.0d
+			shape: "square"
+			dependencies: ["244E3D30E386690B"]
+			optional: true
+			id: "0ED1A964EA25E9B9"
+			tasks: [{
+				id: "2C8206C48D2AB02E"
+				type: "item"
+				item: "productivebees:spruce_wood_nest"
+			}]
+		}
+		{
+			x: -28.5d
+			y: 5.0d
+			shape: "square"
+			dependencies: ["244E3D30E386690B"]
+			optional: true
+			id: "00B668BA1519C4EB"
+			tasks: [{
+				id: "16676CD16B8262E8"
+				type: "item"
+				item: "productivebees:dark_oak_wood_nest"
+			}]
+		}
+		{
+			x: -25.5d
+			y: 5.0d
+			shape: "square"
+			dependencies: ["244E3D30E386690B"]
+			optional: true
+			id: "056371633B2B62A1"
+			tasks: [{
+				id: "096B91C4BAAFB5B2"
+				type: "item"
+				item: "productivebees:birch_wood_nest"
+			}]
+		}
+		{
+			x: -22.5d
+			y: 5.0d
+			shape: "square"
+			dependencies: ["244E3D30E386690B"]
+			optional: true
+			id: "7A5CD0391ED80590"
+			tasks: [{
+				id: "38E110A8A8B2564D"
+				type: "item"
+				item: "productivebees:jungle_wood_nest"
+			}]
+		}
+		{
+			x: -19.5d
+			y: 5.0d
+			shape: "square"
+			dependencies: ["244E3D30E386690B"]
+			optional: true
+			id: "1CF5156290259878"
+			tasks: [{
+				id: "19747F9FCE9F602E"
+				type: "item"
+				item: "productivebees:acacia_wood_nest"
+			}]
+		}
+		{
+			x: -16.5d
+			y: 5.0d
+			shape: "square"
+			dependencies: ["244E3D30E386690B"]
+			optional: true
+			id: "0BE0C8C38A8293DE"
+			tasks: [{
+				id: "4DD1B443D95D4E48"
+				type: "item"
+				item: "productivebees:bamboo_hive"
+			}]
+		}
+		{
+			x: -13.5d
+			y: 5.0d
+			shape: "square"
+			dependencies: ["244E3D30E386690B"]
+			optional: true
+			id: "6C6DDD387EEACC5F"
+			tasks: [{
+				id: "4EB6248379509103"
+				type: "item"
+				item: "productivebees:stone_nest"
+			}]
+		}
+		{
+			x: -10.5d
+			y: 5.0d
+			shape: "square"
+			dependencies: ["244E3D30E386690B"]
+			optional: true
+			id: "0CE2D7D3778557A5"
+			tasks: [{
+				id: "6E7B79417D33914C"
+				type: "item"
+				item: "productivebees:coarse_dirt_nest"
+			}]
+		}
+		{
+			x: -7.5d
+			y: 5.0d
+			shape: "square"
+			dependencies: ["244E3D30E386690B"]
+			optional: true
+			id: "34E1A35A0720AB10"
+			tasks: [{
+				id: "617AD104E0D77F1F"
+				type: "item"
+				item: "productivebees:sand_nest"
+			}]
+		}
+		{
+			x: -4.5d
+			y: 5.0d
+			shape: "square"
+			dependencies: ["244E3D30E386690B"]
+			optional: true
+			id: "5CA61C2A763A54C9"
+			tasks: [{
+				id: "4E2E579025912749"
+				type: "item"
+				item: "productivebees:snow_nest"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 5.0d
+			shape: "square"
+			dependencies: ["244E3D30E386690B"]
+			optional: true
+			id: "49B43A391BFFFD30"
+			tasks: [{
+				id: "296D825FF0598862"
+				type: "item"
+				item: "productivebees:gravel_nest"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 5.0d
+			shape: "square"
+			dependencies: ["244E3D30E386690B"]
+			optional: true
+			id: "011B7D8DA35BBA93"
+			tasks: [{
+				id: "0EEDA7914D115CB6"
+				type: "item"
+				item: "productivebees:slimy_nest"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 5.0d
+			shape: "square"
+			dependencies: ["244E3D30E386690B"]
+			optional: true
+			id: "2A03E9E3154E2581"
+			tasks: [{
+				id: "7940DBAF88EDEADF"
+				type: "item"
+				item: "productivebees:glowstone_nest"
+			}]
+		}
+		{
+			x: 7.5d
+			y: 5.0d
+			shape: "square"
+			dependencies: ["244E3D30E386690B"]
+			optional: true
+			id: "4A393B0DEC7ADF27"
+			tasks: [{
+				id: "2E025734EA36D0F9"
+				type: "item"
+				item: "productivebees:soul_sand_nest"
+			}]
+		}
+		{
+			x: 10.5d
+			y: 5.0d
+			shape: "square"
+			dependencies: ["244E3D30E386690B"]
+			optional: true
+			id: "65C246526B53CBCD"
+			tasks: [{
+				id: "3C3AA96AE0AC5384"
+				type: "item"
+				item: "productivebees:nether_quartz_nest"
+			}]
+		}
+		{
+			x: 13.5d
+			y: 5.0d
+			shape: "square"
+			dependencies: ["244E3D30E386690B"]
+			optional: true
+			id: "12AE24950F61D939"
+			tasks: [{
+				id: "4F58D14FB50CCD5A"
+				type: "item"
+				item: "productivebees:nether_gold_nest"
+			}]
+		}
+		{
+			x: 16.5d
+			y: 5.0d
+			shape: "square"
+			dependencies: ["244E3D30E386690B"]
+			optional: true
+			id: "36EC79445AC7E6FF"
+			tasks: [{
+				id: "6D8552584A651997"
+				type: "item"
+				item: "productivebees:nether_brick_nest"
+			}]
+		}
+		{
+			x: 19.5d
+			y: 5.0d
+			shape: "square"
+			dependencies: ["244E3D30E386690B"]
+			optional: true
+			id: "657B2AB3970C895C"
+			tasks: [{
+				id: "5E62D095EABF02D5"
+				type: "item"
+				item: "productivebees:end_stone_nest"
+			}]
+		}
+		{
+			x: 22.5d
+			y: 5.0d
+			shape: "square"
+			dependencies: ["244E3D30E386690B"]
+			optional: true
+			id: "53AE6E98AB92AB74"
+			tasks: [{
+				id: "1D408001DE3F62A6"
+				type: "item"
+				item: "productivebees:obsidian_nest"
+			}]
+		}
+		{
+			x: 25.5d
+			y: 5.0d
+			shape: "square"
+			dependencies: ["244E3D30E386690B"]
+			optional: true
+			id: "46C07254CA5D7612"
+			tasks: [{
+				id: "14BC50BB7FBFAEEF"
+				type: "item"
+				item: "productivebees:bumble_bee_nest"
+			}]
+		}
+		{
+			x: 28.5d
+			y: 5.0d
+			shape: "square"
+			dependencies: ["244E3D30E386690B"]
+			optional: true
+			id: "64A374889A576213"
+			tasks: [{
+				id: "50D81B4B12169686"
+				type: "item"
+				item: "productivebees:sugarbag_nest"
+			}]
+		}
+		{
+			x: 31.5d
+			y: 5.0d
+			shape: "square"
+			dependencies: ["244E3D30E386690B"]
+			optional: true
+			id: "78DE2F2E327C5B5E"
+			tasks: [{
+				id: "59C73EA4AEC56A23"
+				type: "item"
+				item: "productivebees:warped_bee_nest"
+			}]
+		}
+		{
+			x: 34.5d
+			y: 5.0d
+			shape: "square"
+			dependencies: ["244E3D30E386690B"]
+			optional: true
+			id: "0FC3F70E5223AFE1"
+			tasks: [{
+				id: "5E6C11B0A7954105"
+				type: "item"
+				item: "productivebees:crimson_bee_nest"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 0.0d
+			id: "244E3D30E386690B"
+			tasks: [{
+				id: "5EE3B9C3EE50A2D3"
+				type: "item"
+				item: {
+					id: "minecraft:wooden_sword"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -1.0d
+			y: -2.0d
+			shape: "heart"
+			dependencies: [
+				"7B6E73E5B07FEA4E"
+				"3183A289EF1F6AEC"
+			]
+			id: "5A462AECCCB2758D"
+			tasks: [{
+				id: "6E971E5BF24DD08A"
+				type: "item"
+				item: "productivebees:upgrade_productivity"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -0.5d
+			dependencies: ["7B6E73E5B07FEA4E"]
+			id: "4D4B2B13EE8C49CA"
+			tasks: [{
+				id: "70A29A8D1579C0E9"
+				type: "item"
+				item: "productivebees:upgrade_breeding"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -3.0d
+			dependencies: ["4D4B2B13EE8C49CA"]
+			id: "714996627971A872"
+			tasks: [{
+				id: "4B3BC8E3650D1256"
+				type: "item"
+				item: "productivebees:upgrade_not_babee"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -3.5d
+			dependencies: ["7B6E73E5B07FEA4E"]
+			id: "746DB46817D569F7"
+			tasks: [{
+				id: "769F1CBC7AEEB36E"
+				type: "item"
+				item: "productivebees:upgrade_comb_block"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -3.0d
+			dependencies: ["7B6E73E5B07FEA4E"]
+			id: "717EDBD415E4EFE3"
+			tasks: [{
+				id: "1DDA981A6F37732A"
+				type: "item"
+				item: "productivebees:upgrade_anti_teleport"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -1.0d
+			dependencies: ["7B6E73E5B07FEA4E"]
+			id: "3FE4FEE3EE21FEE5"
+			tasks: [{
+				id: "3AAEDE8A83B3E5F4"
+				type: "item"
+				item: "productivebees:upgrade_filter"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -2.0d
+			dependencies: ["7B6E73E5B07FEA4E"]
+			id: "292AEE7A7DA20A3C"
+			tasks: [{
+				id: "26B8DEE4DB0F9A52"
+				type: "item"
+				item: "productivebees:upgrade_bee_sampler"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -1.0d
+			dependencies: ["7B6E73E5B07FEA4E"]
+			id: "7AAB54F9BF7CCB69"
+			tasks: [{
+				id: "0EAAF82E4500B789"
+				type: "item"
+				item: "productivebees:upgrade_simulator"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -2.0d
+			id: "7B6E73E5B07FEA4E"
+			tasks: [{
+				id: "2F4651A778EB2BA7"
+				type: "item"
+				item: "productivebees:upgrade_base"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -3.0d
+			id: "0D2B4BAA700759B4"
+			tasks: [{
+				id: "1FF5E8C4D79DCEB6"
+				type: "item"
+				item: "productivebees:bottler"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -2.0d
+			subtitle: "遠心分離できれいな蜂の巣を"
+			id: "45C7265BD17B554C"
+			tasks: [{
+				id: "54EECA3C4C4C2473"
+				type: "item"
+				item: "productivebees:centrifuge"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -3.0d
+			subtitle: "ちょっとだけ強くなったよ"
+			dependencies: ["45C7265BD17B554C"]
+			id: "60137C914FCC5983"
+			tasks: [{
+				id: "7003D183F21CAE33"
+				type: "item"
+				item: "productivebees:powered_centrifuge"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -3.5d
+			subtitle: "あったかい遠心分離機"
+			hide_dependency_lines: true
+			dependencies: [
+				"746DB46817D569F7"
+				"60137C914FCC5983"
+				"3183A289EF1F6AEC"
+			]
+			id: "25B068D0CB96F4F5"
+			tasks: [{
+				id: "4B1052CA859F6B2E"
+				type: "item"
+				item: "productivebees:heated_centrifuge"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -1.0d
+			subtitle: "蜂蜜で発電...?"
+			id: "11BBA9BFFD1B38A2"
+			tasks: [{
+				id: "6161E08D27DBFE59"
+				type: "item"
+				item: "productivebees:honey_generator"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -2.0d
+			id: "24B82AE734D31FEB"
+			tasks: [{
+				id: "5F4D40CDEB605C61"
+				type: "item"
+				item: "productivebees:catcher"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -1.0d
+			subtitle: "大人からしかDNAは絞れない、じゃあ大人にしてしまおう"
+			id: "1C94ACBD9E85B77A"
+			tasks: [{
+				id: "5A49E4D76820D4AE"
+				type: "item"
+				item: "productivebees:incubator"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -2.0d
+			subtitle: "ピストンで押し潰そう"
+			id: "4BE87883F764925B"
+			tasks: [{
+				id: "1FE3C2F498F6C46A"
+				type: "item"
+				item: "productivebees:gene_indexer"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -0.5d
+			subtitle: "健全です、"
+			hide_dependency_lines: true
+			dependencies: ["4D4B2B13EE8C49CA"]
+			id: "097380F810343321"
+			tasks: [{
+				id: "4A17A141F0A8255A"
+				type: "item"
+				item: "productivebees:breeding_chamber"
+			}]
+		}
+		{
+			title: "ちょっとずつ蜂増やしていきます"
+			x: 0.0d
+			y: 2.5d
+			invisible: true
+			id: "51A24F0170A06DE0"
+			tasks: [{
+				id: "50BBA9F260924737"
+				type: "custom"
+				title: "ひまなときに蜂追加していきます"
+			}]
+		}
+		{
+			x: -6.5d
+			y: -2.0d
+			dependencies: [
+				"1D4A59F0E6573228"
+				"1A4C963C2D429D68"
+			]
+			id: "5CC3393DA8DF472F"
+			tasks: [{
+				id: "379C02506EB6FEC9"
+				type: "item"
+				item: {
+					id: "productivebees:configurable_honeycomb"
+					Count: 1b
+					tag: {
+						EntityTag: {
+							type: "productivebees:spacial"
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: -6.5d
+			y: -3.5d
+			dependencies: ["5CC3393DA8DF472F"]
+			id: "614D85BAC43B787B"
+			tasks: [{
+				id: "0C7274A5E7088AEA"
+				type: "item"
+				item: {
+					id: "productivebees:configurable_honeycomb"
+					Count: 1b
+					tag: {
+						EntityTag: {
+							type: "productivebees:fluix"
+						}
+					}
+				}
+			}]
+		}
+		{
+			disable_toast: true
+			x: -7.5d
+			y: -0.5d
+			hide_dependency_lines: true
+			dependencies: ["657B2AB3970C895C"]
+			id: "1A4C963C2D429D68"
+			tasks: [{
+				id: "3B2AD87FE5C18917"
+				type: "item"
+				item: {
+					id: "productivebees:configurable_honeycomb"
+					Count: 1b
+					tag: {
+						EntityTag: {
+							type: "productivebees:ender"
+						}
+					}
+				}
+			}]
+		}
+		{
+			disable_toast: true
+			x: -5.5d
+			y: -0.5d
+			hide_dependency_lines: true
+			dependencies: ["65C246526B53CBCD"]
+			id: "1D4A59F0E6573228"
+			tasks: [{
+				id: "23A71F9B048E25A2"
+				type: "item"
+				item: {
+					id: "productivebees:configurable_honeycomb"
+					Count: 1b
+					tag: {
+						EntityTag: {
+							type: "productivebees:crystalline"
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 9.5d
+			y: 6.5d
+			shape: "square"
+			dependencies: ["65C246526B53CBCD"]
+			optional: true
+			id: "4E24D2DDD6F8FB20"
+			tasks: [{
+				id: "2A24BAF21A3AFF9E"
+				type: "item"
+				item: {
+					id: "productivebees:configurable_honeycomb"
+					Count: 1b
+					tag: {
+						EntityTag: {
+							type: "productivebees:crystalline"
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 18.5d
+			y: 6.5d
+			shape: "square"
+			dependencies: ["657B2AB3970C895C"]
+			optional: true
+			id: "2A7D360B41EDDF89"
+			tasks: [{
+				id: "0D8AD42324487B7F"
+				type: "item"
+				item: {
+					id: "productivebees:configurable_honeycomb"
+					Count: 1b
+					tag: {
+						EntityTag: {
+							type: "productivebees:ender"
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 21.5d
+			y: 6.5d
+			shape: "square"
+			dependencies: ["53AE6E98AB92AB74"]
+			optional: true
+			id: "50E9F32ACE17435F"
+			tasks: [{
+				id: "0400192EAFE8205F"
+				type: "item"
+				item: {
+					id: "productivebees:configurable_honeycomb"
+					Count: 1b
+					tag: {
+						EntityTag: {
+							type: "productivebees:draconic"
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: -3.0d
+			id: "3183A289EF1F6AEC"
+			tasks: [{
+				id: "0F79DD8500E806E9"
+				type: "item"
+				item: {
+					id: "productivebees:configurable_honeycomb"
+					Count: 1b
+					tag: {
+						EntityTag: {
+							type: "productivebees:draconic"
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 5.5d
+			y: -3.5d
+			dependencies: ["6866A56F24303563"]
+			id: "281A864513B989F7"
+			tasks: [{
+				id: "68C869479FA9D016"
+				type: "item"
+				item: {
+					id: "productivebees:spawn_egg_configurable_bee"
+					Count: 1b
+					tag: {
+						EntityTag: {
+							type: "productivebees:chaos"
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 5.5d
+			y: -2.5d
+			dependencies: ["6058D49B3C2A1959"]
+			id: "6866A56F24303563"
+			tasks: [{
+				id: "2B6315B452FA9117"
+				type: "item"
+				item: {
+					id: "productivebees:spawn_egg_configurable_bee"
+					Count: 1b
+					tag: {
+						EntityTag: {
+							type: "productivebees:awakened"
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 5.5d
+			y: -1.5d
+			dependencies: ["5E47A6F0A2A38648"]
+			id: "6058D49B3C2A1959"
+			tasks: [{
+				id: "6B5F63F5CED05BD8"
+				type: "item"
+				item: {
+					id: "productivebees:spawn_egg_configurable_bee"
+					Count: 1b
+					tag: {
+						EntityTag: {
+							type: "productivebees:draconium"
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 5.5d
+			y: -0.5d
+			hide_dependency_lines: true
+			dependencies: ["53AE6E98AB92AB74"]
+			id: "5E47A6F0A2A38648"
+			tasks: [{
+				id: "004EA4C6D9B2CBD8"
+				type: "item"
+				item: {
+					id: "productivebees:spawn_egg_configurable_bee"
+					Count: 1b
+					tag: {
+						EntityTag: {
+							type: "productivebees:draconic"
+						}
+					}
+				}
+			}]
+		}
+	]
+	quest_links: [ ]
+}

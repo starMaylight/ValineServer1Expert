@@ -1,0 +1,9 @@
+{
+    "name": "Ultimate Upgrade",
+    "colors": ["32cd32", "000000"],
+    "ingredient": {
+          "item": "pipez:ultimate_upgrade"
+          
+    },
+    "materialCount": 10000
+}

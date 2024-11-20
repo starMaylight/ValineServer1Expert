@@ -1,0 +1,8 @@
+{
+    "name": "Rainbow Plating",
+    "colors": ["b22222", "00ffff"],
+    "ingredient": {
+        "item": "ironfurnaces:rainbow_plating"
+    },
+    "materialCount": 500
+}

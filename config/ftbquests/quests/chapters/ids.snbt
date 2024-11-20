@@ -1,0 +1,340 @@
+{
+	id: "4A0A911E69388B06"
+	group: "7ACDCF71AFEABB00"
+	order_index: 7
+	filename: "ids"
+	title: "over:IDs"
+	subtitle: [
+		"MassacrE || 3rc4224M"
+		""
+		""
+		"技術者は笑う。高らかに嗤う。兵器をその手に乗せて。"
+		"敵対者を葬るための準備はできた。全てを剝奪するための技術は成った。"
+		"爆弾魔も、大樹も、灰も。全てを奪い去ると。そう運命は定まってしまった。"
+	]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			id: "14146F4A78CC7894"
+			tasks: [
+				{
+					id: "36DFA8C29292FE4C"
+					type: "item"
+					item: "integrateddynamics:crystalized_menril_chunk"
+				}
+				{
+					id: "3B2D13385C3DE8CB"
+					type: "item"
+					item: "integrateddynamics:menril_sapling"
+				}
+			]
+		}
+		{
+			x: 1.5d
+			y: 0.0d
+			dependencies: ["14146F4A78CC7894"]
+			id: "7E49ABECE133E706"
+			tasks: [{
+				id: "3D8824B7CBFC7482"
+				type: "item"
+				item: "valine_s1ex:azure_menril_ingot"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -1.5d
+			dependencies: ["7E49ABECE133E706"]
+			id: "09C419C8FB996A9B"
+			tasks: [{
+				id: "7643103ECD4E73BF"
+				type: "item"
+				item: "integrateddynamics:variable"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 0.0d
+			dependencies: ["7E49ABECE133E706"]
+			id: "34EE53504FA52C24"
+			tasks: [{
+				id: "02544757B72D7A71"
+				type: "item"
+				item: "integrateddynamics:cable"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 1.5d
+			dependencies: ["14146F4A78CC7894"]
+			id: "75B05527AE0FB488"
+			tasks: [{
+				id: "4EB4EAD28141F55C"
+				type: "item"
+				item: "integrateddynamics:crystalized_menril_block"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 3.0d
+			dependencies: ["75B05527AE0FB488"]
+			id: "0DF996386484E825"
+			tasks: [{
+				id: "2FCE91BE96DAC8D0"
+				type: "item"
+				item: {
+					id: "integrateddynamics:energy_battery"
+					Count: 1b
+					tag: {
+						energy: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 1.5d
+			y: 2.5d
+			dependencies: ["0DF996386484E825"]
+			id: "433F273E0E291521"
+			tasks: [{
+				id: "6BE56E3DB701F012"
+				type: "item"
+				item: "integrateddynamics:mechanical_squeezer"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 3.5d
+			dependencies: ["0DF996386484E825"]
+			id: "79B20FA73AA60721"
+			tasks: [{
+				id: "26EA982B64F78C35"
+				type: "item"
+				item: "integrateddynamics:mechanical_drying_basin"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -3.0d
+			dependencies: ["09C419C8FB996A9B"]
+			id: "1FE1A7CA95F5954C"
+			tasks: [{
+				id: "49B2797E145D9451"
+				type: "item"
+				item: "integrateddynamics:variablestore"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -4.0d
+			dependencies: ["1FE1A7CA95F5954C"]
+			id: "5E729DCFDF815A01"
+			tasks: [{
+				id: "38DEC5008C3708D7"
+				type: "item"
+				item: "integrateddynamics:delay"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -2.5d
+			dependencies: ["1FE1A7CA95F5954C"]
+			id: "6FC44BB0F8D3C518"
+			tasks: [{
+				id: "6DF60403DE2B9795"
+				type: "item"
+				item: "integrateddynamics:proxy"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 2.5d
+			dependencies: ["433F273E0E291521"]
+			id: "6B92219DC23A5E84"
+			tasks: [{
+				id: "5272F8BEE296E985"
+				type: "item"
+				item: "integrateddynamics:crystalized_chorus_chunk"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 2.5d
+			dependencies: ["6B92219DC23A5E84"]
+			id: "6C3E6F0B63E26B4C"
+			tasks: [{
+				id: "64376C75406AAE45"
+				type: "item"
+				item: "integrateddynamics:logic_director"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 0.0d
+			dependencies: ["34EE53504FA52C24"]
+			id: "2E7FDDF95F7EC46E"
+			tasks: [{
+				id: "30C80E9720CCC6FC"
+				type: "item"
+				item: "integrateddynamics:part_connector_mono_directional"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 1.0d
+			dependencies: [
+				"2E7FDDF95F7EC46E"
+				"6C3E6F0B63E26B4C"
+			]
+			id: "0D256C77909B1A41"
+			tasks: [{
+				id: "32FE993A8A711AD7"
+				type: "item"
+				item: "integrateddynamics:part_connector_omni_directional"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -1.5d
+			dependencies: ["09C419C8FB996A9B"]
+			id: "26FC4FE711C40111"
+			tasks: [{
+				id: "060428D3BAEE9D8F"
+				type: "item"
+				item: "integrateddynamics:logic_programmer"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -1.5d
+			dependencies: ["26FC4FE711C40111"]
+			id: "330724F03DBA7203"
+			tasks: [{
+				id: "5102933FB1EFE783"
+				type: "item"
+				item: "integrateddynamics:portable_logic_programmer"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -2.5d
+			subtitle: "writer"
+			dependencies: ["09C419C8FB996A9B"]
+			id: "241E46DB6670ACED"
+			tasks: [
+				{
+					id: "38505C97E66363EA"
+					type: "item"
+					item: "integrateddynamics:part_audio_writer"
+				}
+				{
+					id: "43958ECD4A97F948"
+					type: "item"
+					item: "integrateddynamics:part_effect_writer"
+				}
+				{
+					id: "1B98E58F2A727397"
+					type: "item"
+					item: "integrateddynamics:part_machine_writer"
+				}
+				{
+					id: "0DA8DC5DE6AA587C"
+					type: "item"
+					item: "integrateddynamics:part_inventory_writer"
+				}
+				{
+					id: "79585A69E81ED8BE"
+					type: "item"
+					item: "integrateddynamics:part_redstone_writer"
+				}
+				{
+					id: "283C87BBA8E8E3EB"
+					type: "item"
+					item: "integrateddynamics:part_entity_writer"
+				}
+			]
+		}
+		{
+			x: 3.5d
+			y: -1.0d
+			subtitle: "Reader"
+			dependencies: ["09C419C8FB996A9B"]
+			id: "34FC3CCFDD1595CE"
+			tasks: [
+				{
+					id: "5995192F47B06B7E"
+					type: "item"
+					item: "integrateddynamics:part_audio_reader"
+				}
+				{
+					id: "390C0A944D336786"
+					type: "item"
+					item: "integrateddynamics:part_block_reader"
+				}
+				{
+					id: "5FAE6225CB9301D5"
+					type: "item"
+					item: "integrateddynamics:part_entity_reader"
+				}
+				{
+					id: "305C7EC58A7E9DCD"
+					type: "item"
+					item: "integrateddynamics:part_extradimensional_reader"
+				}
+				{
+					id: "1FC6AC51F09048EA"
+					type: "item"
+					item: "integrateddynamics:part_fluid_reader"
+				}
+				{
+					id: "4F8E41C2FE18C0C1"
+					type: "item"
+					item: "integrateddynamics:part_inventory_reader"
+				}
+				{
+					id: "0C5F40AFFF67B478"
+					type: "item"
+					item: "integrateddynamics:part_machine_reader"
+				}
+				{
+					id: "3C9D87ED8C6E048E"
+					type: "item"
+					item: "integrateddynamics:part_network_reader"
+				}
+				{
+					id: "0A2BDF7B790E7797"
+					type: "item"
+					item: "integrateddynamics:part_redstone_reader"
+				}
+				{
+					id: "29C061BBF5381455"
+					type: "item"
+					item: "integrateddynamics:part_world_reader"
+				}
+			]
+		}
+		{
+			x: 3.0d
+			y: 1.5d
+			id: "6043EB90AB072CA3"
+			tasks: [{
+				id: "77CCB2825FD64704"
+				type: "item"
+				item: "integratedterminals:part_terminal_storage"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 1.5d
+			id: "3E4E256161C64083"
+			tasks: [{
+				id: "59B6A51B02C7B98B"
+				type: "item"
+				item: "integratedterminals:part_terminal_crafting_job"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

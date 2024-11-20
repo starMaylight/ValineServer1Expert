@@ -1,0 +1,72 @@
+[
+    {
+        "type": "block",
+        "key": "valine_s1ex:eternal_block",
+        "rarity": "legendary",
+        "create": 100000,
+        "maintain": 100000,
+        "ticks": 100000,
+        "worldgen": false,
+        "dimlet": true
+    },
+    {
+        "type": "block",
+        "key": "valine_s1ex:ilmenite_ore",
+        "rarity": "rare",
+        "create": 1000,
+        "maintain": 1000,
+        "ticks": 1000,
+        "worldgen": true,
+        "dimlet": true
+    },
+    {
+        "type": "block",
+        "key": "valine_s1ex:iridium_ore",
+        "rarity": "rare",
+        "create": 1000,
+        "maintain": 1000,
+        "ticks": 1000,
+        "worldgen": true,
+        "dimlet": true
+    },
+    {
+        "type": "block",
+        "key": "valine_s1ex:tungsten_ore",
+        "rarity": "rare",
+        "create": 1000,
+        "maintain": 1000,
+        "ticks": 1000,
+        "worldgen": true,
+        "dimlet": true
+    },
+    {
+        "type": "block",
+        "key": "valine_s1ex:platinum_ore",
+        "rarity": "rare",
+        "create": 1000,
+        "maintain": 1000,
+        "ticks": 1000,
+        "worldgen": true,
+        "dimlet": true
+    },
+    {
+        "type": "block",
+        "key": "valine_s1ex:empowered_lapis",
+        "rarity": "legendary",
+        "create": 10000,
+        "maintain": 10000,
+        "ticks": 10000,
+        "worldgen": true,
+        "dimlet": true
+    },
+    {
+        "type": "block",
+        "key": "valine_s1ex:polonium_pellet_block",
+        "rarity": "legendary",
+        "create": 10000,
+        "maintain": 10000,
+        "ticks": 10000,
+        "worldgen": true,
+        "dimlet": true
+    }
+]

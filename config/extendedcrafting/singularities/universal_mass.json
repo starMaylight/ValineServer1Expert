@@ -1,0 +1,8 @@
+{
+    "name": "Universal Mass",
+    "colors": ["FFB7C5", "FFC0CB"],
+    "ingredient": {
+        "item": "mekanismmatter:universal_mass"
+    },
+    "materialCount": 10000
+}

@@ -1,0 +1,8 @@
+{
+    "name": "Salmon Tempura",
+    "colors": ["FFB360", "FFDAA2"],
+    "ingredient": {
+        "item": "pneumaticcraft:salmon_tempura"
+    },
+    "materialCount": 1000
+}

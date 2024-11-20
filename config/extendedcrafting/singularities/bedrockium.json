@@ -1,0 +1,8 @@
+{
+    "name": "Bedrockium Ingot",
+    "colors": ["1E1E1E", "0F0F0F"],
+    "ingredient": {
+        "item": "extrautilitiesrebirth:bedrockium_ingot"
+    },
+    "materialCount": 500
+}

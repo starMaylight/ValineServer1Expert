@@ -1,0 +1,698 @@
+{
+	id: "5ED5031333588AF3"
+	group: "025D71E464BF6EDC"
+	order_index: 4
+	filename: "056FB7D7EE03CEA9"
+	title: "鉱脈備忘録"
+	subtitle: ["覚えられるわけねーだろ"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "鉄鉱脈"
+			x: -14.5d
+			y: -7.5d
+			subtitle: "通常生成"
+			description: [
+				"uniformHeight:Bottom(0),absolute(150)"
+				"count=8~10"
+				"size = 30"
+			]
+			id: "6ADC7AD30EDF5198"
+			tasks: [{
+				id: "0D8B6EFC9CE18EDC"
+				type: "item"
+				title: "Any #forge:ores/iron"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ores/iron"
+					}
+				}
+			}]
+		}
+		{
+			title: "概要"
+			x: -17.5d
+			y: -7.5d
+			subtitle: "読めない人用"
+			description: [
+				"uniformHeight：高さの指定"
+				"count:鉱脈の生成数？（多分１チャンク当たりかな？）"
+				"size:１鉱脈当たりの鉱石生成数"
+				"通常生成：石、深層岩を元に鉱石化"
+				"特殊生成（N）：Nの生成の一部が変化"
+				"特殊生成は鉱脈の個数に左右されるためそもそも生成が少なくなります。指定数が多いのはそのためです。200でも微妙ではあるけど"
+			]
+			id: "6025CC3B4FF658F2"
+			tasks: [{
+				id: "0E95BBE1AB31F61F"
+				type: "checkmark"
+				title: "鉱脈"
+			}]
+		}
+		{
+			title: "銅鉱脈"
+			x: -12.5d
+			y: -7.5d
+			subtitle: "通常生成"
+			description: [
+				"uniformHeight:Bottom(49),absolute(256)"
+				"count=8~12"
+				"size = 30"
+			]
+			id: "3C27D70EB1ED2DDC"
+			tasks: [{
+				id: "6CE04FF7F9383108"
+				type: "item"
+				title: "Any #forge:ores/copper"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ores/copper"
+					}
+				}
+			}]
+		}
+		{
+			title: "特殊金鉱脈"
+			x: -10.5d
+			y: -7.5d
+			subtitle: "特殊生成：鉄+銅"
+			description: [
+				"uniformHeight:Bottom(15),absolute(256)"
+				"count=200"
+				"size = 20"
+			]
+			id: "17F248481DDAA297"
+			tasks: [{
+				id: "78A68BCC6B207431"
+				type: "item"
+				title: "Any #forge:ores/gold"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ores/gold"
+					}
+				}
+			}]
+		}
+		{
+			title: "石炭鉱脈"
+			x: -14.5d
+			y: -5.5d
+			subtitle: "通常生成"
+			description: [
+				"uniformHeight:Bottom(0),absolute(256)"
+				"count=10~18"
+				"size = 35"
+			]
+			id: "30EECE3ADBA731B7"
+			tasks: [{
+				id: "0CB97E4F316F48E0"
+				type: "item"
+				item: "minecraft:coal_ore"
+			}]
+		}
+		{
+			title: "ダイヤモンド鉱脈"
+			x: -10.5d
+			y: -5.5d
+			subtitle: "特殊生成：石炭"
+			description: [
+				"uniformHeight:Bottom(0),absolute(11)"
+				"count=200"
+				"size = 15"
+			]
+			id: "4DC9B17D846D4D09"
+			tasks: [{
+				id: "728DC54BD0C5E9A8"
+				type: "item"
+				title: "Any #forge:ores/diamond"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ores/diamond"
+					}
+				}
+			}]
+		}
+		{
+			title: "レッドストーン鉱脈"
+			x: -14.5d
+			y: -3.5d
+			subtitle: "通常生成"
+			description: [
+				"uniformHeight:Bottom(0),absolute(16)"
+				"count=5~15"
+				"size = 35"
+			]
+			id: "03B1D67C1AE0649B"
+			tasks: [{
+				id: "646E1CF831F42054"
+				type: "item"
+				title: "Any #forge:ores/redstone"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ores/redstone"
+					}
+				}
+			}]
+		}
+		{
+			title: "辰砂鉱脈"
+			x: -12.5d
+			y: -3.5d
+			subtitle: "通常生成"
+			description: [
+				"uniformHeight:Bottom(32),absolute(64)"
+				"count=5~10"
+				"size = 15"
+			]
+			id: "398AC7F33B73707C"
+			tasks: [{
+				id: "0F450114596106DA"
+				type: "item"
+				title: "Any #forge:ores/cinnabar"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ores/cinnabar"
+					}
+				}
+			}]
+		}
+		{
+			title: "チタン鉱脈"
+			x: -10.5d
+			y: -3.5d
+			subtitle: "特殊生成：赤石+辰砂"
+			description: [
+				"uniformHeight：Bottom(32),absolute(12)"
+				"count=200"
+				"size = 10"
+			]
+			id: "74C2C9E7F4B3200B"
+			tasks: [{
+				id: "47663C3AAED89500"
+				type: "item"
+				title: "Any #forge:ores/titanium"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ores/titanium"
+					}
+				}
+			}]
+		}
+		{
+			title: "ウラン鉱脈"
+			x: -14.5d
+			y: -1.5d
+			subtitle: "通常生成"
+			description: [
+				"uniformHeight:Bottom(0),absolute(12)"
+				"count=6~10"
+				"size = 25"
+			]
+			id: "0CA27CBD7B99FF23"
+			tasks: [{
+				id: "1E5549CCAC7ABF35"
+				type: "item"
+				title: "Any #forge:ores/uranium"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ores/uranium"
+					}
+				}
+			}]
+		}
+		{
+			title: "エメラルド鉱脈"
+			x: -10.5d
+			y: -1.5d
+			subtitle: "特殊生成：essence+ウラン"
+			description: [
+				"uniformHeight:Bottom(0),absolute(256)"
+				"count=200"
+				"size = 10"
+			]
+			id: "7B159EACC9A24682"
+			tasks: [{
+				id: "2FF4411D29B7B054"
+				type: "item"
+				title: "Any #forge:ores/emerald"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ores/emerald"
+					}
+				}
+			}]
+		}
+		{
+			title: "essence鉱脈"
+			x: -12.5d
+			y: -1.5d
+			subtitle: "通常生成"
+			description: [
+				"uniformHeight:Bottom(45),absolute(5)"
+				"count=5~8"
+				"size = 15"
+			]
+			id: "048DD9DC4036423E"
+			tasks: [{
+				id: "15CA79D4D8D9066A"
+				type: "item"
+				title: "Any #forge:ores/inferium"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ores/inferium"
+					}
+				}
+			}]
+		}
+		{
+			title: "ラピスラズリ鉱脈"
+			x: -8.5d
+			y: -7.5d
+			subtitle: "通常生成"
+			description: [
+				"uniformHeight:Bottom(48),absolute(256)"
+				"count=10~12"
+				"size = 20"
+			]
+			id: "3F413DEAD68FC0BC"
+			tasks: [{
+				id: "737141A3C7D8DE33"
+				type: "item"
+				title: "Any #forge:ores/lapis"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ores/lapis"
+					}
+				}
+			}]
+		}
+		{
+			title: "燐灰石鉱脈"
+			x: -6.5d
+			y: -7.5d
+			subtitle: "通常生成"
+			description: [
+				"uniformHeight：Bottom(48),absolute(256)"
+				"count=12~18"
+				"size = 15"
+			]
+			id: "0F1ACB0D8EF491DC"
+			tasks: [{
+				id: "5A4026C0ACCA9210"
+				type: "item"
+				title: "Any #forge:ores/apatite"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ores/apatite"
+					}
+				}
+			}]
+		}
+		{
+			title: "ケルタスクォーツ鉱脈"
+			x: -4.5d
+			y: -7.5d
+			subtitle: "特殊生成：ラピス+アパタイト"
+			description: [
+				"uniformHeight:Bottom(0),absolute(256)"
+				"count=200"
+				"size = 10"
+			]
+			id: "032E569ACFC46C80"
+			tasks: [{
+				id: "7FD90A697D1A34FC"
+				type: "item"
+				title: "Any #forge:ores/certus_quartz"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ores/certus_quartz"
+					}
+				}
+			}]
+		}
+		{
+			title: "亜鉛鉱脈"
+			x: -8.5d
+			y: -5.5d
+			subtitle: "通常生成"
+			description: [
+				"uniformHeight:Bottom(0),absolute(256)"
+				"count=10~15"
+				"size = 25"
+			]
+			id: "3D0B7B0395C791FA"
+			tasks: [{
+				id: "3EF78B22F88294FC"
+				type: "item"
+				title: "Any #forge:ores/zinc"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ores/zinc"
+					}
+				}
+			}]
+		}
+		{
+			title: "錫鉱脈"
+			x: -6.5d
+			y: -5.5d
+			subtitle: "通常生成"
+			description: [
+				"uniformHeight:Bottom(55),absolute(256)"
+				"count=10~12"
+				"size = 25"
+			]
+			id: "3F7BFE99C1BAF867"
+			tasks: [{
+				id: "32DB552B49341B64"
+				type: "item"
+				title: "Any #forge:ores/tin"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ores/tin"
+					}
+				}
+			}]
+		}
+		{
+			title: "銀鉱脈"
+			x: -4.5d
+			y: -5.5d
+			subtitle: "特殊生成:tin+zinc"
+			description: [
+				"uniformHeight:Bottom(0),absolute(256)"
+				"count=200"
+				"size = 15"
+			]
+			id: "652399CAEDC19A2F"
+			tasks: [{
+				id: "5202FF5886A96908"
+				type: "item"
+				title: "Any #forge:ores/silver"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ores/silver"
+					}
+				}
+			}]
+		}
+		{
+			title: "ニッケル鉱脈"
+			x: -8.5d
+			y: -3.5d
+			subtitle: "通常生成"
+			description: [
+				"uniformHeight:Bottom(0),absolute(256)"
+				"count = 8~10"
+				"size = 15"
+			]
+			id: "01FC651C667FB25A"
+			tasks: [{
+				id: "32D6C94C130B7EF2"
+				type: "item"
+				title: "Any #forge:ores/nickel"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ores/nickel"
+					}
+				}
+			}]
+		}
+		{
+			title: "硫黄鉱脈"
+			x: -6.5d
+			y: -3.5d
+			subtitle: "通常生成"
+			description: [
+				"uniformHeight:Bottom(0),absolute(64)"
+				"count = 5~10"
+				"size = 15"
+			]
+			id: "2B45551C7DA60E67"
+			tasks: [{
+				id: "32F9C2BAFA4D7B8B"
+				type: "item"
+				title: "Any #forge:ores/sulfur"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ores/sulfur"
+					}
+				}
+			}]
+		}
+		{
+			title: "硝石鉱脈"
+			x: -8.5d
+			y: -1.5d
+			subtitle: "通常生成"
+			description: [
+				"uniformHeight:Bottom(0),absolute(256)"
+				"count = 5~10"
+				"size = 25"
+			]
+			id: "099298CD93677810"
+			tasks: [{
+				id: "20FC73ADA15BA57E"
+				type: "item"
+				title: "Any #forge:ores/niter"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ores/niter"
+					}
+				}
+			}]
+		}
+		{
+			title: "蛍石鉱脈"
+			x: -6.5d
+			y: -1.5d
+			subtitle: "通常生成"
+			description: [
+				"uniformHeight:Bottom(0),absolute(5)"
+				"count = 10~15"
+				"size = 25"
+			]
+			id: "1479F2F478B9E01B"
+			tasks: [{
+				id: "049608ADC918903A"
+				type: "item"
+				title: "Any #forge:ores/fluorite"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ores/fluorite"
+					}
+				}
+			}]
+		}
+		{
+			title: "オスミウム鉱脈"
+			x: -4.5d
+			y: -1.5d
+			subtitle: "特殊生成：硝石+蛍石"
+			description: [
+				"uniformHeight:Bottom(0),absolute(256)"
+				"count = 200"
+				"size =10"
+			]
+			id: "4BF784A4D0129B76"
+			tasks: [{
+				id: "172F6267536E8CC3"
+				type: "item"
+				title: "Any #forge:ores/osmium"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ores/osmium"
+					}
+				}
+			}]
+		}
+		{
+			title: "アルミニウム鉱脈"
+			x: -14.5d
+			y: 0.5d
+			subtitle: "通常生成"
+			description: [
+				"uniformHeight:Bottom(32),absolute(32)"
+				"count = 5~8"
+				"size = 20"
+			]
+			id: "59D55A448D6B0D36"
+			tasks: [{
+				id: "22BA75BF4383FDA2"
+				type: "item"
+				title: "Any #forge:ores/aluminum"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ores/aluminum"
+					}
+				}
+			}]
+		}
+		{
+			title: "鉛鉱脈"
+			x: -12.5d
+			y: 0.5d
+			subtitle: "通常生成"
+			description: [
+				"uniformHeight:Bottom(32),absolute(64)"
+				"count = 6~10"
+				"size = 20"
+			]
+			id: "3A5FA4EB4A88AD94"
+			tasks: [{
+				id: "05AD5ED9C5E6FEB9"
+				type: "item"
+				title: "Any #forge:ores/lead"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ores/lead"
+					}
+				}
+			}]
+		}
+		{
+			title: "クロム鉱脈"
+			x: -10.5d
+			y: 0.5d
+			subtitle: "特殊生成：鉛+アルミ"
+			description: [
+				"uniformHeight:Bottom(32),absolute(8)"
+				"count=200"
+				"size = 10"
+			]
+			id: "3E087CA74E14B38A"
+			tasks: [{
+				id: "02EF77F20D5FD37F"
+				type: "item"
+				title: "Any #forge:ores/chrome"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ores/chrome"
+					}
+				}
+			}]
+		}
+		{
+			title: "タングステン鉱脈"
+			x: -8.5d
+			y: 0.5d
+			subtitle: "通常生成"
+			description: [
+				"uniformHeight:Bottom(32),absolute(0)"
+				"count=6~10"
+				"size = 20"
+			]
+			id: "160B37A12050B149"
+			tasks: [{
+				id: "085B249B9CC71A3B"
+				type: "item"
+				title: "Any #forge:ores/tungsten"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ores/tungsten"
+					}
+				}
+			}]
+		}
+		{
+			title: "プラチナ鉱脈"
+			x: -6.5d
+			y: 0.5d
+			subtitle: "通常生成"
+			description: [
+				"uniformHeight:Bottom(32),absolute(0)"
+				"count = 6~10"
+				"size = 20"
+			]
+			id: "318E473FEC3A8C76"
+			tasks: [{
+				id: "325BD1F7277465AC"
+				type: "item"
+				title: "Any #forge:ores/platinum"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ores/platinum"
+					}
+				}
+			}]
+		}
+		{
+			title: "イリジウム鉱脈"
+			x: -4.5d
+			y: 0.5d
+			subtitle: "特殊生成：タングステン＋プラチナ"
+			description: [
+				"uniformHeight：Bottom(32),absolute(8)"
+				"count=200"
+				"size = 10"
+			]
+			id: "0940A31B7105338D"
+			tasks: [{
+				id: "3022493C08C36F8A"
+				type: "item"
+				title: "Any #forge:ores/iridium"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ores/iridium"
+					}
+				}
+			}]
+		}
+	]
+	quest_links: [ ]
+}

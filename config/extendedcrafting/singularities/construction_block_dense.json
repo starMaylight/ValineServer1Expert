@@ -1,0 +1,8 @@
+{
+    "name": "Dense Construction Block",
+    "colors": ["d3d3d3", "dcdcdc"],
+    "ingredient": {
+        "item": "buildinggadgets:construction_block_dense"
+    },
+    "materialCount": 1000
+}

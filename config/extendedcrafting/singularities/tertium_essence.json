@@ -1,0 +1,8 @@
+{
+    "name": "tertium essence",
+    "colors": ["cd853f", "daa520"],
+    "ingredient": {
+        "item": "mysticalagriculture:tertium_essence"
+    },
+    "materialCount": 10000
+}

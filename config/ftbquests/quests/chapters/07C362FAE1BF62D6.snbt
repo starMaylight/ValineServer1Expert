@@ -1,0 +1,353 @@
+{
+	id: "07C362FAE1BF62D6"
+	group: "025D71E464BF6EDC"
+	order_index: 3
+	filename: "07C362FAE1BF62D6"
+	title: "進捗チェックマーク"
+	icon: "minecraft:light_gray_bed"
+	disable_toast: true
+	subtitle: [
+		"のみーに影響された進捗です。"
+		"猪突猛進に爆走したい方向けの案内"
+	]
+	default_quest_shape: "diamond"
+	default_hide_dependency_lines: true
+	quests: [
+		{
+			x: -15.0d
+			y: -2.0d
+			subtitle: "このクエストページは2.5で大規模に修正しました。"
+			id: "13473F8A55330743"
+			tasks: [{
+				id: "75EC3457A7AF08D8"
+				type: "checkmark"
+				title: "あっぷでーてっど！"
+			}]
+		}
+		{
+			title: "Tutorial [0]"
+			x: -15.0d
+			y: 0.0d
+			subtitle: "「ようこそ！」"
+			description: [""]
+			hide_dependency_lines: true
+			dependencies: ["233812AD903DA6FD"]
+			size: 2.0d
+			id: "54F354B9D15C55D9"
+			tasks: [{
+				id: "2DF92D6C61E15E27"
+				type: "checkmark"
+				title: "＞＜"
+			}]
+		}
+		{
+			title: "-. Minecraft"
+			x: -15.0d
+			y: 2.0d
+			subtitle: "「まずマイクラをクリアしないとね！」"
+			id: "233812AD903DA6FD"
+			tasks: [
+				{
+					id: "690C73475E5DA896"
+					type: "item"
+					item: "minecraft:copper_block"
+				}
+				{
+					id: "0577A4D0854A6552"
+					type: "item"
+					item: "minecraft:iron_block"
+				}
+				{
+					id: "74E68F14E46FA071"
+					type: "item"
+					item: "minecraft:gold_block"
+				}
+				{
+					id: "5FD9799CB734E6F9"
+					type: "item"
+					item: "minecraft:diamond_block"
+				}
+				{
+					id: "4739C3264D6040A3"
+					type: "item"
+					item: "minecraft:netherite_block"
+				}
+				{
+					id: "4CE815F483D4009F"
+					type: "item"
+					item: "minecraft:nether_star"
+				}
+				{
+					id: "5E5264F764453A9E"
+					type: "item"
+					item: "minecraft:blackstone"
+				}
+				{
+					id: "23077A906E83F1F8"
+					type: "item"
+					item: "minecraft:end_stone"
+				}
+			]
+		}
+		{
+			x: -12.5d
+			y: 0.0d
+			dependencies: [
+				"54F354B9D15C55D9"
+				"768A3B2034497CE1"
+				"4ED8096D16B281B0"
+				"23D3B8FF1251F125"
+				"5817963FDFE1FC82"
+				"76D526BE84BC040B"
+				"152409A7093634C8"
+				"7FE894D5B4362BE5"
+			]
+			size: 2.0d
+			id: "0C64F67F6AAFE39F"
+			tasks: [{
+				id: "22C1DFFEF78E07BC"
+				type: "checkmark"
+				title: "Step [1]"
+			}]
+		}
+		{
+			title: "ぼーなす #1"
+			icon: {
+				id: "minecraft:potion"
+				Count: 1b
+				tag: {
+					Potion: "minecraft:long_night_vision"
+				}
+			}
+			x: -12.5d
+			y: -2.0d
+			shape: "circle"
+			subtitle: "ガチャを実装する話はなくなったよ！\\nかわりにネタポーションがばらまかれるのだ！"
+			dependencies: [
+				"0C64F67F6AAFE39F"
+				"768A3B2034497CE1"
+				"4ED8096D16B281B0"
+				"23D3B8FF1251F125"
+				"5817963FDFE1FC82"
+				"76D526BE84BC040B"
+				"49BFE4095E17454D"
+				"152409A7093634C8"
+				"7FE894D5B4362BE5"
+			]
+			hide: true
+			optional: true
+			can_repeat: true
+			id: "63D1DA98A76B840E"
+			tasks: [
+				{
+					id: "4BF0117EA29A9F88"
+					type: "forge_energy"
+					value: 1000000000L
+					max_input: 1000L
+				}
+				{
+					id: "0E735E990F3F78B9"
+					type: "xp"
+					value: 10L
+					points: false
+				}
+			]
+			rewards: [{
+				id: "3AFAD415AEBC2974"
+				type: "item"
+				item: {
+					id: "minecraft:potion"
+					Count: 1b
+					tag: {
+						Potion: "minecraft:long_night_vision"
+					}
+				}
+			}]
+		}
+		{
+			title: "1. Pneumatic Craft"
+			x: -13.5d
+			y: 2.0d
+			subtitle: "「ぷしゅー！...あっそうじゃんこれ爆発すｒ"
+			dependencies: [
+				"3C72BF0EBCB6F93B"
+				"045C56653D192C6A"
+				"6F88830B8DC1C2CC"
+			]
+			id: "5817963FDFE1FC82"
+			tasks: [
+				{
+					id: "34C26336C993F8FF"
+					type: "item"
+					item: "pneumaticcraft:advanced_air_compressor"
+				}
+				{
+					id: "65B0B68691446259"
+					type: "item"
+					item: "pneumaticcraft:air_compressor"
+				}
+			]
+		}
+		{
+			title: "2. Create"
+			x: -13.0d
+			y: 1.5d
+			subtitle: "「重いけどロマンがあるのがいいよね！ ...って鉄道しかメリットない？そんなぁ...」"
+			dependencies: [
+				"1EE3A5AED8C3F5ED"
+				"391512F49666273E"
+				"09EAE5A45E377433"
+			]
+			id: "7FE894D5B4362BE5"
+			tasks: [{
+				id: "0C117750AC96032C"
+				type: "advancement"
+				advancement: "create:speed_controller"
+				criterion: ""
+			}]
+		}
+		{
+			title: "3. Botania [A-side]"
+			x: -12.5d
+			y: 3.0d
+			subtitle: "「...いつになったら エルフさんたちと和解できるのかな」"
+			dependencies: ["449D582C9D5DB0B5"]
+			id: "4ED8096D16B281B0"
+			tasks: [
+				{
+					id: "433DEBB7AFC8673F"
+					type: "item"
+					item: "botania:rune_spring"
+				}
+				{
+					id: "526C0E656D018BBD"
+					type: "item"
+					item: "botania:rune_summer"
+				}
+				{
+					id: "6646D14E80B434E9"
+					type: "item"
+					item: "botania:rune_autumn"
+				}
+				{
+					id: "1D0D8DEAABE4E2E6"
+					type: "item"
+					item: "botania:rune_winter"
+				}
+			]
+		}
+		{
+			title: "4. Extra Utilities"
+			x: -12.5d
+			y: 2.0d
+			subtitle: "「それどうするの？ ...えっ発電の材料にするって？正気なの？」"
+			dependencies: [
+				"6270F07D0D42A3C6"
+				"14DA16988B3A4E76"
+			]
+			id: "76D526BE84BC040B"
+			tasks: [{
+				id: "4FF0F27D1AB11ED3"
+				type: "observation"
+				title: "レインボー発電機を30秒見つめる"
+				icon: "tconstruct:enderman_head"
+				timer: 600L
+				observe_type: 0
+				to_observe: "extrautilitiesrebirth:rainbow_generator"
+			}]
+		}
+		{
+			title: "5. Immersive Engineering"
+			x: -12.0d
+			y: 1.5d
+			subtitle: "「がっしゃーん！ やっぱり大型の機械はおいしいね！！」"
+			dependencies: [
+				"0F2EC03F06CFE3DA"
+				"3FD914CC5DFE0C4E"
+			]
+			id: "768A3B2034497CE1"
+			tasks: [{
+				id: "1E4577D6BD0F05C8"
+				type: "item"
+				item: "immersiveengineering:redstone_acid_bucket"
+			}]
+		}
+		{
+			title: "&72. Create - Append"
+			x: -13.0d
+			y: 2.5d
+			subtitle: "「わーい！ケーキだ！」 | &e一部消費クエスト"
+			description: ["Tips: このクエストのようにAppendと書いてるクエストは達成しなくて構いませんが、それぞれのmodにより深く触れてほしいという目的で製作しています。 よければ「ロマンのある工場」にも手を出してみてください。"]
+			hide_dependency_lines: false
+			dependencies: ["7FE894D5B4362BE5"]
+			optional: true
+			id: "49BFE4095E17454D"
+			tasks: [
+				{
+					id: "41C3A3708281BDCE"
+					type: "item"
+					item: "createaddition:cake_base_baked"
+				}
+				{
+					id: "06B7E29265DB4009"
+					type: "item"
+					item: "createaddition:honey_cake"
+					count: 16L
+					consume_items: true
+				}
+				{
+					id: "5F4482D1993B8053"
+					type: "item"
+					item: "createaddition:chocolate_cake"
+					count: 16L
+					consume_items: true
+				}
+			]
+		}
+		{
+			title: "5. Thermal Expansion"
+			x: -12.0d
+			y: 2.5d
+			subtitle: "「このこ、5kRF/tも輸送できるの！ ...えっよわいって？」"
+			dependencies: [
+				"327A7772D048D1A2"
+				"5019300A675A67EC"
+				"519C46A5E7375B85"
+				"74EE669BFD5A9C64"
+				"146D9F008B0EE9CE"
+				"674DAE8D75271AF6"
+				"0C72591E62125DCF"
+				"0B12A299BE908969"
+				"3191BEF6E32BF399"
+				"4ED0F139FDF2816C"
+				"39249FD0CD57485B"
+				"2B74757CFFB65E67"
+			]
+			id: "23D3B8FF1251F125"
+			tasks: [{
+				id: "76F3E3F17E982D49"
+				type: "item"
+				item: "createaddition:electrum_spool"
+			}]
+		}
+		{
+			title: "6. Cyclic"
+			x: -11.5d
+			y: 2.0d
+			subtitle: "「それは...また今度でいいよ」"
+			dependencies: [
+				"768C5304B3BBC451"
+				"51188E3CF76CA75B"
+				"0A9C623C67279B63"
+				"297F3FB20EFCA3E7"
+			]
+			id: "152409A7093634C8"
+			tasks: [{
+				id: "77B82AB657BF6CFD"
+				type: "item"
+				item: "cyclic:anvil_void"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

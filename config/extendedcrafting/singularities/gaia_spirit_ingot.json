@@ -1,0 +1,8 @@
+{
+    "name": "Gaia Spirit Ingot",
+    "colors": ["fff0f5", "e0ffff"],
+    "ingredient": {
+        "item": "botania:gaia_ingot"
+    },
+    "materialCount": 1000
+}

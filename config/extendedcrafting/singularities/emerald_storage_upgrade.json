@@ -1,0 +1,9 @@
+{
+    "name": "Emerald Storage Upgrade",
+    "colors": ["8b4513", "00ff00"],
+    "ingredient": {
+          "item": "storagedrawers:emerald_storage_upgrade"
+          
+    },
+    "materialCount": 10000
+}

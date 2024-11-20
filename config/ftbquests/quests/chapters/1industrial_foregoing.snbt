@@ -1,0 +1,517 @@
+{
+	id: "55B92D7E244E5163"
+	group: "76C8668A0FE5C01C"
+	order_index: 0
+	filename: "1industrial_foregoing"
+	title: "1.Industrial foregoing"
+	icon: "industrialforegoing:plastic"
+	subtitle: [
+		"フルオート：mob factory"
+		""
+		""
+		"爆弾魔は拳を机にたたきつけた。花の戯れによって事象改変された相棒を見ながら。"
+		"だが、その瞳には薄暗い炎が灯っている。この程度では私は止められないと語っているかのようで。"
+		"堆肥で生まれ変わってしまった相棒に充填をし、今日も破壊を繰り返す。"
+		"これが未来の出来事だと知らずに。"
+	]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			subtitle: "回路もなしに機械ができるわけない"
+			description: ["機械もなしに素手で作れるわけがない"]
+			dependencies: ["6FD87028F491C52C"]
+			id: "2CF7334AC9253570"
+			tasks: [{
+				id: "7ED816B4115FCA1A"
+				type: "item"
+				item: "industrialforegoing:machine_frame_pity"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 0.0d
+			subtitle: "ゴムの木?そんなもんバニラにないが"
+			description: ["原木から吸い取っていく"]
+			dependencies: ["2CF7334AC9253570"]
+			id: "018F98D18AABDE63"
+			tasks: [
+				{
+					id: "36E4FF8BCC4D72C5"
+					type: "item"
+					item: "industrialforegoing:fluid_extractor"
+				}
+				{
+					id: "4C5646AEAA913F50"
+					type: "item"
+					item: "industrialforegoing:latex_processing_unit"
+				}
+			]
+		}
+		{
+			x: 5.0d
+			y: 0.0d
+			subtitle: "簡単って言われそうなので難しくしておきました"
+			description: ["無限に取れるものと無限にとれるものを合わせても無限は無限"]
+			dependencies: ["018F98D18AABDE63"]
+			id: "376194BDC622B0F2"
+			tasks: [
+				{
+					id: "1CF463023D31C1D0"
+					type: "item"
+					item: "industrialforegoing:plastic"
+				}
+				{
+					id: "417D8C382C1C2EEC"
+					type: "item"
+					item: "industrialforegoing:dryrubber"
+				}
+			]
+		}
+		{
+			x: 9.5d
+			y: 2.0d
+			subtitle: "骨まで余すことなく"
+			description: ["粉骨砕身"]
+			dependencies: ["376194BDC622B0F2"]
+			id: "1E7E0EE5D876149C"
+			tasks: [{
+				id: "20EC9101B19E5BDD"
+				type: "item"
+				item: "industrialforegoing:mob_slaughter_factory"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 2.0d
+			shape: "square"
+			subtitle: "ブレイズケーキなんて要らなかったんだ"
+			description: ["ケーキっていちいち作るの面倒だよね"]
+			dependencies: ["376194BDC622B0F2"]
+			optional: true
+			id: "44E7A3730FAAB0D0"
+			tasks: [
+				{
+					id: "089ADDC878667105"
+					type: "item"
+					item: "industrialforegoing:bioreactor"
+				}
+				{
+					id: "46584FAF3ACF63AD"
+					type: "item"
+					item: "createaddition:straw"
+				}
+			]
+			rewards: [{
+				id: "73BCFE632A8EC4CE"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+		}
+		{
+			x: 5.0d
+			y: 2.0d
+			subtitle: "&4真鍮使ってんだからいいだろ"
+			description: ["根元がプラスチックになっただけ"]
+			dependencies: ["376194BDC622B0F2"]
+			id: "4CDFA86A974864AB"
+			tasks: [{
+				id: "0C7782F80C7A8326"
+				type: "item"
+				item: "create:brass_hand"
+			}]
+		}
+		{
+			x: 8.0d
+			y: 4.0d
+			subtitle: "流石に限度がある"
+			description: ["肥料だって言ってるだろう？"]
+			dependencies: ["1E7E0EE5D876149C"]
+			hide: true
+			id: "2C52F0179DE62A1E"
+			tasks: [
+				{
+					id: "3C8FAD3BAAB48E06"
+					type: "item"
+					item: "industrialforegoing:sewer"
+				}
+				{
+					id: "791C6CB9794772D2"
+					type: "item"
+					item: "industrialforegoing:sewage_composter"
+				}
+			]
+		}
+		{
+			x: 6.5d
+			y: 2.0d
+			shape: "square"
+			subtitle: "まさかこんなもの使うわけ..."
+			description: ["HAHAHA"]
+			dependencies: ["376194BDC622B0F2"]
+			optional: true
+			id: "221E9E9118EBAAD7"
+			tasks: [{
+				id: "6F283BC856C780EB"
+				type: "item"
+				item: "industrialforegoing:plant_gatherer"
+			}]
+			rewards: [{
+				id: "04A980B116784D3E"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+		}
+		{
+			x: 9.5d
+			y: -1.5d
+			subtitle: "1.12.2のIFを見習え"
+			description: ["原本から魔改造されすぎだって"]
+			dependencies: ["376194BDC622B0F2"]
+			id: "3F5C7F6CE7E9F347"
+			tasks: [{
+				id: "408605134539AB0E"
+				type: "item"
+				item: "industrialforegoing:dissolution_chamber"
+			}]
+		}
+		{
+			x: 12.5d
+			y: 2.0d
+			subtitle: "###この文章は粛清されました###"
+			description: ["ZAP！ZAP！ZAP！"]
+			dependencies: [
+				"1E7E0EE5D876149C"
+				"3F5C7F6CE7E9F347"
+			]
+			id: "13A51A104C0489E8"
+			tasks: [{
+				id: "27552A45E7A274DF"
+				type: "item"
+				item: "industrialforegoing:pink_slime"
+			}]
+		}
+		{
+			x: 12.5d
+			y: -1.5d
+			subtitle: "ネザーラックの自動化って難しくない?"
+			description: ["レシピ変更されてネザーラック使わなくなってるけどね……"]
+			dependencies: [
+				"3F5C7F6CE7E9F347"
+				"59E8D41F3405CD5E"
+				"13A51A104C0489E8"
+			]
+			id: "16E03EDA0D1AD627"
+			tasks: [{
+				id: "573ADEE4147B0556"
+				type: "item"
+				item: "industrialforegoing:machine_frame_simple"
+			}]
+		}
+		{
+			x: 15.5d
+			y: -1.5d
+			subtitle: "回路が変わってないから前のと同じ"
+			description: ["すまんな、ピンクスライムはこっちに必要なんだ。"]
+			dependencies: ["16E03EDA0D1AD627"]
+			id: "343011466E8B3602"
+			tasks: [{
+				id: "26A38921D4BD4080"
+				type: "item"
+				item: "industrialforegoing:machine_frame_advanced"
+			}]
+		}
+		{
+			x: 9.5d
+			y: 4.0d
+			subtitle: "つまりはエレクトラム"
+			description: ["顔が見える......こいつっ生きてやがる！"]
+			dependencies: ["1E7E0EE5D876149C"]
+			id: "4C9249601318BF42"
+			tasks: [{
+				id: "5D2C985CDB3E66B7"
+				type: "item"
+				item: "industrialforegoing:pink_slime_ingot"
+			}]
+		}
+		{
+			x: 8.0d
+			y: 6.0d
+			subtitle: "うんち！(せいかいのおと)"
+			description: ["え？あのアニメ今どきの子供は見てないの？まじ？"]
+			dependencies: ["2C52F0179DE62A1E"]
+			id: "7C718D0AF1C17B4D"
+			tasks: [{
+				id: "1C67A90B0596DD8F"
+				type: "item"
+				item: "industrialforegoing:fertilizer"
+			}]
+		}
+		{
+			x: 17.5d
+			y: -0.5d
+			subtitle: "原油が無限だよ!!!よかったね!!!"
+			description: ["原油地味に大量に使うから助かる"]
+			dependencies: ["343011466E8B3602"]
+			id: "35AF9EFEF9454F2B"
+			tasks: [
+				{
+					id: "495172F9681FE38D"
+					type: "item"
+					item: "industrialforegoing:fluid_laser_base"
+				}
+				{
+					id: "5B04637FDC89E0C6"
+					type: "item"
+					item: "industrialforegoing:laser_drill"
+				}
+			]
+		}
+		{
+			x: 17.5d
+			y: -2.5d
+			subtitle: "犬だって止められる"
+			description: ["わんわんおー＾＾"]
+			dependencies: ["343011466E8B3602"]
+			id: "31308FF47202D202"
+			tasks: [{
+				id: "2EF2D0CBF93B1550"
+				type: "item"
+				item: "industrialforegoing:stasis_chamber"
+			}]
+		}
+		{
+			x: 21.0d
+			y: -2.5d
+			subtitle: "どうしてこんなことを"
+			description: ["油断すると反乱される"]
+			dependencies: [
+				"31308FF47202D202"
+				"35AF9EFEF9454F2B"
+			]
+			id: "3571D94BECE35AFC"
+			tasks: [{
+				id: "2714355ABA9E63A0"
+				type: "item"
+				item: "industrialforegoing:ether_gas_bucket"
+			}]
+		}
+		{
+			x: 21.0d
+			y: -0.5d
+			subtitle: "ロボトミー手術"
+			description: ["ラヴェジャー「俺またなんかやっちゃいました？」"]
+			dependencies: [
+				"35AF9EFEF9454F2B"
+				"31308FF47202D202"
+			]
+			id: "4990A3F842936A2E"
+			tasks: [{
+				id: "1C6F17D2FC78E8EF"
+				type: "item"
+				item: "valine_s1ex:unknown_darkmatter_bucket"
+			}]
+		}
+		{
+			x: 23.5d
+			y: -0.5d
+			subtitle: "&f何もなければよかったね"
+			description: ["fill it"]
+			dependencies: ["4990A3F842936A2E"]
+			id: "36B010812DBAFF66"
+			tasks: [{
+				id: "5B6F713B0E50646E"
+				type: "item"
+				item: "valine_s1ex:empty_crystal"
+			}]
+		}
+		{
+			x: 23.5d
+			y: -2.5d
+			subtitle: "&0Nothing is worth the risk"
+			description: [
+				"&0An intense dissatisfaction in the world"
+				"&0And a compulsion to do something about it"
+				"&0Heaven and Earth"
+				"&0My guiding star"
+			]
+			dependencies: [
+				"36B010812DBAFF66"
+				"3571D94BECE35AFC"
+			]
+			hide_details_until_startable: true
+			id: "33ABE48CD81D9126"
+			tasks: [{
+				id: "5E1429E7D8151652"
+				type: "item"
+				item: "valine_s1ex:ether_crystal"
+			}]
+		}
+		{
+			x: 23.5d
+			y: 1.5d
+			subtitle: "&3アフロフンコロガシの略"
+			description: ["AFKアリーナ"]
+			dependencies: ["36B010812DBAFF66"]
+			id: "0C3DE51AB7715D0A"
+			tasks: [{
+				id: "3A3E3EB4C7E23167"
+				type: "item"
+				item: "valine_s1ex:arc_element_crystal"
+			}]
+		}
+		{
+			x: 8.0d
+			y: 8.0d
+			subtitle: "booooom"
+			description: [
+				"核爆弾（堆肥爆弾）"
+				""
+				""
+				""
+				"......すまんかった。"
+			]
+			dependencies: ["7C718D0AF1C17B4D"]
+			id: "25F799B7891D2543"
+			tasks: [{
+				id: "441140E370D1EF53"
+				type: "item"
+				item: {
+					id: "industrialforegoing:infinity_nuke"
+					Count: 1b
+					tag: {
+						CanCharge: 1b
+						Special: 0b
+						Selected: "POOR"
+						Energy: 0L
+						Fluid: {
+							FluidName: "biofuel"
+							Amount: 0
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 15.5d
+			y: 1.0d
+			shape: "heart"
+			subtitle: "&dこれを作ったからといって宇宙には行けない"
+			description: ["だがこれを作らないことにはHNNは始まらない"]
+			hide_dependency_lines: true
+			dependencies: [
+				"343011466E8B3602"
+				"3571D94BECE35AFC"
+				"692A7A94904230FF"
+				"79CD8F3A8C2814E3"
+			]
+			size: 1.5d
+			id: "3CD54C516F9647EF"
+			tasks: [{
+				id: "3984FB4DCA705398"
+				type: "item"
+				item: "industrialforegoing:machine_frame_supreme"
+			}]
+		}
+		{
+			x: 15.5d
+			y: 3.0d
+			shape: "square"
+			subtitle: "&3もうウィザーモデルがあるのに?"
+			description: ["ただしまだ使えるとはってない。......え？同じタイミングで使えるようになる？"]
+			dependencies: ["3CD54C516F9647EF"]
+			hide: true
+			optional: true
+			id: "74A673AB874FD707"
+			tasks: [
+				{
+					id: "230EEF060F7166AE"
+					type: "item"
+					item: "industrialforegoing:wither_builder"
+				}
+				{
+					id: "29F4A97353595FCA"
+					type: "item"
+					item: "industrialforegoing:mob_crusher"
+				}
+			]
+			rewards: [{
+				id: "45C2CC9D062E4F2F"
+				type: "xp_levels"
+				xp_levels: 20
+			}]
+		}
+		{
+			x: 17.5d
+			y: 3.0d
+			shape: "square"
+			subtitle: "使えたらいいね"
+			description: ["全部のIFの発電機が動いていると発電する"]
+			dependencies: ["3CD54C516F9647EF"]
+			optional: true
+			id: "18B3320691DF63E4"
+			tasks: [{
+				id: "28B5668F8EA712F6"
+				type: "item"
+				item: "industrialforegoing:mycelial_reactor"
+			}]
+			rewards: [{
+				id: "291925DB8D16A66E"
+				type: "xp_levels"
+				xp_levels: 20
+			}]
+		}
+		{
+			x: 15.5d
+			y: -3.5d
+			shape: "square"
+			subtitle: "一体どこを掘っているのか"
+			description: [
+				"岩盤を掘りぬく"
+				"なおThermalの宝石はこいつからしか出ない模様"
+			]
+			dependencies: ["343011466E8B3602"]
+			optional: true
+			id: "2513CC9D7F1932B0"
+			tasks: [
+				{
+					id: "04A8F6D38045EC64"
+					type: "item"
+					item: "industrialforegoing:ore_laser_base"
+				}
+				{
+					id: "7D00F2F7F3D4709D"
+					type: "item"
+					item: "industrialforegoing:laser_drill"
+				}
+			]
+			rewards: [{
+				id: "4E7DB3E26707F12A"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+		}
+	]
+	quest_links: [
+		{
+			linked_quest: "612397FEC0E7FF80"
+			x: 5.0d
+			y: 4.0d
+			id: "4505F4B315DB2149"
+		}
+		{
+			linked_quest: "51EFB779A2CBDEEF"
+			x: 11.0d
+			y: 4.0d
+			id: "5811AA57A2D7CC6D"
+		}
+		{
+			linked_quest: "29E312412F223BBF"
+			x: 21.0d
+			y: 1.5d
+			id: "336784D31AFD770B"
+		}
+	]
+}

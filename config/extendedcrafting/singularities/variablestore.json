@@ -1,0 +1,8 @@
+{
+    "name": "Variablestore",
+    "colors": ["4169e4", "8b4513"],
+    "ingredient": {
+        "item": "integrateddynamics:variablestore"
+    },
+    "materialCount": 1000
+}

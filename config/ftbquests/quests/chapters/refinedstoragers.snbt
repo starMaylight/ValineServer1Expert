@@ -1,0 +1,1022 @@
+{
+	id: "0CE2663C2E79F684"
+	group: "76C8668A0FE5C01C"
+	order_index: 4
+	filename: "refinedstoragers"
+	title: "5.RefinedStorage(RS)"
+	icon: "refinedstorage:creative_controller"
+	subtitle: [
+		"AEでよくね？"
+		"「単純さ。この要素を突き詰め大容量の倉庫を作り出す。」"
+		"「アイテムに制限はなく、量産もたやすい。そんな倉庫を作ったつもりであった。」"
+		"「一つ面倒があるとすれば、一人で何でもやりすぎて孤立してしまったことだろうか。」"
+	]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [
+		{
+			x: 5.5d
+			y: 0.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "rebornstorage:textures/blocks/multiblock_cpu.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 4.5d
+			y: 1.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "rebornstorage:textures/blocks/multiblock_frame.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 5.5d
+			y: -0.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "rebornstorage:textures/blocks/multiblock_storage.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 6.5d
+			y: 0.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "rebornstorage:textures/blocks/multiblock_heat.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 6.5d
+			y: 1.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "rebornstorage:textures/blocks/multiblock_frame.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 4.5d
+			y: -1.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "rebornstorage:textures/blocks/multiblock_frame.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 6.5d
+			y: -1.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "rebornstorage:textures/blocks/multiblock_frame.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 6.5d
+			y: -0.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "rebornstorage:textures/blocks/multiblock_heat.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 4.5d
+			y: -0.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "rebornstorage:textures/blocks/multiblock_heat.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 4.5d
+			y: 0.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "rebornstorage:textures/blocks/multiblock_heat.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 5.5d
+			y: -1.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "rebornstorage:textures/blocks/multiblock_heat.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 5.5d
+			y: 1.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "rebornstorage:textures/blocks/multiblock_heat.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+	]
+	quests: [
+		{
+			x: -4.5d
+			y: 0.0d
+			id: "4FEDCE7BA8E09A38"
+			tasks: [{
+				id: "1B75B61A803A3081"
+				type: "item"
+				item: "refinedstorage:quartz_enriched_iron"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 5.5d
+			dependencies: [
+				"16F12DE3BAC7BF43"
+				"37BBBCF18103C915"
+			]
+			id: "14062D40C05D8717"
+			tasks: [{
+				id: "2CD86AC3E0ECEB89"
+				type: "item"
+				item: "refinedstorage:raw_basic_processor"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 5.5d
+			dependencies: [
+				"16F12DE3BAC7BF43"
+				"37BBBCF18103C915"
+			]
+			id: "22F744EF973260E3"
+			tasks: [{
+				id: "34E7A9AF9E5164E5"
+				type: "item"
+				item: "refinedstorage:raw_improved_processor"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 5.5d
+			dependencies: [
+				"16F12DE3BAC7BF43"
+				"37BBBCF18103C915"
+			]
+			id: "2E15485724C284E8"
+			tasks: [{
+				id: "27AC95B14A245F45"
+				type: "item"
+				item: "refinedstorage:raw_advanced_processor"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 4.5d
+			dependencies: ["14062D40C05D8717"]
+			id: "3476A89164832352"
+			tasks: [{
+				id: "5B1F40143765C683"
+				type: "item"
+				item: "refinedstorage:basic_processor"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 4.5d
+			dependencies: ["22F744EF973260E3"]
+			id: "76C6D2ECF320FFE4"
+			tasks: [{
+				id: "28E8BC3C3712F735"
+				type: "item"
+				item: "refinedstorage:improved_processor"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 4.5d
+			dependencies: ["2E15485724C284E8"]
+			id: "526BA18FF4050D7C"
+			tasks: [{
+				id: "73DA2C4BB9D0A0BF"
+				type: "item"
+				item: "refinedstorage:advanced_processor"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 5.5d
+			dependencies: ["37BBBCF18103C915"]
+			id: "3A01B3224959F186"
+			tasks: [{
+				id: "1FF38A9E5C2CBAA8"
+				type: "item"
+				item: "extradisks:raw_withering_processor"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 4.5d
+			dependencies: ["3A01B3224959F186"]
+			id: "3706FC7B5B6F5B37"
+			tasks: [{
+				id: "457C454089BD7D2A"
+				type: "item"
+				item: "extradisks:withering_processor"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 5.5d
+			dependencies: [
+				"16F12DE3BAC7BF43"
+				"37BBBCF18103C915"
+			]
+			id: "4AAABCF85F54F1F5"
+			tasks: [{
+				id: "04D27D776E7618F9"
+				type: "item"
+				item: "rebornstorage:raw_super_advanced_processor"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 4.5d
+			dependencies: ["4AAABCF85F54F1F5"]
+			id: "04C4B0166DAA49F5"
+			tasks: [{
+				id: "1B0075D1FDE9EDE3"
+				type: "item"
+				item: "rebornstorage:super_advanced_processor"
+			}]
+		}
+		{
+			x: -5.5d
+			y: 0.0d
+			dependencies: ["4FEDCE7BA8E09A38"]
+			id: "7DC8C69A1D4F5118"
+			tasks: [{
+				id: "7B618A73AE940415"
+				type: "item"
+				item: "refinedstorage:cable"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 0.0d
+			dependencies: ["02E322FAEF43F70E"]
+			size: 2.0d
+			id: "02729BC07E557C88"
+			tasks: [{
+				id: "24E4E3A9663B350B"
+				type: "item"
+				item: "refinedstorage:machine_casing"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 0.0d
+			dependencies: ["02729BC07E557C88"]
+			id: "4B900DF0D8885358"
+			tasks: [{
+				id: "041900D483086C51"
+				type: "item"
+				item: "refinedstorage:controller"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -1.5d
+			dependencies: ["02729BC07E557C88"]
+			id: "0F5442AC501ADE64"
+			tasks: [
+				{
+					id: "5FF1174469E4A301"
+					type: "item"
+					item: "refinedstorage:network_transmitter"
+				}
+				{
+					id: "4350D40F838931E9"
+					type: "item"
+					item: "refinedstorage:network_receiver"
+				}
+				{
+					id: "61243377B15F4867"
+					type: "item"
+					item: "refinedstorage:network_card"
+				}
+			]
+		}
+		{
+			x: -2.0d
+			y: -2.5d
+			shape: "square"
+			hide_dependency_lines: true
+			dependencies: ["7DC8C69A1D4F5118"]
+			id: "77F6ECD31DEE3FBD"
+			tasks: [{
+				id: "69D49EF4A3323134"
+				type: "item"
+				item: "refinedstorage:external_storage"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -4.5d
+			shape: "square"
+			hide_dependency_lines: true
+			dependencies: ["7DC8C69A1D4F5118"]
+			id: "36C26D0F984760AF"
+			tasks: [{
+				id: "5A41675003369E9D"
+				type: "item"
+				item: "refinedstorage:importer"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -3.5d
+			shape: "square"
+			hide_dependency_lines: true
+			dependencies: ["7DC8C69A1D4F5118"]
+			id: "49332BC2C61A8749"
+			tasks: [{
+				id: "01A3AE5EC1FA40AA"
+				type: "item"
+				item: "refinedstorage:exporter"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -2.5d
+			shape: "square"
+			hide_dependency_lines: true
+			dependencies: ["7DC8C69A1D4F5118"]
+			id: "2642D850FB147495"
+			tasks: [{
+				id: "060C928693B3CBF5"
+				type: "item"
+				item: "refinedstorage:constructor"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -2.5d
+			shape: "square"
+			hide_dependency_lines: true
+			dependencies: ["7DC8C69A1D4F5118"]
+			id: "6098C98A989B9934"
+			tasks: [{
+				id: "3EC1E0765E564E90"
+				type: "item"
+				item: "refinedstorage:destructor"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 2.0d
+			id: "15E2A634F8160C53"
+			tasks: [{
+				id: "2BDD46EDA75F50D8"
+				type: "item"
+				item: "refinedstorage:wireless_transmitter"
+			}]
+		}
+		{
+			x: -5.5d
+			y: -2.5d
+			hide_dependency_lines: true
+			dependencies: ["16F12DE3BAC7BF43"]
+			id: "455187603AD1B71A"
+			tasks: [
+				{
+					id: "6F2474777675ED87"
+					type: "item"
+					item: "refinedstorage:1k_storage_part"
+				}
+				{
+					id: "7D0F25A682EDB04C"
+					type: "item"
+					item: "refinedstorage:4k_storage_part"
+				}
+				{
+					id: "57E295B47334A7E6"
+					type: "item"
+					item: "refinedstorage:16k_storage_part"
+				}
+				{
+					id: "2B50AC4F312C4626"
+					type: "item"
+					item: "refinedstorage:64k_storage_part"
+				}
+			]
+		}
+		{
+			x: -5.5d
+			y: -1.5d
+			hide_dependency_lines: true
+			dependencies: [
+				"16F12DE3BAC7BF43"
+				"4FEDCE7BA8E09A38"
+			]
+			id: "6AA70FA0B2240B50"
+			tasks: [
+				{
+					id: "7B5BEC9D03EACDCF"
+					type: "item"
+					item: "refinedstorage:64k_fluid_storage_part"
+				}
+				{
+					id: "1A99A5653A3B7366"
+					type: "item"
+					item: "refinedstorage:256k_fluid_storage_part"
+				}
+				{
+					id: "4E48107C03AD6843"
+					type: "item"
+					item: "refinedstorage:1024k_fluid_storage_part"
+				}
+				{
+					id: "40A893DE5735A9F2"
+					type: "item"
+					item: "refinedstorage:4096k_fluid_storage_part"
+				}
+			]
+		}
+		{
+			x: -0.5d
+			y: -4.5d
+			shape: "diamond"
+			id: "1C0B38708268455F"
+			tasks: [{
+				id: "2122530BFA94F5B7"
+				type: "item"
+				item: "refinedstorage:upgrade"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -4.0d
+			shape: "diamond"
+			id: "2234214971B4E7AA"
+			tasks: [{
+				id: "34DFE8E2169E3046"
+				type: "item"
+				item: "refinedstorage:speed_upgrade"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -5.0d
+			shape: "diamond"
+			id: "0DE327663FC5FFA8"
+			tasks: [{
+				id: "36CC0CC2461684A2"
+				type: "item"
+				item: "refinedstorage:crafting_upgrade"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -4.5d
+			shape: "diamond"
+			dependencies: ["2234214971B4E7AA"]
+			id: "7C9C80C709A56E12"
+			tasks: [{
+				id: "200DE29F3EF840C3"
+				type: "item"
+				item: "refinedstorage:stack_upgrade"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -3.5d
+			shape: "square"
+			hide_dependency_lines: true
+			dependencies: [
+				"49332BC2C61A8749"
+				"36C26D0F984760AF"
+			]
+			id: "279DD8B4B8965F8B"
+			tasks: [{
+				id: "1199F0E426AAB8DF"
+				type: "item"
+				item: "refinedstorage:interface"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -3.5d
+			shape: "square"
+			hide_dependency_lines: true
+			dependencies: ["279DD8B4B8965F8B"]
+			id: "3E4554EDF4BBBD8C"
+			tasks: [{
+				id: "7C06AB4150F05D3A"
+				type: "item"
+				item: "refinedstorage:fluid_interface"
+			}]
+		}
+		{
+			x: -5.0d
+			y: 3.0d
+			id: "3BBDC23ABAD640D2"
+			tasks: [{
+				id: "1F1748CC5D4C2A71"
+				type: "item"
+				item: {
+					id: "refinedstorage:cover"
+					Count: 1b
+					tag: {
+						Item: {
+							id: "minecraft:stone_bricks"
+							Count: 1b
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: 3.0d
+			id: "56C117D8A7AA970A"
+			tasks: [{
+				id: "7AFC6BCC311775BB"
+				type: "item"
+				item: "refinedstorage:wireless_crafting_monitor"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 2.0d
+			dependencies: ["02729BC07E557C88"]
+			id: "36E62F4D4763487E"
+			tasks: [{
+				id: "04D51928360A520F"
+				type: "item"
+				item: "refinedstorage:disk_manipulator"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 3.0d
+			dependencies: ["02729BC07E557C88"]
+			id: "02B957FECCC9E375"
+			tasks: [{
+				id: "083AFF0700A4A791"
+				type: "item"
+				item: "refinedstorage:relay"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 3.0d
+			dependencies: ["02729BC07E557C88"]
+			id: "3965BCBF09F83394"
+			tasks: [{
+				id: "3F91440280F37B43"
+				type: "item"
+				item: "refinedstorage:detector"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -1.0d
+			dependencies: ["02729BC07E557C88"]
+			id: "386B407038B3C473"
+			tasks: [{
+				id: "18A81B568FF84728"
+				type: "item"
+				item: {
+					id: "refinedstorage:portable_grid"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: -3.0d
+			y: 4.5d
+			dependencies: ["3476A89164832352"]
+			id: "3F08C9C2E4F0A327"
+			tasks: [{
+				id: "0997D8CF78E756DF"
+				type: "item"
+				item: "refinedstorage:construction_core"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 5.5d
+			dependencies: [
+				"16F12DE3BAC7BF43"
+				"37BBBCF18103C915"
+				"3476A89164832352"
+			]
+			id: "749B6A949A10885F"
+			tasks: [{
+				id: "08499FCC1203DFBF"
+				type: "item"
+				item: "refinedstorage:destruction_core"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -5.5d
+			shape: "square"
+			id: "5C9B10A4BC7D642B"
+			tasks: [{
+				id: "22AFE03A0B00CDDC"
+				type: "item"
+				item: "refinedstorage:filter"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 0.0d
+			dependencies: ["02729BC07E557C88"]
+			id: "7285106C94822BD0"
+			tasks: [{
+				id: "770D0C19F039335A"
+				type: "item"
+				item: "rebornstorage:multiblock_frame"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 1.0d
+			dependencies: ["7285106C94822BD0"]
+			id: "2F27A3EEE9520E69"
+			tasks: [{
+				id: "034C1EA935EB82EC"
+				type: "item"
+				item: "rebornstorage:multiblock_heat"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -1.0d
+			dependencies: ["7285106C94822BD0"]
+			id: "5F8066F9FBF002DC"
+			tasks: [{
+				id: "46DF5DB40E300A15"
+				type: "item"
+				item: "rebornstorage:multiblock_cpu"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 0.0d
+			dependencies: ["7285106C94822BD0"]
+			id: "02BFA714FF7D4F28"
+			tasks: [{
+				id: "14E6570E4ED4C24F"
+				type: "item"
+				item: "rebornstorage:multiblock_storage"
+			}]
+		}
+		{
+			x: -8.5d
+			y: -2.5d
+			hide_dependency_lines: true
+			dependencies: ["16F12DE3BAC7BF43"]
+			id: "3C3B242241F673A1"
+			tasks: [
+				{
+					id: "5AC996512704BDF7"
+					type: "item"
+					item: "extradisks:16384k_fluid_storage_part"
+				}
+				{
+					id: "5FCFC4E1FD1C63A8"
+					type: "item"
+					item: "extradisks:65536k_fluid_storage_part"
+				}
+				{
+					id: "0AE92B597685D1C7"
+					type: "item"
+					item: "extradisks:262144k_fluid_storage_part"
+				}
+				{
+					id: "6BDB353C810C1E70"
+					type: "item"
+					item: "extradisks:1048576k_fluid_storage_part"
+				}
+				{
+					id: "034B4CFD355487AB"
+					type: "item"
+					item: "extradisks:infinite_fluid_storage_part"
+				}
+			]
+		}
+		{
+			x: 1.0d
+			y: 3.0d
+			id: "11DEC8005FAD19F5"
+			tasks: [{
+				id: "3F9ADBCB4CA97A4E"
+				type: "item"
+				item: {
+					id: "rebornstorage:super_wireless_crafting_grid"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: -8.5d
+			y: -1.5d
+			hide_dependency_lines: true
+			dependencies: ["16F12DE3BAC7BF43"]
+			id: "71B89930E198BFCE"
+			tasks: [
+				{
+					id: "55B82F6FB2DE47F4"
+					type: "item"
+					item: "extradisks:256k_storage_part"
+				}
+				{
+					id: "7D522F6CA99713FE"
+					type: "item"
+					item: "extradisks:1024k_storage_part"
+				}
+				{
+					id: "7A3B9207BBDD5A4D"
+					type: "item"
+					item: "extradisks:4096k_storage_part"
+				}
+				{
+					id: "101EEB95634ADF05"
+					type: "item"
+					item: "extradisks:16384k_storage_part"
+				}
+				{
+					id: "10925CCBB822D0C6"
+					type: "item"
+					item: "extradisks:65536k_storage_part"
+				}
+				{
+					id: "466118B695587ACE"
+					type: "item"
+					item: "extradisks:262144k_storage_part"
+				}
+				{
+					id: "06ACD2711F1CF729"
+					type: "item"
+					item: "extradisks:1048576k_storage_part"
+				}
+				{
+					id: "7360EF51FB0C46EF"
+					type: "item"
+					item: "extradisks:infinite_storage_part"
+				}
+			]
+		}
+		{
+			x: -3.0d
+			y: -1.0d
+			shape: "hexagon"
+			dependencies: ["02729BC07E557C88"]
+			id: "5C20418B1BFDC25F"
+			tasks: [{
+				id: "68FE7A7B9E12CD0E"
+				type: "item"
+				item: "extradisks:advanced_machine_casing"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -1.0d
+			hide_dependency_lines: true
+			dependencies: ["4FEDCE7BA8E09A38"]
+			id: "6DD1333620FC2B05"
+			tasks: [{
+				id: "0956A21FB3A232A0"
+				type: "item"
+				item: "refinedstorage:pattern"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 1.0d
+			dependencies: ["02729BC07E557C88"]
+			id: "5EB25F6330773E2A"
+			tasks: [{
+				id: "0C05E594EAE9BC8A"
+				type: "item"
+				item: "rsrequestify:requester"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 0.0d
+			dependencies: ["02729BC07E557C88"]
+			id: "7D63B4EC096ED48C"
+			tasks: [{
+				id: "13D28389E5ACA094"
+				type: "item"
+				item: "refinedstorage:grid"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -1.0d
+			dependencies: ["02729BC07E557C88"]
+			id: "4DA113919C2B4CF1"
+			tasks: [{
+				id: "36489D2F59CFA88D"
+				type: "item"
+				item: "refinedstorage:crafting_monitor"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 0.0d
+			dependencies: ["4FEDCE7BA8E09A38"]
+			id: "02E322FAEF43F70E"
+			tasks: [{
+				id: "685452691142D368"
+				type: "item"
+				item: "refinedstorage:quartz_enriched_iron_block"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 1.0d
+			dependencies: ["02729BC07E557C88"]
+			id: "6700D554DC0EDA69"
+			tasks: [{
+				id: "6CB4F245C5937978"
+				type: "item"
+				item: "refinedstorage:disk_drive"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 0.0d
+			dependencies: ["02729BC07E557C88"]
+			id: "11267012180D7567"
+			tasks: [
+				{
+					id: "09E80B6654CD249D"
+					type: "item"
+					item: "refinedstorage:crafting_grid"
+				}
+				{
+					id: "6F8C71642D7C4731"
+					type: "item"
+					item: "refinedstorage:pattern_grid"
+				}
+			]
+		}
+		{
+			x: -2.0d
+			y: 1.5d
+			dependencies: ["02729BC07E557C88"]
+			id: "332BD4D7D0C55E5C"
+			tasks: [{
+				id: "71F5A3E89DE3B795"
+				type: "item"
+				item: "refinedstorage:storage_monitor"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -5.0d
+			shape: "diamond"
+			id: "511A55547F5A2CF7"
+			tasks: [{
+				id: "79AEB64740240D17"
+				type: "item"
+				item: "refinedstorage:regulator_upgrade"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -4.0d
+			shape: "diamond"
+			id: "390EBAB6A2018373"
+			tasks: [
+				{
+					id: "5A9E1AC67713A0EC"
+					type: "item"
+					item: "refinedstorage:silk_touch_upgrade"
+				}
+				{
+					id: "2E26D6155DC7794B"
+					type: "item"
+					item: "refinedstorage:fortune_3_upgrade"
+				}
+			]
+		}
+		{
+			x: -1.0d
+			y: 3.0d
+			dependencies: ["15E2A634F8160C53"]
+			id: "424B1E0DE1A6B86C"
+			tasks: [{
+				id: "08FA369613E9DFB1"
+				type: "item"
+				item: "rebornstorage:advanced_wireless_transmitter"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -1.0d
+			dependencies: ["02729BC07E557C88"]
+			id: "5907E2BB981E7E9D"
+			tasks: [{
+				id: "300A8A506686507A"
+				type: "item"
+				item: "refinedstorage:fluid_grid"
+			}]
+		}
+		{
+			x: -5.0d
+			y: 4.5d
+			id: "37BBBCF18103C915"
+			tasks: [{
+				id: "2F69307E70AA110C"
+				type: "item"
+				item: "refinedstorage:processor_binding"
+			}]
+		}
+		{
+			x: -5.0d
+			y: 5.5d
+			id: "16F12DE3BAC7BF43"
+			tasks: [{
+				id: "4CED1096B5B84AD6"
+				type: "item"
+				item: "refinedstorage:silicon"
+			}]
+		}
+		{
+			x: -6.5d
+			y: -2.0d
+			hide_dependency_lines: true
+			dependencies: ["4FEDCE7BA8E09A38"]
+			id: "4B980D0EBC4EA27B"
+			tasks: [{
+				id: "5F6A18703507917B"
+				type: "item"
+				item: "refinedstorage:storage_housing"
+			}]
+		}
+		{
+			x: -7.5d
+			y: -2.0d
+			hide_dependency_lines: true
+			dependencies: ["4FEDCE7BA8E09A38"]
+			id: "52B7AC4A1A4F3F33"
+			tasks: [{
+				id: "00BA176EEF79272A"
+				type: "item"
+				item: "extradisks:advanced_storage_housing"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

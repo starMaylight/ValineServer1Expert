@@ -1,0 +1,93 @@
+{
+	id: "0B7AA993DEAC369F"
+	group: "49F5FAB4580E0BD3"
+	order_index: 0
+	filename: "description"
+	title: "Description"
+	subtitle: [
+		"V1EXだー！"
+		""
+		""
+		""
+		"「……本当に一人で行ってしまうのかい？」私はそう聞く。"
+		"「ええ。私一人でいかなければならないから。」そう彼女は答えた。そして玄関の前でこちらを振り返る。"
+		"「帰ってきたらいつものレシピでまたご飯作るから。それまで待っててね？」"
+		"そう告げた彼女は１か月たっても帰ってこなかった。"
+	]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "VVelcome注意書き！"
+			x: -2.5d
+			y: -2.5d
+			subtitle: "沢山の方々の協力でかんせいしました。"
+			description: ["ほぼすべての進捗が終了しております。"]
+			size: 5.0d
+			id: "6DDD3A08032F6296"
+			tasks: [{
+				id: "45299F4C760F82B2"
+				type: "checkmark"
+				title: "チェックしたら押してね"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -2.5d
+			subtitle: "開発者向け"
+			description: [
+				"1.砕いたプラチナが消えました。"
+				"2.クロム製錬が追加されました。"
+				"3.MEGA cell関連はIE作業台に置き換わりました。"
+				"4.液体チャンバーが作れない問題を修正しました"
+				"5.botaniaの変換レシピの抜け道を修正しました"
+				"6.IEまでのクエストをマージしました。"
+				"7.コメントアウトした状態で易化レシピを実装しました。使用する場合はコメントアウトを外し保存後、リロードを行うか再起動を行ってください。"
+				"8.Accepterレシピが変わりました。"
+			]
+			dependencies: ["6DDD3A08032F6296"]
+			id: "78C0E056BA057C9C"
+			tasks: [{
+				id: "4BE91215D95BD164"
+				type: "checkmark"
+				title: "2.2 update情報"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.0d
+			subtitle: "開発者向け"
+			description: [
+				"1.クエストの追加"
+				"2.cellのレシピの変更"
+				"3.追加済みのクエスト章にサブタイを追加"
+			]
+			dependencies: ["78C0E056BA057C9C"]
+			id: "6146E38BC18F6E7C"
+			tasks: [{
+				id: "29329DF60C8E0392"
+				type: "checkmark"
+				title: "2.3update"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 2.0d
+			subtitle: "開発者向け"
+			description: [
+				"1.雑な解説を導入"
+				"2.cellのブループリントを追加"
+				"3.一部ブロックの世界関連を追加"
+				"4.クエストの統合"
+			]
+			dependencies: ["6146E38BC18F6E7C"]
+			id: "3F76AD9FAAAFD243"
+			tasks: [{
+				id: "26F2F0861D185B21"
+				type: "checkmark"
+				title: "2.4アップデート"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

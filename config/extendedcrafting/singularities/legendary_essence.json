@@ -1,0 +1,9 @@
+{
+    "name": "Legendary Essence",
+    "colors": ["8a2ba2", "800080"],
+    "ingredient": {
+          "item": "rftoolsdim:legendary_essence"
+          
+    },
+    "materialCount": 1000
+}

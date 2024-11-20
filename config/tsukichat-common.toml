@@ -1,0 +1,47 @@
+#ローマ字を漢字混じりの日本語に変換するかどうか。
+#無効にすると、ローマ字変換のみ行います。
+transliterate = true
+#ASCII文字以外を含むメッセージのローマ字変換と日本語変換を無視するかどうか。
+#このオプションは、マークダウン変換を行うかどうかに影響しません。
+ignore_non_ascii = true
+#&を§に変換するかどうか。
+ampersand = true
+#単純なマークダウンを装飾コードに変換するかどうか。
+#複雑なマークダウンはうまく変換されない場合があります。
+markdown = true
+#プレイヤーが /tsukichat で個人設定を変更できるようにするかどうか。
+#無効にした場合でも、ignoreTagとignoreCompletelyTagは使用されます。
+allow_personal_settings = true
+#TsukiChatは、以下の接頭辞から始まるメッセージのローマ字変換や日本語変換を行いません。
+#ただし、マークダウンの変換は行われます。
+ignore = ["!", "#", ";"]
+#TsukiChatは、以下の接頭辞から始まるメッセージについて、一切の変換を行いません。
+ignore_completely = [":"]
+#変換前のメッセージをどう表示するかを指定します。
+#$0は変換前のメッセージに置き換えられます。
+format_original = "§7$0§r"
+#変換後のメッセージをどう表示するかを指定します。
+#$0は変換後のメッセージに置き換えられます。
+format_converted = "→ $0§r"
+#コンフィグignoreで設定された接頭辞で始まるメッセージがMarkdown変換されなかった際にどう表示するかを指定します。
+#$0は接頭辞、$1はメッセージのうち接頭辞以外の部分に置き換えられます。
+format_original_ignored = "§7$0§r$1§r"
+#コンフィグignoreで設定された接頭辞から始まるメッセージがMarkdown変換された際にどう表示するかを指定します。
+#$0は接頭辞、$1は変換後のメッセージのうち接頭辞以外の部分に置き換えられます。
+format_converted_ignored = "→ §7$0§r$1§r"
+#TsukiChatは、以下のタグを持つプレイヤーのメッセージのローマ字変換や日本語変換を行いません。
+#ただし、マークダウンの変換は行われます。
+ignore_tag = "tsukichat_no_romaji"
+#TsukiChatは、以下のタグを持つプレイヤーのメッセージについて、一切の変換を行いません。
+ignore_completely_tag = "tsukichat_ignore"
+#ローマ字から日本語への変換をマルチスレッドで行うかどうか。
+#無効化した場合、他MODとの互換性が向上する代償に、
+#サーバーのtick処理に顕著な遅延が生じる可能性があります。
+multi_threading = true
+#メッセージが以下のリストのいずれかと一致する場合、一切の変換を行いません。
+ignore_messages = ["afk", "bad", "brb", "btw", "cool", "ez", "false", "fine", "gg", "gj", "gl", "good", "great", "hello", "hf", "hi", "idk", "jk", "lmao", "lol", "maybe", "nc", "nice", "no", "nope", "np", "nvm", "oh", "ok", "okay", "omg", "please", "pls", "plz", "rofl", "sorry", "sry", "sure", "thanks", "thx", "true", "ty", "tysm", "w", "wow", "wtf", "ww", "www", "wwww", "wwwww", "wwwwww", "wwwwwww", "wwwwwwww", "wwwwwwwww", "wwwwwwwwww", "yay", "yeah", "yes", "yw"]
+#変換前のメッセージの長さがこの値以下の場合、ローマ字変換や日本語変換を行いません。
+#ただし、マークダウンの変換は行われます。
+#Range: > 0
+ignore_length = 3
+

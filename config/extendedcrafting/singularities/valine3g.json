@@ -1,0 +1,13 @@
+{
+    "name": "Valine3g",
+    "colors": [
+      "C61F36",
+      "263FCC"
+    ],
+    "ingredient": {
+      "item": "valine_s1ex:valine3g_pellet"
+    },
+    "materialCount":7800,
+    "inUltimateSingularity": false
+  }
+  

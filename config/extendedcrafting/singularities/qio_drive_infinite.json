@@ -1,0 +1,9 @@
+{
+    "name": "Infinite QIO Drive",
+    "colors": ["e6e6fa", "fff0f5"],
+    "ingredient": {
+          "item": "mekaevolution:qio_drive_infinite"
+          
+    },
+    "materialCount": 100
+}

@@ -1,0 +1,1834 @@
+{
+	id: "6CFF01F2A961EE31"
+	group: "7ACDCF71AFEABB00"
+	order_index: 5
+	filename: "5iete"
+	title: "5.IE＆TE"
+	icon: {
+		id: "immersiveengineering:hammer"
+		Count: 1b
+		tag: {
+			Damage: 0
+		}
+	}
+	subtitle: [
+		"ImmersiveEngineering＆ThermalExpansion"
+		"「世界の工場といわれたここも、すっかり廃れてしまった。」"
+		"「他の世界に多くを奪われてなお、彼らは進む。」"
+		"「その独自性で評価をもらえることを夢見て。努力を怠らず、一心不乱に進んだ結果が実る日は近い。」"
+	]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			subtitle: "TE→IE→TE"
+			description: ["thermalを進めるためのIEを進めるためのThermal"]
+			dependencies: [
+				"0232420D44BC062D"
+				"28198177286BBDE4"
+			]
+			id: "501B8C7868D52463"
+			tasks: [{
+				id: "20F3C0C072C779CC"
+				type: "item"
+				item: "thermal:machine_frame"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -3.0d
+			subtitle: "赤石制御の核"
+			description: ["素材の都合であんま量産したくないのは何故だろうか。結局大量に使うけども。"]
+			dependencies: [
+				"6003E86BFC1BDB0E"
+				"0E83561DE99169BF"
+			]
+			id: "5E428F1782DD795F"
+			tasks: [{
+				id: "770E9C66FE1871AC"
+				type: "item"
+				item: "immersiveengineering:rs_engineering"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 0.0d
+			subtitle: "序盤の壁への最初のゲート"
+			description: ["マシンフレーム２つ要求……？どうしてそうなったんだ？"]
+			dependencies: [
+				"593D4AFEC2D33CC3"
+				"501B8C7868D52463"
+			]
+			id: "7219AB96343CD156"
+			tasks: [{
+				id: "01A5062CFF1E2B67"
+				type: "item"
+				item: "immersiveengineering:light_engineering"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -3.0d
+			subtitle: "だれかこの大ぐらいをどうにかしてくれ"
+			description: ["どうして初期の自分は赤石ブロックを素材にしてしまったのか"]
+			min_required_dependencies: 1
+			dependencies: [
+				"1593FBBAFE7EEE70"
+				"749E2E0711D45460"
+			]
+			id: "6003E86BFC1BDB0E"
+			tasks: [{
+				id: "495B2B0A2E96FA1A"
+				type: "item"
+				item: "valine_s1ex:redalloy_ingot"
+			}]
+		}
+		{
+			title: "誘導加熱炉"
+			x: 1.5d
+			y: 1.5d
+			subtitle: "合金への第一歩"
+			description: [
+				"それtinkerでよくね？となりますが、速度と自動化の観点上こちらを作らなければならないのです......"
+				"......あ、これ作るとIDｓすすめられるよ"
+			]
+			dependencies: [
+				"501B8C7868D52463"
+				"28E980F323B99550"
+				"0F2EC03F06CFE3DA"
+			]
+			id: "3191BEF6E32BF399"
+			tasks: [{
+				id: "2D145D695B49891A"
+				type: "item"
+				item: "thermal:machine_smelter"
+			}]
+		}
+		{
+			title: "熱分解機"
+			x: 10.5d
+			y: 1.5d
+			subtitle: "あれ......？"
+			description: ["実は使い道がない。というか消えた。"]
+			dependencies: [
+				"501B8C7868D52463"
+				"28E980F323B99550"
+				"0F2EC03F06CFE3DA"
+			]
+			id: "327A7772D048D1A2"
+			tasks: [{
+				id: "654BF95A03C2C6C9"
+				type: "item"
+				item: "thermal:machine_pyrolyzer"
+			}]
+		}
+		{
+			x: -4.5d
+			y: -1.5d
+			subtitle: "自然発火マン"
+			description: ["クレオソート製造機。でも今回はコークスがメインなのよね。"]
+			id: "0AF3E6895F11487E"
+			tasks: [{
+				id: "3CA03016D5FB9F8A"
+				type: "item"
+				item: "immersiveengineering:cokebrick"
+				count: 27L
+			}]
+		}
+		{
+			x: -4.5d
+			y: -3.0d
+			subtitle: "便利燃料枠？"
+			description: ["だいたい木炭製造ばっかされるコークス炉君は、ちゃんとコークスを生産しないといけません。"]
+			dependencies: ["0AF3E6895F11487E"]
+			id: "0A3F7124D881FEF4"
+			tasks: [{
+				id: "0F16B6563ECBBFAF"
+				type: "item"
+				item: "immersiveengineering:coal_coke"
+			}]
+		}
+		{
+			title: "Steel Ingot"
+			x: -3.0d
+			y: -3.0d
+			subtitle: "圧縮圧縮！"
+			description: [
+				"耐火粘土もないのに高温で処理する鋼鉄は作れない。なお今回作るのは鋼鉄もどきであって鋼鉄ではない。"
+				"......実装面倒だし鋼鉄でいいや。"
+			]
+			min_required_dependencies: 1
+			dependencies: [
+				"0A3F7124D881FEF4"
+				"1593FBBAFE7EEE70"
+				"749E2E0711D45460"
+			]
+			id: "0E83561DE99169BF"
+			tasks: [{
+				id: "5456B29C80AA95DA"
+				type: "item"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ingots/steel"
+					}
+				}
+			}]
+		}
+		{
+			x: -1.5d
+			y: -1.5d
+			subtitle: "なんか色々使えるけど水バケツで大丈夫"
+			description: ["凄い重工業感"]
+			id: "593D4AFEC2D33CC3"
+			tasks: [{
+				id: "722E63E4417E9ED6"
+				type: "item"
+				item: "immersiveengineering:concrete"
+				count: 8L
+			}]
+		}
+		{
+			x: -3.0d
+			y: 0.0d
+			subtitle: "いかれたレシピをご案内"
+			description: ["作者「このブロックのレシピが一番イカレてる。いや難易度が高いとかそういうのではなくレシピにかませないといけないアイテム群の連携とかそういうのが。」"]
+			dependencies: [
+				"7219AB96343CD156"
+				"39F8625C9F6247ED"
+				"3127CC80FAA3C1A9"
+			]
+			id: "4D7C163DD1235108"
+			tasks: [{
+				id: "1941AF6AA466D246"
+				type: "item"
+				item: "immersiveengineering:heavy_engineering"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 1.5d
+			subtitle: "君は誰？"
+			description: ["IEのあまり使わない機能シリーズ"]
+			dependencies: ["7219AB96343CD156"]
+			id: "6E3B81F49D17A1C1"
+			tasks: [{
+				id: "1523FD2766140FA4"
+				type: "item"
+				item: "immersiveengineering:circuit_table"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 1.5d
+			subtitle: "銅線と回路基板をエンジニアの回路台に入れて作ろう"
+			description: ["はんだを忘れないでね！"]
+			dependencies: [
+				"6E3B81F49D17A1C1"
+				"032E22FD250BED22"
+			]
+			id: "47AFE33C43D3961F"
+			tasks: [{
+				id: "48BC160D9A19F8E9"
+				type: "item"
+				item: "immersiveengineering:logic_circuit"
+			}]
+		}
+		{
+			x: -4.5d
+			y: 1.5d
+			subtitle: "え、君は元からある？"
+			description: ["元素材がすごいグレッグだけど元から存在してます"]
+			dependencies: [
+				"5DFEACE93117E055"
+				"44CC9C154E199D07"
+				"45B6FC3FC761B10D"
+			]
+			id: "032E22FD250BED22"
+			tasks: [{
+				id: "475571679DACC098"
+				type: "item"
+				item: "immersiveengineering:circuit_board"
+			}]
+		}
+		{
+			title: "自動工具台"
+			icon: "immersiveengineering:auto_workbench"
+			x: -4.5d
+			y: 3.0d
+			subtitle: "一番使わないマルチブロックから一番使うマルチブロックに昇格したやべーやつ"
+			description: ["使い倒します。乱立させます。覚悟の準備をしておいてください。"]
+			hide_dependency_lines: true
+			dependencies: [
+				"7219AB96343CD156"
+				"4D7C163DD1235108"
+				"0E83561DE99169BF"
+				"5E428F1782DD795F"
+			]
+			id: "5DFEACE93117E055"
+			tasks: [
+				{
+					id: "5AC41DBE6BD37B1C"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 5L
+				}
+				{
+					id: "46A84E4E32C537E1"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 4L
+				}
+				{
+					id: "61651572DCE995F9"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "7512BE9468C9FACE"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+					count: 2L
+				}
+				{
+					id: "0C8BFC3925CE75DF"
+					type: "item"
+					item: "immersiveengineering:slab_treated_wood_horizontal"
+					count: 2L
+				}
+				{
+					id: "7B83D174946D0669"
+					type: "item"
+					item: "immersiveengineering:conveyor_basic"
+					count: 4L
+				}
+			]
+		}
+		{
+			title: "瓶詰機"
+			icon: "immersiveengineering:bottling_machine"
+			x: -6.0d
+			y: 3.0d
+			hide_dependency_lines: true
+			dependencies: [
+				"0E83561DE99169BF"
+				"7219AB96343CD156"
+				"5E428F1782DD795F"
+			]
+			id: "351A78B5973C0BDB"
+			tasks: [
+				{
+					id: "78AD92C2F4B1D242"
+					type: "item"
+					item: "immersiveengineering:fluid_pump"
+				}
+				{
+					id: "409403F4895DE991"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_iron"
+					count: 2L
+				}
+				{
+					id: "3887B05322F3672E"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 3L
+				}
+				{
+					id: "77BD2A0995D19D9B"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "555890B9CD67D947"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 2L
+				}
+				{
+					id: "0CE14BCD5E8BCE48"
+					type: "item"
+					item: "immersiveengineering:conveyor_basic"
+					count: 3L
+				}
+			]
+		}
+		{
+			x: -6.0d
+			y: 1.5d
+			dependencies: [
+				"351A78B5973C0BDB"
+				"4ABB24AA1FB1FBEA"
+			]
+			id: "44CC9C154E199D07"
+			tasks: [{
+				id: "77D5844DA2761233"
+				type: "item"
+				item: "immersiveengineering:plate_duroplast"
+			}]
+		}
+		{
+			title: "工業用精製機"
+			icon: "immersiveengineering:refinery"
+			x: -9.0d
+			y: 3.0d
+			hide_dependency_lines: true
+			dependencies: [
+				"0E83561DE99169BF"
+				"7219AB96343CD156"
+				"5E428F1782DD795F"
+				"4D7C163DD1235108"
+			]
+			id: "78433C93B3996463"
+			tasks: [
+				{
+					id: "43901138F8FD0904"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 8L
+				}
+				{
+					id: "23BF6EBDB17A7701"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 2L
+				}
+				{
+					id: "6CF4EE551371E883"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+					count: 2L
+				}
+				{
+					id: "65D6D0461A4076D3"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_iron"
+					count: 16L
+				}
+				{
+					id: "6DC9D54A9C8E6D9D"
+					type: "item"
+					item: "immersiveengineering:fluid_pipe"
+					count: 5L
+				}
+				{
+					id: "17A5FAF9D87A8570"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+			]
+		}
+		{
+			x: -7.5d
+			y: 1.5d
+			dependencies: [
+				"78433C93B3996463"
+				"0E37673D5E6D0ACA"
+			]
+			id: "4ABB24AA1FB1FBEA"
+			tasks: [{
+				id: "1C475E955AEB4D08"
+				type: "item"
+				item: "immersiveengineering:phenolic_resin_bucket"
+			}]
+		}
+		{
+			x: -9.0d
+			y: 1.5d
+			dependencies: [
+				"78433C93B3996463"
+				"074D02334A1CA205"
+			]
+			id: "0E37673D5E6D0ACA"
+			tasks: [{
+				id: "0CD0A69FB47CF288"
+				type: "item"
+				item: "immersiveengineering:acetaldehyde_bucket"
+			}]
+		}
+		{
+			title: "工業用発酵槽"
+			icon: "immersiveengineering:fermenter"
+			x: -10.5d
+			y: 3.0d
+			subtitle: "実は使わなくてもいける"
+			description: ["いやでも別解は面倒なのでおとなしくこっち使ってくれ"]
+			hide_dependency_lines: true
+			dependencies: [
+				"0E83561DE99169BF"
+				"7219AB96343CD156"
+				"5E428F1782DD795F"
+			]
+			id: "24E4A26B1F9DCC48"
+			tasks: [
+				{
+					id: "487EB7ECA761FEE1"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 6L
+				}
+				{
+					id: "61736841674EF01D"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 2L
+				}
+				{
+					id: "31932EC3271E95EF"
+					type: "item"
+					item: "minecraft:cauldron"
+					count: 4L
+				}
+				{
+					id: "260955D7FEA415E1"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "19AB23320FC0774A"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_iron"
+					count: 4L
+				}
+				{
+					id: "11BD9975AA9194FC"
+					type: "item"
+					item: "immersiveengineering:fluid_pipe"
+					count: 2L
+				}
+			]
+		}
+		{
+			x: -10.5d
+			y: 1.5d
+			dependencies: ["24E4A26B1F9DCC48"]
+			id: "074D02334A1CA205"
+			tasks: [{
+				id: "24F84233E50F12C4"
+				type: "item"
+				item: "immersiveengineering:ethanol_bucket"
+			}]
+		}
+		{
+			title: "アーク炉"
+			icon: "immersiveengineering:arc_furnace"
+			x: -6.0d
+			y: 4.5d
+			hide_dependency_lines: true
+			dependencies: [
+				"0E83561DE99169BF"
+				"7219AB96343CD156"
+				"5E428F1782DD795F"
+				"4D7C163DD1235108"
+			]
+			id: "3FD914CC5DFE0C4E"
+			tasks: [
+				{
+					id: "3F29930B334FCBE7"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_steel"
+					count: 8L
+				}
+				{
+					id: "11D8127C9E5AB4D6"
+					type: "item"
+					title: "Any #forge:storage_blocks/steel"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:storage_blocks/steel"
+						}
+					}
+					count: 6L
+				}
+				{
+					id: "26BDE72EC5978AC2"
+					type: "item"
+					item: "immersiveengineering:slab_sheetmetal_steel"
+					count: 14L
+				}
+				{
+					id: "245D476394036BFA"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 5L
+				}
+				{
+					id: "019256A8CEBB9711"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+					count: 5L
+				}
+				{
+					id: "6CE056877AFC09AA"
+					type: "item"
+					item: "minecraft:cauldron"
+				}
+				{
+					id: "4D6780DA4254B79A"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "555D99C23E84A7DE"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 10L
+				}
+				{
+					id: "1A8E02D2919302B7"
+					type: "item"
+					item: "immersiveengineering:blastbrick_reinforced"
+					count: 27L
+				}
+			]
+		}
+		{
+			x: -4.5d
+			y: 4.5d
+			subtitle: "量産型電子部品"
+			description: ["部品であって回路ではない。ので素材として大量に要求してやるので覚悟の準備をしておいてください"]
+			dependencies: [
+				"5DFEACE93117E055"
+				"45B6FC3FC761B10D"
+			]
+			id: "6FD87028F491C52C"
+			tasks: [{
+				id: "3D67E16E2DAA38DA"
+				type: "item"
+				item: "immersiveengineering:component_electronic_adv"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 4.5d
+			subtitle: "お手製は凝るもの"
+			dependencies: [
+				"6FD87028F491C52C"
+				"617A00C84F14491B"
+				"36E98BB71ECA96B9"
+			]
+			id: "59E8D41F3405CD5E"
+			tasks: [{
+				id: "3DC43907F755DFC8"
+				type: "item"
+				item: "valine_s1ex:handmade_circuit"
+			}]
+		}
+		{
+			x: -6.0d
+			y: 0.0d
+			dependencies: [
+				"11A56876CA12762D"
+				"7E7F50A3FE652AE1"
+			]
+			id: "56491C90016C983C"
+			tasks: [{
+				id: "691DB078DF2CB62F"
+				type: "item"
+				item: "chemlib:polyvinyl_chloride_dust"
+				count: 8L
+			}]
+		}
+		{
+			x: -4.5d
+			y: 0.0d
+			subtitle: "管ではない"
+			description: [
+				" PVCのメリット①幅広い製品に加工できる②傷つきにくく強度がある③耐候性・耐水性があり屋外で使える④安価で製造できる"
+				"なお幅広くした結果大量に量産が求められます。死力を尽くしなさい。"
+			]
+			dependencies: ["56491C90016C983C"]
+			id: "39F8625C9F6247ED"
+			tasks: [{
+				id: "2F409C335F68EC78"
+				type: "item"
+				item: "chemlib:polyvinyl_chloride_plate"
+			}]
+		}
+		{
+			title: "工業用撹拌機"
+			icon: "immersiveengineering:mixer"
+			x: -7.5d
+			y: -1.5d
+			subtitle: "みっくすじゅーす！"
+			description: ["※食品に使わないでください"]
+			hide_dependency_lines: true
+			dependencies: [
+				"0E83561DE99169BF"
+				"7219AB96343CD156"
+				"5E428F1782DD795F"
+			]
+			id: "1E64A21C50A31753"
+			tasks: [
+				{
+					id: "04F8A83263EB9293"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 5L
+				}
+				{
+					id: "5B3E903048424959"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 4L
+				}
+				{
+					id: "7FCFD4AE804E50BC"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_iron"
+					count: 4L
+				}
+				{
+					id: "381490AC4D73C4D2"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "106AF406EA2B1570"
+					type: "item"
+					item: "immersiveengineering:steel_fence"
+				}
+				{
+					id: "7D3A0E4726CB4AD6"
+					type: "item"
+					item: "immersiveengineering:fluid_pipe"
+					count: 3L
+				}
+			]
+		}
+		{
+			x: -7.5d
+			y: 0.0d
+			subtitle: "GTの魔の手"
+			description: ["要するに塩ビの元"]
+			dependencies: [
+				"1E64A21C50A31753"
+				"65AC259D9B1B732C"
+			]
+			id: "11A56876CA12762D"
+			tasks: [{
+				id: "0057B76766782D48"
+				type: "item"
+				item: "valine_s1ex:vinyl_chloride_bucket"
+			}]
+		}
+		{
+			x: -9.0d
+			y: -1.5d
+			subtitle: "電気分解（あれガラス管は？）"
+			description: ["無からガラスが生えてくる世界線。"]
+			dependencies: ["1DAE3605F3129F57"]
+			id: "65AC259D9B1B732C"
+			tasks: [{
+				id: "0B7FEFB443F7CA9E"
+				type: "item"
+				item: "chemlib:chlorine"
+				count: 8L
+			}]
+		}
+		{
+			x: -3.0d
+			y: -1.5d
+			subtitle: "要：鋼鉄"
+			description: ["鋼鉄を作るために鋼鉄が必要でだから鋼鉄を作るために鋼鉄が、ってえ……？"]
+			id: "3127CC80FAA3C1A9"
+			tasks: [{
+				id: "3D8596342B7B4D04"
+				type: "item"
+				item: "immersiveengineering:blastbrick_reinforced"
+			}]
+		}
+		{
+			x: -6.0d
+			y: 6.0d
+			dependencies: [
+				"3FD914CC5DFE0C4E"
+				"5B3CE2EC9D833A79"
+			]
+			id: "0F3046332B490C1F"
+			tasks: [{
+				id: "06CC60E3BF1AE829"
+				type: "item"
+				item: "immersiveengineering:ingot_aluminum"
+			}]
+		}
+		{
+			x: -4.5d
+			y: 6.0d
+			subtitle: "実は村人が売っていたり"
+			description: ["でもね、半スタック単位で常に要求され続けるものを交易だけで賄うのは無理があるんだよ。"]
+			dependencies: ["0F3046332B490C1F"]
+			id: "617A00C84F14491B"
+			tasks: [{
+				id: "38EAF1E8C94E80FE"
+				type: "item"
+				item: "immersiveengineering:wirecoil_steel"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 3.0d
+			subtitle: "乾式製錬炉さんで合金作れちゃう"
+			description: ["乾式製錬炉の自動化はめんどくさい"]
+			id: "42F191FD3AAD8CCB"
+			tasks: [{
+				id: "3F8F7AFB959D188A"
+				type: "item"
+				item: "thermal:invar_ingot"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 7.5d
+			shape: "heart"
+			subtitle: "Presto"
+			description: ["最大出力！撃てー！"]
+			dependencies: [
+				"4AADAFEDAE3836B3"
+				"2E6F845223ED3D70"
+				"0C34E22F482CDECD"
+			]
+			id: "3EFED20B55E1E7F8"
+			tasks: [{
+				id: "58531E3B7CED1405"
+				type: "item"
+				item: "thermal_extra:upgrade_augment"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 6.0d
+			subtitle: "Allegro"
+			description: ["結構強力"]
+			dependencies: [
+				"38CA705C9A23D331"
+				"74EE669BFD5A9C64"
+				"2D658F5775EB8FB6"
+				"0B9FF7000513F22D"
+			]
+			id: "4AADAFEDAE3836B3"
+			tasks: [{
+				id: "02403920669B5DEA"
+				type: "item"
+				item: "thermal:upgrade_augment_3"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 4.5d
+			subtitle: "Moderato"
+			description: ["そこそこ性能"]
+			dependencies: [
+				"2759ED15CE9BA519"
+				"4ED0F139FDF2816C"
+				"6DC48127607B8115"
+			]
+			id: "38CA705C9A23D331"
+			tasks: [{
+				id: "38D72B144BD2AF6B"
+				type: "item"
+				item: "thermal:upgrade_augment_2"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 3.0d
+			subtitle: "Andante"
+			description: ["ゆったり性能"]
+			dependencies: ["42F191FD3AAD8CCB"]
+			id: "2759ED15CE9BA519"
+			tasks: [{
+				id: "5562832B6D7A808E"
+				type: "item"
+				item: "thermal:upgrade_augment_1"
+			}]
+		}
+		{
+			title: "金属プレス機"
+			icon: "immersiveengineering:metal_press"
+			x: 6.0d
+			y: 3.0d
+			subtitle: "物事を押しつぶす"
+			hide_dependency_lines: true
+			dependencies: [
+				"0E83561DE99169BF"
+				"7219AB96343CD156"
+				"5E428F1782DD795F"
+			]
+			id: "0F2EC03F06CFE3DA"
+			tasks: [
+				{
+					id: "49651A2562B3725D"
+					type: "item"
+					item: "minecraft:piston"
+				}
+				{
+					id: "326C316BC23AFAAE"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 2L
+				}
+				{
+					id: "580CA85743FE4BEF"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "11EE834141AF6107"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+				}
+				{
+					id: "2C77F31435B65F55"
+					type: "item"
+					item: "immersiveengineering:conveyor_basic"
+					count: 2L
+				}
+			]
+		}
+		{
+			title: "Electrum Ingot"
+			x: 4.5d
+			y: 4.5d
+			subtitle: "こいつはCreateでも合金が作れてしまう"
+			description: ["だれだcreateのelectrumにall_metalなんてタグ付けたやつは"]
+			min_required_dependencies: 1
+			id: "4ED0F139FDF2816C"
+			tasks: [{
+				id: "4A7F574C92CF4944"
+				type: "item"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ingots/electrum"
+					}
+				}
+			}]
+		}
+		{
+			x: 1.5d
+			y: 4.5d
+			dependencies: ["0C72591E62125DCF"]
+			id: "6DC48127607B8115"
+			tasks: [{
+				id: "3F72706131B5D3B0"
+				type: "item"
+				item: "thermal:signalum_gear"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 4.5d
+			subtitle: "武具に使っても優秀"
+			description: ["しれっと赤石"]
+			id: "0C72591E62125DCF"
+			tasks: [{
+				id: "0F6FF4603ECC16FA"
+				type: "item"
+				item: "thermal:signalum_ingot"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 6.0d
+			subtitle: "後々めっちゃ使う"
+			description: ["大量（無限に使う）"]
+			id: "39249FD0CD57485B"
+			tasks: [{
+				id: "558F4230A174DF72"
+				type: "item"
+				item: "thermal:lumium_ingot"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 6.0d
+			dependencies: ["39249FD0CD57485B"]
+			id: "2D658F5775EB8FB6"
+			tasks: [{
+				id: "1B3CB3A66E0C6182"
+				type: "item"
+				item: "thermal:lumium_gear"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 6.0d
+			subtitle: "おのれ乾式製錬炉"
+			description: ["blaze blood無ければ乾式で作れない境界"]
+			id: "74EE669BFD5A9C64"
+			tasks: [{
+				id: "70952783C999F4F1"
+				type: "item"
+				item: "thermal:enderium_ingot"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 4.5d
+			hide_dependency_lines: true
+			dependencies: ["3191BEF6E32BF399"]
+			id: "0B9FF7000513F22D"
+			tasks: [{
+				id: "0A23249A2935256E"
+				type: "item"
+				item: "thermal:obsidian_glass"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 7.5d
+			dependencies: ["0DFAA342249B48D4"]
+			id: "2E6F845223ED3D70"
+			tasks: [{
+				id: "0DB3F2CA7668E76C"
+				type: "item"
+				item: "thermal_extra:dragonsteel_gear"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 7.5d
+			subtitle: "さすがにこいつは乾式製錬炉で作れないようだ"
+			description: ["apatiteとドラゴンブレスが溶けねぇんだわ"]
+			hide_dependency_lines: true
+			dependencies: ["3191BEF6E32BF399"]
+			id: "0DFAA342249B48D4"
+			tasks: [{
+				id: "4A127733D20C1C1B"
+				type: "item"
+				item: "thermal_extra:dragonsteel_ingot"
+			}]
+		}
+		{
+			title: "粉砕機"
+			x: 3.0d
+			y: 1.5d
+			subtitle: "辰砂の粉砕機"
+			description: ["真っ先に作りましょう。辰砂の粉砕にいちいちバサルツを討伐しなくて済みます。"]
+			dependencies: [
+				"501B8C7868D52463"
+				"28E980F323B99550"
+				"0F2EC03F06CFE3DA"
+			]
+			id: "5019300A675A67EC"
+			tasks: [{
+				id: "7F5822625CEB15A2"
+				type: "item"
+				item: "thermal:machine_pulverizer"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 7.5d
+			hide_dependency_lines: true
+			dependencies: ["5019300A675A67EC"]
+			id: "0C34E22F482CDECD"
+			tasks: [{
+				id: "2687709B65B1F6CC"
+				type: "item"
+				item: "thermal:netherite_dust"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 0.0d
+			subtitle: "いつもの"
+			description: ["赤石ダンベル何キロ持てる？"]
+			dependencies: [
+				"70A95393E3617947"
+				"1DAE3605F3129F57"
+			]
+			id: "28E980F323B99550"
+			tasks: [{
+				id: "49085D39934B6CC4"
+				type: "item"
+				item: "thermal:rf_coil"
+			}]
+		}
+		{
+			x: 6.0d
+			y: -1.5d
+			subtitle: "Now loading......"
+			description: ["Error:起動のための電力が不足しています。"]
+			min_required_dependencies: 1
+			dependencies: [
+				"1593FBBAFE7EEE70"
+				"749E2E0711D45460"
+			]
+			id: "70A95393E3617947"
+			tasks: [{
+				id: "6FB1F7635D0EC7D4"
+				type: "item"
+				item: "valine_s1ex:inactive_redstone_flux_coil"
+			}]
+		}
+		{
+			title: "マルチサーボプレス機"
+			x: 7.5d
+			y: 1.5d
+			subtitle: "ガシャコン"
+			description: ["圧縮系なら何でもござれ"]
+			dependencies: [
+				"28E980F323B99550"
+				"501B8C7868D52463"
+				"0F2EC03F06CFE3DA"
+			]
+			id: "146D9F008B0EE9CE"
+			tasks: [{
+				id: "024F2946F32A29C6"
+				type: "item"
+				item: "thermal:machine_press"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 3.0d
+			subtitle: "ブループリント......"
+			description: ["今回の被害者"]
+			hide_dependency_lines: true
+			dependencies: ["0F3046332B490C1F"]
+			id: "45B6FC3FC761B10D"
+			tasks: [{
+				id: "413EC0571CD497B8"
+				type: "item"
+				item: {
+					id: "immersiveengineering:blueprint"
+					Count: 1b
+					tag: {
+						blueprint: "components"
+					}
+				}
+			}]
+		}
+		{
+			x: -9.0d
+			y: 6.0d
+			dependencies: [
+				"4E9066BF2F898EA0"
+				"772067437D4D7B82"
+				"20E750A831D029F1"
+			]
+			id: "5B3CE2EC9D833A79"
+			tasks: [{
+				id: "30A048918DF29067"
+				type: "item"
+				item: {
+					id: "immersiveengineering:graphite_electrode"
+					Count: 1b
+					tag: {
+						graphDmg: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -9.0d
+			y: 4.5d
+			dependencies: ["147A4B390CA632DB"]
+			id: "4E9066BF2F898EA0"
+			tasks: [{
+				id: "35CD2B89DD91B9A9"
+				type: "item"
+				item: "immersiveengineering:ingot_hop_graphite"
+			}]
+		}
+		{
+			title: "工業用圧搾機"
+			icon: "immersiveengineering:squeezer"
+			x: -7.5d
+			y: 3.0d
+			hide_dependency_lines: true
+			dependencies: [
+				"0E83561DE99169BF"
+				"7219AB96343CD156"
+				"5E428F1782DD795F"
+			]
+			id: "147A4B390CA632DB"
+			tasks: [
+				{
+					id: "455D2DB62D3A38DB"
+					type: "item"
+					item: "minecraft:piston"
+				}
+				{
+					id: "395B81560AA6FEDA"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 6L
+				}
+				{
+					id: "5DE7ED9EA5FD7D0F"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 2L
+				}
+				{
+					id: "0EE7DB5E30F77163"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "361F8AA3A5CA9B38"
+					type: "item"
+					item: "immersiveengineering:steel_fence"
+					count: 2L
+				}
+				{
+					id: "4CF3E4EFA2682A24"
+					type: "item"
+					item: "immersiveengineering:fluid_pipe"
+					count: 2L
+				}
+				{
+					id: "403ED74721651EA2"
+					type: "item"
+					item: "immersiveengineering:wooden_barrel"
+					count: 4L
+				}
+			]
+		}
+		{
+			title: "錬金術的醸造機"
+			x: 6.0d
+			y: 1.5d
+			subtitle: "これ使う？"
+			description: ["ここにいるってことは必須だぞ！"]
+			dependencies: [
+				"28E980F323B99550"
+				"0F2EC03F06CFE3DA"
+				"501B8C7868D52463"
+			]
+			id: "2B74757CFFB65E67"
+			tasks: [{
+				id: "797F0E0BB401D45B"
+				type: "item"
+				item: "thermal:machine_brewer"
+			}]
+		}
+		{
+			title: "分画蒸留器"
+			x: 4.5d
+			y: 1.5d
+			subtitle: "元最速作成組"
+			description: ["アナザーレシピの案は消えてしまったのですよ。恨むなら一部の人を恨みなさい。"]
+			dependencies: [
+				"28E980F323B99550"
+				"0F2EC03F06CFE3DA"
+				"501B8C7868D52463"
+			]
+			hide_details_until_startable: true
+			id: "674DAE8D75271AF6"
+			tasks: [{
+				id: "1F824F7C200561DF"
+				type: "item"
+				item: "thermal:machine_refinery"
+			}]
+		}
+		{
+			x: -10.5d
+			y: 6.0d
+			dependencies: ["699B7A4B8EBAC86B"]
+			id: "772067437D4D7B82"
+			tasks: [{
+				id: "60E3BD4D5D0B8961"
+				type: "item"
+				item: "thermal_extra:sticky_ball"
+			}]
+		}
+		{
+			x: -12.0d
+			y: 6.0d
+			dependencies: ["39CDD3A80B084D99"]
+			id: "699B7A4B8EBAC86B"
+			tasks: [{
+				id: "14C54E5B2652357E"
+				type: "item"
+				item: "thermal_extra:crystallized_sunflower_oil_bucket"
+			}]
+		}
+		{
+			x: -13.5d
+			y: 6.0d
+			hide_dependency_lines: true
+			dependencies: ["146D9F008B0EE9CE"]
+			id: "39CDD3A80B084D99"
+			tasks: [{
+				id: "3CB5A1D96BEF7A39"
+				type: "item"
+				item: "thermal_extra:sunflower_oil_bucket"
+			}]
+		}
+		{
+			x: -10.5d
+			y: 4.5d
+			hide_dependency_lines: true
+			dependencies: ["0E83561DE99169BF"]
+			id: "20E750A831D029F1"
+			tasks: [{
+				id: "17E885D32847CEFA"
+				type: "item"
+				item: "immersiveengineering:gunpart_barrel"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -3.0d
+			subtitle: "起動待機中"
+			description: ["過去からの贈り物：充電待機"]
+			min_required_dependencies: 1
+			dependencies: [
+				"1593FBBAFE7EEE70"
+				"749E2E0711D45460"
+			]
+			id: "2A0E94C858B6C01C"
+			tasks: [{
+				id: "74C62625DE45063D"
+				type: "item"
+				item: "valine_s1ex:inactive_redstone_transmission_coil"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -1.5d
+			subtitle: "充電完了！"
+			description: ["activate:とらんすみっしょん！"]
+			dependencies: ["2A0E94C858B6C01C"]
+			id: "5569F87B8D0A67BC"
+			tasks: [{
+				id: "2504CF3383C624E8"
+				type: "item"
+				item: "valine_s1ex:redstone_transmission_coil"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -3.0d
+			subtitle: "ポンコツ？"
+			description: ["実は結構いかれた発電してるやつも混じってる"]
+			dependencies: ["5569F87B8D0A67BC"]
+			id: "11B0F3D8B29B33AA"
+			tasks: [{
+				id: "5D2B0CACB26CE03F"
+				type: "item"
+				item: "thermal:dynamo_numismatic"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -3.0d
+			subtitle: "１次産業発電"
+			description: ["農家さんにはお世話になってます。"]
+			dependencies: ["5569F87B8D0A67BC"]
+			id: "0B7D649B797D2C54"
+			tasks: [{
+				id: "6FE96CECEBC085C3"
+				type: "item"
+				item: "thermal:dynamo_gourmand"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -1.5d
+			subtitle: "普通のかまど発電機"
+			description: ["Mysticalを進めていると幸せになれる"]
+			dependencies: ["5569F87B8D0A67BC"]
+			id: "69568F971EAA45B0"
+			tasks: [{
+				id: "116AE690A1F20476"
+				type: "item"
+				item: "thermal:dynamo_stirling"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 0.0d
+			subtitle: "要らないエンチャを燃やす"
+			description: [
+				"魔法みたいな発電機"
+				"......いやそもそもエンチャで発電ってどういうこと？"
+			]
+			dependencies: ["5569F87B8D0A67BC"]
+			id: "5736F5FDD85F080D"
+			tasks: [{
+				id: "3C6B8B146289EEC7"
+				type: "item"
+				item: "thermal:dynamo_disenchantment"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 0.0d
+			subtitle: "ダイヤ発電"
+			description: ["Nomiで猛威を振るった発電機。"]
+			dependencies: ["5569F87B8D0A67BC"]
+			id: "0C11F8BE4DBF0E7A"
+			tasks: [{
+				id: "5234FFF36E92F8E8"
+				type: "item"
+				item: "thermal:dynamo_lapidary"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 0.0d
+			subtitle: "要するに燃料発電"
+			description: ["液体燃料で発電するぞ！"]
+			dependencies: ["5569F87B8D0A67BC"]
+			id: "60668E29CCB71270"
+			tasks: [{
+				id: "367F196AD0349509"
+				type: "item"
+				item: "thermal:dynamo_compression"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -1.5d
+			subtitle: "溶岩？"
+			description: ["実はTicと合わせて無限発電ができる。"]
+			dependencies: ["5569F87B8D0A67BC"]
+			id: "1F8C8EF0102A3D5A"
+			tasks: [{
+				id: "6F09DC3BD95EECCD"
+				type: "item"
+				item: "thermal:dynamo_magmatic"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 3.0d
+			dependencies: [
+				"032E22FD250BED22"
+				"0B12A299BE908969"
+				"51EFB779A2CBDEEF"
+			]
+			id: "36E98BB71ECA96B9"
+			tasks: [{
+				id: "17DB4CC2554E80C3"
+				type: "item"
+				item: "valine_s1ex:basic_circuit_base"
+			}]
+		}
+		{
+			title: "大型掘削機"
+			icon: "immersiveengineering:excavator"
+			x: -12.0d
+			y: 3.0d
+			subtitle: "こいつは重要"
+			description: ["説明書に鉱脈の種類が乗ってたりします。実は......"]
+			hide_dependency_lines: true
+			dependencies: [
+				"0E83561DE99169BF"
+				"7219AB96343CD156"
+				"5E428F1782DD795F"
+				"4D7C163DD1235108"
+			]
+			id: "65FE23D234AC3061"
+			tasks: [
+				{
+					id: "7E0EDFA6968472BE"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 6L
+				}
+				{
+					id: "19CBF12E0F52E220"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_steel"
+					count: 16L
+				}
+				{
+					id: "555A67044DB59632"
+					type: "item"
+					item: "immersiveengineering:radiator"
+					count: 3L
+				}
+				{
+					id: "7CE29F63358B52D2"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 9L
+				}
+				{
+					id: "67880231B80FE8C1"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "17AB92DDAF08DE6D"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+					count: 4L
+				}
+			]
+		}
+		{
+			x: -12.0d
+			y: 1.5d
+			subtitle: "何があるかな？"
+			description: ["電源と右クリでサンプルを掘り出そう！"]
+			hide_dependency_lines: true
+			dependencies: [
+				"0E83561DE99169BF"
+				"7219AB96343CD156"
+			]
+			id: "6A4F321429642FF0"
+			tasks: [{
+				id: "3288F2EBA0A1D3D5"
+				type: "item"
+				item: "immersiveengineering:sample_drill"
+			}]
+		}
+		{
+			x: 12.0d
+			y: 1.5d
+			dependencies: ["06AEA03918583BCF"]
+			id: "73C81987C812B373"
+			tasks: [{
+				id: "23E7B098C304BFB6"
+				type: "item"
+				item: "thermal:device_tree_extractor"
+			}]
+		}
+		{
+			x: 12.0d
+			y: 0.0d
+			dependencies: ["62376CF4E5B69ECF"]
+			id: "06AEA03918583BCF"
+			tasks: [{
+				id: "1F0441F87439ED3B"
+				type: "item"
+				item: "thermal:redstone_servo"
+			}]
+		}
+		{
+			x: 12.0d
+			y: -1.5d
+			dependencies: ["6907454B2BFA57AB"]
+			id: "62376CF4E5B69ECF"
+			tasks: [{
+				id: "19EE8714A0E4E448"
+				type: "item"
+				item: "valine_s1ex:inactive_redstone_servo"
+			}]
+		}
+		{
+			title: "溶岩るつぼ"
+			x: 9.0d
+			y: 1.5d
+			subtitle: "メルト"
+			description: [
+				"お願い時間を止めて 泣きそうなの"
+				"でも嬉しくて 死んでしまうわ！"
+			]
+			dependencies: [
+				"28E980F323B99550"
+				"0F2EC03F06CFE3DA"
+				"501B8C7868D52463"
+			]
+			id: "519C46A5E7375B85"
+			tasks: [{
+				id: "2533424C6439EFE8"
+				type: "item"
+				item: "thermal:machine_crucible"
+			}]
+		}
+		{
+			x: 12.0d
+			y: -3.0d
+			hide_dependency_lines: true
+			dependencies: ["519C46A5E7375B85"]
+			id: "6907454B2BFA57AB"
+			tasks: [{
+				id: "76BFD9F96BD640CE"
+				type: "item"
+				item: "thermal:redstone_bucket"
+			}]
+		}
+		{
+			x: 12.0d
+			y: 3.0d
+			min_required_dependencies: 1
+			dependencies: [
+				"146D9F008B0EE9CE"
+				"73C81987C812B373"
+			]
+			id: "75BD49517C0EA7D9"
+			tasks: [{
+				id: "3AF82E88EC51BB22"
+				type: "item"
+				item: "thermal:latex_bucket"
+			}]
+		}
+		{
+			x: 10.5d
+			y: 3.0d
+			dependencies: ["75BD49517C0EA7D9"]
+			id: "43771662F6100B75"
+			tasks: [{
+				id: "373B19A48AC63DD4"
+				type: "item"
+				item: "thermal:rubber"
+				count: 3L
+			}]
+		}
+		{
+			x: 9.0d
+			y: 3.0d
+			dependencies: ["43771662F6100B75"]
+			id: "1CF45B4A4CA123A5"
+			tasks: [{
+				id: "3A0603AB77CDEC36"
+				type: "item"
+				item: "thermal:cured_rubber"
+				count: 3L
+			}]
+		}
+		{
+			x: 7.5d
+			y: 12.0d
+			subtitle: "fffff"
+			description: ["five hammer"]
+			dependencies: [
+				"5C6914496262199B"
+				"61F59B848EDF0422"
+			]
+			id: "5325A7889A530398"
+			tasks: [{
+				id: "6F4DEC59D97A213F"
+				type: "item"
+				item: "thermal_extra:fluid_tank_augment_6"
+			}]
+		}
+		{
+			x: 7.5d
+			y: 10.5d
+			subtitle: "Fortissimo"
+			description: ["うおっでっk"]
+			dependencies: ["648D2F17D77DF3BD"]
+			id: "5C6914496262199B"
+			tasks: [{
+				id: "6295AB882BCBA8C2"
+				type: "item"
+				item: "thermal_extra:fluid_tank_augment_5"
+			}]
+		}
+		{
+			x: 7.5d
+			y: 9.0d
+			subtitle: "Forte"
+			description: ["大きめ"]
+			dependencies: [
+				"26328A269B24F72F"
+				"0746863672D74AAC"
+			]
+			id: "648D2F17D77DF3BD"
+			tasks: [{
+				id: "23D197CA02D2243D"
+				type: "item"
+				item: "thermal_extra:fluid_tank_augment_4"
+			}]
+		}
+		{
+			x: 7.5d
+			y: 7.5d
+			subtitle: "Mezzo Forte"
+			description: ["いい感じ"]
+			dependencies: [
+				"2247B01BA24FBB0B"
+				"19D794DBAB55F568"
+			]
+			id: "26328A269B24F72F"
+			tasks: [{
+				id: "2C91CDB145411DFB"
+				type: "item"
+				item: "thermal_extra:fluid_tank_augment_3"
+			}]
+		}
+		{
+			x: 7.5d
+			y: 6.0d
+			subtitle: "Mezzo Piano"
+			description: ["小さめだけどまぁ......"]
+			dependencies: [
+				"1B5587FB266F1344"
+				"5636A15F578B7721"
+			]
+			id: "2247B01BA24FBB0B"
+			tasks: [{
+				id: "6B5EB85061C3D6C6"
+				type: "item"
+				item: "thermal_extra:fluid_tank_augment_2"
+			}]
+		}
+		{
+			x: 7.5d
+			y: 4.5d
+			subtitle: "Piano"
+			description: ["まだ小さい"]
+			dependencies: [
+				"364F98DA7ADB6B1B"
+				"34BC69CED1B8A903"
+			]
+			id: "1B5587FB266F1344"
+			tasks: [{
+				id: "1200819CE91421F0"
+				type: "item"
+				item: "thermal_extra:fluid_tank_augment_1"
+			}]
+		}
+		{
+			x: 7.5d
+			y: 3.0d
+			subtitle: "Pianissimo"
+			description: ["かなり小さめ"]
+			dependencies: [
+				"0B9FF7000513F22D"
+				"1CF45B4A4CA123A5"
+			]
+			id: "364F98DA7ADB6B1B"
+			tasks: [{
+				id: "489F1D82AFD5E878"
+				type: "item"
+				item: "thermal:fluid_tank_augment"
+			}]
+		}
+		{
+			x: 9.0d
+			y: 4.5d
+			dependencies: ["45730B08435CCBB9"]
+			id: "34BC69CED1B8A903"
+			tasks: [{
+				id: "48EAA12AE0304CD8"
+				type: "item"
+				item: "thermal_extra:soul_infused_gear"
+			}]
+		}
+		{
+			x: 10.5d
+			y: 4.5d
+			hide_dependency_lines: true
+			dependencies: [
+				"3191BEF6E32BF399"
+				"42F191FD3AAD8CCB"
+				"5019300A675A67EC"
+			]
+			id: "45730B08435CCBB9"
+			tasks: [{
+				id: "507744E4248EBD19"
+				type: "item"
+				item: "thermal_extra:soul_infused_ingot"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 6.0d
+			dependencies: ["74EE669BFD5A9C64"]
+			id: "5636A15F578B7721"
+			tasks: [{
+				id: "3B7D511E35A595B6"
+				type: "item"
+				item: "thermal:enderium_gear"
+			}]
+		}
+		{
+			x: 9.0d
+			y: 7.5d
+			dependencies: ["3B818E0E7170C326"]
+			id: "19D794DBAB55F568"
+			tasks: [{
+				id: "63E60AF8A793A2F9"
+				type: "item"
+				item: "thermal_extra:shellite_gear"
+			}]
+		}
+		{
+			x: 10.5d
+			y: 7.5d
+			hide_dependency_lines: true
+			dependencies: ["3191BEF6E32BF399"]
+			id: "3B818E0E7170C326"
+			tasks: [{
+				id: "758663F94534F8BB"
+				type: "item"
+				item: "thermal_extra:shellite_ingot"
+			}]
+		}
+		{
+			x: 9.0d
+			y: 9.0d
+			dependencies: ["71530D619543DFEB"]
+			id: "0746863672D74AAC"
+			tasks: [{
+				id: "20BEBB650E7DF209"
+				type: "item"
+				item: "thermal_extra:twinite_gear"
+			}]
+		}
+		{
+			x: 10.5d
+			y: 9.0d
+			hide_dependency_lines: true
+			dependencies: [
+				"3191BEF6E32BF399"
+				"74EE669BFD5A9C64"
+			]
+			id: "71530D619543DFEB"
+			tasks: [{
+				id: "33257E21E7704BE1"
+				type: "item"
+				item: "thermal_extra:twinite_ingot"
+			}]
+		}
+		{
+			x: 9.0d
+			y: 12.0d
+			hide_dependency_lines: true
+			dependencies: ["519C46A5E7375B85"]
+			id: "61F59B848EDF0422"
+			tasks: [{
+				id: "3B57F2EC04A7BB21"
+				type: "item"
+				item: "thermal:ender_bucket"
+			}]
+		}
+		{
+			title: "流体密封機"
+			x: 0.0d
+			y: 1.5d
+			subtitle: "注入器？"
+			description: ["ボトラーなのに注入器として使われてるやつ"]
+			dependencies: [
+				"28E980F323B99550"
+				"0F2EC03F06CFE3DA"
+				"501B8C7868D52463"
+			]
+			id: "0B12A299BE908969"
+			tasks: [{
+				id: "233AC7E8DEFFAD62"
+				type: "item"
+				item: "thermal:machine_bottler"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 3.0d
+			subtitle: "燃料ではない"
+			description: ["燃料に肉を、混ぜるな"]
+			id: "51EFB779A2CBDEEF"
+			tasks: [{
+				id: "2C07A817CD4F2008"
+				type: "item"
+				item: "valine_s1ex:fermented_biodiesel_bucket"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

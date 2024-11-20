@@ -1,0 +1,529 @@
+{
+	id: "27286CFD603DAD59"
+	group: "7ACDCF71AFEABB00"
+	order_index: 6
+	filename: "6cyclic"
+	title: "6.Cyclic"
+	icon: "cyclic:user"
+	subtitle: [
+		"ランダムなアイテムと強すぎるボール"
+		"「......ここまでやっと来たのに。こんな結果だなんて。」"
+		"「私は認めない。こんなちんけな結果だけしか得られなかっただなんて。」"
+		"「がんばらなきゃ。私は&k魔法少女&rだから。」"
+	]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -1.5d
+			y: 0.5d
+			subtitle: "改変されてるものの一つ"
+			description: ["謎要求ネザライト"]
+			id: "6A584AAC424133ED"
+			tasks: [{
+				id: "69D0213CB1183A2B"
+				type: "item"
+				item: "cyclic:solidifier"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 3.0d
+			shape: "square"
+			subtitle: "未来の国からはるばると"
+			optional: true
+			id: "3F868FEEDA7CC5C7"
+			tasks: [{
+				id: "3CBEA79058049FED"
+				type: "item"
+				item: "cyclic:inventory_cake"
+			}]
+			rewards: [{
+				id: "3EFCC347AE15C044"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 4.5d
+			y: 0.5d
+			shape: "heart"
+			subtitle: "&dクワガタでも噛み切れない"
+			description: ["制作がめんどくさい！"]
+			dependencies: ["298A7DE0B2033C61"]
+			size: 1.5d
+			id: "0522E01ACF97C64F"
+			tasks: [{
+				id: "79DDEF0CD60431B3"
+				type: "item"
+				item: "cyclic:gem_obsidian"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 0.5d
+			subtitle: "カブトムシの大好物"
+			description: ["カリッこれは青酸ペロ！"]
+			dependencies: ["6A584AAC424133ED"]
+			id: "298A7DE0B2033C61"
+			tasks: [{
+				id: "415325B963F207B2"
+				type: "item"
+				item: "cyclic:gem_amber"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 10.5d
+			shape: "square"
+			subtitle: "なぜか覚えてるヘリトンボ"
+			optional: true
+			id: "5D6FF5EF3CF74758"
+			tasks: [{
+				id: "62E02133103CA9C3"
+				type: "item"
+				item: "cyclic:chorus_flight"
+			}]
+			rewards: [{
+				id: "643725F796E098D3"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: -1.5d
+			y: 5.5d
+			shape: "square"
+			subtitle: "ダイヤがなる木"
+			optional: true
+			id: "5B71B9C687C46783"
+			tasks: [{
+				id: "7A93BA304949475F"
+				type: "item"
+				item: "cyclic:apple_sprout_diamond"
+			}]
+			rewards: [{
+				id: "1F4900D212B01367"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 1.5d
+			y: 5.5d
+			shape: "square"
+			subtitle: "強力ウルトラスーパーデラックスアップル"
+			dependencies: ["5B71B9C687C46783"]
+			optional: true
+			id: "6348FAAAFA488EEA"
+			tasks: [{
+				id: "1C14CE3751425CA6"
+				type: "item"
+				item: "cyclic:apple_diamond"
+			}]
+			rewards: [{
+				id: "5C0512036741F8C1"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: -1.5d
+			y: 8.0d
+			shape: "square"
+			subtitle: "村人には見せないように"
+			optional: true
+			id: "31EEA1259D9C7F00"
+			tasks: [{
+				id: "3892212290201C2B"
+				type: "item"
+				item: "cyclic:apple_sprout_emerald"
+			}]
+			rewards: [{
+				id: "0B435E070C891808"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 1.5d
+			y: 8.0d
+			shape: "square"
+			subtitle: "目指せ100万個"
+			dependencies: ["31EEA1259D9C7F00"]
+			optional: true
+			id: "034BD5DEBD76A040"
+			tasks: [{
+				id: "4DAD5A57288A2985"
+				type: "item"
+				item: "cyclic:apple_emerald"
+			}]
+			rewards: [{
+				id: "5086636E1AE8043A"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 7.5d
+			y: 0.5d
+			shape: "gear"
+			subtitle: "&3いけっカオスガーディアン！たいあたりだ！"
+			description: ["※idはmagic net"]
+			size: 1.5d
+			id: "57934A0CD90FBB5D"
+			tasks: [{
+				id: "215F19BDC31EF097"
+				type: "item"
+				item: "cyclic:magic_net"
+			}]
+		}
+		{
+			x: 12.5d
+			y: 3.0d
+			subtitle: "力尽きてなるものか"
+			id: "70389106458702F4"
+			tasks: [{
+				id: "60CA1F77235A5A66"
+				type: "item"
+				item: {
+					id: "cyclic:soulstone"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 7.5d
+			y: 5.5d
+			subtitle: "旅のお供にどうぞ"
+			dependencies: [
+				"768C5304B3BBC451"
+				"51188E3CF76CA75B"
+				"0A9C623C67279B63"
+				"297F3FB20EFCA3E7"
+			]
+			size: 1.5d
+			id: "0B44C102A98E15E1"
+			tasks: [{
+				id: "463149A81B74B9EF"
+				type: "item"
+				item: {
+					id: "cyclic:charm_ultimate"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 7.5d
+			y: 3.0d
+			subtitle: "これ作るころにはもうウィザー倒してる"
+			hide_dependency_lines: true
+			id: "768C5304B3BBC451"
+			tasks: [{
+				id: "2796CE04E7A751A6"
+				type: "item"
+				item: {
+					id: "cyclic:charm_wither"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 10.5d
+			y: 5.5d
+			subtitle: "なお空腹は防げない"
+			hide_dependency_lines: true
+			id: "0A9C623C67279B63"
+			tasks: [{
+				id: "66351082A55905CD"
+				type: "item"
+				item: {
+					id: "cyclic:charm_antidote"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 7.5d
+			y: 8.5d
+			subtitle: "これは労基案件"
+			hide_dependency_lines: true
+			id: "297F3FB20EFCA3E7"
+			tasks: [{
+				id: "29A1924687380086"
+				type: "item"
+				item: {
+					id: "cyclic:charm_void"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 4.5d
+			y: 5.5d
+			subtitle: "安全なマグマダイブをお楽しみ下さい"
+			hide_dependency_lines: true
+			id: "51188E3CF76CA75B"
+			tasks: [{
+				id: "4ECCB491D14DC868"
+				type: "item"
+				item: {
+					id: "cyclic:charm_fire"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 1.5d
+			y: 3.0d
+			shape: "square"
+			subtitle: "実質ノーダメージ"
+			optional: true
+			id: "6A79B16634A91E87"
+			tasks: [{
+				id: "5D6063D410436771"
+				type: "item"
+				item: "cyclic:heart"
+			}]
+			rewards: [{
+				id: "0A4455728BE9E49E"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 1.5d
+			y: 10.5d
+			shape: "square"
+			subtitle: "銭湯への持ち込み禁止"
+			optional: true
+			id: "75A3ABD6B7CADECC"
+			tasks: [{
+				id: "33FD0884AE35F5FF"
+				type: "item"
+				item: "cyclic:chorus_spectral"
+			}]
+			rewards: [{
+				id: "1D5B126976E7D083"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "Hand Crafting Table"
+			x: 15.5d
+			y: 3.0d
+			shape: "square"
+			subtitle: "でも君ら普通の作業台使うんでしょ?"
+			optional: true
+			id: "1EC1A9F565C23086"
+			tasks: [{
+				id: "715D1AD5005F6FB6"
+				type: "item"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "cyclic:crafting_stick"
+								Count: 1b
+							}
+							{
+								ForgeCaps: {
+									Parent: {
+										Size: 9
+										Items: [ ]
+									}
+								}
+								id: "cyclic:crafting_bag"
+								Count: 1b
+							}
+							{
+								id: "extendedcrafting:handheld_table"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "44F2A66CB07EC874"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 12.5d
+			y: 5.5d
+			shape: "square"
+			subtitle: "寝た場所なんて覚えてない"
+			optional: true
+			id: "4B166538125EF670"
+			tasks: [{
+				id: "284A2A5D0619C880"
+				type: "item"
+				item: {
+					id: "cyclic:charm_home"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "28573AAFD821FAA0"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 15.5d
+			y: 5.5d
+			shape: "circle"
+			subtitle: "これでもう無くさない"
+			id: "242882DDF784E71D"
+			tasks: [{
+				id: "5AFCE8E40A9A6710"
+				type: "item"
+				item: {
+					id: "cyclic:ender_eye_reuse"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 12.5d
+			y: 8.0d
+			shape: "square"
+			subtitle: "Hey!タクシー"
+			optional: true
+			id: "30E755CF8AE4CAEA"
+			tasks: [
+				{
+					id: "56870474EDD61B1A"
+					type: "item"
+					item: {
+						id: "cyclic:stirrups_reverse"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "58628ADD305E52C9"
+					type: "item"
+					item: {
+						id: "cyclic:stirrups"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "70B782D1610BF3D5"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 15.5d
+			y: 8.0d
+			shape: "square"
+			subtitle: "おはよう!朝4時に何してるんだい?"
+			optional: true
+			id: "4DB3ADB0CE2FCA94"
+			tasks: [{
+				id: "4F2D5EEDEC89AD23"
+				type: "item"
+				item: {
+					id: "cyclic:sleeping_mat"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "3204CEDA41220FD5"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 12.5d
+			y: 11.0d
+			shape: "square"
+			subtitle: "これだからcyclicはぶっ壊れなんだ"
+			hide_dependency_lines: true
+			dependencies: ["298A7DE0B2033C61"]
+			hide: true
+			optional: true
+			id: "30A34DE42A23D33C"
+			tasks: [
+				{
+					id: "3EBE2EE1EA776E83"
+					type: "item"
+					item: "cyclic:generator_item"
+				}
+				{
+					id: "3D2E69C2A6AD2348"
+					type: "item"
+					item: "cyclic:peat_fuel_enriched"
+				}
+			]
+			rewards: [{
+				id: "42982CEE06CC1FDF"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+		}
+		{
+			x: 15.5d
+			y: 11.0d
+			shape: "square"
+			subtitle: "何でも直せる優れもの"
+			hide_dependency_lines: true
+			dependencies: ["298A7DE0B2033C61"]
+			hide: true
+			optional: true
+			invisible_until_tasks: 1
+			id: "57E6990D48C75310"
+			tasks: [{
+				id: "56F9A9298656D904"
+				type: "item"
+				item: "cyclic:anvil"
+			}]
+			rewards: [{
+				id: "2913E51369D787AA"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+		}
+	]
+	quest_links: [ ]
+}

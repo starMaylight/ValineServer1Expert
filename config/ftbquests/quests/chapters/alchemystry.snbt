@@ -1,0 +1,1622 @@
+{
+	id: "024ECDAD22922F9C"
+	group: "76C8668A0FE5C01C"
+	order_index: 3
+	filename: "alchemystry"
+	title: "4.Alchemistry"
+	icon: "alchemistry:combiner"
+	subtitle: [
+		"こんなに元素要らない......"
+		"「彼は発狂した。元素が多すぎる、と。」"
+		"「そして言い訳も始めた。\"コピペだとしても頭がおかしくなる。誰かやってくれ\"」"
+		"「......結局、彼は何を言いたかったのか。それは花のみぞ知る。」"
+	]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Alchemistry"
+			x: 0.0d
+			y: -2.5d
+			shape: "square"
+			subtitle: "第二回元素表を作ろう"
+			optional: true
+			id: "78A7E069EA171E7D"
+			tasks: [{
+				id: "46AE746EF342D7C1"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "5C1C2F8B1E329CA4"
+				type: "item"
+				item: "chemlib:periodic_table"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -2.5d
+			shape: "square"
+			dependencies: ["387B406E0F7CFFD4"]
+			optional: true
+			id: "530D9D3122D00294"
+			tasks: [{
+				id: "310CFE2702E3AC04"
+				type: "item"
+				item: "alchemistry:dissolver"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -2.5d
+			shape: "square"
+			dependencies: ["387B406E0F7CFFD4"]
+			optional: true
+			id: "0EE2B3D737D1126D"
+			tasks: [{
+				id: "4C2F45A6A0429920"
+				type: "item"
+				item: "alchemistry:combiner"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -2.5d
+			shape: "square"
+			subtitle: "1.H"
+			description: [
+				"gas/1.008/N.M/natual"
+				"M.P:-259.16"
+				"B.P:-252.879"
+				"水素"
+			]
+			optional: true
+			id: "4FD027950D1C48F3"
+			tasks: [{
+				id: "235B984EC3B437AD"
+				type: "item"
+				item: "chemlib:hydrogen"
+			}]
+		}
+		{
+			x: 13.5d
+			y: -2.5d
+			shape: "square"
+			subtitle: "2.He"
+			description: [
+				"gas/4.003/N.M/natural"
+				"M.P:-"
+				"B.P:-268.928"
+				"ヘリウム"
+			]
+			optional: true
+			id: "5AD5AD0AAA1DC7B7"
+			tasks: [{
+				id: "686127A862D6A759"
+				type: "item"
+				item: "chemlib:helium"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -1.5d
+			shape: "square"
+			subtitle: "3.Li"
+			optional: true
+			id: "4A3F0728FAD6649B"
+			tasks: [{
+				id: "3D982C25D361A04E"
+				type: "item"
+				item: "chemlib:lithium"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -0.5d
+			shape: "square"
+			subtitle: "11.Na"
+			optional: true
+			id: "0501B704A6E9C576"
+			tasks: [{
+				id: "565B2DCF46462151"
+				type: "item"
+				item: "chemlib:sodium"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 0.5d
+			shape: "square"
+			subtitle: "19.K"
+			optional: true
+			id: "7108CD339C53385B"
+			tasks: [{
+				id: "07E21CABA22EB2F4"
+				type: "item"
+				item: "chemlib:potassium"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 1.5d
+			shape: "square"
+			subtitle: "37.Rb"
+			optional: true
+			id: "632E4A3CEE59BF2F"
+			tasks: [{
+				id: "057B6770519A7DB8"
+				type: "item"
+				item: "chemlib:rubidium"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 2.5d
+			shape: "square"
+			subtitle: "55.Cs"
+			optional: true
+			id: "7A34CCDA31473D39"
+			tasks: [{
+				id: "27C009E133F56B94"
+				type: "item"
+				item: "chemlib:cesium"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 3.5d
+			shape: "square"
+			subtitle: "87.Fr"
+			optional: true
+			id: "7733DD678A8423B5"
+			tasks: [{
+				id: "680FE7F6DAD05556"
+				type: "item"
+				item: "chemlib:francium"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -1.5d
+			shape: "square"
+			subtitle: "4.Be"
+			optional: true
+			id: "69D9CA99EE6D37E8"
+			tasks: [{
+				id: "2FC187BDAADA6680"
+				type: "item"
+				item: "chemlib:beryllium"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -0.5d
+			shape: "square"
+			subtitle: "12.Mg"
+			optional: true
+			id: "455D36C9EDB15B77"
+			tasks: [{
+				id: "54248161F779AEF7"
+				type: "item"
+				item: "chemlib:magnesium"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 0.5d
+			shape: "square"
+			subtitle: "20.Ca"
+			optional: true
+			id: "30BEDACF02707FD5"
+			tasks: [{
+				id: "221E7B5ABECB5CF6"
+				type: "item"
+				item: "chemlib:calcium"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 1.5d
+			shape: "square"
+			subtitle: "38.Sr"
+			optional: true
+			id: "2691F997D3BB417D"
+			tasks: [{
+				id: "75D4BEE383CEBA67"
+				type: "item"
+				item: "chemlib:strontium"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 2.5d
+			shape: "square"
+			subtitle: "56.Ba"
+			optional: true
+			id: "34A24F18F92D16F0"
+			tasks: [{
+				id: "1632848606102FF1"
+				type: "item"
+				item: "chemlib:barium"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 3.5d
+			shape: "square"
+			subtitle: "88.Ra"
+			optional: true
+			id: "3BF4DD21811D1DA2"
+			tasks: [{
+				id: "42A2FB831511E5E0"
+				type: "item"
+				item: "chemlib:radium"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 0.5d
+			shape: "square"
+			subtitle: "21.Sc"
+			optional: true
+			id: "2D65E0BA4CF68100"
+			tasks: [{
+				id: "4CF362BB695F265E"
+				type: "item"
+				item: "chemlib:scandium"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 1.5d
+			shape: "square"
+			subtitle: "39.Y"
+			optional: true
+			id: "177B7B9CCE12BBDC"
+			tasks: [{
+				id: "0EAE25471813656B"
+				type: "item"
+				item: "chemlib:yttrium"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 0.5d
+			shape: "square"
+			subtitle: "22.Ti"
+			optional: true
+			id: "6282252448162589"
+			tasks: [{
+				id: "42CD9D33B062B536"
+				type: "item"
+				item: "chemlib:titanium"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 1.5d
+			shape: "square"
+			subtitle: "40.Zr"
+			optional: true
+			id: "60476D4A7F6AFB14"
+			tasks: [{
+				id: "71A46E5FF36D614F"
+				type: "item"
+				item: "chemlib:zirconium"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 2.5d
+			shape: "square"
+			subtitle: "72.Hf"
+			optional: true
+			id: "44A31A259ADC08E2"
+			tasks: [{
+				id: "1645500BEF89C53A"
+				type: "item"
+				item: "chemlib:hafnium"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 3.5d
+			shape: "square"
+			subtitle: "104.Rf"
+			optional: true
+			id: "683587B6613AF318"
+			tasks: [{
+				id: "6579C396C80D0D75"
+				type: "item"
+				item: "chemlib:rutherfordium"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 0.5d
+			shape: "square"
+			subtitle: "23.V"
+			optional: true
+			id: "4316981EDBF98148"
+			tasks: [{
+				id: "7F62393379EB714D"
+				type: "item"
+				item: "chemlib:vanadium"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 0.5d
+			shape: "square"
+			subtitle: "24.Cr"
+			optional: true
+			id: "5D496DF885883CDD"
+			tasks: [{
+				id: "464F187994F1B5B9"
+				type: "item"
+				item: "chemlib:chromium"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 0.5d
+			shape: "square"
+			subtitle: "25.Mn"
+			optional: true
+			id: "1D0A777029F0B577"
+			tasks: [{
+				id: "4EA4B728ACD2236A"
+				type: "item"
+				item: "chemlib:manganese"
+			}]
+		}
+		{
+			x: 7.5d
+			y: 0.5d
+			shape: "square"
+			subtitle: "30.Zn"
+			optional: true
+			id: "7616A37E4BD06CA6"
+			tasks: [{
+				id: "31DE7F9E885F5196"
+				type: "item"
+				item: "chemlib:zinc"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 0.5d
+			shape: "square"
+			subtitle: "26.Fe"
+			optional: true
+			id: "32A7F79118E7042A"
+			tasks: [{
+				id: "7E5C8312C4C55184"
+				type: "item"
+				item: "chemlib:iron"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 0.5d
+			shape: "square"
+			subtitle: "27.Co"
+			optional: true
+			id: "4110480687514651"
+			tasks: [{
+				id: "0C618C678C717929"
+				type: "item"
+				item: "chemlib:cobalt"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 0.5d
+			shape: "square"
+			subtitle: "28.Ni"
+			optional: true
+			id: "5B0AB1E622D3CE42"
+			tasks: [{
+				id: "7FBD3E2E19B5C764"
+				type: "item"
+				item: "chemlib:nickel"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 0.5d
+			shape: "square"
+			subtitle: "29.Cu"
+			optional: true
+			id: "659FC26F6DD7257A"
+			tasks: [{
+				id: "4C505A74867FA712"
+				type: "item"
+				item: "chemlib:copper"
+			}]
+		}
+		{
+			x: 7.5d
+			y: 1.5d
+			shape: "square"
+			subtitle: "48.Cd"
+			optional: true
+			id: "03BA46B4A1005CCC"
+			tasks: [{
+				id: "0542C07D0B06CDC5"
+				type: "item"
+				item: "chemlib:cadmium"
+			}]
+		}
+		{
+			x: 7.5d
+			y: 2.5d
+			shape: "square"
+			subtitle: "80.Hg"
+			optional: true
+			id: "5818EA484A89841D"
+			tasks: [{
+				id: "308BF941B51FDD27"
+				type: "item"
+				item: "chemlib:mercury"
+			}]
+		}
+		{
+			x: 7.5d
+			y: 3.5d
+			shape: "square"
+			subtitle: "112.Cn"
+			optional: true
+			id: "633077C8B7754B99"
+			tasks: [{
+				id: "09FD9AFE68D839FB"
+				type: "item"
+				item: "chemlib:copernicium"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 3.5d
+			shape: "square"
+			subtitle: "111.Rg"
+			optional: true
+			id: "06F88FCED039BAC2"
+			tasks: [{
+				id: "590A287D1429753C"
+				type: "item"
+				item: "chemlib:roentgenium"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 3.5d
+			shape: "square"
+			subtitle: "110.Ds"
+			optional: true
+			id: "556D95F222893B35"
+			tasks: [{
+				id: "35759EA72C8F5D02"
+				type: "item"
+				item: "chemlib:darmstadtium"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 3.5d
+			shape: "square"
+			subtitle: "109.Mt"
+			optional: true
+			id: "17C7FB4A1C6EB1D9"
+			tasks: [{
+				id: "168E92BCA650D5E2"
+				type: "item"
+				item: "chemlib:meitnerium"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 3.5d
+			shape: "square"
+			subtitle: "108.Hs"
+			optional: true
+			id: "7DE466180080775C"
+			tasks: [{
+				id: "297FE69BC12A028D"
+				type: "item"
+				item: "chemlib:hassium"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 3.5d
+			shape: "square"
+			subtitle: "107.Bh"
+			optional: true
+			id: "3D0BD48F3DA4411C"
+			tasks: [{
+				id: "354921EDC0216647"
+				type: "item"
+				item: "chemlib:bohrium"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 3.5d
+			shape: "square"
+			subtitle: "106.Sg"
+			optional: true
+			id: "163AD7635AA6226B"
+			tasks: [{
+				id: "0567C0D39E6BD3EB"
+				type: "item"
+				item: "chemlib:seaborgium"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 3.5d
+			shape: "square"
+			subtitle: "105.Db"
+			optional: true
+			id: "3C339D53C2734307"
+			tasks: [{
+				id: "5ED60912738A5303"
+				type: "item"
+				item: "chemlib:dubnium"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 1.5d
+			shape: "square"
+			subtitle: "41.Nb"
+			optional: true
+			id: "75ED3D098C032C69"
+			tasks: [{
+				id: "443BD08634C55653"
+				type: "item"
+				item: "chemlib:niobium"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 2.5d
+			shape: "square"
+			subtitle: "73.Ta"
+			optional: true
+			id: "17C3882144EAD19D"
+			tasks: [{
+				id: "14AE83609078C00B"
+				type: "item"
+				item: "chemlib:tantalum"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 1.5d
+			shape: "square"
+			subtitle: "42.Mo"
+			optional: true
+			id: "20E4F45D47B7822B"
+			tasks: [{
+				id: "51EA0353ADFAFE8E"
+				type: "item"
+				item: "chemlib:molybdenum"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 2.5d
+			shape: "square"
+			subtitle: "74.W"
+			optional: true
+			id: "78880F8D1CDE28C4"
+			tasks: [{
+				id: "25427506BAEDAB46"
+				type: "item"
+				item: "chemlib:tungsten"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 1.5d
+			shape: "square"
+			subtitle: "43.Tc"
+			optional: true
+			id: "21399EC3E6BA7F98"
+			tasks: [{
+				id: "7FEEA4873D6F99E9"
+				type: "item"
+				item: "chemlib:technetium"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 2.5d
+			shape: "square"
+			subtitle: "75.Re"
+			optional: true
+			id: "165670CF2DC7D64C"
+			tasks: [{
+				id: "41E74DC640C69515"
+				type: "item"
+				item: "chemlib:rhenium"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 1.5d
+			shape: "square"
+			subtitle: "44.Ru"
+			optional: true
+			id: "3D056EA021A8817A"
+			tasks: [{
+				id: "2E0E1BE6F466A432"
+				type: "item"
+				item: "chemlib:ruthenium"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 2.5d
+			shape: "square"
+			subtitle: "76.Os"
+			optional: true
+			id: "65ACF0A3CBB99882"
+			tasks: [{
+				id: "1817AF23525B5A26"
+				type: "item"
+				item: "chemlib:osmium"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 1.5d
+			shape: "square"
+			subtitle: "45.Rh"
+			optional: true
+			id: "046FE42210B407EB"
+			tasks: [{
+				id: "2488E8A8F349F527"
+				type: "item"
+				item: "chemlib:rhodium"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 2.5d
+			shape: "square"
+			subtitle: "77.Ir"
+			optional: true
+			id: "406991C997EB2492"
+			tasks: [{
+				id: "6C5C8528EBA03703"
+				type: "item"
+				item: "chemlib:iridium"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 1.5d
+			shape: "square"
+			subtitle: "46.Pb"
+			optional: true
+			id: "0B778F57197299B0"
+			tasks: [{
+				id: "108955428BF55072"
+				type: "item"
+				item: "chemlib:palladium"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 2.5d
+			shape: "square"
+			subtitle: "79.Au"
+			optional: true
+			id: "09EFA94823C6022A"
+			tasks: [{
+				id: "44934051A37A5023"
+				type: "item"
+				item: "chemlib:gold"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 1.5d
+			shape: "square"
+			subtitle: "47.Ag"
+			optional: true
+			id: "195067F12D84365E"
+			tasks: [{
+				id: "733CB735A5932F20"
+				type: "item"
+				item: "chemlib:silver"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 2.5d
+			shape: "square"
+			subtitle: "78.Pt"
+			optional: true
+			id: "4BF6B6DDDD11BD2D"
+			tasks: [{
+				id: "6983E06E94EC5F28"
+				type: "item"
+				item: "chemlib:platinum"
+			}]
+		}
+		{
+			x: 8.5d
+			y: 0.5d
+			shape: "square"
+			subtitle: "31.Ga"
+			optional: true
+			id: "6EDC6239106DE31D"
+			tasks: [{
+				id: "13320A93D8DF9415"
+				type: "item"
+				item: "chemlib:gallium"
+			}]
+		}
+		{
+			x: 8.5d
+			y: 1.5d
+			shape: "square"
+			subtitle: "49.In"
+			optional: true
+			id: "3E8C4E3EC1EDC88A"
+			tasks: [{
+				id: "27574EAD880F8167"
+				type: "item"
+				item: "chemlib:indium"
+			}]
+		}
+		{
+			x: 8.5d
+			y: 2.5d
+			shape: "square"
+			subtitle: "81.Tl"
+			optional: true
+			id: "483706AD1A101E02"
+			tasks: [{
+				id: "58F4B14AF9B201D6"
+				type: "item"
+				item: "chemlib:thallium"
+			}]
+		}
+		{
+			x: 8.5d
+			y: 3.5d
+			shape: "square"
+			subtitle: "113.Nh"
+			optional: true
+			id: "69E196A48CB51633"
+			tasks: [{
+				id: "6CA18359902001C6"
+				type: "item"
+				item: "chemlib:nihonium"
+			}]
+		}
+		{
+			x: 8.5d
+			y: -0.5d
+			shape: "square"
+			subtitle: "13.Al"
+			optional: true
+			id: "461BCC31CED8D6C2"
+			tasks: [{
+				id: "5BB92AB3B93972AC"
+				type: "item"
+				item: "chemlib:aluminum"
+			}]
+		}
+		{
+			x: 8.5d
+			y: -1.5d
+			shape: "square"
+			subtitle: "5.B"
+			optional: true
+			id: "5BDE770E1081FEDE"
+			tasks: [{
+				id: "67D313EA13B6D87E"
+				type: "item"
+				item: "chemlib:boron"
+			}]
+		}
+		{
+			x: 9.5d
+			y: -1.5d
+			shape: "square"
+			subtitle: "6.C"
+			optional: true
+			id: "49CD71A7EF83BF17"
+			tasks: [{
+				id: "73D6A1EFCC1B57DA"
+				type: "item"
+				item: "chemlib:carbon"
+			}]
+		}
+		{
+			x: 10.5d
+			y: -1.5d
+			shape: "square"
+			subtitle: "7.N"
+			optional: true
+			id: "676A0BE1C7C31294"
+			tasks: [{
+				id: "05D905D4F9A9401A"
+				type: "item"
+				item: "chemlib:nitrogen"
+			}]
+		}
+		{
+			x: 11.5d
+			y: -1.5d
+			shape: "square"
+			subtitle: "8.O"
+			optional: true
+			id: "0F28A0E69B7927C7"
+			tasks: [{
+				id: "5E16D88CB9D31F6A"
+				type: "item"
+				item: "chemlib:oxygen"
+			}]
+		}
+		{
+			x: 12.5d
+			y: -1.5d
+			shape: "square"
+			subtitle: "9.F"
+			optional: true
+			id: "0D2BEDCE51319934"
+			tasks: [{
+				id: "656546E8F28BA39E"
+				type: "item"
+				item: "chemlib:fluorine"
+			}]
+		}
+		{
+			x: 9.5d
+			y: -0.5d
+			shape: "square"
+			subtitle: "14.Si"
+			optional: true
+			id: "7DEEC4910F462F37"
+			tasks: [{
+				id: "5309180F40B73EFC"
+				type: "item"
+				item: "chemlib:silicon"
+			}]
+		}
+		{
+			x: 9.5d
+			y: 0.5d
+			shape: "square"
+			subtitle: "32.Ge"
+			optional: true
+			id: "6C1243D6EEC39567"
+			tasks: [{
+				id: "2AC77A961B5501EC"
+				type: "item"
+				item: "chemlib:germanium"
+			}]
+		}
+		{
+			x: 9.5d
+			y: 1.5d
+			shape: "square"
+			subtitle: "50.Sn"
+			optional: true
+			id: "4E9BBD3CB9664775"
+			tasks: [{
+				id: "51DA3CB8B00BFB3B"
+				type: "item"
+				item: "chemlib:tin"
+			}]
+		}
+		{
+			x: 9.5d
+			y: 2.5d
+			shape: "square"
+			subtitle: "82.Pb"
+			optional: true
+			id: "393DF4FD2D4AAB3C"
+			tasks: [{
+				id: "0283F10DD4CD99FF"
+				type: "item"
+				item: "chemlib:lead"
+			}]
+		}
+		{
+			x: 9.5d
+			y: 3.5d
+			shape: "square"
+			subtitle: "114.Fl"
+			optional: true
+			id: "7229F00F9382EED5"
+			tasks: [{
+				id: "03ABD40098ED6242"
+				type: "item"
+				item: "chemlib:flerovium"
+			}]
+		}
+		{
+			x: 10.5d
+			y: 3.5d
+			shape: "square"
+			subtitle: "115.Mc"
+			optional: true
+			id: "6090D377B66CC05B"
+			tasks: [{
+				id: "464EB1C02FA5B415"
+				type: "item"
+				item: "chemlib:moscovium"
+			}]
+		}
+		{
+			x: 10.5d
+			y: 2.5d
+			shape: "square"
+			subtitle: "83.Bi"
+			optional: true
+			id: "17B680613684D01D"
+			tasks: [{
+				id: "4A5EB64BEE971473"
+				type: "item"
+				item: "chemlib:bismuth"
+			}]
+		}
+		{
+			x: 10.5d
+			y: 1.5d
+			shape: "square"
+			subtitle: "51.Sb"
+			optional: true
+			id: "61F9A7806A35016B"
+			tasks: [{
+				id: "4E760CF2B2CD185D"
+				type: "item"
+				item: "chemlib:antimony"
+			}]
+		}
+		{
+			x: 10.5d
+			y: 0.5d
+			shape: "square"
+			subtitle: "33.As"
+			optional: true
+			id: "59A3ABE5608790FF"
+			tasks: [{
+				id: "2CFC225C33E57EA3"
+				type: "item"
+				item: "chemlib:arsenic"
+			}]
+		}
+		{
+			x: 10.5d
+			y: -0.5d
+			shape: "square"
+			subtitle: "15.P"
+			optional: true
+			id: "2A6843CE92E0D1DB"
+			tasks: [{
+				id: "563515926B6155C6"
+				type: "item"
+				item: "chemlib:phosphorus"
+			}]
+		}
+		{
+			x: 11.5d
+			y: -0.5d
+			shape: "square"
+			subtitle: "16.S"
+			optional: true
+			id: "0B727E8058B8ADD0"
+			tasks: [{
+				id: "4C982944235B1768"
+				type: "item"
+				item: "chemlib:sulfur"
+			}]
+		}
+		{
+			x: 11.5d
+			y: 0.5d
+			shape: "square"
+			subtitle: "34.Se"
+			optional: true
+			id: "1A0AD80C4F6767D6"
+			tasks: [{
+				id: "13DD49FF9752E53E"
+				type: "item"
+				item: "chemlib:selenium"
+			}]
+		}
+		{
+			x: 11.5d
+			y: 1.5d
+			shape: "square"
+			subtitle: "52.Te"
+			optional: true
+			id: "59323AD230CBF800"
+			tasks: [{
+				id: "03959F55FAEE818A"
+				type: "item"
+				item: "chemlib:tellurium"
+			}]
+		}
+		{
+			x: 11.5d
+			y: 2.5d
+			shape: "square"
+			subtitle: "84.Po"
+			optional: true
+			id: "1D663A8BF7EAB01F"
+			tasks: [{
+				id: "5285A407097C94C1"
+				type: "item"
+				item: "chemlib:polonium"
+			}]
+		}
+		{
+			x: 11.5d
+			y: 3.5d
+			shape: "square"
+			subtitle: "116.Lv"
+			optional: true
+			id: "6875F06137A1F449"
+			tasks: [{
+				id: "76362FE6EFD90227"
+				type: "item"
+				item: "chemlib:livermorium"
+			}]
+		}
+		{
+			x: 13.5d
+			y: 3.5d
+			shape: "square"
+			subtitle: "118.Og"
+			optional: true
+			id: "4C8E94CDDE2389C5"
+			tasks: [{
+				id: "26CC55ADD6033FB2"
+				type: "item"
+				item: "chemlib:oganesson"
+			}]
+		}
+		{
+			x: 13.5d
+			y: 2.5d
+			shape: "square"
+			subtitle: "86.Rn"
+			optional: true
+			id: "5BC246A8A0468344"
+			tasks: [{
+				id: "7CE09D17829676DD"
+				type: "item"
+				item: "chemlib:radon"
+			}]
+		}
+		{
+			x: 13.5d
+			y: 1.5d
+			shape: "square"
+			subtitle: "54.Xe"
+			optional: true
+			id: "207E74F2612C17ED"
+			tasks: [{
+				id: "56143A0866B4FEB5"
+				type: "item"
+				item: "chemlib:xenon"
+			}]
+		}
+		{
+			x: 13.5d
+			y: 0.5d
+			shape: "square"
+			subtitle: "36.Kr"
+			optional: true
+			id: "6894A3FE2CDC4EA4"
+			tasks: [{
+				id: "162BD50D297DD0C4"
+				type: "item"
+				item: "chemlib:krypton"
+			}]
+		}
+		{
+			x: 13.5d
+			y: -0.5d
+			shape: "square"
+			subtitle: "18.Ar"
+			optional: true
+			id: "0E5C743C03F7D26A"
+			tasks: [{
+				id: "36095A4B60B22F0E"
+				type: "item"
+				item: "chemlib:argon"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 5.0d
+			shape: "square"
+			subtitle: "58.Ce"
+			optional: true
+			id: "6D9171AB7E21ED00"
+			tasks: [{
+				id: "5B2270C6B0B79458"
+				type: "item"
+				item: "chemlib:cerium"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 5.0d
+			shape: "square"
+			subtitle: "57.La"
+			optional: true
+			id: "254E1E9B3585C9E6"
+			tasks: [{
+				id: "6A310046258749C2"
+				type: "item"
+				item: "chemlib:lanthanum"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 5.0d
+			shape: "square"
+			subtitle: "59.Pr"
+			optional: true
+			id: "038DC6665A2649D4"
+			tasks: [{
+				id: "7FB3E9C4365F25BC"
+				type: "item"
+				item: "chemlib:praseodymium"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 5.0d
+			shape: "square"
+			subtitle: "60.Nd"
+			optional: true
+			id: "28ABBAD0D004C824"
+			tasks: [{
+				id: "115B400FD2751388"
+				type: "item"
+				item: "chemlib:neodymium"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 5.0d
+			shape: "square"
+			subtitle: "61.Pm"
+			optional: true
+			id: "4BB765123BEFC428"
+			tasks: [{
+				id: "7E5C286C46F332D5"
+				type: "item"
+				item: "chemlib:promethium"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 5.0d
+			shape: "square"
+			subtitle: "62.Sm"
+			optional: true
+			id: "7CFE0B5EAD7F3557"
+			tasks: [{
+				id: "302A7505423FBAB8"
+				type: "item"
+				item: "chemlib:samarium"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 5.0d
+			shape: "square"
+			subtitle: "63.Eu"
+			optional: true
+			id: "3F75B3CB88587360"
+			tasks: [{
+				id: "50B5A56383DBBB18"
+				type: "item"
+				item: "chemlib:europium"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 5.0d
+			shape: "square"
+			subtitle: "64.Gd"
+			optional: true
+			id: "60152054716C769D"
+			tasks: [{
+				id: "40DDD10A11BF6848"
+				type: "item"
+				item: "chemlib:gadolinium"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 5.0d
+			shape: "square"
+			subtitle: "65.Tb"
+			optional: true
+			id: "25FE4A818FACD592"
+			tasks: [{
+				id: "14734AF41889CAFC"
+				type: "item"
+				item: "chemlib:terbium"
+			}]
+		}
+		{
+			x: 7.5d
+			y: 5.0d
+			shape: "square"
+			subtitle: "66.Dy"
+			optional: true
+			id: "5A7817752E027053"
+			tasks: [{
+				id: "5E66E18E9EBC983C"
+				type: "item"
+				item: "chemlib:dysprosium"
+			}]
+		}
+		{
+			x: 8.5d
+			y: 5.0d
+			shape: "square"
+			subtitle: "67.Ho"
+			optional: true
+			id: "02593AB594E5A8EB"
+			tasks: [{
+				id: "22C0C3030170E3A4"
+				type: "item"
+				item: "chemlib:holmium"
+			}]
+		}
+		{
+			x: 9.5d
+			y: 5.0d
+			shape: "square"
+			subtitle: "68.Er"
+			optional: true
+			id: "697E57E54FF18E0F"
+			tasks: [{
+				id: "715E7CE0F1C08908"
+				type: "item"
+				item: "chemlib:erbium"
+			}]
+		}
+		{
+			x: 10.5d
+			y: 5.0d
+			shape: "square"
+			subtitle: "69.Tm"
+			optional: true
+			id: "7D27A2B2F9E8EBBA"
+			tasks: [{
+				id: "06C17DA0542B5C10"
+				type: "item"
+				item: "chemlib:thulium"
+			}]
+		}
+		{
+			x: 11.5d
+			y: 5.0d
+			shape: "square"
+			subtitle: "70.Yb"
+			optional: true
+			id: "2C745A3898EA2DBF"
+			tasks: [{
+				id: "4211C4C11E9917A7"
+				type: "item"
+				item: "chemlib:ytterbium"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 6.0d
+			shape: "square"
+			subtitle: "89.Ac"
+			optional: true
+			id: "306AEC1A93CE055C"
+			tasks: [{
+				id: "7935F1791C923AEB"
+				type: "item"
+				item: "chemlib:actinium"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 6.0d
+			shape: "square"
+			subtitle: "90.Th"
+			optional: true
+			id: "1F4A074C9B809C26"
+			tasks: [{
+				id: "70313B76A75501C3"
+				type: "item"
+				item: "chemlib:thorium"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 6.0d
+			shape: "square"
+			subtitle: "91.Pa"
+			optional: true
+			id: "2DA2AC9F14C878E2"
+			tasks: [{
+				id: "65E46B22B953F61C"
+				type: "item"
+				item: "chemlib:protactinium"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 6.0d
+			shape: "square"
+			subtitle: "92.U"
+			optional: true
+			id: "0B50CC88EBDE990F"
+			tasks: [{
+				id: "2A3CBA3FEE41116D"
+				type: "item"
+				item: "chemlib:uranium"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 6.0d
+			shape: "square"
+			subtitle: "93.Np"
+			optional: true
+			id: "2D6655A5EFD6220A"
+			tasks: [{
+				id: "4A6B435C21CD5537"
+				type: "item"
+				item: "chemlib:neptunium"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 6.0d
+			shape: "square"
+			subtitle: "94.Pu"
+			optional: true
+			id: "36A667F52B43F2E3"
+			tasks: [{
+				id: "6AE1C0E929AD495A"
+				type: "item"
+				item: "chemlib:plutonium"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 6.0d
+			shape: "square"
+			subtitle: "95.Am"
+			optional: true
+			id: "58483952D43C8235"
+			tasks: [{
+				id: "5512293B9029F12C"
+				type: "item"
+				item: "chemlib:americium"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 6.0d
+			shape: "square"
+			subtitle: "96.Cm"
+			optional: true
+			id: "4974D6EBC1DFCE9C"
+			tasks: [{
+				id: "4817A374002C6F5A"
+				type: "item"
+				item: "chemlib:curium"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 6.0d
+			shape: "square"
+			subtitle: "97.Bk"
+			optional: true
+			id: "2FC3D4AA13DA0270"
+			tasks: [{
+				id: "253360FD11C6906C"
+				type: "item"
+				item: "chemlib:berkelium"
+			}]
+		}
+		{
+			x: 7.5d
+			y: 6.0d
+			shape: "square"
+			subtitle: "98.Cf"
+			optional: true
+			id: "244D65D237CEE53B"
+			tasks: [{
+				id: "64FEDD387BB147A6"
+				type: "item"
+				item: "chemlib:californium"
+			}]
+		}
+		{
+			x: 8.5d
+			y: 6.0d
+			shape: "square"
+			subtitle: "99.Es"
+			optional: true
+			id: "52CDCF073E02BCF3"
+			tasks: [{
+				id: "6130F4F1C724C551"
+				type: "item"
+				item: "chemlib:einsteinium"
+			}]
+		}
+		{
+			x: 9.5d
+			y: 6.0d
+			shape: "square"
+			subtitle: "100.Fm"
+			optional: true
+			id: "723DC1A0526951FD"
+			tasks: [{
+				id: "381B5B7D20AAC6E7"
+				type: "item"
+				item: "chemlib:fermium"
+			}]
+		}
+		{
+			x: 10.5d
+			y: 6.0d
+			shape: "square"
+			subtitle: "101.Md"
+			optional: true
+			id: "4E6B965A2963095E"
+			tasks: [{
+				id: "60F82E859C331FCE"
+				type: "item"
+				item: "chemlib:mendelevium"
+			}]
+		}
+		{
+			x: 11.5d
+			y: 6.0d
+			shape: "square"
+			subtitle: "102.No"
+			optional: true
+			id: "7AB58B75E3AB4A77"
+			tasks: [{
+				id: "3F12C4F01716B1A6"
+				type: "item"
+				item: "chemlib:nobelium"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -1.5d
+			subtitle: "このクエストの大きさは3です"
+			description: ["C5H11NO2"]
+			size: 3.0d
+			id: "5C0E5F1AAFC3488E"
+			tasks: [{
+				id: "6352ADF78DEBEA81"
+				type: "item"
+				item: "valine_s1ex:valine"
+			}]
+		}
+		{
+			x: 13.5d
+			y: -1.5d
+			shape: "square"
+			subtitle: "10.Ne"
+			optional: true
+			id: "6456386BC76706C4"
+			tasks: [{
+				id: "1A8DBBA311A9B7A8"
+				type: "item"
+				item: "chemlib:neon"
+			}]
+		}
+		{
+			x: 12.5d
+			y: -0.5d
+			shape: "square"
+			subtitle: "17.Cl"
+			optional: true
+			id: "7373CBED5D0B36BC"
+			tasks: [{
+				id: "0DAA9929F1BBA99D"
+				type: "item"
+				item: "chemlib:chlorine"
+			}]
+		}
+		{
+			x: 12.5d
+			y: 0.5d
+			shape: "square"
+			subtitle: "35.Br"
+			optional: true
+			id: "60C7FC53234EE6A6"
+			tasks: [{
+				id: "0D60334AA7721451"
+				type: "item"
+				item: "chemlib:bromine"
+			}]
+		}
+		{
+			x: 12.5d
+			y: 1.5d
+			shape: "square"
+			subtitle: "53.I"
+			optional: true
+			id: "7848569F434CBCE1"
+			tasks: [{
+				id: "1B848FBDFA408591"
+				type: "item"
+				item: "chemlib:iodine"
+			}]
+		}
+		{
+			x: 12.5d
+			y: 2.5d
+			shape: "square"
+			subtitle: "85.At"
+			optional: true
+			id: "597F028013CE97D1"
+			tasks: [{
+				id: "5090B94951B721FB"
+				type: "item"
+				item: "chemlib:astatine"
+			}]
+		}
+		{
+			x: 12.5d
+			y: 3.5d
+			shape: "square"
+			subtitle: "117.Ts"
+			optional: true
+			id: "3F31E2C59F3180A9"
+			tasks: [{
+				id: "691D8D1DBC4E7A13"
+				type: "item"
+				item: "chemlib:tennessine"
+			}]
+		}
+		{
+			x: 12.5d
+			y: 5.0d
+			shape: "square"
+			subtitle: "71.Lu"
+			optional: true
+			id: "017D4C72AD82628F"
+			tasks: [{
+				id: "0118C158DCC0B0C3"
+				type: "item"
+				item: "chemlib:lutetium"
+			}]
+		}
+		{
+			x: 12.5d
+			y: 6.0d
+			shape: "square"
+			subtitle: "103.Lr"
+			optional: true
+			id: "281F29EBA937F7AB"
+			tasks: [{
+				id: "395BA2C3047D8F03"
+				type: "item"
+				item: "chemlib:lawrencium"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

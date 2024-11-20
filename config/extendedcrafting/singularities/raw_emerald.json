@@ -1,0 +1,8 @@
+{
+    "name": "Raw Emerald",
+    "colors": ["20E36B", "7AE396"],
+    "ingredient": {
+        "item": "createoreexcavation:raw_emerald"
+    },
+    "materialCount": 100
+}

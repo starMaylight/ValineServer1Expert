@@ -1,0 +1,9 @@
+{
+    "name": "Upgrade Productivity",
+    "colors": ["ffff00", "adff2f"],
+    "ingredient": {
+          "item": "productivebees:upgrade_productivity"
+          
+    },
+    "materialCount": 10000
+}

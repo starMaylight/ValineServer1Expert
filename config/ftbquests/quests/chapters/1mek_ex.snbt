@@ -1,0 +1,532 @@
+{
+	id: "4021A56F5E59827A"
+	group: "43BAF829B74123A2"
+	order_index: 1
+	filename: "1mek_ex"
+	title: "1'.Mek_EX"
+	icon: "mekaevolution:infinite_control_circuit"
+	subtitle: [
+		"Extra Function"
+		""
+		""
+		"ここに同盟はなされた。３つの柱は２つと1に分かれる。"
+		"緑は力を。白は資源を。灰は道を示された。"
+		"つかの間の平穏は過ぎていく。裏で静かに、だが着実にことは進んでいるというのに。"
+	]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			dependencies: ["5C33DD006C2A5F2E"]
+			id: "0B83DC546B7082A6"
+			tasks: [{
+				id: "2D5D251B8396EE66"
+				type: "item"
+				item: "mekanismgenerators:fission_reactor_casing"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 0.0d
+			id: "5C33DD006C2A5F2E"
+			tasks: [{
+				id: "08F1D5F883C0AD35"
+				type: "item"
+				item: "valine_s1ex:fractual_mix"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 1.5d
+			id: "3235EBC459610877"
+			tasks: [
+				{
+					id: "30478ABCBBAC068B"
+					type: "item"
+					item: "megacells:radioactive_cell_component"
+				}
+				{
+					id: "13D8E43A6F00AA7E"
+					type: "item"
+					item: "mekanism:radioactive_waste_barrel"
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: 1.5d
+			dependencies: ["3235EBC459610877"]
+			id: "23C0E6E8742790AD"
+			tasks: [
+				{
+					id: "0687081C4C34F779"
+					type: "item"
+					item: "mekanismgenerators:fission_reactor_port"
+				}
+				{
+					id: "224FFC40F543E1F8"
+					type: "item"
+					item: "mekanismgenerators:fission_fuel_assembly"
+				}
+				{
+					id: "6A8F77AC460D9BF1"
+					type: "item"
+					item: "mekanismgenerators:control_rod_assembly"
+				}
+			]
+		}
+		{
+			x: 1.5d
+			y: 0.5d
+			dependencies: [
+				"23C0E6E8742790AD"
+				"0B83DC546B7082A6"
+			]
+			id: "25E4D7FFDF3BC36C"
+			tasks: [
+				{
+					id: "7FC124FA575BECE6"
+					type: "item"
+					item: "mekanism:pellet_polonium"
+				}
+				{
+					id: "26AA3EB0AD32E4E4"
+					type: "item"
+					item: "mekanism:pellet_plutonium"
+				}
+			]
+		}
+		{
+			x: 1.5d
+			y: -1.0d
+			dependencies: ["25E4D7FFDF3BC36C"]
+			id: "11CFE2378DE823DA"
+			tasks: [{
+				id: "382D2A5978E722B4"
+				type: "item"
+				item: "mekanism:reprocessed_fissile_fragment"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 2.0d
+			dependencies: ["25E4D7FFDF3BC36C"]
+			id: "04A350A6A253D4FF"
+			tasks: [
+				{
+					id: "3809FA517EEFD009"
+					type: "item"
+					item: "mekanism:mekasuit_helmet"
+				}
+				{
+					id: "43FBC0A27E132494"
+					type: "item"
+					item: "mekanism:mekasuit_bodyarmor"
+				}
+				{
+					id: "4551112B63390CD6"
+					type: "item"
+					item: "mekanism:mekasuit_pants"
+				}
+				{
+					id: "7E210039DDD5C98E"
+					type: "item"
+					item: "mekanism:mekasuit_boots"
+				}
+			]
+		}
+		{
+			x: -1.5d
+			y: -3.0d
+			id: "736715AC1E755C8C"
+			tasks: [{
+				id: "04864DA340B7581D"
+				type: "item"
+				item: "mekaddelement:dust_calcium_oxide"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -3.0d
+			dependencies: ["736715AC1E755C8C"]
+			id: "217036241379114A"
+			tasks: [{
+				id: "0DBE9F6142CF1234"
+				type: "item"
+				item: "mekanism:basic_induction_cell"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -4.5d
+			dependencies: ["736715AC1E755C8C"]
+			id: "523C42B7E66AF457"
+			tasks: [{
+				id: "6D8A551A36EC9CC9"
+				type: "item"
+				item: "mekanism:basic_induction_provider"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -3.0d
+			dependencies: ["217036241379114A"]
+			id: "410F70127AD1A0CC"
+			tasks: [{
+				id: "51B9152D48C1B905"
+				type: "item"
+				item: "mekanism:advanced_induction_cell"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -3.0d
+			dependencies: ["410F70127AD1A0CC"]
+			id: "7E9ABCEBD038B5E9"
+			tasks: [{
+				id: "11EA4B7735AD5440"
+				type: "item"
+				item: "mekanism:elite_induction_cell"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -3.0d
+			dependencies: ["7E9ABCEBD038B5E9"]
+			id: "3B8AF1DA6C8C8BEB"
+			tasks: [{
+				id: "2A4C1DE577D2C200"
+				type: "item"
+				item: "mekanism:ultimate_induction_cell"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -4.5d
+			dependencies: ["523C42B7E66AF457"]
+			id: "02BCE28101235741"
+			tasks: [{
+				id: "49346B962B9A1F7F"
+				type: "item"
+				item: "mekanism:advanced_induction_provider"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -4.5d
+			dependencies: ["02BCE28101235741"]
+			id: "56B2092FF79C80E2"
+			tasks: [{
+				id: "576919BCA89C0171"
+				type: "item"
+				item: "mekanism:elite_induction_provider"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -4.5d
+			dependencies: ["56B2092FF79C80E2"]
+			id: "230D74011402AF40"
+			tasks: [{
+				id: "381D3C8C6DB7CA53"
+				type: "item"
+				item: "mekanism:ultimate_induction_provider"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 0.5d
+			dependencies: ["25E4D7FFDF3BC36C"]
+			id: "74FFE94C1D591B7D"
+			tasks: [
+				{
+					id: "0DF7C7296EF708F8"
+					type: "item"
+					item: "mekanism:sps_casing"
+				}
+				{
+					id: "05C8BB9008A07E6E"
+					type: "item"
+					item: "mekanism:sps_port"
+				}
+				{
+					id: "43DE23291543A31F"
+					type: "item"
+					item: "mekanism:supercharged_coil"
+				}
+			]
+		}
+		{
+			x: 3.5d
+			y: 2.0d
+			dependencies: [
+				"74FFE94C1D591B7D"
+				"2B96EB8D398BF6C6"
+			]
+			id: "6B3B11E2C9D289AB"
+			tasks: [{
+				id: "76869057430BCBD2"
+				type: "item"
+				item: "mekaevolution:absolute_control_circuit"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 2.0d
+			dependencies: ["6B3B11E2C9D289AB"]
+			id: "7F6F9CD4BFCABD31"
+			tasks: [{
+				id: "5F44B58BC48A5CA1"
+				type: "item"
+				item: "mekaevolution:supreme_control_circuit"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 2.0d
+			dependencies: ["7F6F9CD4BFCABD31"]
+			id: "4C645D18DAABA0A9"
+			tasks: [{
+				id: "7C39A95CE05C0B50"
+				type: "item"
+				item: "mekaevolution:cosmic_control_circuit"
+			}]
+		}
+		{
+			x: 8.0d
+			y: 2.0d
+			dependencies: ["4C645D18DAABA0A9"]
+			id: "12AB4C1BE0194B43"
+			tasks: [{
+				id: "0E23174E53207AA7"
+				type: "item"
+				item: "mekaevolution:infinite_control_circuit"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 0.5d
+			dependencies: ["74FFE94C1D591B7D"]
+			id: "2B96EB8D398BF6C6"
+			tasks: [{
+				id: "144456558A722749"
+				type: "item"
+				item: "mekanism:pellet_antimatter"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 3.5d
+			id: "40192D2412D66A25"
+			tasks: [{
+				id: "39282FB0BD0772E6"
+				type: "item"
+				item: "mekanismmatter:matter_fabricator"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 3.5d
+			dependencies: ["40192D2412D66A25"]
+			id: "37A27CE0D6B7E06F"
+			tasks: [{
+				id: "3541BDEC567792A2"
+				type: "item"
+				item: "mekanismmatter:matter_analyzer"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 3.5d
+			subtitle: "configを確認"
+			dependencies: ["40192D2412D66A25"]
+			id: "42195CD600B6629F"
+			tasks: [{
+				id: "16079CE2B3BCA97B"
+				type: "item"
+				item: "mekanismmatter:scanner"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 3.5d
+			dependencies: ["40192D2412D66A25"]
+			id: "0A8A985DB498486D"
+			tasks: [{
+				id: "386392B842CCAE1C"
+				type: "item"
+				item: "mekanismmatter:matter_synthesizer"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 3.5d
+			dependencies: ["40192D2412D66A25"]
+			id: "360022384FDD4F51"
+			tasks: [{
+				id: "2D7EF3981AE11AD8"
+				type: "item"
+				item: "mekanismmatter:antimatter_synthesizer"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 5.0d
+			dependencies: ["06C20D6A0BF18CE8"]
+			id: "1C08DA945F68BB4A"
+			tasks: [{
+				id: "4109657E51D8DA67"
+				type: "item"
+				item: "mekanism:qio_drive_base"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 5.0d
+			dependencies: ["1C08DA945F68BB4A"]
+			id: "1526E9CB23423960"
+			tasks: [{
+				id: "3FA9F629A3628113"
+				type: "item"
+				item: "mekanism:qio_drive_hyper_dense"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 5.0d
+			dependencies: [
+				"1526E9CB23423960"
+				"25E4D7FFDF3BC36C"
+			]
+			id: "18DDCAE7AF766FBA"
+			tasks: [{
+				id: "34332F06753B48B2"
+				type: "item"
+				item: "mekanism:qio_drive_time_dilating"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 5.0d
+			dependencies: [
+				"18DDCAE7AF766FBA"
+				"2B96EB8D398BF6C6"
+			]
+			id: "22DF181BAE8ED306"
+			tasks: [{
+				id: "30B9333F7D5E2080"
+				type: "item"
+				item: "mekanism:qio_drive_supermassive"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 5.0d
+			dependencies: ["22DF181BAE8ED306"]
+			id: "1D0CF4FD7AFCF42D"
+			tasks: [{
+				id: "0E3E349E8F03B78E"
+				type: "item"
+				item: "mekaevolution:qio_drive_absolute"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 5.0d
+			dependencies: ["1D0CF4FD7AFCF42D"]
+			id: "28B1BA60D94378BA"
+			tasks: [{
+				id: "3C5EA155409FD002"
+				type: "item"
+				item: "mekaevolution:qio_drive_supreme"
+			}]
+		}
+		{
+			x: 7.5d
+			y: 5.0d
+			dependencies: ["28B1BA60D94378BA"]
+			id: "06CDA28D2CA5ADE8"
+			tasks: [{
+				id: "20D6F83B7794850F"
+				type: "item"
+				item: "mekaevolution:qio_drive_cosmic"
+			}]
+		}
+		{
+			x: 9.0d
+			y: 5.0d
+			dependencies: ["06CDA28D2CA5ADE8"]
+			id: "56FDEF7B2679E5D1"
+			tasks: [{
+				id: "44A1E11CD7166E7E"
+				type: "item"
+				item: "mekaevolution:qio_drive_infinite"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 6.5d
+			dependencies: ["25E4D7FFDF3BC36C"]
+			id: "343E0808CB222970"
+			tasks: [
+				{
+					id: "7197BB768B083A67"
+					type: "item"
+					item: "mekanismgenerators:fusion_reactor_frame"
+				}
+				{
+					id: "0DAC983BAE9D3E5E"
+					type: "item"
+					item: "mekanismgenerators:fusion_reactor_port"
+				}
+				{
+					id: "3F54D05068DBB87B"
+					type: "item"
+					item: "mekanismgenerators:fusion_reactor_controller"
+				}
+				{
+					id: "11BBB4DDD2B616AE"
+					type: "item"
+					item: "mekanism:laser"
+				}
+				{
+					id: "00B30C40B355F13C"
+					type: "item"
+					item: "mekanism:laser_amplifier"
+				}
+			]
+		}
+		{
+			x: -3.0d
+			y: 6.5d
+			subtitle: "実はめちゃくちゃ本体は安い"
+			id: "06C20D6A0BF18CE8"
+			tasks: [
+				{
+					id: "276CF55900A74C54"
+					type: "item"
+					item: "mekanism:qio_drive_array"
+				}
+				{
+					id: "035B1714CD12A588"
+					type: "item"
+					item: "mekanism:qio_dashboard"
+				}
+			]
+		}
+		{
+			x: 6.5d
+			y: 0.5d
+			dependencies: ["2B96EB8D398BF6C6"]
+			id: "0147FC3CAB45DCBB"
+			tasks: [{
+				id: "7246A9076F9E814E"
+				type: "item"
+				item: "mekanism:antiprotonic_nucleosynthesizer"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

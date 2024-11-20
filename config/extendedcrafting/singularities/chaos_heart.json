@@ -1,0 +1,8 @@
+{
+    "name": "Chaos Heart",
+    "colors": ["000000", "808080"],
+    "ingredient": {
+        "item": "draconicadditions:chaos_heart"
+    },
+    "materialCount": 100
+}

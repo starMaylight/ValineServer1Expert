@@ -1,0 +1,9 @@
+{
+	chapter_groups: [
+		{ id: "49F5FAB4580E0BD3", title: "Start up" }
+		{ id: "7ACDCF71AFEABB00", title: "1st step" }
+		{ id: "76C8668A0FE5C01C", title: "2nd mythology" }
+		{ id: "43BAF829B74123A2", title: "3rd Ragnarok" }
+		{ id: "025D71E464BF6EDC", title: "other misc" }
+	]
+}

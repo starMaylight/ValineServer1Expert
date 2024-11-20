@@ -1,0 +1,9 @@
+{
+    "name": "256M Crafting Storage",
+    "colors": ["9400d3", "696969"],
+    "ingredient": {
+          "item": "megacells:256m_crafting_storage"
+          
+    },
+    "materialCount": 100
+}

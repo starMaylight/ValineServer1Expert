@@ -1,0 +1,77 @@
+{
+	id: "1939261EEAF167DE"
+	order_index: 0
+	title: "vein"
+	loot_size: 1
+	rewards: [
+		{
+			item: {
+				id: "immersiveengineering:drill"
+				Count: 1b
+				tag: {
+					Fluid: {
+						FluidName: "immersiveengineering:biodiesel"
+						Amount: 2000
+					}
+				}
+				ForgeCaps: {
+					Parent: {
+						Size: 5
+						Items: [{
+							Slot: 0
+							id: "immersiveengineering:drillhead_steel"
+							Count: 1b
+						}]
+					}
+				}
+			}
+		}
+		{
+			item: {
+				id: "immersiveengineering:buzzsaw"
+				Count: 1b
+				tag: {
+					Enchantments: [{
+						lvl: 1
+						id: "silk_touch"
+					}]
+					Fluid: {
+						FluidName: "immersiveengineering:biodiesel"
+						Amount: 2000
+					}
+				}
+				ForgeCaps: {
+					Parent: {
+						Size: 5
+						Items: [{
+							Slot: 0
+							id: "immersiveengineering:grindingdisk"
+							Count: 1b
+							tag: {
+								Damage: 0
+							}
+						}]
+					}
+				}
+			}
+		}
+		{
+			item: {
+				id: "thermal:flux_drill"
+				Count: 1b
+				tag: {
+					Energy: 50000
+				}
+			}
+		}
+		{
+			item: {
+				id: "thermal:flux_saw"
+				Count: 1b
+				tag: {
+					Energy: 50000
+				}
+			}
+		}
+	]
+}

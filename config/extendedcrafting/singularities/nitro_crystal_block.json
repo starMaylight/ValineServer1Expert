@@ -1,0 +1,9 @@
+{
+    "name": "Nitro Crystal Block",
+    "colors": ["dc143c", "ff4500"],
+    "ingredient": {
+          "item": "powah:nitro_crystal_block"
+          
+    },
+    "materialCount": 1000
+}

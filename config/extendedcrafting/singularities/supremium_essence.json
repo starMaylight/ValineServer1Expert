@@ -1,0 +1,8 @@
+{
+    "name": "supremium essence",
+    "colors": ["ff4500", "ff0000"],
+    "ingredient": {
+        "item": "mysticalagriculture:supremium_essence"
+    },
+    "materialCount": 10000
+}

@@ -1,0 +1,626 @@
+{
+	id: "388E6AC0ACBDACB2"
+	group: "025D71E464BF6EDC"
+	order_index: 0
+	filename: "24A75544D3549AB7"
+	title: "簡単な収納と精練"
+	subtitle: ["みすく！みすく！みすくってなんだよ。"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -6.5d
+			y: -7.0d
+			id: "3C5ED6A2A0879C59"
+			tasks: [{
+				id: "4964E6CA76C5984B"
+				type: "item"
+				item: "ironfurnaces:iron_furnace"
+			}]
+		}
+		{
+			x: -4.5d
+			y: -7.0d
+			id: "43069A84CEFA3EB5"
+			tasks: [{
+				id: "2BB7B28968AD43AD"
+				type: "item"
+				item: "ironfurnaces:gold_furnace"
+			}]
+		}
+		{
+			x: -7.5d
+			y: -10.0d
+			id: "0E326E36B7CD4520"
+			tasks: [{
+				id: "6DA836330407CDEA"
+				type: "item"
+				item: "ironfurnaces:diamond_furnace"
+			}]
+		}
+		{
+			x: -6.5d
+			y: -10.0d
+			id: "3C3D18B4BF7325BF"
+			tasks: [{
+				id: "7E46B238E5E58557"
+				type: "item"
+				item: "ironfurnaces:emerald_furnace"
+			}]
+		}
+		{
+			x: -5.5d
+			y: -10.0d
+			id: "0727D4DEAC9C74CB"
+			tasks: [{
+				id: "1D940AD54A7A3781"
+				type: "item"
+				item: "ironfurnaces:obsidian_furnace"
+			}]
+		}
+		{
+			x: -4.5d
+			y: -10.0d
+			id: "0FD3EB6B6741D4FA"
+			tasks: [{
+				id: "3F52A4701866DE30"
+				type: "item"
+				item: "ironfurnaces:crystal_furnace"
+			}]
+		}
+		{
+			x: -8.0d
+			y: -9.0d
+			id: "487BE52FFB3F9458"
+			tasks: [{
+				id: "4EA2F33D9D566525"
+				type: "item"
+				item: "ironfurnaces:netherite_furnace"
+			}]
+		}
+		{
+			x: -7.5d
+			y: -7.0d
+			id: "3D4264813363C2F2"
+			tasks: [{
+				id: "1C228C91499A4E2D"
+				type: "item"
+				item: "ironfurnaces:copper_furnace"
+				only_from_crafting: false
+			}]
+		}
+		{
+			x: -5.5d
+			y: -7.0d
+			id: "4F58FD218DECA021"
+			tasks: [{
+				id: "1BF26CF9913C1038"
+				type: "item"
+				item: "ironfurnaces:silver_furnace"
+			}]
+		}
+		{
+			x: -7.0d
+			y: -8.5d
+			description: ["コア?"]
+			id: "4C7A67D7762DCD78"
+			tasks: [{
+				id: "6BD3F4BBEB431CCB"
+				type: "item"
+				item: "ironfurnaces:rainbow_core"
+			}]
+		}
+		{
+			x: -8.0d
+			y: -8.0d
+			shape: "gear"
+			description: ["これでなにがリンクする?"]
+			id: "2DF5100A71CF478D"
+			tasks: [{
+				id: "4484B7F037678719"
+				type: "item"
+				item: "ironfurnaces:item_linker"
+			}]
+		}
+		{
+			x: -6.0d
+			y: -8.5d
+			shape: "heart"
+			description: ["8つのかまど複数作りました?"]
+			id: "75C5A223AC3523D0"
+			tasks: [{
+				id: "296842F2E65003A7"
+				type: "item"
+				item: "ironfurnaces:rainbow_plating"
+			}]
+		}
+		{
+			x: -5.0d
+			y: -8.5d
+			shape: "gear"
+			description: [
+				"全てのかまどが一つに集まる時"
+				"一回製錬するだけでワンスタック分完成する"
+			]
+			id: "0E2506569E19C7AE"
+			tasks: [{
+				id: "01A2FA81838BF3AA"
+				type: "item"
+				item: {
+					id: "ironfurnaces:million_furnace"
+					Count: 1b
+					tag: {
+						display: {
+							Name: "{\"extra\":[{\"color\":\"blue\",\"text\":\"R\"},{\"color\":\"light_purple\",\"text\":\"a\"},{\"color\":\"yellow\",\"text\":\"i\"},{\"color\":\"light_purple\",\"text\":\"n\"},{\"color\":\"light_purple\",\"text\":\"b\"},{\"color\":\"yellow\",\"text\":\"o\"},{\"color\":\"yellow\",\"text\":\"w\"},{\"color\":\"aqua\",\"text\":\" \"},{\"color\":\"light_purple\",\"text\":\"F\"},{\"color\":\"blue\",\"text\":\"u\"},{\"color\":\"yellow\",\"text\":\"r\"},{\"color\":\"green\",\"text\":\"n\"},{\"color\":\"blue\",\"text\":\"a\"},{\"color\":\"yellow\",\"text\":\"c\"},{\"color\":\"blue\",\"text\":\"e\"}],\"text\":\"\"}"
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: -2.5d
+			y: -8.0d
+			description: ["より容量が入るチェストが欲しい方へ"]
+			id: "644B3D5EC958746E"
+			tasks: [
+				{
+					id: "244F33B193A7772D"
+					type: "item"
+					item: "ironchest:copper_chest"
+				}
+				{
+					id: "1B8668F55395D831"
+					type: "item"
+					item: "ironchest:iron_chest"
+				}
+				{
+					id: "2B53E3CFB2E3A6C9"
+					type: "item"
+					item: "ironchest:gold_chest"
+				}
+				{
+					id: "57F9765C359C7368"
+					type: "item"
+					item: "ironchest:diamond_chest"
+				}
+			]
+		}
+		{
+			x: -2.5d
+			y: -9.0d
+			description: ["設置しているチェストをアップグレードしてみよう!"]
+			id: "5DE945396B895684"
+			tasks: [{
+				id: "17A9BE6B0F2D5432"
+				type: "item"
+				item: "ironchest:wood_to_iron_chest_upgrade"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -7.0d
+			shape: "circle"
+			description: [
+				"個別のチャンネルでアイテムをエンダーチェストのようにいつでもどこでも取り出せます ただし、２つ同じチャンネルかどうかを要確認"
+				"種類別にアイテムを輸送経路として使ってみよう！"
+			]
+			id: "3E8A80736A7D77D3"
+			tasks: [{
+				id: "5A089DE831AABD54"
+				type: "item"
+				item: "dimstorage:dimensional_chest"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -7.0d
+			shape: "gear"
+			description: [
+				"個別のチャンネルで液体をいつでもどこでも取り出せます"
+				"ただし、2つ同じチャンネルか要確認"
+				"種類別にアイテムを輸送経路として使ってみよう!"
+			]
+			hide: false
+			id: "4165B1168C20B45D"
+			tasks: [{
+				id: "707DDDA0C9754449"
+				type: "item"
+				item: "dimstorage:dimensional_tank"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -5.5d
+			description: [
+				"ラージチェストと同じ容量"
+				"ツールや機械など独自で持っておきたいときにおすすめ"
+			]
+			id: "21058D63842C2927"
+			tasks: [{
+				id: "7ECEECBBF2BAF4B8"
+				type: "item"
+				item: {
+					id: "extrautilitiesrebirth:golden_bag_of_holding"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							Size: 54
+							Items: [ ]
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: -3.0d
+			y: -6.5d
+			description: [
+				"シェルカーと同じ壊しても中身はばらけません"
+				"まとめて輸送するのにも役立ちます"
+			]
+			id: "2CBAFA4949756560"
+			tasks: [
+				{
+					id: "73604D0F40B86533"
+					type: "item"
+					item: "immersiveengineering:crate"
+				}
+				{
+					id: "7378E46AEF0E5893"
+					type: "item"
+					item: "immersiveengineering:reinforced_crate"
+				}
+			]
+		}
+		{
+			x: -2.0d
+			y: -6.5d
+			description: [
+				"エンダーチェストとリンクしているため、無くしてもアイテムは消滅しません。"
+				"大事なものはこれにしまっておきましょう。"
+			]
+			id: "186399F01BA151F5"
+			tasks: [{
+				id: "725708984CFBB598"
+				type: "item"
+				item: "cyclic:ender_bag"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -8.0d
+			description: ["かまどに特別な機能を付けてみよう!"]
+			id: "2D770AD779E45F03"
+			tasks: [
+				{
+					id: "47D49373DB25871C"
+					type: "item"
+					item: "ironfurnaces:augment_factory"
+				}
+				{
+					id: "312A6C1319BB2BBB"
+					type: "item"
+					item: "ironfurnaces:augment_blasting"
+				}
+				{
+					id: "217A0E53A22726B7"
+					type: "item"
+					item: "ironfurnaces:augment_smoking"
+				}
+				{
+					id: "6B58DC4FFFD0FF0E"
+					type: "item"
+					item: "ironfurnaces:augment_generator"
+				}
+				{
+					id: "7C9C579347224E0C"
+					type: "item"
+					item: "ironfurnaces:augment_speed"
+				}
+				{
+					id: "76FE61B763381646"
+					type: "item"
+					item: "ironfurnaces:augment_fuel"
+				}
+				{
+					id: "44081EB5D3078136"
+					type: "item"
+					item: "ironfurnaces:augment_xp"
+				}
+			]
+		}
+		{
+			x: -0.5d
+			y: -7.0d
+			description: [
+				"大量のアイテムを収納しよう"
+				"StorageControllerと共にLinkingToolで接続すると幸せになります"
+			]
+			id: "2CEF4D52D1D5D24A"
+			tasks: [{
+				id: "179DC3993D50BB7D"
+				type: "item"
+				title: "Any #functionalstorage:drawer"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "functionalstorage:drawer"
+					}
+				}
+			}]
+		}
+		{
+			x: 2.5d
+			y: -7.0d
+			description: [
+				"液体を大量に収納しよう!"
+				"LinkingToolで接続可能"
+			]
+			id: "7E5F9A8ABC0B31EF"
+			tasks: [{
+				id: "1D4F98CD68F75EEA"
+				type: "item"
+				item: "functionalstorage:fluid_1"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -8.5d
+			description: [
+				"これで何でも圧縮縮小させて取り出そう!"
+				"LinkingToolで接続可能"
+			]
+			id: "76581281A990BB8D"
+			tasks: [{
+				id: "2F78CCBC5062645D"
+				type: "item"
+				item: "functionalstorage:compacting_drawer"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -9.0d
+			description: [
+				"LinkingToolを左クリックで登録して、Shift+右クリックで連結"
+				"連結すると片方にアイテムが入るともう片方にもアイテムが表示され取り出せます"
+			]
+			id: "5BCFC1C0492EEBCF"
+			tasks: [{
+				id: "1247BAFA75D4DB68"
+				type: "item"
+				item: "functionalstorage:ender_drawer"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -8.5d
+			description: [
+				"接続されているOakDrawerのアイテムたちがControllerに集合状態"
+				"これにとあるターミナルで表示させたり、搬入搬出をフィルター指定すると?"
+			]
+			id: "23CB5BEF7A71C235"
+			tasks: [
+				{
+					id: "3CDA36629BCD91F8"
+					type: "item"
+					item: "functionalstorage:storage_controller"
+				}
+				{
+					id: "1D78AAACC9772052"
+					type: "item"
+					item: "functionalstorage:controller_extension"
+				}
+			]
+		}
+		{
+			x: 2.5d
+			y: -10.0d
+			shape: "heart"
+			description: ["え?足りない？ならこれを入れて大量に突っ込め突っ込め！"]
+			id: "6D66F18670F16C3A"
+			tasks: [{
+				id: "6F997F6685749378"
+				type: "item"
+				item: "functionalstorage:netherite_upgrade"
+			}]
+		}
+		{
+			x: -8.5d
+			y: -10.0d
+			description: ["設置しているかまどをアップグレードしてみよう!"]
+			id: "796068205C52ED73"
+			tasks: [{
+				id: "65AC4EB3DFF7CE4A"
+				type: "item"
+				item: "ironfurnaces:upgrade_iron"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -10.0d
+			description: ["通常容量じゃ物足りない？ならこれを入れてみよう!"]
+			id: "1D79E2DAB89701D9"
+			tasks: [{
+				id: "2983EA6B8B4815A2"
+				type: "item"
+				item: "functionalstorage:copper_upgrade"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -10.0d
+			id: "14A3F8AEC8D2032C"
+			tasks: [{
+				id: "0DACAAB9E52A6E8F"
+				type: "item"
+				item: "functionalstorage:gold_upgrade"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -10.0d
+			id: "50B0A18265D826D3"
+			tasks: [{
+				id: "3B5DC81B9936C885"
+				type: "item"
+				item: "functionalstorage:diamond_upgrade"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -10.0d
+			description: [
+				"アイテムを限界容量を超えると消滅していきます"
+				"Mobトラップに役立つかも?"
+			]
+			id: "4F8D02C8634F6522"
+			tasks: [{
+				id: "471D9A46514C37BA"
+				type: "item"
+				item: "functionalstorage:void_upgrade"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -8.0d
+			description: [
+				"OakDrawerとStorageControllerと一緒に接続"
+				"離れていても範囲内なら接続可能 右クリックでモード切り替え"
+				"・add_リンク"
+				"・Remove_切断"
+			]
+			id: "5F05186F9CB80D0C"
+			tasks: [{
+				id: "071C2C4C31B95020"
+				type: "item"
+				item: {
+					id: "functionalstorage:linking_tool"
+					Count: 1b
+					tag: {
+						Action: "ADD"
+						Mode: "SINGLE"
+					}
+				}
+			}]
+		}
+		{
+			x: -1.0d
+			y: -9.0d
+			description: [
+				"Shift+右クリックでモード切り替え"
+				"・Locking_アイテムを固定"
+				"・Amount_収納数を非表示"
+				"・ItemRenders_アイテムを非表示"
+				"・UpgradeRenders_アップグレードカードを非表示"
+				"元に戻したいときは同じモードでShift+右クリック"
+			]
+			id: "525F8329E6C7E0CD"
+			tasks: [{
+				id: "5F86BB32EE81D995"
+				type: "item"
+				item: {
+					id: "functionalstorage:configuration_tool"
+					Count: 1b
+					tag: {
+						Mode: "LOCKING"
+					}
+				}
+			}]
+		}
+		{
+			x: -4.0d
+			y: -9.0d
+			description: [
+				"WirelessHeatTransmitterにエネルギー送り"
+				"WirelessHeatReceiverを入れるとリンクする"
+				"Receiverを燃料代わりに使ってみよう!"
+				"注意、製錬ができない場合エネルギー不足かリンクされてるか要確認"
+			]
+			id: "0041C162621A9B08"
+			tasks: [
+				{
+					id: "5A843FF5514A9B23"
+					type: "item"
+					item: "ironfurnaces:heater"
+				}
+				{
+					id: "7DBD3EC4398BA529"
+					type: "item"
+					item: "ironfurnaces:item_heater"
+				}
+			]
+		}
+		{
+			x: 3.0d
+			y: -8.0d
+			description: [
+				"パイプ無しで搬入搬出したときにおすすめ"
+				"インベントリを開いてUpgradeカードにカーソル合わせて右クリックすると方向が変わる"
+				"Controllerはドロップアイテムを拾ってくれます"
+			]
+			id: "14402EADDABE3D0C"
+			tasks: [
+				{
+					id: "2B3629F06725E21B"
+					type: "item"
+					item: {
+						id: "functionalstorage:collector_upgrade"
+						Count: 1b
+						tag: {
+							Direction: "down"
+						}
+					}
+				}
+				{
+					id: "08A90F14FD54D792"
+					type: "item"
+					item: {
+						id: "functionalstorage:puller_upgrade"
+						Count: 1b
+						tag: {
+							Direction: "down"
+						}
+					}
+				}
+				{
+					id: "1324E3A75C55B00F"
+					type: "item"
+					item: {
+						id: "functionalstorage:pusher_upgrade"
+						Count: 1b
+						tag: {
+							Direction: "down"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -3.5d
+			y: -10.0d
+			description: ["IronFurnacesの搬入搬出設定をコピーしてみよう!"]
+			id: "770F1ED8D0E73390"
+			tasks: [{
+				id: "75127D0FA1A70610"
+				type: "item"
+				item: "ironfurnaces:item_copy"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -10.0d
+			description: [
+				"これを入れると64個までしか入りません"
+				"量産阻止に役立つかも?"
+			]
+			id: "378AA69E2BD13F7D"
+			tasks: [{
+				id: "2BACB8A5BCD61B3C"
+				type: "item"
+				item: "functionalstorage:iron_downgrade"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

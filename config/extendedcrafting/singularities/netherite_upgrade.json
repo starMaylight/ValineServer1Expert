@@ -1,0 +1,8 @@
+{
+    "name": "Netherite Upgrade",
+    "colors": ["708090", "000000"],
+    "ingredient": {
+        "item": "functionalstorage:netherite_upgrade"
+    },
+    "materialCount": 1000
+}

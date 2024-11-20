@@ -1,0 +1,588 @@
+{
+	id: "7BC808D031FC3E08"
+	group: "7ACDCF71AFEABB00"
+	order_index: 0
+	filename: "0"
+	title: "0.チュートリアル"
+	subtitle: [
+		"ウィザーはチュートリアルらしいっすよ"
+		"「貴方の旅路は他ならぬあなたたちの意志によって困難なものとなることが約束された。」"
+		"「諦めてはならない。其れが唯一の贖罪だ。」"
+		"「さあ選べ。引き返すか。それとも進むか。ここから先は意図して作られた地獄である。」"
+	]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "はじめの一歩"
+			x: 0.0d
+			y: 0.0d
+			subtitle: "日常"
+			description: [
+				"最初の一歩はいつも同じ。"
+				"最初にして最後の報酬とともに。"
+				"追記：ultimineは伐採専用"
+			]
+			id: "22EE6096DC390DD8"
+			tasks: [{
+				id: "195D6B18BD492A45"
+				type: "item"
+				title: "Any #minecraft:logs"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+				count: 16L
+			}]
+			rewards: [
+				{
+					id: "5BAB567FE7B03814"
+					type: "item"
+					item: {
+						id: "cyclic:tank"
+						Count: 1b
+						tag: {
+							Fluid: {
+								FluidName: "immersiveengineering:biodiesel"
+								Amount: 64000
+							}
+						}
+					}
+				}
+				{
+					id: "0088E50E2CD00A22"
+					type: "item"
+					item: {
+						id: "immersiveengineering:jerrycan"
+						Count: 1b
+						tag: {
+							Fluid: {
+								FluidName: "immersiveengineering:biodiesel"
+								Amount: 10000
+							}
+						}
+					}
+				}
+				{
+					id: "300BBF655A026232"
+					type: "choice"
+					icon: {
+						id: "immersiveengineering:drill"
+						Count: 1b
+						tag: {
+							Fluid: {
+								FluidName: "immersiveengineering:biodiesel"
+								Amount: 2000
+							}
+						}
+						ForgeCaps: {
+							Parent: {
+								Size: 5
+								Items: [{
+									Slot: 0
+									id: "immersiveengineering:drillhead_steel"
+									Count: 1b
+								}]
+							}
+						}
+					}
+					exclude_from_claim_all: true
+					table_id: 1817525838853269470L
+				}
+			]
+		}
+		{
+			x: 2.0d
+			y: -1.5d
+			subtitle: "初心者Tinkerセット"
+			dependencies: ["22EE6096DC390DD8"]
+			id: "10E6820D9690D7CB"
+			tasks: [
+				{
+					id: "329791A59236AA50"
+					type: "item"
+					item: "tconstruct:tinker_station"
+				}
+				{
+					id: "03594FFE08ECDD91"
+					type: "item"
+					item: "tconstruct:crafting_station"
+				}
+				{
+					id: "41F6F999B8626E03"
+					type: "item"
+					item: "tconstruct:part_builder"
+				}
+				{
+					id: "15340CBA34FEEF78"
+					type: "item"
+					item: "tconstruct:part_chest"
+				}
+			]
+		}
+		{
+			title: "nether"
+			x: 2.0d
+			y: 0.0d
+			dependencies: ["22EE6096DC390DD8"]
+			id: "7DF86312AC87298B"
+			tasks: [{
+				id: "4168D150D188B163"
+				type: "dimension"
+				dimension: "minecraft:the_nether"
+			}]
+		}
+		{
+			title: "end"
+			x: 4.5d
+			y: 0.0d
+			dependencies: [
+				"7DF86312AC87298B"
+				"22EE6096DC390DD8"
+			]
+			id: "523C694C0B6CFA21"
+			tasks: [{
+				id: "1D68008238ACEFB3"
+				type: "dimension"
+				dimension: "minecraft:the_end"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 2.0d
+			dependencies: ["7DF86312AC87298B"]
+			id: "7A290B97B0FF9CF4"
+			tasks: [{
+				id: "3E19B393C572CC37"
+				type: "item"
+				item: "minecraft:nether_star"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 2.0d
+			dependencies: ["523C694C0B6CFA21"]
+			id: "32FA931E7AEEBA86"
+			tasks: [{
+				id: "54A2E2D2D04463A4"
+				type: "item"
+				item: "draconicevolution:dragon_heart"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -3.5d
+			subtitle: "溶かす"
+			dependencies: ["10E6820D9690D7CB"]
+			id: "2AFE80EC26056265"
+			tasks: [{
+				id: "4FA3A47243324F5C"
+				type: "item"
+				item: "tconstruct:seared_melter"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -3.5d
+			subtitle: "溶かす2"
+			dependencies: ["2AFE80EC26056265"]
+			id: "78C4B1F1A3EDC8B7"
+			tasks: [{
+				id: "7E3DBAC549C43EFF"
+				type: "item"
+				item: {
+					id: "tconstruct:foundry_controller"
+					Count: 1b
+					tag: {
+						texture: "tconstruct:scorched_stone"
+					}
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: -3.5d
+			subtitle: "合わせる"
+			dependencies: ["2AFE80EC26056265"]
+			id: "77682C576D12563E"
+			tasks: [{
+				id: "47FCE226244918FA"
+				type: "item"
+				item: "tconstruct:scorched_alloyer"
+			}]
+		}
+		{
+			x: 6.0d
+			y: -3.5d
+			subtitle: "PnC進めてね"
+			dependencies: ["78C4B1F1A3EDC8B7"]
+			id: "48898D23CCEC6FB1"
+			tasks: [{
+				id: "3C1F858985D991AC"
+				type: "item"
+				item: "tconstruct:smeltery_controller"
+			}]
+		}
+		{
+			x: -5.5d
+			y: -3.5d
+			id: "07467239E45D15AE"
+			tasks: [{
+				id: "74F67ADD530F79CA"
+				type: "item"
+				item: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						"patchouli:book": "alchemistry:alchemistry_book"
+					}
+				}
+				weak_nbt_match: true
+			}]
+		}
+		{
+			x: -4.0d
+			y: -3.5d
+			id: "7FEFD5E402977F2B"
+			tasks: [{
+				id: "31EF0B1A5A1D39C2"
+				type: "item"
+				item: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						"patchouli:book": "productivebees:guide"
+					}
+				}
+				weak_nbt_match: true
+			}]
+		}
+		{
+			x: -2.5d
+			y: -3.5d
+			id: "52DC6E5029D31761"
+			tasks: [{
+				id: "7FCC4891ADD7F2E2"
+				type: "item"
+				item: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						"patchouli:book": "rebornstorage:rs_book"
+					}
+				}
+				weak_nbt_match: true
+			}]
+		}
+		{
+			x: -5.5d
+			y: -2.0d
+			id: "47141D39445C2FF0"
+			tasks: [{
+				id: "7BB9BDEC460566B7"
+				type: "item"
+				item: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						"patchouli:book": "cyclic:cyclic_guide_book"
+					}
+				}
+				weak_nbt_match: true
+			}]
+		}
+		{
+			x: -4.0d
+			y: -2.0d
+			id: "302028B1CAD1397D"
+			tasks: [{
+				id: "5E87F53E9D3C3648"
+				type: "item"
+				item: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						"patchouli:book": "extendedcrafting:guide"
+					}
+				}
+				weak_nbt_match: true
+			}]
+		}
+		{
+			x: -2.5d
+			y: -2.0d
+			id: "5D5F6EC93CEBF0A6"
+			tasks: [{
+				id: "6DDC99CF20953A18"
+				type: "item"
+				item: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						"patchouli:book": "industrialforegoing:industrial_foregoing"
+					}
+				}
+				weak_nbt_match: true
+			}]
+		}
+		{
+			x: -5.5d
+			y: -0.5d
+			id: "7671FF5C3CBF902E"
+			tasks: [{
+				id: "1EF1F9AAAF951348"
+				type: "item"
+				item: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						"patchouli:book": "laserio:laseriobook"
+					}
+				}
+				weak_nbt_match: true
+			}]
+		}
+		{
+			x: -4.0d
+			y: -0.5d
+			id: "149CCF7AB107D376"
+			tasks: [{
+				id: "38650097700C8B0C"
+				type: "item"
+				item: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						"patchouli:book": "modularrouters:book"
+					}
+				}
+				weak_nbt_match: true
+			}]
+		}
+		{
+			x: -2.5d
+			y: -0.5d
+			id: "49E55EF4E37ABF88"
+			tasks: [{
+				id: "4C4E2916B8334C37"
+				type: "item"
+				item: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						"patchouli:book": "mysticalagriculture:guide"
+					}
+				}
+				weak_nbt_match: true
+			}]
+		}
+		{
+			x: -7.0d
+			y: -3.5d
+			id: "3238E232BDD580C7"
+			tasks: [{
+				id: "202E1CC85A84E723"
+				type: "item"
+				item: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						"patchouli:book": "pneumaticcraft:book"
+					}
+				}
+				weak_nbt_match: true
+			}]
+		}
+		{
+			x: -7.0d
+			y: -2.0d
+			id: "0C6C8FEFF88C7BE1"
+			tasks: [{
+				id: "3425100CC2CD9D5D"
+				type: "item"
+				item: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						"patchouli:book": "thermal:guidebook"
+					}
+				}
+				weak_nbt_match: true
+			}]
+		}
+		{
+			x: -7.0d
+			y: -0.5d
+			id: "5A359926EC79DD54"
+			tasks: [{
+				id: "202DC0EB08F6E5FB"
+				type: "item"
+				item: "ftbquests:book"
+			}]
+		}
+		{
+			x: -7.0d
+			y: 1.0d
+			id: "46229CFC374EA234"
+			tasks: [{
+				id: "1F3FA72ADD3D7889"
+				type: "item"
+				item: "rftoolsbase:manual"
+			}]
+		}
+		{
+			x: -5.5d
+			y: 1.0d
+			id: "643072ADEF20E96D"
+			tasks: [{
+				id: "5D7BC2DACE758453"
+				type: "item"
+				item: "immersiveengineering:manual"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 1.0d
+			id: "53FDC12A46B14EAC"
+			tasks: [
+				{
+					id: "53E0BFFFF42715CB"
+					type: "item"
+					item: "tconstruct:materials_and_you"
+				}
+				{
+					id: "4332AF40E905792E"
+					type: "item"
+					item: "tconstruct:puny_smelting"
+				}
+				{
+					id: "5AB410EDD5B33DE1"
+					type: "item"
+					item: "tconstruct:mighty_smelting"
+				}
+				{
+					id: "478A9760F29B161B"
+					type: "item"
+					item: "tconstruct:tinkers_gadgetry"
+				}
+				{
+					id: "5C5518E1B7896EBD"
+					type: "item"
+					item: "tconstruct:fantastic_foundry"
+				}
+				{
+					id: "0C54771487775FCB"
+					type: "item"
+					item: "tconstruct:encyclopedia"
+				}
+			]
+		}
+		{
+			x: -2.5d
+			y: 1.0d
+			id: "7F26F54F62CA6681"
+			tasks: [{
+				id: "5E0DB9E92486EF82"
+				type: "item"
+				item: "powah:book"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -2.0d
+			id: "2683E20EB11AC226"
+			tasks: [{
+				id: "4FAA52E6BA2653DB"
+				type: "item"
+				item: {
+					id: "botania:lexicon"
+					Count: 1b
+					tag: {
+						"botania:elven_unlock": 1b
+					}
+				}
+			}]
+		}
+		{
+			x: -1.0d
+			y: -3.5d
+			id: "56802D0EB185B92D"
+			tasks: [{
+				id: "34962E1BBC9A3272"
+				type: "item"
+				item: "botania:lexicon"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -0.5d
+			id: "561B161ADDE56002"
+			tasks: [{
+				id: "576BBFD5778FFF0D"
+				type: "item"
+				item: "integrateddynamics:on_the_dynamics_of_integration"
+			}]
+		}
+		{
+			x: 6.0d
+			y: -1.5d
+			subtitle: "余りにも見つからないらしいので"
+			description: ["もっと探すか蜂を作るかの２択を迫ろうかなって"]
+			id: "5B070334C722FE28"
+			tasks: [{
+				id: "7032850A0B597EA0"
+				type: "item"
+				item: "thermal:basalz_rod"
+			}]
+			rewards: [{
+				id: "1A71564F11357783"
+				type: "item"
+				team_reward: true
+				item: "thermal:basalz_rod"
+				count: 3
+			}]
+		}
+		{
+			x: 7.5d
+			y: -1.5d
+			subtitle: "余りにも見つからないらしいんで"
+			description: ["もっと探すか蜂を作ってね"]
+			id: "2081829B0C39FF32"
+			tasks: [{
+				id: "7E16D36FBA6C9DDF"
+				type: "item"
+				item: "thermal:blizz_rod"
+			}]
+			rewards: [{
+				id: "2A349AF6CF0CC6FC"
+				type: "item"
+				team_reward: true
+				item: "thermal:blizz_rod"
+				count: 3
+			}]
+		}
+		{
+			x: 9.0d
+			y: -1.5d
+			subtitle: "余りにも見つか......ねえこのくだり何回目？"
+			description: ["蜂はすべてを解決するから蜂を真っ先に進めなさい"]
+			id: "5408AA0947989DD1"
+			tasks: [{
+				id: "0B40F43A0A9F5096"
+				type: "item"
+				item: "thermal:blitz_rod"
+			}]
+			rewards: [{
+				id: "5F2C3F36816D0BF4"
+				type: "item"
+				team_reward: true
+				item: "thermal:blitz_rod"
+				count: 3
+			}]
+		}
+	]
+	quest_links: [ ]
+}

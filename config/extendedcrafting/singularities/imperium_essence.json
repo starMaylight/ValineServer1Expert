@@ -1,0 +1,8 @@
+{
+    "name": "imperium essence",
+    "colors": ["0000cd", "0000ff"],
+    "ingredient": {
+        "item": "mysticalagriculture:imperium_essence"
+    },
+    "materialCount": 10000
+}

@@ -1,0 +1,9 @@
+{
+    "name": "High Voltage Module",
+    "colors": ["dda0dd", "f8f8ff"],
+    "ingredient": {
+          "item": "valine_s1ex:high_voltage_module"
+          
+    },
+    "materialCount": 1000
+}

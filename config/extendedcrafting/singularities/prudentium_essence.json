@@ -1,0 +1,8 @@
+{
+    "name": "prudentium essence",
+    "colors": ["2e8b57", "008000"],
+    "ingredient": {
+        "item": "mysticalagriculture:prudentium_essence"
+    },
+    "materialCount": 10000
+}

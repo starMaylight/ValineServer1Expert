@@ -1,0 +1,13 @@
+{
+    "name": "Emerald Capacitor",
+    "colors": ["20E36B", "7AE396"],
+    "ingredient": {
+        "type": "forge:nbt",
+          "item": "ironjetpacks:capacitor",
+          "nbt": {
+            "Id": "ironjetpacks:emerald"
+            }
+          
+    },
+    "materialCount": 500
+}

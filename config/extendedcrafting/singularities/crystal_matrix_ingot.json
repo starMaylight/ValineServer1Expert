@@ -1,0 +1,8 @@
+{
+    "name": "Crystal Matrix Ingot",
+    "colors": ["96D3D1", "FAFBFA"],
+    "ingredient": {
+        "item": "avaritia:crystal_matrix_ingot"
+    },
+    "materialCount": 1000
+}

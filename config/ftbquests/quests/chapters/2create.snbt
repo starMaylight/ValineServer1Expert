@@ -1,0 +1,567 @@
+{
+	id: "646F4C4FF1EB1E97"
+	group: "7ACDCF71AFEABB00"
+	order_index: 2
+	filename: "2create"
+	title: "2.Create"
+	icon: "create:wrench"
+	subtitle: [
+		"プロローグその2"
+		"「歯車は廻る。運命を乗せて。完全自動という甘美な響きとともに。」"
+		"「くるくると、くるくると。踊り子のように回り続ける。」"
+		"「私たちとは違って勤勉なようで。」"
+	]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			subtitle: "手で合金が作れるわけないよね"
+			description: ["手で混ざらないなら圧力をかければいいじゃない！"]
+			id: "578B82D4AEC87D44"
+			tasks: [{
+				id: "30C49367A1E4F968"
+				type: "item"
+				item: "create:andesite_alloy"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 1.5d
+			subtitle: "建材としても優秀"
+			description: ["冷静に考えて合金をぶつけるだけで出来るケーシングってなんだ"]
+			dependencies: ["578B82D4AEC87D44"]
+			id: "219104396F1F9BB0"
+			tasks: [{
+				id: "32192B004FE26A21"
+				type: "item"
+				item: "create:andesite_casing"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 0.0d
+			subtitle: "ネタがない、銅しよう"
+			description: ["もう銅にでもなーれ！"]
+			id: "59645AB856663F74"
+			tasks: [{
+				id: "2165DA9933FBB91E"
+				type: "item"
+				item: "create:copper_casing"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 0.0d
+			subtitle: "ロマンたっぷりの動力"
+			description: ["くるくる～くるくる～"]
+			dependencies: ["578B82D4AEC87D44"]
+			id: "16A192BD1E868B21"
+			tasks: [
+				{
+					id: "00332208B767F4F8"
+					type: "item"
+					item: "create:shaft"
+				}
+				{
+					id: "52C4D69E1127F8C2"
+					type: "item"
+					item: "create:cogwheel"
+				}
+				{
+					id: "1E3E1D0007D37458"
+					type: "item"
+					item: "create:large_cogwheel"
+				}
+			]
+		}
+		{
+			x: 3.0d
+			y: 0.0d
+			subtitle: "便利な道具"
+			description: ["必需品です。作るのを戸惑わないこと。"]
+			dependencies: ["16A192BD1E868B21"]
+			id: "6224BF05B2FC4DE4"
+			tasks: [
+				{
+					id: "11E64B3EC62693D5"
+					type: "item"
+					item: "create:wrench"
+				}
+				{
+					id: "4A6C10CA796C6A9D"
+					type: "item"
+					item: "create:goggles"
+				}
+			]
+		}
+		{
+			x: -1.5d
+			y: 3.0d
+			subtitle: "屈強なクラフターにはいらないかな？"
+			description: ["置くだけ放置で作れるって最高では？"]
+			dependencies: ["219104396F1F9BB0"]
+			id: "0282387BB6C691BE"
+			tasks: [{
+				id: "3DE2F481E587A7B0"
+				type: "item"
+				item: "create:mechanical_press"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 3.0d
+			subtitle: "合金も作れる優れもの"
+			description: ["無限安山岩合金編"]
+			dependencies: ["219104396F1F9BB0"]
+			id: "4DCC3DA2FA5C8DB1"
+			tasks: [{
+				id: "6F56EAAC97DA3300"
+				type: "item"
+				item: "create:mechanical_mixer"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 1.5d
+			subtitle: "粉々にしよう、メンタルとともに"
+			dependencies: ["219104396F1F9BB0"]
+			id: "35DF0E80F5EAC742"
+			tasks: [{
+				id: "2BAAA009A028FED0"
+				type: "item"
+				item: "create:millstone"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 1.5d
+			subtitle: "ハンマーで作れたって？"
+			description: ["ハンマーで作れるのは重要じゃない。重要なのは放置で稼働するということ。"]
+			dependencies: ["0282387BB6C691BE"]
+			id: "066F611CAAD4C156"
+			tasks: [
+				{
+					id: "34ED93CB9A15451E"
+					type: "item"
+					item: "create:iron_sheet"
+				}
+				{
+					id: "03EFDDC31D79ED31"
+					type: "item"
+					item: "create:golden_sheet"
+				}
+				{
+					id: "64A4C344935D511D"
+					type: "item"
+					item: "create:copper_sheet"
+				}
+			]
+		}
+		{
+			x: 4.5d
+			y: 0.0d
+			subtitle: "建築に便利だね！"
+			description: ["バグがなければ...&4使うなよ？"]
+			id: "70792A4635C6316A"
+			tasks: [
+				{
+					id: "7A99F9E1DA7381FA"
+					type: "item"
+					item: "create:schematicannon"
+				}
+				{
+					id: "78FBE7709916DE54"
+					type: "item"
+					item: "create:schematic_table"
+				}
+				{
+					id: "4B2C22BD06D88CDC"
+					type: "item"
+					item: "create:empty_schematic"
+				}
+			]
+		}
+		{
+			x: 4.5d
+			y: 1.5d
+			subtitle: "液体を無限にくみ上げる不思議なホース"
+			description: ["十分な範囲が液体ならば無限だぞ！"]
+			dependencies: ["59645AB856663F74"]
+			id: "4F873FC40C6E25AF"
+			tasks: [{
+				id: "3FD8EA070A22ED39"
+				type: "item"
+				item: "create:hose_pulley"
+			}]
+		}
+		{
+			x: 7.5d
+			y: 1.5d
+			subtitle: "液体を垂らすだけの機械"
+			description: ["色々注入するから登場機会は多め。"]
+			dependencies: ["59645AB856663F74"]
+			id: "09A16D98D6373E8D"
+			tasks: [{
+				id: "61591FFF6F2671D5"
+				type: "item"
+				item: "create:spout"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 1.5d
+			subtitle: "液体タンクとして使われることは少ない"
+			description: ["もっぱらエンジン用。だってIOが不十分だし……"]
+			dependencies: ["59645AB856663F74"]
+			id: "0D2A819DB354869F"
+			tasks: [{
+				id: "6114448469ECC709"
+				type: "item"
+				item: "create:fluid_tank"
+			}]
+		}
+		{
+			x: 7.5d
+			y: 3.0d
+			subtitle: "暖かくておいしいケーキ"
+			dependencies: ["09A16D98D6373E8D"]
+			id: "391512F49666273E"
+			tasks: [{
+				id: "1CA022F0A9D12C3A"
+				type: "item"
+				item: "create:blaze_cake"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 1.5d
+			subtitle: "囚われのブレイズ"
+			description: ["ママーッ！！！"]
+			id: "0ECB2C5969D2B5BA"
+			tasks: [{
+				id: "3ADCB79709415705"
+				type: "item"
+				item: "create:blaze_burner"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 3.0d
+			subtitle: "乾式製錬炉で作れたって？"
+			description: ["乾式製錬炉未だに現役なんだよねぇ"]
+			dependencies: [
+				"4DCC3DA2FA5C8DB1"
+				"0ECB2C5969D2B5BA"
+			]
+			id: "617AD97E0D07757F"
+			tasks: [{
+				id: "66EF1CACA21765B7"
+				type: "item"
+				item: "create:brass_ingot"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 4.5d
+			subtitle: "ここの担当者はただのケースにネタを書けるほど優秀ではない"
+			description: ["ただし担当者が変わればネタが勝手に生まれるとはこのサブタイの筆者は知らなかった模様。"]
+			dependencies: ["617AD97E0D07757F"]
+			id: "7F3112D2410A2589"
+			tasks: [{
+				id: "352287599EB75B70"
+				type: "item"
+				item: "create:brass_casing"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 6.0d
+			subtitle: "食べてないよ？"
+			description: ["ねぇ！赤石素材じゃないんだけど！"]
+			id: "7A88B6E2B787B289"
+			tasks: [{
+				id: "57D37EB3FFDEA9D2"
+				type: "item"
+				item: "create:electron_tube"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 4.5d
+			subtitle: "ロマンたっぷりのクラフト"
+			description: ["ロマンは大事。古事記にもそう書かれている。"]
+			dependencies: [
+				"7F3112D2410A2589"
+				"7A88B6E2B787B289"
+			]
+			id: "546733835174BDAB"
+			tasks: [{
+				id: "25F812BDB4944D45"
+				type: "item"
+				item: "create:mechanical_crafter"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 7.5d
+			subtitle: "どうやら歌が歌えるらしい...?"
+			description: ["歌ネタは多めですよ！"]
+			dependencies: ["7A88B6E2B787B289"]
+			id: "612397FEC0E7FF80"
+			tasks: [{
+				id: "1EF7EDEB0F1466D2"
+				type: "item"
+				item: "create:deployer"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 6.0d
+			subtitle: "確実に作れないのいやじゃない...?"
+			description: ["さらにいうなら大量に要求するのは犯罪じゃない......？"]
+			dependencies: ["612397FEC0E7FF80"]
+			id: "09EAE5A45E377433"
+			tasks: [{
+				id: "4230185DCBE34AFE"
+				type: "item"
+				item: "create:precision_mechanism"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 6.0d
+			subtitle: "レコードを搬入させるとｹﾞｰﾐﾝｸﾞになるのは有名だよね"
+			description: ["ゲーミングダンシングハンド君"]
+			dependencies: [
+				"7F3112D2410A2589"
+				"09EAE5A45E377433"
+			]
+			id: "7A328272A5FCB2E8"
+			tasks: [{
+				id: "35077927A9C73D8D"
+				type: "item"
+				item: "create:mechanical_arm"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 4.5d
+			subtitle: "とりあえず最速で"
+			description: ["速さが足りないんだよ！もっと早さを！"]
+			dependencies: [
+				"7F3112D2410A2589"
+				"09EAE5A45E377433"
+			]
+			id: "3D5E1EA513C47A62"
+			tasks: [{
+				id: "1B2EAEBB2D69F664"
+				type: "item"
+				item: "create:rotation_speed_controller"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 3.0d
+			subtitle: "桁違いの動力"
+			description: ["無限起動と悪魔付き"]
+			dependencies: [
+				"3D5E1EA513C47A62"
+				"0D2A819DB354869F"
+				"0ECB2C5969D2B5BA"
+			]
+			id: "2CA221AFBB8399C4"
+			tasks: [
+				{
+					id: "1BC7585CCE4B6452"
+					type: "item"
+					item: "create:steam_engine"
+					count: 4L
+				}
+				{
+					id: "6CE3355461517E55"
+					type: "item"
+					item: "create:blaze_burner"
+					count: 4L
+				}
+				{
+					id: "76AEA438067C9F65"
+					type: "item"
+					item: "create:fluid_tank"
+					count: 20L
+				}
+			]
+		}
+		{
+			x: 1.5d
+			y: 1.5d
+			subtitle: "基本的な動力"
+			description: ["大型はbanされました。"]
+			dependencies: ["16A192BD1E868B21"]
+			id: "2868243C62469B5B"
+			tasks: [{
+				id: "19F7FA06ADD43CF7"
+				type: "item"
+				item: "create:water_wheel"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 3.0d
+			subtitle: "労災には気を付けよう"
+			description: ["動き出すローラー。ひとり載せられるベルコン。迫る凶器。"]
+			dependencies: ["546733835174BDAB"]
+			id: "21AB662086E51176"
+			tasks: [{
+				id: "2EAC0F286C5EE76F"
+				type: "item"
+				item: "create:crushing_wheel"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 0.0d
+			subtitle: "帆が張ってなくてもいいらしいね"
+			description: ["でもこれ重いんだよね……"]
+			dependencies: ["578B82D4AEC87D44"]
+			id: "54BF861DA3F73431"
+			tasks: [
+				{
+					id: "77C572F3AE602CDC"
+					type: "item"
+					item: "create:windmill_bearing"
+				}
+				{
+					id: "0E95A5F07D87521F"
+					type: "item"
+					item: "create:white_sail"
+					count: 18L
+				}
+			]
+		}
+		{
+			x: -1.5d
+			y: 6.0d
+			subtitle: "なんでこいつでしかRawEmeraldが掘れないんだ"
+			description: ["無限に掘れるアドバンテージ"]
+			dependencies: ["546733835174BDAB"]
+			id: "206718DFCDF58313"
+			tasks: [{
+				id: "6DC801EFAD285E32"
+				type: "item"
+				item: "createoreexcavation:drilling_machine"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 6.0d
+			subtitle: "色々チャージしよう"
+			description: ["１０秒チャージ！"]
+			dependencies: ["546733835174BDAB"]
+			id: "1DAE3605F3129F57"
+			tasks: [{
+				id: "15B61A1AEA19FB6F"
+				type: "item"
+				item: "createaddition:tesla_coil"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 4.5d
+			subtitle: "電気を回転に"
+			description: ["なんだかんだ一番使ってる。"]
+			dependencies: ["546733835174BDAB"]
+			id: "6B54DBE5548DAC37"
+			tasks: [{
+				id: "588CD31B880A7936"
+				type: "item"
+				item: "createaddition:electric_motor"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 6.0d
+			subtitle: "回転を電気に"
+			description: [
+				"序盤から使うならこれだよね！"
+				"......え？普段使わないって？"
+			]
+			dependencies: ["546733835174BDAB"]
+			id: "3CA2B5B5E2309DAA"
+			tasks: [{
+				id: "53AE5F20D11E7D25"
+				type: "item"
+				item: "createaddition:alternator"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 7.5d
+			subtitle: "あっダイヤは使わないよ"
+			description: ["※ダイヤが仲間はずれなだけです。"]
+			dependencies: ["206718DFCDF58313"]
+			id: "1EE3A5AED8C3F5ED"
+			tasks: [
+				{
+					id: "3D57BAC4588FCBB7"
+					type: "item"
+					item: "createoreexcavation:raw_diamond"
+				}
+				{
+					id: "6584B1A34BD06431"
+					type: "item"
+					item: "createoreexcavation:raw_emerald"
+				}
+				{
+					id: "1D05756BC0975093"
+					type: "item"
+					item: "createoreexcavation:raw_redstone"
+				}
+			]
+		}
+		{
+			x: 6.0d
+			y: 3.0d
+			subtitle: "ただの経験値"
+			description: ["バニラだと地味に面倒だよね"]
+			id: "60C663A247150A07"
+			tasks: [{
+				id: "19883CDFCD74FA04"
+				type: "item"
+				item: "minecraft:experience_bottle"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 4.5d
+			subtitle: "ハイパーな経験値"
+			description: ["こんなもんをケーシングに要求するな"]
+			dependencies: [
+				"60C663A247150A07"
+				"391512F49666273E"
+				"0ECB2C5969D2B5BA"
+			]
+			id: "56BB5AB5AF23682F"
+			tasks: [{
+				id: "1D079415DF828F48"
+				type: "item"
+				item: "create_enchantment_industry:hyper_experience_bottle"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 3.0d
+			subtitle: "引き延ばせ"
+			description: ["圧延だから違うって？ｷﾆｽﾝﾅ"]
+			dependencies: ["219104396F1F9BB0"]
+			id: "7585924443011CF7"
+			tasks: [{
+				id: "53A76824F78BB14E"
+				type: "item"
+				item: "createaddition:rolling_mill"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

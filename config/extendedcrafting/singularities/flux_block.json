@@ -1,0 +1,8 @@
+{
+    "name": "Flux Block",
+    "colors": ["000000", "000000"],
+    "ingredient": {
+        "item": "fluxnetworks:flux_block"
+    },
+    "materialCount": 1000
+}

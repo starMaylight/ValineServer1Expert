@@ -1,0 +1,271 @@
+{
+	id: "247683482BEEC0E7"
+	group: ""
+	order_index: 0
+	filename: "247683482BEEC0E7"
+	title: "クレジット"
+	subtitle: [
+		"「遍く奇跡の始発点」"
+		"こわれたら、なおす"
+		"なおせないなら、つくりなおす"
+		"それがまちがいだってかまわない"
+		"まちがいのないじんせいなんてつまらないでしょ？"
+		"ここは、あらたなせかいへのとびら。"
+		"あなたにふりかかったわざわいは、あなたのちからへとかわった。"
+		"そのちからをどうつかうか。それはあなたしだい。"
+		""
+		"あなたのあたらしいせかいへのかけはしとなれることを"
+		"わたしはねがいつづける。"
+	]
+	default_quest_shape: ""
+	default_hide_dependency_lines: true
+	quests: [
+		{
+			x: 1.5d
+			y: -2.5d
+			subtitle: "制作者一同より感謝を。"
+			description: [
+				"V1EX攻略おめでとうございます。長いクエストを終えた今、あなたは何をしますか？"
+				"クリエと同等になった世界で遊び倒すもよし。愉しかったと満足してそのまま閉じるもよし。まだ遊び足りないと再度遊ぶもよし。"
+				"このmodpackで培ったmodの仕様/自動化構築等の能力は他modpackでも部分的に生かすことができます。その知識を応用するも見なかったことにするもあなた次第です。"
+				"貴方のmodpackライフに祝福あれ！"
+				""
+				"V1EX制作チーム最終責任者 starMaylight@Lace"
+			]
+			dependencies: ["0FFC9165F8A8B396"]
+			hide: true
+			id: "06B263F5996B34D1"
+			tasks: [{
+				id: "44634E9CAF9D0825"
+				type: "checkmark"
+				title: "Thank you for playing!!!"
+			}]
+		}
+		{
+			title: "チームメンバー+special thanks"
+			x: 1.5d
+			y: -1.0d
+			subtitle: "沢山の方々に支えられてこのmodpackはできました。"
+			description: [
+				"右側がレシピ/テクスチャ関連。"
+				"左がクエスト関連"
+				"下が同梱jarの制作者+α"
+				"となっています。"
+				"上？......"
+			]
+			dependencies: ["06B263F5996B34D1"]
+			hide: true
+			id: "3FDF9AE39BD42BFE"
+			tasks: [{
+				id: "45D61B02F8287CBD"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "takoito5151"
+			x: 3.5d
+			y: -1.5d
+			subtitle: "マグロの人"
+			description: ["マグロ関連を製作した人。例のEternalを作成した張本人でもある。テクスチャも割と自力で用意してくる人。ただeternal関連のレシピが届いたのがファイル提出してから２か月後だったのはまだ許してない。"]
+			dependencies: ["3FDF9AE39BD42BFE"]
+			id: "6F6E7C5D57CE91B5"
+			tasks: [{
+				id: "1D91E83484C9B1D3"
+				type: "checkmark"
+				title: "確認後にクリック"
+			}]
+		}
+		{
+			title: "ocho08310141"
+			x: 3.5d
+			y: -0.5d
+			subtitle: "濃縮マターの人"
+			description: [
+				"濃縮マター作った人。液体インフィニティ作ったので許した。ただプレイヤーのヘイトは高そう。なお、クエストも作ってくれたはずなんだけど提出ファイル間違えてるんだよね。だから入ってない。"
+				"なお、のちの会話にてバンバン使うようなアイテムではなく、singurarityみたいにポン置きで使う素材と判明した模様。つまりだいたいlaceが悪い。"
+			]
+			dependencies: ["3FDF9AE39BD42BFE"]
+			id: "122C89333CD8C3E0"
+			tasks: [{
+				id: "055AF911CA36E1BB"
+				type: "checkmark"
+				title: "確認後にクリック"
+			}]
+		}
+		{
+			title: "salt-A"
+			x: 3.5d
+			y: -2.5d
+			subtitle: "テクスチャ全般"
+			description: ["3割くらいのテクスチャを書いた人。重要だったり過去アイテムのテクスチャだったりを色々書いていただきました。多分この人がいなければもっと味気ないテクスチャになってた。"]
+			dependencies: ["3FDF9AE39BD42BFE"]
+			id: "00FA2EE30A95D69E"
+			tasks: [{
+				id: "3A75549006849136"
+				type: "checkmark"
+				title: "確認後にクリック"
+			}]
+		}
+		{
+			title: "yuhhamu"
+			x: -0.5d
+			y: -1.5d
+			subtitle: "そろそろ爆破されそう。"
+			description: [
+				"クエストを手伝ってくれた人。無茶苦茶複雑で面倒なラインたちを全部整理して書いてくれました。大感謝。ただこの人の相棒を弄ってヤバいことにしてしまったので多分この後私は爆殺されます。"
+				"白の爆弾魔さん。"
+			]
+			dependencies: ["3FDF9AE39BD42BFE"]
+			id: "7AFF5656C5C71795"
+			tasks: [{
+				id: "6C2FEFD8D7C78806"
+				type: "checkmark"
+				title: "確認後にクリック"
+			}]
+		}
+		{
+			title: "_limiter"
+			x: -0.5d
+			y: -0.5d
+			subtitle: "良心"
+			description: ["クエストを作ってくれた人。面倒なつくりをしている場所を率先してクエストを作っていただいたため大感謝祭中。デバックもついでにされたんでありがてぇや"]
+			dependencies: ["3FDF9AE39BD42BFE"]
+			id: "658D1DC4F9348256"
+			tasks: [{
+				id: "613B8DB75A2CB2C5"
+				type: "checkmark"
+				title: "確認後にクリック"
+			}]
+		}
+		{
+			title: "kurohaku04"
+			x: -0.5d
+			y: 0.5d
+			subtitle: "RSの人"
+			description: ["RSのクエストを作ってくれた人。作ってくれたはいいが何故か提出されてなくて自分が途中まで作ったら出てきた。わーん"]
+			dependencies: ["3FDF9AE39BD42BFE"]
+			id: "75207F45B600D535"
+			tasks: [{
+				id: "01D4CC587B547D4B"
+				type: "checkmark"
+				title: "確認後にクリック"
+			}]
+		}
+		{
+			title: "hardsmoothy_mc"
+			x: -0.5d
+			y: -2.5d
+			subtitle: "進捗の人"
+			description: ["進捗クエストを作ってくださった人。最初はガチャ実装しようとしてたけどこちらからストップをかけてしまった。申し訳ねぇ。ところで次のステップの進捗は実装しないんです？（多分これ書き終わった後に実装される。）"]
+			dependencies: ["3FDF9AE39BD42BFE"]
+			id: "3BF6E44345299F25"
+			tasks: [{
+				id: "29E7FCACE548D22A"
+				type: "checkmark"
+				title: "確認後にクリック"
+			}]
+		}
+		{
+			title: "Lapis"
+			x: 0.5d
+			y: 0.5d
+			subtitle: "modder+IDsの人。"
+			description: [
+				"Enchantable BotanyPots、MekanismMoreCapacity、FluxIntegrations、TorcherinoCompat等を手掛けたmodderであり、技術面での貢献度が一番ヤバい人。"
+				"青の技術者。"
+			]
+			dependencies: ["3FDF9AE39BD42BFE"]
+			id: "52CE658EDF8CE7E0"
+			tasks: [{
+				id: "65F44E6032692B04"
+				type: "checkmark"
+				title: "確認後にクリック"
+			}]
+		}
+		{
+			title: "FixedDolphin927"
+			x: 1.5d
+			y: 0.5d
+			subtitle: "Radioactiveの人"
+			description: [
+				"MekanismRadioactiveの人。核分裂関連が楽になる素晴らしい調整をありがとう。"
+				"地味に分裂炉関係はjsonファイルでの改変ではないので容易に改変できない領域である。"
+			]
+			dependencies: ["3FDF9AE39BD42BFE"]
+			id: "2BD6CD93BE490D65"
+			tasks: [{
+				id: "1ACDDA10F705AD2D"
+				type: "checkmark"
+				title: "確認後にクリック"
+			}]
+		}
+		{
+			title: "yukku"
+			x: 2.5d
+			y: 0.5d
+			description: [
+				"Mekanism-AdditionalElementの人。冷媒だったり、EX前の元レシピを作成してた人。だいたいなんでもできるしなんでも組める。あとバリン鯖ではマイクラ鯖主としての地位を確立しているというかそれがメイン"
+				"緑の大樹。"
+			]
+			dependencies: ["3FDF9AE39BD42BFE"]
+			id: "546AA79169976A68"
+			tasks: [{
+				id: "0C367CC4DB6B87CC"
+				type: "checkmark"
+				title: "確認後にクリック"
+			}]
+		}
+		{
+			title: "kouyou0845"
+			x: 3.5d
+			y: 0.5d
+			subtitle: "Max_Mekanismの人"
+			description: [
+				"Max_Mekanismの人。内部容量があほになってる原因。どこまでも蓄えてどこまでも消費する。"
+				"インフレの原因ではあるがSPS等の爆速化には必須なのでそれだけでもありがたい。というかこれが無ければ反物質を雑に中間素材にできない。速度が遅すぎるんだ。"
+			]
+			dependencies: ["3FDF9AE39BD42BFE"]
+			id: "758A62FDEC3DF5B2"
+			tasks: [{
+				id: "2AA71F7C562C39B9"
+				type: "checkmark"
+				title: "確認後にクリック"
+			}]
+		}
+		{
+			title: "starMaylight@Lace"
+			x: 1.5d
+			y: -3.5d
+			subtitle: "だいたいのレシピ改変の元凶"
+			description: [
+				"ここのクエストを書いてる人間。レシピ改変、クエスト修正、テクスチャ作成。だいたいなんでもやった何でも屋。なんかほとんどレシピを一人で改変した挙句にクエストまで出張ってるのなんなんだこいつ。たぶん自分がbotany potの鉱石確保難化レシピをぶん投げてから始まったということはわかる。だけどどうして数か月の間黙々とレシピ制作をつづける羽目になったのか、これが分からない。最初にやんややんや言ってた人はなんもしてないし自分はいつの間にか総責任者っぽい立ち位置になってるしどうしてなんでしょうね。"
+				"最後の花は自分の趣味。サンカヨウ。"
+			]
+			dependencies: ["3FDF9AE39BD42BFE"]
+			id: "4BD9DB7C87DA71A8"
+			tasks: [{
+				id: "700A0D4CC61AA293"
+				type: "checkmark"
+				title: "確認後にクリック"
+			}]
+		}
+		{
+			title: "valine3g"
+			x: 1.5d
+			y: -5.0d
+			subtitle: "蠱毒の主"
+			description: [
+				"このmodpackの元となった構成を構築してた実況者。桁違いなんてつけたら大量にやべーやつらが集まってしまって四苦八苦している人。ディスコードサーバーで暴れる民を抑えらえる人。"
+				"魔法少女にされた人。"
+			]
+			dependencies: ["3FDF9AE39BD42BFE"]
+			id: "0CC0C31E699E2CD0"
+			tasks: [{
+				id: "16DA1BCEF134A09A"
+				type: "checkmark"
+				title: "確認後にクリック"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

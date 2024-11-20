@@ -1,0 +1,705 @@
+{
+	id: "22F68532DAF88D63"
+	group: "76C8668A0FE5C01C"
+	order_index: 5
+	filename: "3applieden_ergistics_2"
+	title: "6.Applieden Ergistics 2"
+	icon: "ae2:controller"
+	subtitle: [
+		"これが無いと生きていけない"
+		""
+		""
+		"大樹は根を張る。人々とのつながりを求めて。一人の弱さを知っているから。"
+		"大樹は揺るがない。どんなに強大な相手だろうと揺るがぬ基礎で迎え撃つ。"
+		"基盤さえ残っていれば何度でも立ち上がる。そう信じているからこそ、最終手段を温存し立ち続ける。"
+		"リミットは近い。"
+	]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -3.0d
+			y: 0.0d
+			subtitle: "隕石はどこへ...?"
+			description: ["immersiveの説明書を片っ端から探そうねぇ"]
+			dependencies: ["65FE23D234AC3061"]
+			id: "199AA6E23C7F6C54"
+			tasks: [{
+				id: "370E53F56EAF2F52"
+				type: "item"
+				item: "ae2:sky_stone_block"
+			}]
+		}
+		{
+			title: "各種金型"
+			x: -1.5d
+			y: 1.5d
+			subtitle: "隕石がないってことはそういうこと"
+			description: ["貴方は農家です。"]
+			id: "161C45BDD2AA73F0"
+			tasks: [
+				{
+					id: "6876CF4A2EA1C504"
+					type: "item"
+					item: "ae2:calculation_processor_press"
+				}
+				{
+					id: "7457868E650E9A7D"
+					type: "item"
+					item: "ae2:engineering_processor_press"
+				}
+				{
+					id: "50C0E394FC2A3749"
+					type: "item"
+					item: "ae2:logic_processor_press"
+				}
+				{
+					id: "3C4383E62EBA8A1C"
+					type: "item"
+					item: "ae2:silicon_press"
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: -1.5d
+			subtitle: "加速しても遅い...!"
+			description: ["ほならば大量設置しましょうねぇ"]
+			dependencies: ["1F66FF1FC63C8662"]
+			id: "052355DC34163496"
+			tasks: [{
+				id: "6D2E6BC208BC98C2"
+				type: "item"
+				item: "ae2:inscriber"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 1.5d
+			subtitle: "ﾃｽﾗｺｲﾙに仕事を奪われて中間素材に..."
+			description: ["すまん、君には価値がほぼ無いんだ。"]
+			id: "581F5C0A44A0AE75"
+			tasks: [{
+				id: "096F367D5EAEE9B3"
+				type: "item"
+				item: "ae2:charger"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 1.5d
+			subtitle: "ﾃｽﾗｺｲﾙのが優秀！"
+			description: ["チャージオン！"]
+			dependencies: ["1DAE3605F3129F57"]
+			id: "0055B7A59D44B65B"
+			tasks: [{
+				id: "1D235E1290ECC576"
+				type: "item"
+				item: "ae2:charged_certus_quartz_crystal"
+			}]
+		}
+		{
+			icon: { id: "ae2:fluix_dust", Count: 2b }
+			x: 3.0d
+			y: 3.0d
+			subtitle: "あれ、粉だったっけ"
+			description: [
+				"いつの間にか粉生成になっちゃった子"
+				"砂さえあれば無限に増えてしまう"
+			]
+			dependencies: ["0055B7A59D44B65B"]
+			id: "29EFCD0738C15B85"
+			tasks: [
+				{
+					id: "32EB7B29FCE6939A"
+					type: "item"
+					item: { id: "ae2:fluix_dust", Count: 2b }
+					count: 2L
+				}
+				{
+					id: "2E6FEC28FB3EEB7E"
+					type: "item"
+					disable_toast: true
+					item: "ae2:charged_certus_quartz_crystal"
+				}
+				{
+					id: "132FDF6B10C93B6C"
+					type: "item"
+					disable_toast: true
+					item: "minecraft:quartz"
+				}
+				{
+					id: "2185D1C02B229B17"
+					type: "item"
+					disable_toast: true
+					item: "minecraft:redstone"
+				}
+			]
+		}
+		{
+			x: 3.0d
+			y: 4.5d
+			subtitle: "種をまこう"
+			description: ["なお加速させられる模様"]
+			dependencies: ["29EFCD0738C15B85"]
+			id: "0878190E1E2A0614"
+			tasks: [{
+				id: "0C3D9F361FF71399"
+				type: "item"
+				item: "ae2:fluix_crystal_seed"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 6.0d
+			subtitle: "無限増殖機構を組もう"
+			description: ["いろんな場所で要求されるし最初から無限機構を作るのが吉。砂さえあれば勝手に増やせるんですよこいつ"]
+			dependencies: ["0878190E1E2A0614"]
+			id: "48747D3F4FC31225"
+			tasks: [{
+				id: "650958DA6C129C22"
+				type: "item"
+				item: "ae2:fluix_crystal"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 0.0d
+			subtitle: "いつもの基盤"
+			description: ["大量に作らねば"]
+			dependencies: [
+				"161C45BDD2AA73F0"
+				"052355DC34163496"
+			]
+			id: "3CC852D53621DD92"
+			tasks: [
+				{
+					id: "50ECD272352F2BA8"
+					type: "item"
+					item: "ae2:logic_processor"
+				}
+				{
+					id: "7F8549341FA0CD26"
+					type: "item"
+					item: "ae2:calculation_processor"
+				}
+				{
+					id: "18B668BB156FEDD6"
+					type: "item"
+					item: "ae2:engineering_processor"
+				}
+			]
+		}
+		{
+			x: 1.5d
+			y: 0.0d
+			subtitle: "これ大量にいるんだけど..."
+			description: [
+				"赤石よりもPCBのほうが面倒"
+				"PCB＝4、RA＝576、LP＝1、計581"
+			]
+			dependencies: [
+				"3CC852D53621DD92"
+				"0055B7A59D44B65B"
+				"5BD3723CA4869DA0"
+				"6003E86BFC1BDB0E"
+				"5DFEACE93117E055"
+				"2613052CCC3C0747"
+			]
+			id: "7522981049D9035E"
+			tasks: [{
+				id: "1DCB63F4380100A8"
+				type: "item"
+				item: "ae2:cell_component_1k"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 0.0d
+			description: ["2320"]
+			dependencies: ["7522981049D9035E"]
+			id: "205E80A9C2C2062E"
+			tasks: [{
+				id: "07A388D95E201038"
+				type: "item"
+				item: "ae2:cell_component_4k"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 0.0d
+			description: ["23118"]
+			dependencies: ["56D1FAD1CDE410FA"]
+			id: "0BC43D2FA96C7952"
+			tasks: [{
+				id: "292F683564C309AC"
+				type: "item"
+				item: "ae2:cell_component_64k"
+			}]
+		}
+		{
+			x: 7.5d
+			y: 0.0d
+			description: ["70141"]
+			dependencies: ["0BC43D2FA96C7952"]
+			id: "68A114EA78151F55"
+			tasks: [{
+				id: "336FACA97DDB6A6B"
+				type: "item"
+				item: "ae2:cell_component_256k"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 0.0d
+			description: ["7537"]
+			dependencies: ["205E80A9C2C2062E"]
+			id: "56D1FAD1CDE410FA"
+			tasks: [{
+				id: "7B3778C73B70A79C"
+				type: "item"
+				item: "ae2:cell_component_16k"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -1.5d
+			dependencies: ["449D582C9D5DB0B5"]
+			id: "2613052CCC3C0747"
+			tasks: [{
+				id: "47D80DE4A3F7B173"
+				type: "item"
+				item: {
+					id: "immersiveengineering:blueprint"
+					Count: 1b
+					tag: {
+						blueprint: "miscs"
+					}
+				}
+			}]
+		}
+		{
+			x: -1.5d
+			y: 0.0d
+			subtitle: "心臓を捧げよ"
+			description: ["迫真のレシピ無改変"]
+			dependencies: [
+				"3CC852D53621DD92"
+				"199AA6E23C7F6C54"
+			]
+			id: "560FC10280098E90"
+			tasks: [{
+				id: "0D4D9DF280B62F64"
+				type: "item"
+				item: "ae2:controller"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -1.5d
+			subtitle: "driver"
+			description: ["HDD?SSD?まぁいいや筐体で。"]
+			dependencies: ["3CC852D53621DD92"]
+			id: "72A176AB1383D305"
+			tasks: [{
+				id: "609BD1DCFFC41B29"
+				type: "item"
+				item: "ae2:drive"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 4.5d
+			subtitle: "特異点？"
+			description: ["発作を起こすのはまだ早い"]
+			dependencies: ["0316D809522DA241"]
+			id: "6476611B3AAFE781"
+			tasks: [{
+				id: "755E284ED065CFBB"
+				type: "item"
+				item: "ae2:singularity"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 6.0d
+			subtitle: "垂れ流し"
+			description: ["水道直通で垂れ流しされる彼の身にもなってあげろ"]
+			hide_dependency_lines: true
+			dependencies: ["29EFCD0738C15B85"]
+			id: "0316D809522DA241"
+			tasks: [{
+				id: "64584D4DDC3C92B0"
+				type: "item"
+				item: "ae2:condenser"
+			}]
+		}
+		{
+			icon: { id: "lazierae2:resonating_dust", Count: 2b }
+			x: 4.5d
+			y: 3.0d
+			subtitle: "中間素材"
+			description: ["それこそ大量に必須"]
+			hide_dependency_lines: true
+			dependencies: ["199AA6E23C7F6C54"]
+			id: "094DDBB4392B7CB1"
+			tasks: [
+				{
+					id: "0C095DA50CE94447"
+					type: "item"
+					item: "lazierae2:resonating_dust"
+					count: 2L
+				}
+				{
+					id: "02E94D5232129030"
+					type: "item"
+					disable_toast: true
+					item: "ae2:ender_dust"
+				}
+				{
+					id: "0247DA848B512ED8"
+					type: "item"
+					disable_toast: true
+					item: "minecraft:diamond"
+				}
+				{
+					id: "3F7B6C9D8E9B9745"
+					type: "item"
+					disable_toast: true
+					item: "ae2:sky_dust"
+				}
+			]
+		}
+		{
+			x: 4.5d
+			y: 4.5d
+			subtitle: "種をまｋうわなんだやめ"
+			description: ["非効率"]
+			dependencies: ["094DDBB4392B7CB1"]
+			id: "31C830BDC514CAA2"
+			tasks: [{
+				id: "3E78326C01F06687"
+				type: "item"
+				item: "lazierae2:resonating_seed"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 6.0d
+			subtitle: "無限増殖機構を組もう2"
+			description: ["以下略"]
+			dependencies: ["31C830BDC514CAA2"]
+			id: "6D60295A2B540951"
+			tasks: [{
+				id: "7D3AF2720FE7ED82"
+				type: "item"
+				item: "lazierae2:resonating_crystal"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 6.0d
+			subtitle: "酷使予定"
+			description: ["HNNで酷使するんだよね。ところでこのレシピ見覚えあるんだけど......"]
+			dependencies: ["0316D809522DA241"]
+			id: "3166B966448BBA3D"
+			tasks: [{
+				id: "03378702063C64B3"
+				type: "item"
+				item: "lazierae2:infuser"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 4.5d
+			subtitle: "思ったより使う"
+			description: ["結構作っておこう"]
+			dependencies: ["3166B966448BBA3D"]
+			id: "7C1F54151800F812"
+			tasks: [{
+				id: "14C0070D904B0E63"
+				type: "item"
+				item: "lazierae2:fluix_steel_ingot"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 6.0d
+			subtitle: "これ使う？"
+			description: ["いやAE単体なら普通に必須なんだろうけどこのmod連携ほぼ前提じゃん……"]
+			dependencies: ["7C1F54151800F812"]
+			id: "34EF1CDCD22361BB"
+			tasks: [{
+				id: "335E0A6648D3905F"
+				type: "item"
+				item: "lazierae2:grinder"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 4.5d
+			subtitle: "アイテムをリクエスト"
+			description: ["事前に作っておいてくれるいいやつ。"]
+			dependencies: ["7C1F54151800F812"]
+			id: "612C9F8CA99784F6"
+			tasks: [{
+				id: "0140841E303A6300"
+				type: "item"
+				item: "lazierae2:requester"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 3.0d
+			subtitle: "チャージよりかは中間素材製造機"
+			description: [
+				"地味にクリスタル量産できるの強いんだよね"
+				"というか君増殖できないレゾナント君増殖できるから必須だよね？"
+			]
+			dependencies: [
+				"7C1F54151800F812"
+				"581F5C0A44A0AE75"
+			]
+			id: "78CD447D512809CC"
+			tasks: [{
+				id: "6B9D65B5B647E8EB"
+				type: "item"
+				item: "lazierae2:aggregator"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 3.0d
+			subtitle: "回路を１つで"
+			description: ["雑に置き、雑に使い、大量に作る。"]
+			dependencies: [
+				"7C1F54151800F812"
+				"1B3C855560FAD900"
+			]
+			id: "3DA3592E45240D56"
+			tasks: [{
+				id: "568503F7068E8D51"
+				type: "item"
+				item: "lazierae2:etcher"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 3.0d
+			subtitle: "万能な金型"
+			description: ["All in one"]
+			dependencies: ["161C45BDD2AA73F0"]
+			id: "1B3C855560FAD900"
+			tasks: [{
+				id: "3B2A266B5F0C372C"
+				type: "item"
+				item: "lazierae2:universal_press"
+			}]
+		}
+		{
+			x: 9.0d
+			y: 1.5d
+			description: ["211000"]
+			dependencies: [
+				"68A114EA78151F55"
+				"49917916951BBBB2"
+				"6003E86BFC1BDB0E"
+			]
+			id: "077918AC2D8F9F81"
+			tasks: [{
+				id: "6F6A15CDCA03AA80"
+				type: "item"
+				item: "megacells:cell_component_1m"
+			}]
+		}
+		{
+			x: 7.5d
+			y: 1.5d
+			description: ["633577"]
+			dependencies: ["077918AC2D8F9F81"]
+			id: "7E0DEED438E57C03"
+			tasks: [{
+				id: "09367E176707EBE3"
+				type: "item"
+				item: "megacells:cell_component_4m"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 1.5d
+			description: ["1901308"]
+			dependencies: ["7E0DEED438E57C03"]
+			id: "7523FA15D8F355F0"
+			tasks: [{
+				id: "40950BDC8ACB6340"
+				type: "item"
+				item: "megacells:cell_component_16m"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 1.5d
+			description: ["5704501"]
+			dependencies: ["7523FA15D8F355F0"]
+			id: "5A9DCAF5B32C411D"
+			tasks: [{
+				id: "138F9D20931DDD29"
+				type: "item"
+				item: "megacells:cell_component_64m"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 1.5d
+			subtitle: "100万個以上のRedalloyを使った豪華な一品"
+			description: [
+				"17114080"
+				"ﾄﾞｩﾜｧ!ｾﾝﾅﾅﾋｬｸ!!"
+			]
+			dependencies: ["5A9DCAF5B32C411D"]
+			id: "190F4742A4ECD2EE"
+			tasks: [{
+				id: "223F37D759243587"
+				type: "item"
+				item: "megacells:cell_component_256m"
+			}]
+		}
+		{
+			x: 9.0d
+			y: 0.0d
+			subtitle: "作っちゃった♡"
+			description: ["MEGA用"]
+			dependencies: [
+				"68A114EA78151F55"
+				"6003E86BFC1BDB0E"
+			]
+			id: "49917916951BBBB2"
+			tasks: [{
+				id: "3109F202DF3D80B1"
+				type: "item"
+				item: {
+					id: "immersiveengineering:blueprint"
+					Count: 1b
+					tag: {
+						blueprint: "cell"
+					}
+				}
+			}]
+		}
+		{
+			x: 1.5d
+			y: 3.0d
+			subtitle: "もっと遠くで倉庫を"
+			description: ["やまびこの様に遠くまで"]
+			dependencies: ["29EFCD0738C15B85"]
+			id: "7462F27AD98206DC"
+			tasks: [{
+				id: "781A1D5377B24712"
+				type: "item"
+				item: "ae2:wireless_booster"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 4.5d
+			subtitle: "もっともっと遠くで倉庫を"
+			description: ["無限長ソレノイドの磁束密度の求め方をしっているか？私は忘れた。"]
+			dependencies: ["7462F27AD98206DC"]
+			id: "369FE7367918BA3F"
+			tasks: [{
+				id: "4C1435C1255EE766"
+				type: "item"
+				item: "aeinfinitybooster:infinity_card"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 6.0d
+			subtitle: "次元が違っても同じ倉庫を"
+			description: ["1.12.2にはノーコストでこれをやりやがる化け物が存在するってマジ？"]
+			dependencies: ["369FE7367918BA3F"]
+			id: "466C50FC07B5B3F6"
+			tasks: [{
+				id: "4008825909B642DE"
+				type: "item"
+				item: "aeinfinitybooster:dimension_card"
+			}]
+		}
+		{
+			title: "もっとも簡単な保護貫通手段"
+			x: 3.0d
+			y: -1.5d
+			subtitle: "PvPが今後開催されないらしいので公開していいよね"
+			description: ["バビューン"]
+			dependencies: ["205E80A9C2C2062E"]
+			hide: true
+			optional: true
+			id: "3CEE24B00A2EC567"
+			tasks: [{
+				id: "138D12864CF77687"
+				type: "item"
+				item: {
+					id: "ae2:matter_cannon"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "P2P"
+			x: -3.0d
+			y: 1.5d
+			subtitle: "使えると便利"
+			description: ["使い方をよく理解してから触ること。"]
+			hide_dependency_lines: true
+			dependencies: ["48747D3F4FC31225"]
+			id: "32DD2BFB4374FA37"
+			tasks: [
+				{
+					id: "68BECA44F07A48B0"
+					type: "item"
+					item: "ae2:me_p2p_tunnel"
+					count: 2L
+				}
+				{
+					id: "018147F1B6A1945B"
+					type: "item"
+					item: {
+						id: "ae2:memory_card"
+						Count: 1b
+						tag: { }
+					}
+				}
+			]
+		}
+		{
+			title: "自動クラフト一式"
+			x: -3.0d
+			y: -1.5d
+			subtitle: "一家に１００台"
+			description: ["１００じゃ足りないかも……"]
+			dependencies: ["560FC10280098E90"]
+			id: "43D3004878E49DED"
+			tasks: [
+				{
+					id: "05108606C995750B"
+					type: "item"
+					item: "ae2:pattern_provider"
+				}
+				{
+					id: "05D1CC46085A418E"
+					type: "item"
+					item: "ae2:molecular_assembler"
+					count: 6L
+				}
+				{
+					id: "104963CA2E46D772"
+					type: "item"
+					item: "ae2:speed_card"
+					count: 30L
+				}
+			]
+		}
+	]
+	quest_links: [ ]
+}

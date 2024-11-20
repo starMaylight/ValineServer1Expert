@@ -1,0 +1,9 @@
+{
+    "name": "Draconic Integral Component",
+    "colors": ["00008b", "000080"],
+    "ingredient": {
+          "item": "thermal_extra:upgrade_augment"
+          
+    },
+    "materialCount": 1000
+}

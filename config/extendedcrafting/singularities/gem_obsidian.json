@@ -1,0 +1,8 @@
+{
+    "name": "Crystallized Obsidian",
+    "colors": ["4b0082", "800080"],
+    "ingredient": {
+        "item": "cyclic:gem_obsidian"
+    },
+    "materialCount": 1000
+}

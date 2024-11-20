@@ -1,0 +1,9 @@
+{
+    "name": "Logic Chip",
+    "colors": ["ff0000", "ffffff"],
+    "ingredient": {
+          "item": "laserio:logic_chip"
+          
+    },
+    "materialCount": 10000
+}

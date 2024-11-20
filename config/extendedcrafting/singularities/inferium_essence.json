@@ -1,0 +1,11 @@
+{
+    "name": "Inferium Essence",
+    "colors": ["38b48b", "38b48b"],
+    "ingredient": {
+        "item": "mysticalagriculture:inferium_essence"
+    },
+    "catalyst": {
+      "item": "mysticalagriculture:inferium_block"
+    },
+    "materialCount": 10000
+}

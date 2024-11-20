@@ -1,0 +1,457 @@
+{
+	id: "66083440026A5AA9"
+	group: "43BAF829B74123A2"
+	order_index: 3
+	filename: "2draconicevolution"
+	title: "3.DraconicEvolution"
+	icon: "draconicevolution:dragon_heart"
+	subtitle: [
+		"龍は吠える。孤独の地で。全てを吹き飛ばしてしまうがために。"
+		"心臓を捧げよ。魂を捧げよ。これまでの力を集約し、最強に挑め。"
+		"資源が足りないとは言わせない。手数が足りないとは言わせない。裏技も使わせない。"
+		"龍の力を求めるならば、龍の力をまとうべきである。"
+		"全ての力とは、自分自身の力だけではない。相手の力も考慮すべきである。"
+		"自身の手による混沌の龍の討伐だけが、龍狩りの証明。"
+	]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -1.5d
+			y: 0.0d
+			subtitle: "誘導加熱炉壊れる"
+			description: ["核爆縮"]
+			id: "6A011A3551ADD563"
+			tasks: [{
+				id: "025C298BF5CFF645"
+				type: "item"
+				item: "draconicevolution:draconium_ingot"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 2.0d
+			subtitle: "簡単"
+			description: ["量産できますよ！(なおinjector)"]
+			dependencies: ["6A011A3551ADD563"]
+			id: "21A5699588071EB7"
+			tasks: [{
+				id: "7C0699E287F0C500"
+				type: "item"
+				item: "draconicevolution:crafting_core"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -1.5d
+			subtitle: "(まだT1です)"
+			description: ["組み立てラインがあふれてるのは仕様です"]
+			dependencies: [
+				"604CB4018E68CD58"
+				"4C20570D0F467FA0"
+				"6A011A3551ADD563"
+			]
+			id: "376C54F0CD5D9153"
+			tasks: [{
+				id: "46C889DE2A828266"
+				type: "item"
+				item: "draconicevolution:basic_crafting_injector"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -4.5d
+			subtitle: "なんかあいつ超不安定なイメージある"
+			id: "604CB4018E68CD58"
+			tasks: [{
+				id: "46C9B3F991A5DA0B"
+				type: "item"
+				item: "valine_s1ex:connector"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -4.5d
+			shape: "heart"
+			subtitle: "Idsを使おう"
+			size: 1.5d
+			id: "4C20570D0F467FA0"
+			tasks: [{
+				id: "7775368D412AD711"
+				type: "item"
+				item: "valine_s1ex:high_voltage_module"
+			}]
+			rewards: [{
+				id: "427FBF0244AC3264"
+				type: "item"
+				team_reward: true
+				item: "integrateddynamics:on_the_dynamics_of_integration"
+			}]
+		}
+		{
+			x: 3.75d
+			y: -7.5d
+			shape: "heart"
+			subtitle: "マナ99:ダイヤ1"
+			size: 1.5d
+			id: "71E6A60209D67F24"
+			tasks: [{
+				id: "21D430B67130D572"
+				type: "item"
+				item: "avaritia:crystal_matrix_ingot"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -5.0d
+			subtitle: "乱用注意(乱用しないとは言ってない)"
+			dependencies: ["71E6A60209D67F24"]
+			id: "6EE00B3F594E30A6"
+			tasks: [{
+				id: "36022EF8131EF2C5"
+				type: "item"
+				item: "draconicevolution:draconium_core"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 0.0d
+			subtitle: "9個しかいらないと思った?"
+			dependencies: [
+				"376C54F0CD5D9153"
+				"21A5699588071EB7"
+				"38FD8A604D2077DB"
+			]
+			id: "55635307FB228574"
+			tasks: [{
+				id: "23C3E89D86F79D0C"
+				type: "item"
+				item: "draconicevolution:wyvern_crafting_injector"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -6.5d
+			subtitle: "レシピ上は簡単そうに見える"
+			dependencies: ["6EE00B3F594E30A6"]
+			id: "07465BB520A3BCB7"
+			tasks: [{
+				id: "13679CBF4A63859E"
+				type: "item"
+				item: "draconicevolution:wyvern_energy_core"
+			}]
+		}
+		{
+			x: 11.0d
+			y: 0.0d
+			subtitle: "さらっとQIO"
+			dependencies: [
+				"55635307FB228574"
+				"77CFC593C2568B99"
+				"0115649F9A6E86BC"
+			]
+			id: "07A2A8105FA7FFAF"
+			tasks: [{
+				id: "7F2F015FEA8D740C"
+				type: "item"
+				item: "draconicevolution:awakened_crafting_injector"
+			}]
+		}
+		{
+			x: 13.0d
+			y: -3.0d
+			subtitle: "MS-DOSよりも10000倍高価"
+			hide_dependency_lines: true
+			dependencies: ["4C20570D0F467FA0"]
+			id: "77CFC593C2568B99"
+			tasks: [{
+				id: "785FE1402BF26A86"
+				type: "item"
+				item: "valine_s1ex:souls_of_different_orders_of_magnitude"
+			}]
+		}
+		{
+			x: 11.0d
+			y: -5.5d
+			subtitle: "何も変わってない...ん?"
+			dependencies: ["77CFC593C2568B99"]
+			id: "7DB35B377070666E"
+			tasks: [{
+				id: "35960598A4BD0D1F"
+				type: "item"
+				item: "draconicevolution:awakened_draconium_block"
+			}]
+		}
+		{
+			x: 14.0d
+			y: 0.0d
+			subtitle: "カオスガーディアンなんて弱いわけない"
+			dependencies: ["07A2A8105FA7FFAF"]
+			id: "6E658E3BFD66353C"
+			tasks: [{
+				id: "7390BDDB49F73D5D"
+				type: "kill"
+				icon: "draconicadditions:chaos_heart"
+				entity: "draconicevolution:draconic_guardian"
+				value: 1L
+			}]
+		}
+		{
+			title: "RftoolsDimensions"
+			x: 14.0d
+			y: 2.5d
+			shape: "square"
+			subtitle: "(ほぼ)全ブロックの(ほぼ)無限化"
+			dependencies: ["6E658E3BFD66353C"]
+			optional: true
+			id: "1A4828487716C3AF"
+			tasks: [
+				{
+					id: "5CBEA5379BE24EBA"
+					type: "item"
+					item: "rftoolsdim:dimension_editor"
+				}
+				{
+					id: "68E08721F67700E3"
+					type: "item"
+					item: "rftoolsdim:enscriber"
+				}
+				{
+					id: "7AC3EEE72589239B"
+					type: "item"
+					item: "rftoolsdim:dimlet_workbench"
+				}
+				{
+					id: "4844DB693F9C88E3"
+					type: "item"
+					item: "rftoolsdim:dimension_builder"
+				}
+			]
+			rewards: [{
+				id: "6C92B690B6063356"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 5.0d
+			y: -2.5d
+			subtitle: "この時点で反物質が大量要求されてることに気づけ"
+			dependencies: [
+				"6EE00B3F594E30A6"
+				"2887EA40D12981C0"
+			]
+			id: "38FD8A604D2077DB"
+			tasks: [{
+				id: "166492D0E29E1097"
+				type: "item"
+				item: "draconicevolution:wyvern_core"
+			}]
+		}
+		{
+			x: 7.5d
+			y: -2.5d
+			shape: "square"
+			subtitle: "これで機械が爆発しなくて済む"
+			description: ["雨よ止まれ、時よ進め"]
+			dependencies: ["38FD8A604D2077DB"]
+			optional: true
+			id: "6913A5D114844DEA"
+			tasks: [{
+				id: "35FB1AB6EEA782E1"
+				type: "item"
+				item: "draconicevolution:celestial_manipulator"
+			}]
+			rewards: [{
+				id: "7F4A3226314BEC89"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 4.5d
+			y: 7.0d
+			subtitle: "でりしゃす"
+			size: 2.0d
+			optional: true
+			invisible: true
+			id: "6AF8D677A74593FE"
+			tasks: [{
+				id: "6735D22C2517209F"
+				type: "item"
+				item: {
+					id: "draconicadditions:hermal"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							module_host: {
+								provider_id: [I;
+									991014909
+									968576597
+									-1963578199
+									945261635
+								]
+								modules: [ ]
+								properties: { }
+							}
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 19.0d
+			y: -4.0d
+			subtitle: "二度漬け"
+			description: ["なおカオティックコアはこれ一つで20使われている模様"]
+			dependencies: [
+				"6E658E3BFD66353C"
+				"645589696B2B8AC1"
+				"36E913D6E5FA04C7"
+			]
+			id: "55A538FB07F31FEC"
+			tasks: [{
+				id: "78644567F1EE14F8"
+				type: "item"
+				item: "draconicevolution:chaotic_crafting_injector"
+			}]
+		}
+		{
+			x: 17.5d
+			y: 4.0d
+			subtitle: "まあそこまでじゃない"
+			dependencies: ["10E72B3A462BA0AE"]
+			id: "3AB3D8E261EA23A5"
+			tasks: [{
+				id: "351AAC361056C872"
+				type: "item"
+				item: "extendedcrafting:the_ultimate_catalyst"
+			}]
+		}
+		{
+			x: 17.5d
+			y: 6.5d
+			subtitle: "今まで作ったはずだし行けるでしょのノリ"
+			id: "10E72B3A462BA0AE"
+			tasks: [{
+				id: "6C26ABC3D24CAAD5"
+				type: "item"
+				item: "extendedcrafting:the_ultimate_ingot"
+			}]
+		}
+		{
+			x: 19.0d
+			y: 2.0d
+			subtitle: "これでただの汎用中間素材でしかない絶望"
+			dependencies: [
+				"3AB3D8E261EA23A5"
+				"506CE6EE7B38973D"
+			]
+			id: "645589696B2B8AC1"
+			tasks: [{
+				id: "5FD02B0062927564"
+				type: "item"
+				item: "draconicevolution:chaotic_core"
+			}]
+		}
+		{
+			x: 21.0d
+			y: 4.0d
+			subtitle: "回路を詰め合わせないでくれ"
+			dependencies: ["6A3B4E1C1E9A8D7D"]
+			id: "506CE6EE7B38973D"
+			tasks: [{
+				id: "0F8A7A2E73BF39C3"
+				type: "item"
+				item: "mekaevolution:infinite_control_circuit"
+			}]
+		}
+		{
+			x: 21.0d
+			y: 6.5d
+			subtitle: "さらっと魔改造されたもの"
+			id: "6A3B4E1C1E9A8D7D"
+			tasks: [{
+				id: "1268B77983317789"
+				type: "item"
+				item: "draconicevolution:module_core"
+			}]
+		}
+		{
+			x: 6.0d
+			y: -4.5d
+			subtitle: "さらっと要求されてるが既になんだこれ"
+			dependencies: ["07465BB520A3BCB7"]
+			id: "2887EA40D12981C0"
+			tasks: [{
+				id: "36F2A116FA0BA82F"
+				type: "item"
+				item: "draconicevolution:wyvern_relay_crystal"
+			}]
+		}
+		{
+			x: 9.0d
+			y: -4.0d
+			subtitle: "魔改造された汎用素材"
+			dependencies: [
+				"07465BB520A3BCB7"
+				"38FD8A604D2077DB"
+				"7DB35B377070666E"
+			]
+			id: "0115649F9A6E86BC"
+			tasks: [{
+				id: "5B62C5F1A7EBE177"
+				type: "item"
+				item: "draconicevolution:awakened_core"
+			}]
+		}
+		{
+			x: 20.5d
+			y: 0.0d
+			subtitle: "何だこの……なんだこれ"
+			dependencies: ["645589696B2B8AC1"]
+			id: "36E913D6E5FA04C7"
+			tasks: [{
+				id: "109F20D89B7FEF78"
+				type: "item"
+				item: "draconicevolution:chaotic_energy_core"
+			}]
+		}
+		{
+			x: 17.5d
+			y: 0.0d
+			subtitle: "実はレシピtierがこれだけ変わってる"
+			dependencies: [
+				"645589696B2B8AC1"
+				"36E913D6E5FA04C7"
+			]
+			id: "724AEFAD025F6109"
+			tasks: [{
+				id: "3E524282EE73E81C"
+				type: "item"
+				item: {
+					id: "draconicevolution:chaotic_sword"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							module_host: {
+								provider_id: [I;
+									1625657119
+									-1712304396
+									-1521748869
+									850069439
+								]
+								modules: [ ]
+								properties: { }
+							}
+							energy: {
+								energy: 0
+							}
+						}
+					}
+				}
+			}]
+		}
+	]
+	quest_links: [ ]
+}

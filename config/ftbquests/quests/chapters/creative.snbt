@@ -1,0 +1,2304 @@
+{
+	id: "265CA124A7A0C644"
+	group: "43BAF829B74123A2"
+	order_index: 4
+	filename: "creative"
+	title: "finalAns.Creative"
+	icon: {
+		id: "modularrouters:creative_module"
+		Count: 1b
+		tag: {
+			modularrouters: {
+				ModuleFilter: { }
+			}
+		}
+	}
+	subtitle: [
+		"あまねく壊れた終末点"
+		""
+		""
+		"蹂躙。目の前で行われている行為に名を付けるならまさにそう言い表すのが正しいのだろう。"
+		"地表は禿げ、森は消え失せ、海は枯れる。たった２人に起こされたとは思えない地獄が広がっていた。"
+		"少女は不死身に挑みつづけた。しかし抵抗虚しく屍の山が積もるばかり。"
+		"悩む時間はもう終わった。歪み切ったこの時空は治ることはもうない。そう気づいた大樹は最終兵器に手をかけ、全てを消し飛ばした。"
+	]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -4.0d
+			y: -1.5d
+			subtitle: "いつも通りの例のアレ"
+			description: [
+				"レシピ制作：Lace"
+				"このシンギュラリティの前提は私が作りました"
+			]
+			dependencies: [
+				"6224291D5D6A7600"
+				"261706E06C97F392"
+				"0EED05EA002B47BE"
+				"7E9DD7A53ABEA00E"
+				"5BCC861D79144BDC"
+				"51688EBCA534923D"
+				"7E254B67EB7AE838"
+				"3C63ECDDD0D5B660"
+				"3D0A40DA7353B7DE"
+				"03B4976F5A6537FA"
+				"187A9FAA90AC9757"
+				"2863B618984DD934"
+				"33C3A8CDB5FE5C83"
+				"5D64BF97ABF99309"
+				"5C59910229B6E79D"
+				"0671584D15917002"
+				"562102FA3315CDCE"
+				"1141C243D1EBC347"
+				"3A3C841006E6CDF7"
+				"1710576B96C23CC6"
+				"15793DB81FD5F61C"
+				"280EF99FF23C8538"
+				"56A73DF93CC3706D"
+				"6A31D8D5415CD529"
+				"49FB74246DECD445"
+				"69F082BCE92B9F94"
+				"0FEEAC347C63C8E0"
+				"2659FD4BE58CFD71"
+				"65D8C450A0E692CC"
+				"247F65102492913A"
+				"786ABC645F13AB00"
+				"319FF2A85B83D48B"
+			]
+			size: 3.0d
+			id: "7DF7712FD9FD022F"
+			tasks: [{
+				id: "392C5E6229E896DD"
+				type: "item"
+				item: "extendedcrafting:ultimate_singularity"
+			}]
+		}
+		{
+			x: -7.5d
+			y: 0.5d
+			subtitle: "えぇ……"
+			description: ["いやお前は特異点になっちゃだめだろ"]
+			id: "6224291D5D6A7600"
+			tasks: [{
+				id: "2C2E786BB471A45E"
+				type: "item"
+				item: {
+					id: "extendedcrafting:singularity"
+					Count: 1b
+					tag: {
+						Id: "extendedcrafting:the_ultimate_ingot"
+					}
+				}
+				weak_nbt_match: true
+			}]
+		}
+		{
+			x: -6.0d
+			y: 0.5d
+			id: "261706E06C97F392"
+			tasks: [{
+				id: "71D0691368430B43"
+				type: "item"
+				item: {
+					id: "extendedcrafting:singularity"
+					Count: 1b
+					tag: {
+						Id: "extendedcrafting:machine_frame_supreme"
+					}
+				}
+				weak_nbt_match: true
+			}]
+		}
+		{
+			x: -4.5d
+			y: 0.5d
+			id: "0EED05EA002B47BE"
+			tasks: [{
+				id: "44A3EA0D06D58842"
+				type: "item"
+				item: {
+					id: "extendedcrafting:singularity"
+					Count: 1b
+					tag: {
+						Id: "extendedcrafting:salmon_tempura"
+					}
+				}
+				weak_nbt_match: true
+			}]
+		}
+		{
+			x: -3.0d
+			y: 0.5d
+			id: "7E9DD7A53ABEA00E"
+			tasks: [{
+				id: "422B56C2D94D138E"
+				type: "item"
+				item: {
+					id: "extendedcrafting:singularity"
+					Count: 1b
+					tag: {
+						Id: "extendedcrafting:gaia_spirit_ingot"
+					}
+				}
+				weak_nbt_match: true
+			}]
+		}
+		{
+			x: -1.5d
+			y: 0.5d
+			id: "5BCC861D79144BDC"
+			tasks: [{
+				id: "679C7D6ACF485DC1"
+				type: "item"
+				item: {
+					id: "extendedcrafting:singularity"
+					Count: 1b
+					tag: {
+						Id: "extendedcrafting:raw_emerald"
+					}
+				}
+				weak_nbt_match: true
+			}]
+		}
+		{
+			x: -7.5d
+			y: 2.0d
+			id: "7E254B67EB7AE838"
+			tasks: [{
+				id: "12C35D3538AD9AA0"
+				type: "item"
+				item: {
+					id: "extendedcrafting:singularity"
+					Count: 1b
+					tag: {
+						Id: "extendedcrafting:nitro_crystal_block"
+					}
+				}
+				weak_nbt_match: true
+			}]
+		}
+		{
+			x: -6.0d
+			y: 2.0d
+			id: "3C63ECDDD0D5B660"
+			tasks: [{
+				id: "124EAEA762A00770"
+				type: "item"
+				item: {
+					id: "extendedcrafting:singularity"
+					Count: 1b
+					tag: {
+						Id: "extendedcrafting:netherite_upgrade"
+					}
+				}
+				weak_nbt_match: true
+			}]
+		}
+		{
+			x: -4.5d
+			y: 2.0d
+			id: "3D0A40DA7353B7DE"
+			tasks: [{
+				id: "7380749EC7B9A6AD"
+				type: "item"
+				item: {
+					id: "extendedcrafting:singularity"
+					Count: 1b
+					tag: {
+						Id: "extendedcrafting:mechanical_visor_upgrade"
+					}
+				}
+				weak_nbt_match: true
+			}]
+		}
+		{
+			x: -3.0d
+			y: 2.0d
+			id: "03B4976F5A6537FA"
+			tasks: [{
+				id: "08918A1C3A401828"
+				type: "item"
+				item: {
+					id: "extendedcrafting:singularity"
+					Count: 1b
+					tag: {
+						Id: "extendedcrafting:jeweled_apple"
+					}
+				}
+				weak_nbt_match: true
+			}]
+		}
+		{
+			x: -1.5d
+			y: 2.0d
+			id: "187A9FAA90AC9757"
+			tasks: [{
+				id: "7A5F39FF0E38F926"
+				type: "item"
+				item: {
+					id: "extendedcrafting:singularity"
+					Count: 1b
+					tag: {
+						Id: "extendedcrafting:qio_drive_infinite"
+					}
+				}
+				weak_nbt_match: true
+			}]
+		}
+		{
+			x: -7.5d
+			y: 3.5d
+			id: "33C3A8CDB5FE5C83"
+			tasks: [{
+				id: "0C9C77E0873507EA"
+				type: "item"
+				item: {
+					id: "extendedcrafting:singularity"
+					Count: 1b
+					tag: {
+						Id: "extendedcrafting:infinite_fluid_storage_block"
+					}
+				}
+				weak_nbt_match: true
+			}]
+		}
+		{
+			x: -6.0d
+			y: 3.5d
+			id: "5D64BF97ABF99309"
+			tasks: [{
+				id: "364852322E239BC3"
+				type: "item"
+				item: {
+					id: "extendedcrafting:singularity"
+					Count: 1b
+					tag: {
+						Id: "extendedcrafting:high_voltage_module"
+					}
+				}
+				weak_nbt_match: true
+			}]
+		}
+		{
+			x: -4.5d
+			y: 3.5d
+			id: "5C59910229B6E79D"
+			tasks: [{
+				id: "424382858B9C077B"
+				type: "item"
+				item: {
+					id: "extendedcrafting:singularity"
+					Count: 1b
+					tag: {
+						Id: "extendedcrafting:polyvinyl_chloride_plate"
+					}
+				}
+				weak_nbt_match: true
+			}]
+		}
+		{
+			x: -3.0d
+			y: 3.5d
+			id: "0671584D15917002"
+			tasks: [{
+				id: "4C2FD40E7E3DCD18"
+				type: "item"
+				item: {
+					id: "extendedcrafting:singularity"
+					Count: 1b
+					tag: {
+						Id: "extendedcrafting:rainbow_plating"
+					}
+				}
+				weak_nbt_match: true
+			}]
+		}
+		{
+			x: -1.5d
+			y: 3.5d
+			id: "562102FA3315CDCE"
+			tasks: [{
+				id: "04D35B278B0163F2"
+				type: "item"
+				item: {
+					id: "extendedcrafting:singularity"
+					Count: 1b
+					tag: {
+						Id: "extendedcrafting:flux_block"
+					}
+				}
+				weak_nbt_match: true
+			}]
+		}
+		{
+			x: -7.5d
+			y: 5.0d
+			subtitle: "馬鹿じゃないの！？"
+			description: ["いろいろ弄った結果できなくもないと判定できる程度には楽になりました。"]
+			id: "3A3C841006E6CDF7"
+			tasks: [{
+				id: "35DBDF54E4AE2726"
+				type: "item"
+				item: {
+					id: "extendedcrafting:singularity"
+					Count: 1b
+					tag: {
+						Id: "extendedcrafting:ender_cell"
+					}
+				}
+				weak_nbt_match: true
+			}]
+		}
+		{
+			x: -6.0d
+			y: 5.0d
+			id: "1710576B96C23CC6"
+			tasks: [{
+				id: "45EA487D837B4F6A"
+				type: "item"
+				item: {
+					id: "extendedcrafting:singularity"
+					Count: 1b
+					tag: {
+						Id: "extendedcrafting:emerald_storage_upgrade"
+					}
+				}
+				weak_nbt_match: true
+			}]
+		}
+		{
+			x: -4.5d
+			y: 5.0d
+			id: "15793DB81FD5F61C"
+			tasks: [{
+				id: "48CD82B449E28147"
+				type: "item"
+				item: {
+					id: "extendedcrafting:singularity"
+					Count: 1b
+					tag: {
+						Id: "extendedcrafting:emerald_capasitor"
+					}
+				}
+				weak_nbt_match: true
+			}]
+		}
+		{
+			x: -3.0d
+			y: 5.0d
+			id: "280EF99FF23C8538"
+			tasks: [{
+				id: "0035A7ABFFB90C8C"
+				type: "item"
+				item: {
+					id: "extendedcrafting:singularity"
+					Count: 1b
+					tag: {
+						Id: "extendedcrafting:upgrade_augment"
+					}
+				}
+				weak_nbt_match: true
+			}]
+		}
+		{
+			x: -1.5d
+			y: 5.0d
+			id: "56A73DF93CC3706D"
+			tasks: [{
+				id: "23E730D9CFBF98F7"
+				type: "item"
+				item: {
+					id: "extendedcrafting:singularity"
+					Count: 1b
+					tag: {
+						Id: "extendedcrafting:construction_block_dense"
+					}
+				}
+				weak_nbt_match: true
+			}]
+		}
+		{
+			x: -7.5d
+			y: 6.5d
+			id: "49FB74246DECD445"
+			tasks: [{
+				id: "0F7D3CFE3057DAEA"
+				type: "item"
+				item: {
+					id: "extendedcrafting:singularity"
+					Count: 1b
+					tag: {
+						Id: "extendedcrafting:gem_obsidian"
+					}
+				}
+				weak_nbt_match: true
+			}]
+		}
+		{
+			x: -6.0d
+			y: 6.5d
+			id: "69F082BCE92B9F94"
+			tasks: [{
+				id: "00D5860D23366E2B"
+				type: "item"
+				item: {
+					id: "extendedcrafting:singularity"
+					Count: 1b
+					tag: {
+						Id: "extendedcrafting:logic_chip"
+					}
+				}
+				weak_nbt_match: true
+			}]
+		}
+		{
+			x: -4.5d
+			y: 6.5d
+			id: "0FEEAC347C63C8E0"
+			tasks: [{
+				id: "5A83D65BA14A397B"
+				type: "item"
+				item: {
+					id: "extendedcrafting:singularity"
+					Count: 1b
+					tag: {
+						Id: "extendedcrafting:legendary_essence"
+					}
+				}
+				weak_nbt_match: true
+			}]
+		}
+		{
+			x: -3.0d
+			y: 6.5d
+			id: "2659FD4BE58CFD71"
+			tasks: [{
+				id: "7044257AD31E93A0"
+				type: "item"
+				item: {
+					id: "extendedcrafting:singularity"
+					Count: 1b
+					tag: {
+						Id: "extendedcrafting:crystal_matrix_ingot"
+					}
+				}
+				weak_nbt_match: true
+			}]
+		}
+		{
+			x: -1.5d
+			y: 6.5d
+			id: "65D8C450A0E692CC"
+			tasks: [{
+				id: "64EC62C9D57FE828"
+				type: "item"
+				item: {
+					id: "extendedcrafting:singularity"
+					Count: 1b
+					tag: {
+						Id: "extendedcrafting:machine_maximum"
+					}
+				}
+				weak_nbt_match: true
+			}]
+		}
+		{
+			x: 0.0d
+			y: 0.5d
+			id: "51688EBCA534923D"
+			tasks: [{
+				id: "3F1A9BF2299C1D93"
+				type: "item"
+				item: {
+					id: "extendedcrafting:singularity"
+					Count: 1b
+					tag: {
+						Id: "extendedcrafting:chaos_heart"
+					}
+				}
+				weak_nbt_match: true
+			}]
+		}
+		{
+			x: 0.0d
+			y: 2.0d
+			id: "2863B618984DD934"
+			tasks: [{
+				id: "4CDA79E767FC9942"
+				type: "item"
+				item: {
+					id: "extendedcrafting:singularity"
+					Count: 1b
+					tag: {
+						Id: "extendedcrafting:bedrockium"
+					}
+				}
+				weak_nbt_match: true
+			}]
+		}
+		{
+			x: 0.0d
+			y: 3.5d
+			id: "1141C243D1EBC347"
+			tasks: [{
+				id: "452DB010D49A6ADD"
+				type: "item"
+				item: {
+					id: "extendedcrafting:singularity"
+					Count: 1b
+					tag: {
+						Id: "extendedcrafting:256m_crafting_storage"
+					}
+				}
+				weak_nbt_match: true
+			}]
+		}
+		{
+			x: 0.0d
+			y: 5.0d
+			id: "6A31D8D5415CD529"
+			tasks: [{
+				id: "464C536F8F835307"
+				type: "item"
+				item: {
+					id: "extendedcrafting:singularity"
+					Count: 1b
+					tag: {
+						Id: "extendedcrafting:ultimate_upgrade"
+					}
+				}
+				weak_nbt_match: true
+			}]
+		}
+		{
+			x: 0.0d
+			y: 6.5d
+			id: "247F65102492913A"
+			tasks: [{
+				id: "0A0FFD849E869BFD"
+				type: "item"
+				item: {
+					id: "extendedcrafting:singularity"
+					Count: 1b
+					tag: {
+						Id: "extendedcrafting:universal_mass"
+					}
+				}
+				weak_nbt_match: true
+			}]
+		}
+		{
+			x: -7.5d
+			y: 8.0d
+			id: "786ABC645F13AB00"
+			tasks: [{
+				id: "5813D143DF437EDD"
+				type: "item"
+				item: {
+					id: "extendedcrafting:singularity"
+					Count: 1b
+					tag: {
+						Id: "extendedcrafting:upgrade_productivity"
+					}
+				}
+				weak_nbt_match: true
+			}]
+		}
+		{
+			x: -6.0d
+			y: 8.0d
+			id: "319FF2A85B83D48B"
+			tasks: [{
+				id: "63941BD7BCBB170C"
+				type: "item"
+				item: {
+					id: "extendedcrafting:singularity"
+					Count: 1b
+					tag: {
+						Id: "extendedcrafting:variablestore"
+					}
+				}
+				weak_nbt_match: true
+			}]
+		}
+		{
+			x: -1.0d
+			y: -1.5d
+			subtitle: "予定外のアレ"
+			description: [
+				"レシピ制作：takoito"
+				"fix:Lace"
+			]
+			dependencies: [
+				"7DF7712FD9FD022F"
+				"7358E8A31B3AAAD8"
+			]
+			id: "3C52455F1DE19707"
+			tasks: [{
+				id: "16D72A3E817CB62B"
+				type: "item"
+				item: "valine_s1ex:eternal_ingot"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -1.5d
+			subtitle: "いかれた中間素材"
+			description: [
+				"どうして特異点にしちゃったの？"
+				"どうしてブロックで指定しちゃったの？"
+				"制作：takoito"
+			]
+			dependencies: ["3C52455F1DE19707"]
+			size: 3.0d
+			id: "4DCDB6D38BDA9289"
+			tasks: [{
+				id: "49182517A806FCB3"
+				type: "item"
+				item: {
+					id: "extendedcrafting:singularity"
+					Count: 1b
+					tag: {
+						Id: "extendedcrafting:eternal"
+					}
+				}
+			}]
+		}
+		{
+			x: 5.0d
+			y: -7.5d
+			subtitle: "馬鹿と天災は紙一重"
+			description: [
+				"天才じゃないのがみそ"
+				"制作：Lace"
+			]
+			dependencies: [
+				"4DCDB6D38BDA9289"
+				"7C40768788C519E0"
+				"23DB78F2854B77EC"
+				"24A5440DECC23ECA"
+			]
+			size: 5.0d
+			id: "2DDFD7EF6DF0FBCF"
+			tasks: [{
+				id: "50978B096E921D21"
+				type: "item"
+				item: "avaritia:infinity_catalyst"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -3.5d
+			subtitle: "ﾃﾞﾌｫﾀﾞﾖｰ"
+			description: [
+				"こいつやっぱおかしいって"
+				"まあ液体あるからどうにでもなる"
+			]
+			dependencies: ["2DDFD7EF6DF0FBCF"]
+			size: 2.0d
+			id: "6EEB6F41900C0ABF"
+			tasks: [{
+				id: "0B0DE0E94A44EFD7"
+				type: "item"
+				item: "avaritia:infinity_ingot"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -4.0d
+			subtitle: "加速ぅ"
+			description: ["第Ⅲ級サーバー負荷アイテム"]
+			dependencies: ["7DF7712FD9FD022F"]
+			id: "1644DBA4D8259B47"
+			tasks: [{
+				id: "7C507446FC3E9AF5"
+				type: "item"
+				item: "torcherino:torcherino"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -5.5d
+			subtitle: "もっと加速するよ！"
+			description: ["第二級サーバー負荷量産アイテム"]
+			dependencies: ["1644DBA4D8259B47"]
+			id: "4503ED1CA5CBA170"
+			tasks: [{
+				id: "4CEB14362E15D806"
+				type: "item"
+				item: "torcherino:compressed_torcherino"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -7.0d
+			subtitle: "お前(の鯖)を破壊する"
+			description: ["第一級禁忌アイテム"]
+			dependencies: ["4503ED1CA5CBA170"]
+			id: "78BCFAB1D477FE14"
+			tasks: [{
+				id: "3226F14127BB5FFF"
+				type: "item"
+				item: "torcherino:double_compressed_torcherino"
+			}]
+		}
+		{
+			x: 10.0d
+			y: -3.5d
+			subtitle: "真っ先に作るべきもの"
+			description: [
+				"流石にインゴット大量に作るのはきつい"
+				"ところでどちらのスロットに入れれば無限になるかご存じの人はいらっしゃる？"
+			]
+			dependencies: [
+				"2DDFD7EF6DF0FBCF"
+				"6EEB6F41900C0ABF"
+			]
+			size: 8.0d
+			id: "4D4BE704A0340ED5"
+			tasks: [{
+				id: "5165D635272F3B7A"
+				type: "item"
+				item: "mekanism:creative_fluid_tank"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -7.5d
+			dependencies: ["2DDFD7EF6DF0FBCF"]
+			id: "0525BD8BAA1833BD"
+			tasks: [{
+				id: "60BADFAA74D35676"
+				type: "item"
+				item: "pipez:infinity_upgrade"
+			}]
+		}
+		{
+			x: 6.0d
+			y: -1.5d
+			subtitle: "液体は無限"
+			description: ["制作：ocho"]
+			dependencies: [
+				"4D4BE704A0340ED5"
+				"6EEB6F41900C0ABF"
+			]
+			id: "2F487053D60EA0F2"
+			tasks: [{
+				id: "0577A4D9B428F681"
+				type: "item"
+				item: "valine_s1ex:molten_infinity_bucket"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 0.5d
+			dependencies: ["6EEB6F41900C0ABF"]
+			id: "777894DAA5711C61"
+			tasks: [{
+				id: "08E6EC74BAD68CBC"
+				type: "item"
+				item: "refinedstorage:creative_controller"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 0.5d
+			dependencies: ["6EEB6F41900C0ABF"]
+			id: "7ECC6BBB2E7479FD"
+			tasks: [{
+				id: "39BDA9A8F05B6A8E"
+				type: "item"
+				item: "thermal:machine_catalyst_creative_augment"
+			}]
+		}
+		{
+			x: 8.0d
+			y: 0.5d
+			dependencies: ["6EEB6F41900C0ABF"]
+			id: "530621FD7394C09B"
+			tasks: [{
+				id: "44D89105563F2734"
+				type: "item"
+				item: "pneumaticcraft:creative_compressed_iron_block"
+			}]
+		}
+		{
+			x: 9.5d
+			y: 0.5d
+			dependencies: ["6EEB6F41900C0ABF"]
+			id: "10B0BE82659E3895"
+			tasks: [{
+				id: "5620F5C9E507C634"
+				type: "item"
+				item: "pneumaticcraft:creative_compressor"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 2.0d
+			dependencies: ["6EEB6F41900C0ABF"]
+			id: "7A859AA9B11682FA"
+			tasks: [{
+				id: "6E2A4321F3E098D3"
+				type: "item"
+				item: "mekanism:creative_chemical_tank"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 2.0d
+			subtitle: "お前だけ作者が違う"
+			description: [
+				"他laceです。これだけ違うんです。"
+				"制作：ocho"
+			]
+			dependencies: ["6EEB6F41900C0ABF"]
+			id: "708A77028EA06446"
+			tasks: [{
+				id: "60AFE6A40A622E89"
+				type: "item"
+				item: {
+					id: "mekanism:creative_energy_cube"
+					Count: 1b
+					tag: {
+						mekData: {
+							EnergyContainers: [{
+								Container: 0b
+								stored: "18446744073709551615.9999"
+							}]
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 8.0d
+			y: 2.0d
+			dependencies: ["6EEB6F41900C0ABF"]
+			id: "14E1750545D1879E"
+			tasks: [{
+				id: "52D9E65A84024A3F"
+				type: "item"
+				item: {
+					id: "ironjetpacks:jetpack"
+					Count: 1b
+					tag: {
+						Id: "ironjetpacks:creative"
+						Throttle: 1.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 9.5d
+			y: 2.0d
+			dependencies: ["6EEB6F41900C0ABF"]
+			id: "2DB7A16C452409BE"
+			tasks: [{
+				id: "6DA8E7E577B5E2C1"
+				type: "item"
+				item: {
+					id: "draconicevolution:creative_capacitor"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							module_host: {
+								provider_id: [I;
+									1900335595
+									-1991687425
+									-1313538289
+									1887419140
+								]
+								modules: [ ]
+								properties: {
+									charge_main: {
+										hud: 1b
+									}
+									charge_curios: {
+										hud: 1b
+									}
+									charge_hot_bar: {
+										hud: 1b
+									}
+									charge_armor: {
+										hud: 1b
+									}
+									charge_held_item: {
+										hud: 1b
+									}
+								}
+							}
+							energy: {
+								energy: 0
+							}
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 5.0d
+			y: 3.5d
+			dependencies: ["6EEB6F41900C0ABF"]
+			id: "41B01D87C36A07D8"
+			tasks: [{
+				id: "7A6351BA46788464"
+				type: "item"
+				item: "create:creative_blaze_cake"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 3.5d
+			dependencies: [
+				"6EEB6F41900C0ABF"
+				"222CCC306E926F84"
+			]
+			id: "1170E102E3B31A78"
+			tasks: [{
+				id: "0E5BD0FB15F9E15C"
+				type: "item"
+				item: "botanicalmachinery:mana_battery_creative"
+			}]
+		}
+		{
+			x: 8.0d
+			y: 3.5d
+			dependencies: ["6EEB6F41900C0ABF"]
+			id: "46E823B624B7C372"
+			tasks: [{
+				id: "6ECF0F7268B4A4EF"
+				type: "item"
+				item: "ae2:creative_energy_cell"
+			}]
+		}
+		{
+			x: 9.5d
+			y: 3.5d
+			dependencies: ["6EEB6F41900C0ABF"]
+			id: "222CCC306E926F84"
+			tasks: [{
+				id: "4DAA1B90628013C1"
+				type: "item"
+				item: "botania:creative_pool"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 5.0d
+			dependencies: [
+				"6EEB6F41900C0ABF"
+				"7ECC6BBB2E7479FD"
+			]
+			id: "75CFCA25E4D02C4C"
+			tasks: [{
+				id: "5DC558925DEF4746"
+				type: "item"
+				item: "thermal:machine_efficiency_creative_augment"
+			}]
+		}
+		{
+			x: 9.5d
+			y: -8.0d
+			dependencies: [
+				"1EAA02AF645C44B6"
+				"20DCE2D42437D0CB"
+				"2AF6023F646C2069"
+			]
+			id: "1C934869E62F08E1"
+			tasks: [{
+				id: "3CA12A47CA315CBF"
+				type: "item"
+				item: "overdrive:unparalleled_achievement_v"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -9.5d
+			hide_dependency_lines: true
+			dependencies: ["2DDFD7EF6DF0FBCF"]
+			id: "1EAA02AF645C44B6"
+			tasks: [{
+				id: "3044EF5BF71F39AA"
+				type: "item"
+				item: "overdrive:unparalleled_achievement_h"
+			}]
+		}
+		{
+			x: 9.5d
+			y: -9.5d
+			id: "20DCE2D42437D0CB"
+			tasks: [{
+				id: "51D38772B16BE14F"
+				type: "item"
+				item: "overdrive:unparalleled_achievement_y"
+			}]
+		}
+		{
+			x: 11.0d
+			y: -9.5d
+			hide_dependency_lines: true
+			dependencies: ["7DF7712FD9FD022F"]
+			id: "2AF6023F646C2069"
+			tasks: [{
+				id: "37BC114635791069"
+				type: "item"
+				item: "overdrive:unparalleled_achievement_l"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 5.0d
+			dependencies: ["2DDFD7EF6DF0FBCF"]
+			id: "71C54B4A9CA16808"
+			tasks: [{
+				id: "5F734423914A956C"
+				type: "item"
+				item: "cyclic:magic_net"
+			}]
+		}
+		{
+			x: 11.5d
+			y: -8.0d
+			dependencies: ["1C934869E62F08E1"]
+			id: "5CE17DB7F4EA28B1"
+			tasks: [{
+				id: "49B8D51E50331EFB"
+				type: "item"
+				item: "overdrive:apex_seeker"
+			}]
+		}
+		{
+			x: 16.5d
+			y: -8.0d
+			subtitle: "最強クラスだけど絶妙に使いにくい複製機"
+			description: ["どうしてよりによってこれなんです？"]
+			dependencies: [
+				"5CE17DB7F4EA28B1"
+				"09B3B2C1D7A9A7F9"
+				"2D7C0913365F216F"
+				"2FB224E659B5F59E"
+				"5E7AF4ADAB4680AD"
+			]
+			size: 5.0d
+			id: "2912DA6843FD6B1E"
+			tasks: [{
+				id: "35D8A94D1B364ED3"
+				type: "item"
+				item: "botania:corporea_spark_creative"
+			}]
+		}
+		{
+			x: 20.0d
+			y: -10.0d
+			hide_dependency_lines: true
+			dependencies: ["2DDFD7EF6DF0FBCF"]
+			id: "09B3B2C1D7A9A7F9"
+			tasks: [{
+				id: "7BC0F9758D1B035B"
+				type: "item"
+				item: "overdrive:perfect_maximize"
+			}]
+		}
+		{
+			x: 20.0d
+			y: -8.5d
+			hide_dependency_lines: true
+			dependencies: ["5CE17DB7F4EA28B1"]
+			id: "2D7C0913365F216F"
+			tasks: [{
+				id: "11F532ED7832673B"
+				type: "item"
+				item: "overdrive:distant_horizons"
+			}]
+		}
+		{
+			x: 20.0d
+			y: -7.0d
+			id: "2FB224E659B5F59E"
+			tasks: [{
+				id: "7E1F6EBC15618D2D"
+				type: "item"
+				item: "overdrive:chaotic_breath"
+			}]
+		}
+		{
+			x: 20.0d
+			y: -5.5d
+			id: "5E7AF4ADAB4680AD"
+			tasks: [{
+				id: "6122D1FD3BB0462B"
+				type: "item"
+				item: "overdrive:mercury_lamp"
+			}]
+		}
+		{
+			x: 20.0d
+			y: -4.0d
+			dependencies: ["2912DA6843FD6B1E"]
+			id: "5ADA0225D618BE17"
+			tasks: [{
+				id: "4463C6FCD3B1BF17"
+				type: "item"
+				item: "overdrive:server_eater"
+			}]
+		}
+		{
+			x: 20.0d
+			y: -11.5d
+			hide_dependency_lines: true
+			dependencies: ["5CE17DB7F4EA28B1"]
+			id: "5189CBA4EA33AD3D"
+			tasks: [{
+				id: "41A7C7070AF9594B"
+				type: "item"
+				item: "overdrive:seeking_fragment"
+			}]
+		}
+		{
+			x: 20.0d
+			y: -2.0d
+			hide_dependency_lines: true
+			dependencies: [
+				"5189CBA4EA33AD3D"
+				"09B3B2C1D7A9A7F9"
+				"2D7C0913365F216F"
+				"2FB224E659B5F59E"
+				"5E7AF4ADAB4680AD"
+				"5ADA0225D618BE17"
+			]
+			id: "45EC62025B5B7FAC"
+			tasks: [{
+				id: "0B05C0815B099E5A"
+				type: "item"
+				item: "overdrive:administrator_authority"
+			}]
+		}
+		{
+			x: 22.0d
+			y: -2.0d
+			subtitle: "おしまい。"
+			description: ["V1EX攻略おめでとう！"]
+			dependencies: ["45EC62025B5B7FAC"]
+			id: "0FFC9165F8A8B396"
+			tasks: [{
+				id: "48E37F71EDABD284"
+				type: "item"
+				item: {
+					id: "modularrouters:creative_module"
+					Count: 1b
+					tag: {
+						modularrouters: {
+							ModuleFilter: { }
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 6.5d
+			y: -10.5d
+			id: "23DB78F2854B77EC"
+			tasks: [{
+				id: "029C4DF0980648E1"
+				type: "item"
+				item: "avaritia:endest_pearl"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -10.5d
+			id: "7C40768788C519E0"
+			tasks: [{
+				id: "566ABC5F6B77F287"
+				type: "item"
+				item: "avaritia:cosmic_meatballs"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -10.5d
+			subtitle: "闇鍋"
+			description: ["世界で一番なんと表記すればいいかわからず迷うアイテム"]
+			dependencies: [
+				"47A83E2F9345801E"
+				"08C79FD56F3B3F73"
+				"6BBC4F6C78A22169"
+				"383EFC90C1A607AB"
+				"10F6AFFB75B3C675"
+				"1F5DE5B551BC6CA4"
+				"7AD5FA0FE7D0E23D"
+				"3AC222259E50D3FB"
+				"411A72B0BCA8906D"
+				"758B386B7FB19176"
+				"77E3B76BD945264A"
+				"2A7494B945E4BE17"
+				"4F16A80F38638208"
+				"0F8F8E156B88284A"
+				"2B21F9DC994FB091"
+				"39E4F7E4D4EE0007"
+				"5681C7EB66520716"
+				"4E27BD04391CFF1B"
+				"43156C29B29B5198"
+				"0190643022500E5C"
+				"05941A1307106C3A"
+				"604BF3423A3A35EE"
+				"5E332D6C5B167185"
+				"08072E7067FF7F0A"
+				"10F20CD9677A7ADF"
+				"184E9A7C74681B8F"
+				"2267C2F02E2EB966"
+				"22751E2FD9FC214E"
+				"08796B31E49CF14A"
+				"72391F98917D1DB0"
+				"286C007721539A4B"
+				"118D22FC785A909A"
+				"765D94107CDEF375"
+				"46B7048481C20A67"
+				"06589D54B8B86428"
+				"3614651CF110C77E"
+				"4FA32F3B6419809F"
+				"648FFA16B29F5A2D"
+				"121C24377ECDEFBB"
+				"6B5713CA4EAE4A64"
+				"326E95A9CCA414F1"
+				"027C62DC0C8E76BE"
+				"784FB15B8BF47A82"
+				"0308660680D77189"
+				"7DA41F580AEBF74B"
+				"0511B1CA7C13B34C"
+				"461C45E39D0782AD"
+				"7BF50E631038A9A3"
+				"4F2B02A93CED7CD4"
+				"69C9A172F3161000"
+				"50B012FCAF660943"
+				"5DD25C81817AFD6E"
+				"22EC434AC6E1A0CF"
+				"007C01C6E18A2E54"
+				"2A03F14A682C5006"
+				"24A2E87E9D68FF51"
+				"11DC42D55D9A0B47"
+				"5C21DB5120F8BB85"
+				"5C7BAE69CBF3CDB3"
+				"3568DB9E796343DB"
+				"00416D5D020B0EC5"
+				"3BCE57A9F89D8014"
+				"52CFDC1BA412DF88"
+				"1CC2102650095220"
+				"04C341F62C83D472"
+				"6FF007218F1B555B"
+				"0F756DA814948F76"
+				"138B84A1586EA076"
+				"58980EE8A4171B91"
+				"1E7A27BD8B7BD0BD"
+				"4CBFD958777436FF"
+				"060D1426CC0B1B8E"
+				"02D5902B28D5DF83"
+				"3A3412ECBC931AB8"
+				"7A95C66B1FFDFB95"
+				"7A0C3CD4C75A62E8"
+				"4B0623516986805B"
+				"0433C6489DFEBD6F"
+				"630B4BC72C051594"
+				"3AEB42DEB3FC3FEE"
+				"6D883FC866A49470"
+			]
+			id: "24A5440DECC23ECA"
+			tasks: [{
+				id: "7E756FABFBAB152D"
+				type: "item"
+				item: "avaritia:ultimate_stew"
+			}]
+		}
+		{
+			x: -10.5d
+			y: -5.5d
+			id: "739EFDC592FA6132"
+			tasks: [{
+				id: "695D63532D541BB8"
+				type: "item"
+				item: "exponentialpower:ender_storage"
+			}]
+		}
+		{
+			x: -9.0d
+			y: -5.5d
+			dependencies: ["739EFDC592FA6132"]
+			id: "24000C0EA7565FCD"
+			tasks: [{
+				id: "30A1EF05A5800EB5"
+				type: "item"
+				item: "exponentialpower:advanced_ender_storage"
+			}]
+		}
+		{
+			x: -10.5d
+			y: -7.0d
+			dependencies: ["739EFDC592FA6132"]
+			id: "31FB3B3D2F475880"
+			tasks: [{
+				id: "51ECE5D2DCA8A91F"
+				type: "item"
+				item: "exponentialpower:ender_generator"
+			}]
+		}
+		{
+			x: -9.0d
+			y: -7.0d
+			dependencies: ["31FB3B3D2F475880"]
+			id: "7423415E4AAF0157"
+			tasks: [{
+				id: "3D9FF3BE879FB994"
+				type: "item"
+				item: "exponentialpower:advanced_ender_generator"
+			}]
+		}
+		{
+			x: -10.5d
+			y: -4.0d
+			shape: "heart"
+			subtitle: "レシピ実装してふと前のレシピ見たら想定以上にやばかった図"
+			description: [
+				"地獄賛歌"
+				"制作：Lace"
+			]
+			dependencies: ["066C0FA569DF2665"]
+			id: "3802AAECA4207B76"
+			tasks: [{
+				id: "6AE757CA0DD430D4"
+				type: "item"
+				item: "exponentialpower:ender_cell"
+			}]
+		}
+		{
+			x: -10.5d
+			y: -2.0d
+			subtitle: "これは何ですか？"
+			description: [
+				"どうしてこんなことをしたのか。首根っこつかんでガクガクさせたい"
+				"制作：ocho"
+			]
+			id: "066C0FA569DF2665"
+			tasks: [{
+				id: "5AC9DC667AE0E7F9"
+				type: "item"
+				item: "valine_s1ex:enriched_antimatter_pellet"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -7.0d
+			subtitle: "tuna......?"
+			description: [
+				"要するにマグロ"
+				"制作：takoito"
+			]
+			id: "2411FB7CCF1A7D8A"
+			tasks: [{
+				id: "3AE9FA5ADEDF09E2"
+				type: "item"
+				item: "valine_s1ex:tuna"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -5.5d
+			subtitle: "必須アミノ酸"
+			description: [
+				"突然現れたアミノ酸"
+				"制作:takoito"
+			]
+			dependencies: ["2411FB7CCF1A7D8A"]
+			id: "2DB8F8AD1C5D83EA"
+			tasks: [{
+				id: "1C8859842F58D743"
+				type: "item"
+				item: "valine_s1ex:valine"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -4.0d
+			subtitle: "圧縮圧縮ぅ！"
+			description: [
+				"おっと圧縮しすぎた"
+				"制作：takoito"
+			]
+			dependencies: ["2DB8F8AD1C5D83EA"]
+			id: "2419E418DDD19E40"
+			tasks: [{
+				id: "29A7E2EC33FC0FE0"
+				type: "item"
+				item: "valine_s1ex:compacted_valine3g_pellet"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -4.0d
+			subtitle: "解体中......"
+			description: [
+				"なんか一つで作れる個数が多くね？"
+				"制作：takoito"
+			]
+			dependencies: ["2419E418DDD19E40"]
+			id: "3A2F67A7C6D13140"
+			tasks: [{
+				id: "09777ACC80102F09"
+				type: "item"
+				item: "valine_s1ex:valine3g_pellet"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -2.5d
+			subtitle: "特異点のかんせー！"
+			description: [
+				"いやなんだよ猫の鳴きまねしそうな実況者の特異点って"
+				"制作：takoito"
+			]
+			dependencies: ["3A2F67A7C6D13140"]
+			id: "7358E8A31B3AAAD8"
+			tasks: [{
+				id: "445E1DE329A733E9"
+				type: "item"
+				item: {
+					id: "extendedcrafting:singularity"
+					Count: 1b
+					tag: {
+						Id: "extendedcrafting:valine3g"
+					}
+				}
+			}]
+		}
+		{
+			x: 5.0d
+			y: -12.0d
+			id: "10F6AFFB75B3C675"
+			tasks: [{
+				id: "48532C1E4FF95AED"
+				type: "item"
+				item: "thermal:sushi_maki"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -12.0d
+			id: "1F5DE5B551BC6CA4"
+			tasks: [{
+				id: "22DF8179D63F45F2"
+				type: "item"
+				item: "thermal:stuffed_pepper"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -12.0d
+			id: "7AD5FA0FE7D0E23D"
+			tasks: [{
+				id: "0552897E436310AF"
+				type: "item"
+				item: "thermal:pbj_sandwich"
+			}]
+		}
+		{
+			x: 9.5d
+			y: -12.0d
+			id: "3AC222259E50D3FB"
+			tasks: [{
+				id: "010DD25BBA291BA2"
+				type: "item"
+				item: "thermal:green_bean_pie"
+			}]
+		}
+		{
+			x: 11.0d
+			y: -12.0d
+			id: "411A72B0BCA8906D"
+			tasks: [{
+				id: "1F0ECA32D43CE645"
+				type: "item"
+				item: "thermal:cheese_wedge"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -12.0d
+			id: "383EFC90C1A607AB"
+			tasks: [{
+				id: "068333A99336CCCB"
+				type: "item"
+				item: "thermal:spring_salad"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -12.0d
+			id: "6BBC4F6C78A22169"
+			tasks: [{
+				id: "2A0EDA4A9DAC9CAB"
+				type: "item"
+				item: "thermal:hearty_stew"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -12.0d
+			id: "08C79FD56F3B3F73"
+			tasks: [{
+				id: "1655A75F8EAF0AD4"
+				type: "item"
+				item: "thermal:xp_stew"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -12.0d
+			id: "47A83E2F9345801E"
+			tasks: [{
+				id: "2650E9EEA349E93E"
+				type: "item"
+				item: "thermal:cheese_wheel"
+			}]
+		}
+		{
+			x: 11.0d
+			y: -13.5d
+			id: "758B386B7FB19176"
+			tasks: [{
+				id: "74A213EB65AD3A11"
+				type: "item"
+				item: "thermal:cooked_eggplant"
+			}]
+		}
+		{
+			x: 9.5d
+			y: -13.5d
+			id: "77E3B76BD945264A"
+			tasks: [{
+				id: "59F7DD93A9950570"
+				type: "item"
+				item: "thermal:cooked_corn"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -13.5d
+			id: "2A7494B945E4BE17"
+			tasks: [{
+				id: "7D3D67FC9FC6C72A"
+				type: "item"
+				item: "thermal:cooked_mushroom"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -13.5d
+			id: "4F16A80F38638208"
+			tasks: [{
+				id: "77CC4A2681753FD3"
+				type: "item"
+				item: "cyclic:toxic_carrot"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -13.5d
+			id: "0F8F8E156B88284A"
+			tasks: [{
+				id: "560AA3182015B6A0"
+				type: "item"
+				item: "productivebees:milk_bottle"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -13.5d
+			id: "2B21F9DC994FB091"
+			tasks: [{
+				id: "2C21D97778520032"
+				type: "item"
+				item: "cyclic:lapis_carrot_variant"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -13.5d
+			id: "39E4F7E4D4EE0007"
+			tasks: [{
+				id: "3F86D67CCDE27900"
+				type: "item"
+				item: "cyclic:emerald_carrot_jump"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -13.5d
+			id: "5681C7EB66520716"
+			tasks: [{
+				id: "2FEE1D0F0AD69D82"
+				type: "item"
+				item: "cyclic:redstone_carrot_speed"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -13.5d
+			id: "4E27BD04391CFF1B"
+			tasks: [{
+				id: "1B13DDEBE2598A1E"
+				type: "item"
+				item: "cyclic:diamond_carrot_health"
+			}]
+		}
+		{
+			x: 11.0d
+			y: -15.0d
+			id: "2267C2F02E2EB966"
+			tasks: [{
+				id: "74B5262BF0F30B1D"
+				type: "item"
+				item: "cyclic:carrot_ender"
+			}]
+		}
+		{
+			x: 9.5d
+			y: -15.0d
+			id: "184E9A7C74681B8F"
+			tasks: [{
+				id: "7C47D8014F93B731"
+				type: "item"
+				item: "cyclic:chorus_spectral"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -15.0d
+			id: "10F20CD9677A7ADF"
+			tasks: [{
+				id: "79D16876B2207CDE"
+				type: "item"
+				item: "cyclic:chorus_flight"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -15.0d
+			id: "08072E7067FF7F0A"
+			tasks: [{
+				id: "0AF04EBA25EE5F08"
+				type: "item"
+				item: "cyclic:apple_chocolate"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -15.0d
+			id: "5E332D6C5B167185"
+			tasks: [{
+				id: "71285FB5B5CAD1C9"
+				type: "item"
+				item: "cyclic:apple_emerald"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -15.0d
+			id: "604BF3423A3A35EE"
+			tasks: [{
+				id: "1726BFFCE96C9084"
+				type: "item"
+				item: "cyclic:apple_diamond"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -15.0d
+			id: "05941A1307106C3A"
+			tasks: [{
+				id: "30388FEE32D3413A"
+				type: "item"
+				item: "cyclic:apple_iron"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -15.0d
+			id: "0190643022500E5C"
+			tasks: [{
+				id: "54C249EE325286E5"
+				type: "item"
+				item: "cyclic:apple_lapis"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -15.0d
+			id: "43156C29B29B5198"
+			tasks: [{
+				id: "4CEC9436F9BE09A0"
+				type: "item"
+				item: "cyclic:apple_prismarine"
+			}]
+		}
+		{
+			x: 11.0d
+			y: -16.5d
+			id: "22751E2FD9FC214E"
+			tasks: [{
+				id: "28087024F7D22357"
+				type: "item"
+				item: "cyclic:apple_bone"
+			}]
+		}
+		{
+			x: 9.5d
+			y: -16.5d
+			id: "08796B31E49CF14A"
+			tasks: [{
+				id: "7558FAEB6CC6C941"
+				type: "item"
+				item: "cyclic:apple_chorus"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -16.5d
+			id: "72391F98917D1DB0"
+			tasks: [{
+				id: "39C0E53A49137AAB"
+				type: "item"
+				item: "cyclic:apple_honey"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -16.5d
+			id: "286C007721539A4B"
+			tasks: [{
+				id: "24A2B2BB49492752"
+				type: "item"
+				item: "cyclic:apple_lofty_stature"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -16.5d
+			id: "118D22FC785A909A"
+			tasks: [{
+				id: "2E0198685CD1DF47"
+				type: "item"
+				item: "cyclic:apple_ender"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -16.5d
+			id: "765D94107CDEF375"
+			tasks: [{
+				id: "14CD1A120361F626"
+				type: "item"
+				item: "create:dough"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -16.5d
+			id: "46B7048481C20A67"
+			tasks: [{
+				id: "4C45261AFD95960E"
+				type: "item"
+				item: "create:blaze_cake"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -16.5d
+			id: "06589D54B8B86428"
+			tasks: [{
+				id: "40A7814AB8C365C1"
+				type: "item"
+				item: "create:bar_of_chocolate"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -16.5d
+			id: "3614651CF110C77E"
+			tasks: [{
+				id: "50193907F427AACF"
+				type: "item"
+				item: "create:sweet_roll"
+			}]
+		}
+		{
+			x: 11.0d
+			y: -18.0d
+			id: "4FA32F3B6419809F"
+			tasks: [{
+				id: "5E29D2B983F55C38"
+				type: "item"
+				item: "create:chocolate_glazed_berries"
+			}]
+		}
+		{
+			x: 9.5d
+			y: -18.0d
+			id: "648FFA16B29F5A2D"
+			tasks: [{
+				id: "2A83493F4DEFE990"
+				type: "item"
+				item: "create:honeyed_apple"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -18.0d
+			id: "121C24377ECDEFBB"
+			tasks: [{
+				id: "37E10F3CE23AE7E6"
+				type: "item"
+				item: "create:builders_tea"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -18.0d
+			id: "6B5713CA4EAE4A64"
+			tasks: [{
+				id: "6100784530BC0731"
+				type: "item"
+				item: "pneumaticcraft:salmon_tempura"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -18.0d
+			id: "326E95A9CCA414F1"
+			tasks: [{
+				id: "640A02067B3D6B3A"
+				type: "item"
+				item: {
+					id: "draconicadditions:hermal"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							module_host: {
+								provider_id: [I;
+									1239382263
+									107106282
+									-1194135168
+									933528897
+								]
+								modules: [ ]
+								properties: { }
+							}
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 3.5d
+			y: -18.0d
+			id: "027C62DC0C8E76BE"
+			tasks: [{
+				id: "787BEAEC7885538B"
+				type: "item"
+				item: "pneumaticcraft:cod_n_chips"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -18.0d
+			id: "784FB15B8BF47A82"
+			tasks: [{
+				id: "1842674450C42957"
+				type: "item"
+				item: "pneumaticcraft:sourdough_bread"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -18.0d
+			id: "0308660680D77189"
+			tasks: [{
+				id: "1AE327016F1C38A6"
+				type: "item"
+				item: "botania:mana_cookie"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -18.0d
+			id: "7DA41F580AEBF74B"
+			tasks: [{
+				id: "7198C3913A6B504E"
+				type: "item"
+				item: "createaddition:honey_cake"
+			}]
+		}
+		{
+			x: 11.0d
+			y: -19.5d
+			id: "0511B1CA7C13B34C"
+			tasks: [{
+				id: "745AC9CA28666CC0"
+				type: "item"
+				item: "createaddition:chocolate_cake"
+			}]
+		}
+		{
+			x: 9.5d
+			y: -19.5d
+			id: "461C45E39D0782AD"
+			tasks: [{
+				id: "281069A6EC55A6D8"
+				type: "item"
+				item: "tconstruct:magma_cake"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -19.5d
+			id: "7BF50E631038A9A3"
+			tasks: [{
+				id: "3D6B5C1CF713BE2B"
+				type: "item"
+				item: "tconstruct:ender_cake"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -19.5d
+			id: "4F2B02A93CED7CD4"
+			tasks: [{
+				id: "059FEAE60CE9F199"
+				type: "item"
+				item: "tconstruct:blood_cake"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -19.5d
+			id: "69C9A172F3161000"
+			tasks: [{
+				id: "22B71150157F3F34"
+				type: "item"
+				item: "tconstruct:sky_cake"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -19.5d
+			id: "50B012FCAF660943"
+			tasks: [{
+				id: "2E0B882175C29A7F"
+				type: "item"
+				item: "tconstruct:earth_cake"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -19.5d
+			id: "5DD25C81817AFD6E"
+			tasks: [{
+				id: "45DDBEC96C3FCD9E"
+				type: "item"
+				item: "tconstruct:jeweled_apple"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -19.5d
+			id: "22EC434AC6E1A0CF"
+			tasks: [{
+				id: "2EE6D13C3EB04794"
+				type: "item"
+				item: "tconstruct:bacon"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -19.5d
+			id: "007C01C6E18A2E54"
+			tasks: [{
+				id: "2FD2EF54871BEF53"
+				type: "item"
+				item: "mysticalagradditions:insanium_apple"
+			}]
+		}
+		{
+			x: 11.0d
+			y: -21.0d
+			id: "2A03F14A682C5006"
+			tasks: [{
+				id: "0662C48B78B590EC"
+				type: "item"
+				item: "mysticalagradditions:supremium_apple"
+			}]
+		}
+		{
+			x: 9.5d
+			y: -21.0d
+			id: "24A2E87E9D68FF51"
+			tasks: [{
+				id: "51D4DB8923E531E4"
+				type: "item"
+				item: "mysticalagradditions:imperium_apple"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -21.0d
+			id: "11DC42D55D9A0B47"
+			tasks: [{
+				id: "256573AAD23C08DC"
+				type: "item"
+				item: "mysticalagradditions:tertium_apple"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -21.0d
+			id: "5C21DB5120F8BB85"
+			tasks: [{
+				id: "46BCB147D0392F61"
+				type: "item"
+				item: "mysticalagradditions:prudentium_apple"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -21.0d
+			id: "5C7BAE69CBF3CDB3"
+			tasks: [{
+				id: "1E52C984E3BBD6AC"
+				type: "item"
+				item: "mysticalagradditions:inferium_apple"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -21.0d
+			id: "3568DB9E796343DB"
+			tasks: [{
+				id: "6558A0D840AB2801"
+				type: "item"
+				item: "minecraft:pumpkin_pie"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -21.0d
+			id: "00416D5D020B0EC5"
+			tasks: [{
+				id: "688C4427E6748E46"
+				type: "item"
+				item: "minecraft:honey_bottle"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -21.0d
+			id: "3BCE57A9F89D8014"
+			tasks: [{
+				id: "570321A81D3F37A0"
+				type: "item"
+				item: "minecraft:rabbit_stew"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -21.0d
+			id: "52CFDC1BA412DF88"
+			tasks: [{
+				id: "5C8C2BEFF332F58B"
+				type: "item"
+				item: "minecraft:dried_kelp"
+			}]
+		}
+		{
+			x: 11.0d
+			y: -22.5d
+			id: "1CC2102650095220"
+			tasks: [{
+				id: "720B95DC4C8614EC"
+				type: "item"
+				item: "minecraft:cookie"
+			}]
+		}
+		{
+			x: 9.5d
+			y: -22.5d
+			id: "04C341F62C83D472"
+			tasks: [{
+				id: "7A84174C78F7DC9A"
+				type: "item"
+				item: "minecraft:cake"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -22.5d
+			id: "6FF007218F1B555B"
+			tasks: [{
+				id: "1367D88CCC0335EB"
+				type: "item"
+				item: "minecraft:mushroom_stew"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -22.5d
+			id: "0F756DA814948F76"
+			tasks: [{
+				id: "74FD8511F92D7B6A"
+				type: "item"
+				item: "minecraft:bread"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -22.5d
+			id: "138B84A1586EA076"
+			tasks: [{
+				id: "6FC63C4A82D99048"
+				type: "item"
+				item: "minecraft:enchanted_golden_apple"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -22.5d
+			id: "58980EE8A4171B91"
+			tasks: [{
+				id: "518693C4AB24BDD0"
+				type: "item"
+				item: "minecraft:golden_apple"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -22.5d
+			id: "1E7A27BD8B7BD0BD"
+			tasks: [{
+				id: "0192A8B59BC94500"
+				type: "item"
+				item: "extrautilitiesrebirth:magical_apple"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -22.5d
+			id: "4CBFD958777436FF"
+			tasks: [{
+				id: "129F4FDF2D49F81C"
+				type: "item"
+				item: "minecraft:baked_potato"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -22.5d
+			id: "060D1426CC0B1B8E"
+			tasks: [{
+				id: "2502A72C4F687B7D"
+				type: "item"
+				item: "thermal:potion_cake"
+			}]
+		}
+		{
+			x: 11.0d
+			y: -24.0d
+			id: "02D5902B28D5DF83"
+			tasks: [{
+				id: "16162CC23017446D"
+				type: "item"
+				item: "thermal:frost_melon"
+			}]
+		}
+		{
+			x: 9.5d
+			y: -24.0d
+			id: "3A3412ECBC931AB8"
+			tasks: [{
+				id: "37EF4249CC82C867"
+				type: "item"
+				item: "thermal:syrup_bottle"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -24.0d
+			id: "7A95C66B1FFDFB95"
+			tasks: [{
+				id: "49D95E6412F271A7"
+				type: "item"
+				item: "thermal:spice_cake"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -24.0d
+			id: "7A0C3CD4C75A62E8"
+			tasks: [{
+				id: "2C72FE17448C1F56"
+				type: "item"
+				item: "thermal:chocolate_cake"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -24.0d
+			id: "4B0623516986805B"
+			tasks: [{
+				id: "0BF0447DF7E575BB"
+				type: "item"
+				item: "thermal:carrot_cake"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -24.0d
+			id: "0433C6489DFEBD6F"
+			tasks: [{
+				id: "173AB6A2D5B6F64B"
+				type: "item"
+				item: "thermal:stuffed_pumpkin"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -24.0d
+			id: "630B4BC72C051594"
+			tasks: [{
+				id: "28D07BA0BF6B6FF9"
+				type: "item"
+				item: "minecraft:beetroot_soup"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -24.0d
+			id: "3AEB42DEB3FC3FEE"
+			tasks: [{
+				id: "5657F9E5BC3822CA"
+				type: "item"
+				item: "minecraft:carrot"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -24.0d
+			id: "6D883FC866A49470"
+			tasks: [{
+				id: "273B18FC4FF03C15"
+				type: "item"
+				item: "minecraft:wheat"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

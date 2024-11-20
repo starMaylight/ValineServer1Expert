@@ -1,0 +1,8 @@
+{
+    "name": "insanium essence",
+    "colors": ["9400d3", "4b0082"],
+    "ingredient": {
+        "item": "mysticalagradditions:insanium_essence"
+    },
+    "materialCount": 10000
+}

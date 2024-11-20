@@ -1,0 +1,649 @@
+{
+	id: "75FF1CD0EC333AC4"
+	group: "43BAF829B74123A2"
+	order_index: 0
+	filename: "1mekanism"
+	title: "1.mekanism"
+	icon: "mekanism:alloy_atomic"
+	subtitle: [
+		"桁違いなインフレの元凶"
+		""
+		""
+		"少女は駆ける。誰よりも早く。誰よりも遠くまで。"
+		"動かなければやられる。動けなくてもやられる。それを知っているからこそ、最低限の物だけを持って動き出す。"
+		"誰よりも早く動き出した星は、協力者とともに発展と逃走を繰り返す。"
+		"その先に光があると信じて。"
+	]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 1.0d
+			id: "7DF4B9A8974E9A47"
+			tasks: [{
+				id: "142560BCE9C0121C"
+				type: "item"
+				item: "mekanism:steel_casing"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 1.0d
+			dependencies: ["7DF4B9A8974E9A47"]
+			id: "18B0534E0A0CCE2D"
+			tasks: [{
+				id: "40B1F468CF573579"
+				type: "item"
+				item: "mekanism:metallurgic_infuser"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -0.5d
+			dependencies: ["7DF4B9A8974E9A47"]
+			id: "5E053549E7DE6FF3"
+			tasks: [{
+				id: "5B37F6A9D4CE09CE"
+				type: "item"
+				item: "mekanism:osmium_compressor"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -2.0d
+			dependencies: ["2B8054D959BA0D95"]
+			id: "48B377A9C9A84008"
+			tasks: [{
+				id: "3738EBEC8AF5FB3D"
+				type: "item"
+				item: "mekanism:alloy_infused"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -2.0d
+			dependencies: ["4FA7C3DFD9E8BBFC"]
+			id: "19C8A6C855D8E6AD"
+			tasks: [{
+				id: "1CB941CD4D172220"
+				type: "item"
+				item: "mekanism:alloy_reinforced"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -2.0d
+			dependencies: ["1831480F1035D733"]
+			id: "34379ABB312061FD"
+			tasks: [{
+				id: "4EE28BBB59E4EC55"
+				type: "item"
+				item: "mekanism:alloy_atomic"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -0.5d
+			dependencies: ["18B0534E0A0CCE2D"]
+			id: "2B8054D959BA0D95"
+			tasks: [{
+				id: "1036CB93AC6F563D"
+				type: "item"
+				item: "valine_s1ex:nichrome_ingot"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -0.5d
+			dependencies: ["18B0534E0A0CCE2D"]
+			id: "4FA7C3DFD9E8BBFC"
+			tasks: [{
+				id: "4448E5E5362E78EE"
+				type: "item"
+				item: "valine_s1ex:tungstain_carbite_ingot"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -0.5d
+			dependencies: ["5E053549E7DE6FF3"]
+			id: "1831480F1035D733"
+			tasks: [{
+				id: "16935894D2669DDF"
+				type: "item"
+				item: "valine_s1ex:osmiridium_ingot"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -3.5d
+			dependencies: [
+				"34379ABB312061FD"
+				"19C8A6C855D8E6AD"
+				"48B377A9C9A84008"
+			]
+			id: "3988C57023D878C6"
+			tasks: [{
+				id: "22A887D098F2242C"
+				type: "item"
+				item: "mekanism:basic_control_circuit"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -5.0d
+			dependencies: ["3988C57023D878C6"]
+			id: "2967F7575FC451E7"
+			tasks: [{
+				id: "75D87A48BB1A3DA8"
+				type: "item"
+				item: "mekanism:enrichment_chamber"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -6.5d
+			dependencies: ["3988C57023D878C6"]
+			id: "3B1440BD8C300F09"
+			tasks: [{
+				id: "77AA42B653D47900"
+				type: "item"
+				item: "mekanism:energized_smelter"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -8.0d
+			dependencies: ["3988C57023D878C6"]
+			id: "79FD4A0B58963D82"
+			tasks: [{
+				id: "4EBDCE5D1E8327C5"
+				type: "item"
+				item: "mekanism:electrolytic_core"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -3.5d
+			dependencies: [
+				"3988C57023D878C6"
+				"48B377A9C9A84008"
+			]
+			id: "72A3C8D94B057EA7"
+			tasks: [{
+				id: "651EC88C6E62A8E9"
+				type: "item"
+				item: "mekanism:advanced_control_circuit"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -9.5d
+			dependencies: ["48B377A9C9A84008"]
+			id: "28D0B24A21BC10CC"
+			tasks: [{
+				id: "7CB235A41F4EA1DD"
+				type: "item"
+				item: "mekanism:energy_tablet"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -8.0d
+			dependencies: ["79FD4A0B58963D82"]
+			id: "7DF3100A96C5E694"
+			tasks: [{
+				id: "452219BE2F6648E8"
+				type: "item"
+				item: "mekanismgenerators:gas_burning_generator"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -8.0d
+			dependencies: ["79FD4A0B58963D82"]
+			id: "714B56F3A2CE9906"
+			tasks: [{
+				id: "122364B8DEC15D29"
+				type: "item"
+				item: "mekanism:electrolytic_separator"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -3.5d
+			dependencies: ["72A3C8D94B057EA7"]
+			id: "74A8BF234935AA3E"
+			tasks: [{
+				id: "3145DA72ED7FB97A"
+				type: "item"
+				item: "mekanism:elite_control_circuit"
+			}]
+		}
+		{
+			x: 8.5d
+			y: -3.5d
+			dependencies: ["74A8BF234935AA3E"]
+			id: "43BE3642C4D086BD"
+			tasks: [{
+				id: "60A4F403AB3671C9"
+				type: "item"
+				item: "mekanism:ultimate_control_circuit"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -5.0d
+			dependencies: ["72A3C8D94B057EA7"]
+			id: "5B0D5AFF375EECA4"
+			tasks: [{
+				id: "72F151D4C15E533C"
+				type: "item"
+				item: "mekanism:chemical_oxidizer"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -6.5d
+			dependencies: ["72A3C8D94B057EA7"]
+			id: "3BB4A110113F4B23"
+			tasks: [{
+				id: "0ACB7D71D602B8C9"
+				type: "item"
+				item: "mekanism:chemical_infuser"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -5.0d
+			dependencies: ["74A8BF234935AA3E"]
+			id: "469F14D419FBA3E3"
+			tasks: [{
+				id: "317F067E1432C1B9"
+				type: "item"
+				item: "mekanism:nutritional_liquifier"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -6.5d
+			dependencies: ["74A8BF234935AA3E"]
+			id: "3D0F0DBEA66375A4"
+			tasks: [{
+				id: "217BA600BC83F420"
+				type: "item"
+				item: "mekanism:purification_chamber"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -8.0d
+			dependencies: ["74A8BF234935AA3E"]
+			id: "24A5C1F2E3AD1BCE"
+			tasks: [{
+				id: "63EBE9214C92CC4A"
+				type: "item"
+				item: "mekanism:chemical_injection_chamber"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -9.5d
+			dependencies: ["74A8BF234935AA3E"]
+			id: "7A4C46B6BE016617"
+			tasks: [{
+				id: "03D58343DF7C5428"
+				type: "item"
+				item: "mekanism:combiner"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -11.0d
+			dependencies: ["74A8BF234935AA3E"]
+			id: "639455A80A697715"
+			tasks: [{
+				id: "7FC8094B9442D565"
+				type: "item"
+				item: "mekanism:pressurized_reaction_chamber"
+			}]
+		}
+		{
+			x: 8.5d
+			y: -5.0d
+			dependencies: ["43BE3642C4D086BD"]
+			id: "3A005CDC38438C94"
+			tasks: [{
+				id: "0B60731C49CB6D26"
+				type: "item"
+				item: "mekanism:chemical_dissolution_chamber"
+			}]
+		}
+		{
+			x: 8.5d
+			y: -6.5d
+			dependencies: ["43BE3642C4D086BD"]
+			id: "5F7AD1232F2D3E8C"
+			tasks: [{
+				id: "7CB6D7998B955EFE"
+				type: "item"
+				item: "mekanism:quantum_entangloporter"
+			}]
+		}
+		{
+			x: 8.5d
+			y: -8.0d
+			dependencies: ["43BE3642C4D086BD"]
+			id: "6828ED3FD550E2AD"
+			tasks: [{
+				id: "381D0AEFD301C926"
+				type: "item"
+				item: "mekanism:dimensional_stabilizer"
+			}]
+		}
+		{
+			x: 8.5d
+			y: -9.5d
+			dependencies: ["43BE3642C4D086BD"]
+			id: "49CE178EEA38B30B"
+			tasks: [{
+				id: "15D5E54060DA8DFA"
+				type: "item"
+				item: "mekanism:chemical_washer"
+			}]
+		}
+		{
+			x: 8.5d
+			y: -11.0d
+			dependencies: ["43BE3642C4D086BD"]
+			id: "35B24A6A97A6870A"
+			tasks: [{
+				id: "63E7D2244D0E6283"
+				type: "item"
+				item: "mekanism:chemical_crystallizer"
+			}]
+		}
+		{
+			x: 8.5d
+			y: -12.5d
+			dependencies: ["43BE3642C4D086BD"]
+			id: "24683743946775E9"
+			tasks: [{
+				id: "0EDCFE93DE4AA6F5"
+				type: "item"
+				item: "mekanism:digital_miner"
+			}]
+		}
+		{
+			x: 8.5d
+			y: -14.0d
+			dependencies: ["43BE3642C4D086BD"]
+			id: "7178AB59C0DF31F6"
+			tasks: [{
+				id: "6950FA6A19381E9F"
+				type: "item"
+				item: "mekanism:isotopic_centrifuge"
+			}]
+		}
+		{
+			x: 8.5d
+			y: -2.0d
+			dependencies: ["43BE3642C4D086BD"]
+			id: "6E0DEE8D4312B3AD"
+			tasks: [{
+				id: "3178CB8D3DF89D29"
+				type: "item"
+				item: "valine_s1ex:highend_circuit"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -11.0d
+			dependencies: ["3988C57023D878C6"]
+			id: "62A068DADFC76A8C"
+			tasks: [{
+				id: "074D4B2180500933"
+				type: "item"
+				item: "mekanism:basic_tier_installer"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -12.5d
+			dependencies: [
+				"72A3C8D94B057EA7"
+				"62A068DADFC76A8C"
+			]
+			id: "22ED1C87B226C70D"
+			tasks: [{
+				id: "52FB35CAC8D0CB87"
+				type: "item"
+				item: "mekanism:advanced_tier_installer"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -14.0d
+			dependencies: [
+				"74A8BF234935AA3E"
+				"22ED1C87B226C70D"
+			]
+			id: "4B0013C8F76842A0"
+			tasks: [{
+				id: "7EB7551CA0675634"
+				type: "item"
+				item: "mekanism:elite_tier_installer"
+			}]
+		}
+		{
+			x: 8.5d
+			y: -16.0d
+			dependencies: [
+				"43BE3642C4D086BD"
+				"4B0013C8F76842A0"
+			]
+			id: "146222EFBED9E0DC"
+			tasks: [{
+				id: "2526D50B254D6AD9"
+				type: "item"
+				item: "mekanism:ultimate_tier_installer"
+			}]
+		}
+		{
+			x: 10.0d
+			y: -2.0d
+			dependencies: ["48B377A9C9A84008"]
+			id: "40E3E15A98F707DA"
+			tasks: [{
+				id: "65158A23B9793510"
+				type: "item"
+				item: "mekanism:energy_tablet"
+			}]
+		}
+		{
+			x: 11.5d
+			y: -2.0d
+			dependencies: ["40E3E15A98F707DA"]
+			id: "612DCF1F022FDBF6"
+			tasks: [{
+				id: "73B961EC9DA520DD"
+				type: "item"
+				item: "solarpanels:improved_energy_tablet"
+			}]
+		}
+		{
+			x: 13.0d
+			y: -2.0d
+			dependencies: ["612DCF1F022FDBF6"]
+			id: "5A274B02DB0CBF37"
+			tasks: [{
+				id: "6ECA232C3A55EDBB"
+				type: "item"
+				item: "solarpanels:quantum_energy_tablet"
+			}]
+		}
+		{
+			x: 14.5d
+			y: -2.0d
+			dependencies: ["5A274B02DB0CBF37"]
+			id: "7E7C81694161BB7D"
+			tasks: [{
+				id: "0DCC0BB07AE1F820"
+				type: "item"
+				item: "solarpanels:spectral_energy_tablet"
+			}]
+		}
+		{
+			x: 16.0d
+			y: -2.0d
+			dependencies: ["7E7C81694161BB7D"]
+			id: "14006C7A709B61DE"
+			tasks: [{
+				id: "33DA69D8B5D2F636"
+				type: "item"
+				item: "solarpanels:singular_energy_tablet"
+			}]
+		}
+		{
+			x: 17.5d
+			y: -2.0d
+			dependencies: ["14006C7A709B61DE"]
+			id: "3B110DDA70FA6080"
+			tasks: [{
+				id: "6BE6D1354064CBC7"
+				type: "item"
+				item: "solarpanels:light_absorbing_energy_tablet"
+			}]
+		}
+		{
+			x: 19.0d
+			y: -2.0d
+			dependencies: ["3B110DDA70FA6080"]
+			id: "682F64581D316632"
+			tasks: [{
+				id: "3285512A5C432ACF"
+				type: "item"
+				item: "solarpanels:photonic_energy_tablet"
+			}]
+		}
+		{
+			x: 10.0d
+			y: -3.5d
+			dependencies: ["40E3E15A98F707DA"]
+			id: "2F11B39E944BA263"
+			tasks: [{
+				id: "53755A33EC4569CB"
+				type: "item"
+				item: "mekanismgenerators:solar_generator"
+			}]
+		}
+		{
+			x: 10.0d
+			y: -5.0d
+			dependencies: ["2F11B39E944BA263"]
+			id: "2A1312774769AE98"
+			tasks: [{
+				id: "52A6D19EA33E91C1"
+				type: "item"
+				item: "solarpanels:advanced_solar_panel"
+			}]
+		}
+		{
+			x: 10.0d
+			y: -6.5d
+			dependencies: ["2A1312774769AE98"]
+			id: "7FCB22751090BAA3"
+			tasks: [{
+				id: "35018EE4967AFE7B"
+				type: "item"
+				item: "solarpanels:hybrid_solar_panel"
+			}]
+		}
+		{
+			x: 11.5d
+			y: -6.5d
+			dependencies: [
+				"7FCB22751090BAA3"
+				"612DCF1F022FDBF6"
+			]
+			id: "668662BB28E2CC4C"
+			tasks: [{
+				id: "7B6DE83D6400FD0C"
+				type: "item"
+				item: "solarpanels:ultimate_hybrid_solar_panel"
+			}]
+		}
+		{
+			x: 13.0d
+			y: -6.5d
+			dependencies: [
+				"668662BB28E2CC4C"
+				"5A274B02DB0CBF37"
+			]
+			id: "49957293330040FB"
+			tasks: [{
+				id: "24DA1B4CB942FEE3"
+				type: "item"
+				item: "solarpanels:quantum_solar_panel"
+			}]
+		}
+		{
+			x: 14.5d
+			y: -6.5d
+			dependencies: [
+				"49957293330040FB"
+				"7E7C81694161BB7D"
+			]
+			id: "6F294753E93F4C6F"
+			tasks: [{
+				id: "15DF2A789D9A5B07"
+				type: "item"
+				item: "solarpanels:spectral_solar_panel"
+			}]
+		}
+		{
+			x: 16.0d
+			y: -6.5d
+			dependencies: [
+				"6F294753E93F4C6F"
+				"14006C7A709B61DE"
+			]
+			id: "016F49AE1DB9A965"
+			tasks: [{
+				id: "4D2866AC8AD8AA94"
+				type: "item"
+				item: "solarpanels:singular_solar_panel"
+			}]
+		}
+		{
+			x: 17.5d
+			y: -6.5d
+			dependencies: [
+				"016F49AE1DB9A965"
+				"3B110DDA70FA6080"
+			]
+			id: "15B0467A2E32080E"
+			tasks: [{
+				id: "10AB9FF3034A5E34"
+				type: "item"
+				item: "solarpanels:light_absorbing_solar_panel"
+			}]
+		}
+		{
+			x: 19.0d
+			y: -6.5d
+			dependencies: [
+				"15B0467A2E32080E"
+				"682F64581D316632"
+			]
+			id: "457C2D6AF6710F46"
+			tasks: [{
+				id: "59F894EA3ABBD948"
+				type: "item"
+				item: "solarpanels:photonic_solar_panel"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

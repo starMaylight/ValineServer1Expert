@@ -1,0 +1,2 @@
+//<recipetype:mekanism:nucleosynthesizing>.addRecipe("nucleosynthesizing/draconic_energy_core", <item:draconicevolution:wyvern_energy_core>, <gas:mekanism:antimatter> * 10000, <item:draconicevolution:draconic_energy_core>, 2000000);
+//<recipetype:mekanism:nucleosynthesizing>.addRecipe("nucleosynthesizing/ender_cell", <item:draconicevolution:chaotic_core>, <gas:mekanism:antimatter> * 10000, <item:exponentialpower:ender_cell>, 100000);

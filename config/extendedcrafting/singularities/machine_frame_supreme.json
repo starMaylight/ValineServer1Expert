@@ -1,0 +1,8 @@
+{
+    "name": "Supreme Machine Frame",
+    "colors": ["c0c0c0", "f5f5f5"],
+    "ingredient": {
+        "item": "industrialforegoing:machine_frame_supreme"
+    },
+    "materialCount": 100
+}

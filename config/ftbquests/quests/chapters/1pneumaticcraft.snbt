@@ -1,0 +1,618 @@
+{
+	id: "34C8668FC744189D"
+	group: "7ACDCF71AFEABB00"
+	order_index: 1
+	filename: "1pneumaticcraft"
+	title: "1.PneumaticCraft"
+	icon: "pneumaticcraft:pressure_gauge"
+	subtitle: [
+		"長い長いプロローグ"
+		"「ただのプロローグ。ここは幾度となく踏みしめられるべき道だ。」"
+		"「先が見えないなんて聞いてない。終らないなんて望んでない。」"
+		"「序盤だからと言って舐めてかかってはいけない。」"
+	]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			icon: "pneumaticcraft:ingot_iron_compressed"
+			x: 0.0d
+			y: 0.0d
+			subtitle: "Pneの始まり"
+			description: [
+				"初入手は洞窟の宝箱からのことが多いよね"
+				"君はどうだい？"
+			]
+			id: "4291F2292BED0E93"
+			tasks: [{
+				id: "6915C8FA00CB6245"
+				type: "item"
+				item: "pneumaticcraft:ingot_iron_compressed"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 1.5d
+			subtitle: "スターターキット"
+			description: ["油断すると爆発するから気を付けて"]
+			dependencies: ["4291F2292BED0E93"]
+			id: "3C72BF0EBCB6F93B"
+			tasks: [
+				{
+					id: "28A517A986DB0360"
+					type: "item"
+					item: "pneumaticcraft:air_compressor"
+				}
+				{
+					id: "4890B1E2AB09DEAF"
+					type: "item"
+					item: "pneumaticcraft:pressure_tube"
+					count: 8L
+				}
+			]
+		}
+		{
+			x: -1.5d
+			y: 1.5d
+			subtitle: "真の最小構成?"
+			description: ["PressureChamberはインターフェースがなくてもアイテムを入れられる"]
+			dependencies: ["3C72BF0EBCB6F93B"]
+			id: "749E2E0711D45460"
+			tasks: [
+				{
+					id: "550F1CDCDD909B34"
+					type: "item"
+					item: "pneumaticcraft:pressure_chamber_wall"
+					count: 55L
+				}
+				{
+					id: "38B8E72BEB026982"
+					type: "item"
+					item: "pneumaticcraft:pressure_chamber_valve"
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: 3.0d
+			subtitle: "最小構成"
+			description: ["4x4x4のPressureChamberってあんまりつくらなくない？"]
+			dependencies: ["3C72BF0EBCB6F93B"]
+			id: "1593FBBAFE7EEE70"
+			tasks: [
+				{
+					id: "43C8B6CAEF4B8880"
+					type: "item"
+					item: "pneumaticcraft:pressure_chamber_wall"
+					count: 53L
+				}
+				{
+					id: "6098B7580E9C2E70"
+					type: "item"
+					item: "pneumaticcraft:pressure_chamber_valve"
+				}
+				{
+					id: "04BEF2E474F71A9C"
+					type: "item"
+					item: "pneumaticcraft:pressure_chamber_interface"
+					count: 2L
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: 6.0d
+			subtitle: "プラスチックは2種類ある"
+			description: ["簡単な方で代用できたらいいのにね"]
+			dependencies: ["4674EAE9D2539EFD"]
+			id: "28198177286BBDE4"
+			tasks: [{
+				id: "67A2263CEF4A1FCC"
+				type: "item"
+				item: "pneumaticcraft:plastic"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 4.5d
+			subtitle: "設置して冷やそう"
+			description: ["実績：無限に足りない"]
+			dependencies: ["3062CC2E965AD4D8"]
+			id: "4674EAE9D2539EFD"
+			tasks: [{
+				id: "699F896CAC0D798F"
+				type: "item"
+				item: "pneumaticcraft:plastic_bucket"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 4.5d
+			subtitle: "プラスチックの素材"
+			description: ["全てこれにしてしまおう"]
+			dependencies: ["02CD94C7C15E5C79"]
+			id: "28AB8B6516074013"
+			tasks: [{
+				id: "15A697FCF4E99CEA"
+				type: "item"
+				item: "pneumaticcraft:lpg_bucket"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 3.0d
+			subtitle: "プラスチックの素材"
+			description: ["実は副産物は回復アイテムになる。"]
+			dependencies: [
+				"46B323CD20B63228"
+				"270B3D374BD9B39F"
+				"7E7F50A3FE652AE1"
+			]
+			id: "045C56653D192C6A"
+			tasks: [{
+				id: "59A314111B3C46B0"
+				type: "item"
+				item: "pneumaticcraft:biodiesel_bucket"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 3.0d
+			subtitle: "精製所"
+			description: ["原油以外普通は処理しないって。"]
+			dependencies: [
+				"25254ACFFFD778A4"
+				"3C72BF0EBCB6F93B"
+			]
+			id: "02CD94C7C15E5C79"
+			tasks: [
+				{
+					id: "74955112BE296F1E"
+					type: "item"
+					item: "pneumaticcraft:refinery"
+				}
+				{
+					id: "6C531E078215D652"
+					type: "item"
+					item: "pneumaticcraft:refinery_output"
+					count: 4L
+				}
+			]
+		}
+		{
+			x: -3.0d
+			y: 3.0d
+			subtitle: "現実でもその辺に原油があればいいのに"
+			description: ["でもその辺にあったらあったで邪魔じゃない？"]
+			id: "25254ACFFFD778A4"
+			tasks: [{
+				id: "54F01A151742B7F0"
+				type: "item"
+				item: "pneumaticcraft:oil_bucket"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 3.0d
+			subtitle: "とにかく温める...だけじゃどうにもならない"
+			description: [
+				"アツゥイ！"
+				"実は何故か序盤中盤終盤すべてで使う機会が生まれている機械である。"
+			]
+			dependencies: ["3C72BF0EBCB6F93B"]
+			id: "3062CC2E965AD4D8"
+			tasks: [{
+				id: "01FE0B0B03B336D7"
+				type: "item"
+				item: "pneumaticcraft:thermopneumatic_processing_plant"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 3.0d
+			subtitle: "適切な圧力をかけよう"
+			description: ["指定は圧力だけ……優しいな！"]
+			dependencies: ["3062CC2E965AD4D8"]
+			id: "46B323CD20B63228"
+			tasks: [{
+				id: "0B79224D6614D769"
+				type: "item"
+				item: "pneumaticcraft:vegetable_oil_bucket"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 4.5d
+			subtitle: "いつになったら作れるかな"
+			description: ["温度上限⁺下限指定やめてください！"]
+			dependencies: ["44B74D89C12544F1"]
+			id: "270B3D374BD9B39F"
+			tasks: [{
+				id: "012D50737B7FE216"
+				type: "item"
+				item: "pneumaticcraft:ethanol_bucket"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 4.5d
+			subtitle: "mekanismの抵抗型発熱機で温度調整できるらしいね"
+			description: ["mekなんて作れるのはいつになるやら"]
+			dependencies: ["3062CC2E965AD4D8"]
+			id: "44B74D89C12544F1"
+			tasks: [{
+				id: "129F966150E96C70"
+				type: "item"
+				item: "pneumaticcraft:yeast_culture_bucket"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 7.5d
+			subtitle: "熱帯雨林じゃないよ！"
+			description: ["丸石で核は買えないよ？常識だね"]
+			dependencies: ["28198177286BBDE4"]
+			id: "400556E5E2EC77EC"
+			tasks: [{
+				id: "5D0FC6232CB5EC59"
+				type: "item"
+				item: "pneumaticcraft:amadron_tablet"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 7.5d
+			subtitle: "アセンブリーライン...?"
+			description: ["RS関係と回路で使います。序盤から終盤までずっと動いてるんじゃない？"]
+			dependencies: ["400556E5E2EC77EC"]
+			id: "7BA9881BD34342AB"
+			tasks: [
+				{
+					id: "2774837D14B9CE1F"
+					type: "item"
+					item: "pneumaticcraft:assembly_controller"
+				}
+				{
+					id: "2AE97753AD65244D"
+					type: "item"
+					item: "pneumaticcraft:assembly_platform"
+				}
+				{
+					id: "3C4384C17E9F970C"
+					type: "item"
+					item: "pneumaticcraft:assembly_io_unit_import"
+				}
+				{
+					id: "46F9E8BB0A3747BF"
+					type: "item"
+					item: "pneumaticcraft:assembly_io_unit_export"
+				}
+				{
+					id: "7FC458E4FA07A764"
+					type: "item"
+					item: "pneumaticcraft:assembly_laser"
+				}
+				{
+					id: "0492AA93AE428A1F"
+					type: "item"
+					item: "pneumaticcraft:assembly_drill"
+				}
+			]
+		}
+		{
+			x: 3.0d
+			y: 6.0d
+			subtitle: "これ...使う?（※多分必須）"
+			description: ["クエスト作ってて初めて存在を知りました"]
+			dependencies: ["4674EAE9D2539EFD"]
+			id: "1307E2B3F260C46E"
+			tasks: [{
+				id: "12C76BF0867D669C"
+				type: "item"
+				item: "pneumaticcraft:reinforced_pressure_tube"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 9.0d
+			subtitle: "20bar必要なときに使う"
+			description: ["２０barなんて使う？"]
+			dependencies: ["7BA9881BD34342AB"]
+			id: "47B121F2DBCB5E94"
+			tasks: [{
+				id: "44853F9BB36A9AF9"
+				type: "item"
+				item: "pneumaticcraft:advanced_pressure_tube"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 6.0d
+			subtitle: "確実性に欠けた基盤"
+			description: ["遍く基盤の出発点"]
+			dependencies: ["28198177286BBDE4"]
+			id: "423B9FD1490FB106"
+			tasks: [{
+				id: "1A45FC3FAEDE3A08"
+				type: "item"
+				item: "pneumaticcraft:empty_pcb"
+			}]
+		}
+		{
+			x: -4.5d
+			y: 6.0d
+			subtitle: "速度を求めなければ1個で十分"
+			description: ["え？他にもなんか使い道できたの君？"]
+			dependencies: ["4674EAE9D2539EFD"]
+			id: "523AD25FB74A6A22"
+			tasks: [{
+				id: "1DFD8D8AC8C4E562"
+				type: "item"
+				item: "pneumaticcraft:etching_acid_bucket"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 6.0d
+			subtitle: "加工を確実に！"
+			description: ["村を見つけるかIEまで進めるか。"]
+			dependencies: ["423B9FD1490FB106"]
+			id: "041945A5EF9BA38C"
+			tasks: [{
+				id: "1D2CFD6B00B96FD5"
+				type: "item"
+				item: "pneumaticcraft:uv_light_box"
+			}]
+		}
+		{
+			x: -4.5d
+			y: 7.5d
+			subtitle: "加熱すると早くなる"
+			description: ["エッチングってなんかエッうわなんだやめ"]
+			dependencies: ["523AD25FB74A6A22"]
+			id: "1AF96FDEE27A9EDA"
+			tasks: [{
+				id: "699B53A8CDB2C92D"
+				type: "item"
+				item: "pneumaticcraft:etching_tank"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 7.5d
+			subtitle: "あと少しで完成...!"
+			description: ["ショートカットはタブレット後だぞ！"]
+			dependencies: ["423B9FD1490FB106"]
+			id: "06809BFFB90E7E59"
+			tasks: [{
+				id: "769AF1237AA079F2"
+				type: "item"
+				item: "pneumaticcraft:unassembled_pcb"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 7.5d
+			subtitle: "圧力かけるだけで電子部品が作れる不思議"
+			description: ["圧着だけだと不安だな……"]
+			dependencies: ["28198177286BBDE4"]
+			id: "6D2820E82C76A0DB"
+			tasks: [
+				{
+					id: "4AA1C945F55E305A"
+					type: "item"
+					item: "pneumaticcraft:capacitor"
+				}
+				{
+					id: "062798CA409617AA"
+					type: "item"
+					item: "pneumaticcraft:transistor"
+				}
+			]
+		}
+		{
+			x: -1.5d
+			y: 9.0d
+			subtitle: "これを売っている村人の技術力とは..."
+			description: ["高級だろうと容赦なく使っていく"]
+			dependencies: [
+				"06809BFFB90E7E59"
+				"6D2820E82C76A0DB"
+			]
+			id: "5BD3723CA4869DA0"
+			tasks: [{
+				id: "084EA8768FCF6254"
+				type: "item"
+				item: "pneumaticcraft:printed_circuit_board"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 10.5d
+			subtitle: "空気圧式アイアンマン"
+			description: [
+				"序盤から作れるからって侮ってはいけない。"
+				"というかかなり超高性能です。"
+			]
+			dependencies: ["5BD3723CA4869DA0"]
+			id: "1C28E9E08F52D39D"
+			tasks: [
+				{
+					id: "13805B2A46EAFD5C"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:pneumatic_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "7987CC08C4780283"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:pneumatic_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0F0D56FB6C7A5A8C"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:pneumatic_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "65D300144B322DA4"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:pneumatic_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 3.0d
+			y: 7.5d
+			subtitle: "上位のコンプレッサー"
+			description: ["他が優秀なせいで影薄い？"]
+			dependencies: ["47B121F2DBCB5E94"]
+			id: "6F88830B8DC1C2CC"
+			tasks: [{
+				id: "526AB3E2BD19F08F"
+				type: "item"
+				item: "pneumaticcraft:advanced_air_compressor"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 4.5d
+			subtitle: "温度差を圧力に"
+			description: [
+				"10barまで生産できるの君だけなんだよね"
+				"数回爆発させると思うけど頑張って"
+			]
+			id: "63AA436BD994A483"
+			tasks: [{
+				id: "39B44C8A0A016467"
+				type: "item"
+				item: "pneumaticcraft:thermal_compressor"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 7.5d
+			subtitle: "液体を圧力に"
+			description: ["液体燃料他に使い道有るからなぁ"]
+			id: "6A99A8896DF26F76"
+			tasks: [{
+				id: "757B2DC18132CDB1"
+				type: "item"
+				item: "pneumaticcraft:liquid_compressor"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 7.5d
+			subtitle: "液体を圧力にその2"
+			description: ["影薄いよねえ君も。かわいそうに。"]
+			dependencies: ["6A99A8896DF26F76"]
+			id: "1565B6206DB74AB0"
+			tasks: [{
+				id: "6FD425B63504C58E"
+				type: "item"
+				item: "pneumaticcraft:advanced_liquid_compressor"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 9.0d
+			subtitle: "これさえあれば安心"
+			description: ["序盤は電気気軽に使えないけどねぇ"]
+			dependencies: [
+				"47B121F2DBCB5E94"
+				"5BD3723CA4869DA0"
+			]
+			id: "575BE0E8120FAE20"
+			tasks: [{
+				id: "57B798F9B45E7F70"
+				type: "item"
+				item: "pneumaticcraft:flux_compressor"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 6.0d
+			subtitle: "太陽光を圧力に"
+			id: "228E4F81AE657C4C"
+			tasks: [{
+				id: "6AE2F7E3109035DD"
+				type: "item"
+				item: "pneumaticcraft:solar_compressor"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 6.0d
+			subtitle: "雷から圧力に"
+			description: ["雷あんま見たことないんだけどほんとに落ちる……ん？なんか雨が降っ"]
+			id: "481E7E52F2EC0F71"
+			tasks: [{
+				id: "41344AEDA140E08D"
+				type: "item"
+				item: "pneumaticcraft:electrostatic_compressor"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 1.5d
+			subtitle: "まじぇまじぇ"
+			description: ["中盤まで稼働しっぱなしになることに気づくのにあと１秒。"]
+			dependencies: ["3C72BF0EBCB6F93B"]
+			id: "7E7F50A3FE652AE1"
+			tasks: [{
+				id: "216D5258BE1ACDB1"
+				type: "item"
+				item: "pneumaticcraft:fluid_mixer"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 4.5d
+			subtitle: "これは少しとっておこう"
+			description: ["後で大量に使うからねぇ"]
+			dependencies: ["02CD94C7C15E5C79"]
+			id: "15302C20AB9F9708"
+			tasks: [{
+				id: "6FDACD8B8F7FB575"
+				type: "item"
+				item: "pneumaticcraft:gasoline_bucket"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 4.5d
+			subtitle: "回転を圧力に"
+			description: ["もうこいつ一人でいいんじゃね？"]
+			id: "2BBCF677067FDD24"
+			tasks: [{
+				id: "50FAE8019090587C"
+				type: "item"
+				item: "compressedcreativity:rotational_compressor"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Eternal",
+  "colors": ["7FB1CC","5252B6"],
+  "ingredient": {
+    "item": "valine_s1ex:eternal_block"
+  },
+  "materialCount": 64
+}

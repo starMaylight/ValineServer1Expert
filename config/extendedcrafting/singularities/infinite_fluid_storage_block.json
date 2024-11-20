@@ -1,0 +1,8 @@
+{
+    "name": "Infinite Fluid Storage Block",
+    "colors": ["808080", "a9a9a9"],
+    "ingredient": {
+        "item": "extradisks:infinite_fluid_storage_block"
+    },
+    "materialCount": 50
+}

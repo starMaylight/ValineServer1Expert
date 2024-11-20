@@ -1,0 +1,239 @@
+{
+	id: "5D613F471B6C4E59"
+	group: "76C8668A0FE5C01C"
+	order_index: 2
+	filename: "3rftools"
+	title: "3.Rftools"
+	icon: "rftoolsbase:machine_frame"
+	subtitle: [
+		"極めたるは地形操作"
+		"「世界の破壊と創造。彼らは神の領域に自らの意志を持って手を伸ばした。」"
+		"「彼らは力を手に入れた。望んだ力を。彼らは狂喜する。それが終焉の合図だと知らず。」"
+		"「強い力は人の身には余った。神の決断は早く、自らの手により破滅の宣告を下した。」"
+	]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -0.5d
+			y: 0.0d
+			subtitle: "文句を言ってはいけない"
+			description: ["９割builderのせいです。"]
+			dependencies: [
+				"79CD8F3A8C2814E3"
+				"692A7A94904230FF"
+				"3CD54C516F9647EF"
+			]
+			id: "387B406E0F7CFFD4"
+			tasks: [{
+				id: "591722165FD2BD54"
+				type: "item"
+				item: "rftoolsbase:machine_frame"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 2.5d
+			shape: "square"
+			subtitle: "早い &m安い&r 美味い"
+			description: ["やすくなる予定だったのに......"]
+			dependencies: ["387B406E0F7CFFD4"]
+			optional: true
+			id: "7FCC4D5BDF29A25C"
+			tasks: [{
+				id: "5633E8E5DE220634"
+				type: "item"
+				item: "rftoolsutility:crafter3"
+			}]
+			rewards: [{
+				id: "6BB52617908DD7DD"
+				type: "xp_levels"
+				xp_levels: 20
+			}]
+		}
+		{
+			x: 1.0d
+			y: 2.5d
+			shape: "square"
+			subtitle: "ビルダーって書いてるんだから建築機械"
+			description: ["なお使用用途"]
+			dependencies: ["387B406E0F7CFFD4"]
+			optional: true
+			id: "06D72BBD6B1F9507"
+			tasks: [{
+				id: "7D79C3719D98C55C"
+				type: "item"
+				item: "rftoolsbuilder:builder"
+			}]
+			rewards: [{
+				id: "378E32254B3FF472"
+				type: "xp_levels"
+				xp_levels: 20
+			}]
+		}
+		{
+			x: -0.5d
+			y: 4.0d
+			shape: "square"
+			subtitle: "あると便利な奴"
+			description: ["高すぎるのが欠点"]
+			dependencies: ["387B406E0F7CFFD4"]
+			optional: true
+			id: "5B8538C8C1DB41E1"
+			tasks: [{
+				id: "394795844CBC301C"
+				type: "item"
+				item: "rftoolsbuilder:shield_block4"
+			}]
+			rewards: [{
+				id: "21279B5382B6F399"
+				type: "xp_levels"
+				xp_levels: 20
+			}]
+		}
+		{
+			x: 2.0d
+			y: 1.5d
+			subtitle: "全域クリエ飛行地帯"
+			description: ["バフをばらまけ。限りない遠くまで。"]
+			dependencies: ["387B406E0F7CFFD4"]
+			id: "63796E0251FCA8CF"
+			tasks: [{
+				id: "5517E5613659CD6D"
+				type: "item"
+				item: "rftoolsutility:environmental_controller"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 1.0d
+			subtitle: "地形生成のための"
+			description: ["作業台もどき"]
+			dependencies: ["44962C15F7054B9F"]
+			id: "651360814B28A8AC"
+			tasks: [{
+				id: "3C45534479FD3ED2"
+				type: "item"
+				item: "rftoolsdim:dimlet_workbench"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 0.0d
+			subtitle: "解読はーん"
+			description: ["ほら、dimをちょめちょめしてさ、"]
+			dependencies: ["387B406E0F7CFFD4"]
+			id: "44962C15F7054B9F"
+			tasks: [
+				{
+					id: "792414BBF0E890AA"
+					type: "item"
+					item: "rftoolsdim:researcher"
+				}
+				{
+					id: "575D78400005DFA4"
+					type: "item"
+					item: "rftoolsdim:knowledge_holder"
+				}
+			]
+		}
+		{
+			x: 5.0d
+			y: -1.0d
+			subtitle: "使い道？"
+			description: ["とりあえずで巻き添え食らった人"]
+			dependencies: ["44962C15F7054B9F"]
+			id: "09DDCFAC2208A74F"
+			tasks: [{
+				id: "4F9731155F73557E"
+				type: "item"
+				item: "rftoolsdim:dimension_editor"
+			}]
+		}
+		{
+			x: 7.0d
+			y: 0.0d
+			subtitle: "さて作るかぁ"
+			description: ["莫大な資源を使って開闢の種を生成！"]
+			dependencies: [
+				"651360814B28A8AC"
+				"09DDCFAC2208A74F"
+			]
+			dependency_requirement: "one_completed"
+			id: "36CF9505C6F59467"
+			tasks: [{
+				id: "546C4968D5ED9691"
+				type: "item"
+				item: "rftoolsdim:enscriber"
+			}]
+		}
+		{
+			x: 9.0d
+			y: 0.0d
+			subtitle: "ぐわーっ"
+			description: ["気軽に作らせるわけないよなぁ"]
+			dependencies: ["36CF9505C6F59467"]
+			id: "0B3ED8A35804FA97"
+			tasks: [{
+				id: "59B9515ADD129A9D"
+				type: "item"
+				item: "rftoolsdim:dimension_builder"
+			}]
+		}
+		{
+			x: 9.0d
+			y: 1.0d
+			subtitle: "common"
+			description: ["無限に足りない"]
+			dependencies: ["0B3ED8A35804FA97"]
+			id: "7AA35E100CA9C52F"
+			tasks: [{
+				id: "2B3C56E1F8B84370"
+				type: "item"
+				item: "rftoolsdim:common_essence"
+			}]
+		}
+		{
+			x: 10.0d
+			y: 1.0d
+			subtitle: "Rare"
+			description: ["レアはレアだぞ！"]
+			dependencies: ["0B3ED8A35804FA97"]
+			id: "354C55B47B458412"
+			tasks: [{
+				id: "302D49CA348F860E"
+				type: "item"
+				item: "rftoolsdim:rare_essence"
+			}]
+		}
+		{
+			x: 10.0d
+			y: 0.0d
+			subtitle: "legendary"
+			description: ["これcommonから作るよりかは見つけ出してから沸かせた方がいいやつでは？"]
+			dependencies: ["0B3ED8A35804FA97"]
+			id: "0C927A4F588AC9A5"
+			tasks: [{
+				id: "057AAC50A51B3EA3"
+				type: "item"
+				item: "rftoolsdim:legendary_essence"
+			}]
+		}
+	]
+	quest_links: [
+		{
+			linked_quest: "530D9D3122D00294"
+			x: -1.5d
+			y: -3.0d
+			shape: "square"
+			id: "719A89B53E9D4872"
+		}
+		{
+			linked_quest: "0EE2B3D737D1126D"
+			x: 1.0d
+			y: -3.0d
+			shape: "square"
+			id: "1DE3C861C50A0891"
+		}
+	]
+}

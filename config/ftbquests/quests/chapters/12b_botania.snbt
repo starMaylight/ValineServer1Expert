@@ -1,0 +1,739 @@
+{
+	id: "0C03EF9098A89E5F"
+	group: "7ACDCF71AFEABB00"
+	order_index: 3
+	filename: "12b_botania"
+	title: "3.botania"
+	icon: "botania:cosmetic_tiny_potato_mask"
+	subtitle: [
+		"工業魔術論争"
+		"「爆風が花畑を駆け抜ける。茶の花は絶え、青の花も影に残っていた一輪を除いて絶えた。」"
+		"「技術者と爆弾魔の戦争は終わらない。嵐が過ぎ去るのを待つしかない。」"
+		"「そんな嵐の毎日。根強く生える青の隣にはいつも灰がいた。」"
+	]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -0.5d
+			y: 0.0d
+			subtitle: "これはThaumcraftではない"
+			description: ["ぴゅあぴゅあにしてあげる！"]
+			dependencies: ["0232420D44BC062D"]
+			id: "4B7E57138345532B"
+			tasks: [
+				{
+					id: "036FE5B87169DFEC"
+					type: "item"
+					item: "botania:apothecary_default"
+				}
+				{
+					id: "45941D0245C0194B"
+					type: "item"
+					item: "botania:pure_daisy"
+				}
+			]
+		}
+		{
+			x: 2.0d
+			y: 0.0d
+			subtitle: "なんか見覚えのないものが"
+			description: ["アンザンガンゴウキン-サン"]
+			dependencies: [
+				"4B7E57138345532B"
+				"30FBEBB2AD689456"
+			]
+			id: "3F7AA3D4B6CF6296"
+			tasks: [
+				{
+					id: "035B94FC6175092B"
+					type: "item"
+					item: "botania:livingrock"
+				}
+				{
+					id: "5F2496E1DC0D8A81"
+					type: "item"
+					item: "botania:livingwood_log"
+				}
+			]
+		}
+		{
+			x: 2.0d
+			y: -2.0d
+			subtitle: "じっくり熟成された一品"
+			description: ["取って絞って漬け込む仕事"]
+			id: "30FBEBB2AD689456"
+			tasks: [
+				{
+					id: "1A62FDC469B8AEF3"
+					type: "item"
+					item: "integrateddynamics:menril_log_filled"
+				}
+				{
+					id: "534C9219AB821F98"
+					type: "item"
+					item: "integrateddynamics:squeezer"
+				}
+				{
+					id: "5B5F8F65BB5E1975"
+					type: "item"
+					item: "integrateddynamics:drying_basin"
+				}
+			]
+		}
+		{
+			x: 4.5d
+			y: 0.0d
+			subtitle: "弱くないだけまだまし"
+			description: ["weeeeeeeeeeeeeeeeeek"]
+			dependencies: [
+				"21AB662086E51176"
+				"3F7AA3D4B6CF6296"
+			]
+			id: "0DB61FC3E7339B77"
+			tasks: [
+				{
+					id: "22E27B8C89C4F576"
+					type: "item"
+					item: "botania:mana_pool"
+				}
+				{
+					id: "7F3FF5AA67386373"
+					type: "item"
+					item: "botania:mana_powder"
+				}
+			]
+		}
+		{
+			x: -0.5d
+			y: -2.0d
+			subtitle: "&e7.エネルギーをみんなに そしてクリーンに"
+			description: ["火力発電？そんなもんより水力だ！"]
+			dependencies: ["4B7E57138345532B"]
+			id: "4173F543ACE308F8"
+			tasks: [{
+				id: "17322337B72ECEFF"
+				type: "item"
+				item: "botania:hydroangeas"
+			}]
+		}
+		{
+			title: "Four Elements"
+			x: 6.5d
+			y: -2.0d
+			subtitle: "4つの属性が集まるとき"
+			description: ["熱と氷。グルグル、パッパッパ"]
+			id: "20F5FD31CD0D5F4D"
+			tasks: [
+				{
+					id: "2179349D0B893C8A"
+					type: "item"
+					item: "valine_s1ex:pyrotheum_dust"
+				}
+				{
+					id: "4241484BA15F2B96"
+					type: "item"
+					item: "valine_s1ex:cryotheum_dust"
+				}
+				{
+					id: "576D6C4D613FCC9F"
+					type: "item"
+					item: "valine_s1ex:aerotheum_dust"
+				}
+				{
+					id: "5CFD310BC2A2B0A6"
+					type: "item"
+					item: "valine_s1ex:petrotheum_dust"
+				}
+			]
+		}
+		{
+			x: 6.5d
+			y: 0.0d
+			subtitle: "四属性全て合わせたら最強じゃね?"
+			description: ["打ち消し合って純粋な粉に......なりません！"]
+			dependencies: [
+				"0DB61FC3E7339B77"
+				"20F5FD31CD0D5F4D"
+			]
+			id: "09C28C611979752D"
+			tasks: [{
+				id: "40F527346F324232"
+				type: "item"
+				item: "valine_s1ex:mysterious_mixture"
+			}]
+		}
+		{
+			x: 9.0d
+			y: 0.0d
+			subtitle: "えっハイドロエンゲスだけでこれを?!"
+			description: ["気合で作るでチュ"]
+			dependencies: ["09C28C611979752D"]
+			id: "51AB8D01E39515FB"
+			tasks: [{
+				id: "2A43A61C14959031"
+				type: "item"
+				item: "botania:runic_altar"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 2.0d
+			shape: "square"
+			subtitle: "この環境では多分使わない"
+			description: ["普通に回収したほうが効率はいい。"]
+			dependencies: ["0DB61FC3E7339B77"]
+			optional: true
+			id: "52E70DBC9E471142"
+			tasks: [{
+				id: "480DB938862F79AA"
+				type: "item"
+				item: "botania:alchemy_catalyst"
+			}]
+		}
+		{
+			x: 11.0d
+			y: 2.0d
+			shape: "square"
+			subtitle: "沢山調合しよう"
+			description: ["何で出てきたかって？使うからだよ？"]
+			dependencies: ["449D582C9D5DB0B5"]
+			optional: true
+			id: "4203BF8741F6E53D"
+			tasks: [{
+				id: "45157B4E871E9CFD"
+				type: "item"
+				item: "botania:marimorphosis"
+			}]
+		}
+		{
+			title: "Better Mana Generation"
+			x: 13.5d
+			y: 2.0d
+			shape: "square"
+			subtitle: "水力発電なんてこりごり"
+			description: ["もう枯れないんだってありがたいって"]
+			dependencies: ["449D582C9D5DB0B5"]
+			optional: true
+			id: "70D89C889528BE54"
+			tasks: [{
+				id: "61348372F55C1082"
+				type: "item"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "botania:thermalily"
+								Count: 1b
+							}
+							{
+								id: "botania:rosa_arcana"
+								Count: 1b
+							}
+							{
+								id: "botania:munchdew"
+								Count: 1b
+							}
+							{
+								id: "botania:entropinnyum"
+								Count: 1b
+							}
+							{
+								id: "botania:kekimurus"
+								Count: 1b
+							}
+							{
+								id: "botania:gourmaryllis"
+								Count: 1b
+							}
+							{
+								id: "botania:narslimmus"
+								Count: 1b
+							}
+							{
+								id: "botania:spectrolus"
+								Count: 1b
+							}
+							{
+								id: "botania:dandelifeon"
+								Count: 1b
+							}
+							{
+								id: "botania:rafflowsia"
+								Count: 1b
+							}
+							{
+								id: "botania:shulk_me_not"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			title: "Five Runes"
+			x: 12.0d
+			y: 0.0d
+			shape: "diamond"
+			subtitle: "一旦botaniaはおやすみ"
+			description: ["あぁもう、粉の要求多くない？"]
+			dependencies: ["51AB8D01E39515FB"]
+			size: 1.5d
+			id: "449D582C9D5DB0B5"
+			tasks: [
+				{
+					id: "78695221277BE19E"
+					type: "item"
+					item: "botania:rune_water"
+				}
+				{
+					id: "098721F69E092EE7"
+					type: "item"
+					item: "botania:rune_fire"
+				}
+				{
+					id: "7E8F63B092714CC1"
+					type: "item"
+					item: "botania:rune_earth"
+				}
+				{
+					id: "3E610975380A263B"
+					type: "item"
+					item: "botania:rune_air"
+				}
+				{
+					id: "7BE42FCEDAAD4F12"
+					type: "item"
+					item: "botania:rune_mana"
+				}
+			]
+		}
+		{
+			x: -0.5d
+			y: 9.0d
+			subtitle: "この目中間素材になりがち"
+			description: ["何故IE？"]
+			hide_dependency_lines: true
+			dependencies: ["449D582C9D5DB0B5"]
+			id: "15678164225CD68C"
+			tasks: [{
+				id: "325815D6A3554B4B"
+				type: "item"
+				item: "botania:third_eye"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 2.0d
+			shape: "square"
+			subtitle: "&6一口でおなかいっぱい"
+			description: ["ダイエット食品？"]
+			dependencies: ["0DB61FC3E7339B77"]
+			optional: true
+			id: "08847019985AE3C9"
+			tasks: [{
+				id: "4187CC51A384B678"
+				type: "item"
+				item: "botania:mana_cookie"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 7.0d
+			subtitle: "おかえり"
+			description: ["来 な い で"]
+			dependencies: [
+				"15678164225CD68C"
+				"73623A153730FCC7"
+				"2B939EDFF481C6D2"
+			]
+			id: "40E3B58CB1242BB8"
+			tasks: [{
+				id: "4DE75FACB4C1CBAA"
+				type: "item"
+				item: "botania:terra_plate"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 7.0d
+			subtitle: "この環境では中間素材"
+			description: ["何ならめっちゃ使う"]
+			dependencies: ["40E3B58CB1242BB8"]
+			id: "63DA9CE25D1227F4"
+			tasks: [{
+				id: "60D2B3FBA78ADB77"
+				type: "item"
+				item: "botania:terrasteel_ingot"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 7.0d
+			subtitle: "&9まだ明るくはない"
+			description: ["何故かlapisだけ移植された"]
+			dependencies: [
+				"24E11081D349EEA6"
+				"401E9073A3FB8BD8"
+			]
+			id: "2B939EDFF481C6D2"
+			tasks: [{
+				id: "73F235E3B0A71158"
+				type: "item"
+				item: "valine_s1ex:empowered_lapis"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 7.0d
+			subtitle: "テラスチールより価値がある"
+			description: ["赤石の塊"]
+			dependencies: ["2B939EDFF481C6D2"]
+			id: "73623A153730FCC7"
+			tasks: [{
+				id: "0BE1CD637121850E"
+				type: "item"
+				item: "valine_s1ex:degenerate_symbols"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 6.0d
+			subtitle: "&a他のやつに比べると詰まってないように感じる"
+			description: ["鮮やかな緑。つけたのは水色。"]
+			hide_dependency_lines: true
+			dependencies: [
+				"0DB61FC3E7339B77"
+				"36B010812DBAFF66"
+			]
+			id: "24E11081D349EEA6"
+			tasks: [{
+				id: "4D65B128C0D1521A"
+				type: "item"
+				item: "valine_s1ex:botania_element_crystal"
+			}]
+		}
+		{
+			x: 7.5d
+			y: 7.0d
+			subtitle: "エルフって草食なイメージあるよね"
+			description: ["でも弓使いの狩猟民族って考えると矛盾なんだよね"]
+			dependencies: ["63DA9CE25D1227F4"]
+			id: "3184B404A81D0396"
+			tasks: [
+				{
+					id: "62725D537610D2D6"
+					type: "item"
+					item: "botania:alfheim_portal"
+				}
+				{
+					id: "0A38B2758387652C"
+					type: "item"
+					item: "botania:natura_pylon"
+				}
+				{
+					id: "4DDE669B9B1BE31F"
+					type: "item"
+					item: "botania:glimmering_livingwood"
+				}
+			]
+			rewards: [{
+				id: "31A80AF1473CE12E"
+				type: "item"
+				item: "minecraft:bread"
+			}]
+		}
+		{
+			title: "Elven Items"
+			x: 9.5d
+			y: 7.0d
+			subtitle: "等価交換ですか？これ"
+			description: ["起動コストが高すぎる"]
+			dependencies: ["3184B404A81D0396"]
+			id: "069B8529C5E0BB79"
+			tasks: [{
+				id: "6B7BFFBE32B6023A"
+				type: "item"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "botania:elementium_ingot"
+								Count: 1b
+							}
+							{
+								id: "botania:pixie_dust"
+								Count: 1b
+							}
+							{
+								id: "botania:dragonstone"
+								Count: 1b
+							}
+							{
+								id: "botania:dreamwood"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			x: 11.5d
+			y: 7.0d
+			subtitle: "セキュリティの鬼"
+			description: ["ビーコンビコーン！"]
+			dependencies: ["069B8529C5E0BB79"]
+			id: "5EA25EB82C97AFAC"
+			tasks: [
+				{
+					id: "6B431B7D57D14EA6"
+					type: "item"
+					item: "botania:gaia_pylon"
+				}
+				{
+					id: "33122075D4EB6E12"
+					type: "item"
+					item: "minecraft:beacon"
+				}
+				{
+					id: "30A31EF1DB2F398F"
+					type: "item"
+					item: "botania:terrasteel_ingot"
+				}
+			]
+		}
+		{
+			x: 14.0d
+			y: 7.0d
+			subtitle: "ガイア「増援は聞いてない」"
+			description: ["本日の３分クッキングは、このガイアガーディアンを料理していきます。"]
+			dependencies: ["5EA25EB82C97AFAC"]
+			id: "633EDE814F8653FF"
+			tasks: [
+				{
+					id: "2C12B2ADF4F6959D"
+					type: "item"
+					item: "botania:life_essence"
+				}
+				{
+					id: "7FF58A1FFB35E1FA"
+					type: "kill"
+					icon: "botania:gaia_head"
+					entity: "botania:doppleganger"
+					value: 1L
+				}
+			]
+		}
+		{
+			x: 7.5d
+			y: 9.0d
+			shape: "square"
+			subtitle: "すまんかった"
+			description: ["パン食え"]
+			dependencies: ["3184B404A81D0396"]
+			optional: true
+			invisible: true
+			id: "07A6EAE9FFFDF0B2"
+			tasks: [{
+				id: "29519CDBE93B772A"
+				type: "advancement"
+				advancement: "botania:challenge/alf_portal_bread"
+				criterion: ""
+			}]
+		}
+		{
+			x: 16.5d
+			y: 7.0d
+			shape: "heart"
+			subtitle: "&d自動化できるのが悪い"
+			description: [
+				"最終的にルーンを作るより討伐したほうが早くなる（他のmodpackではそうなった。）"
+				"でもこのmodpackではそんなことはありません。普通にルーン作りましょう。"
+			]
+			dependencies: ["633EDE814F8653FF"]
+			size: 1.5d
+			id: "4DFB97BF13391AA5"
+			tasks: [{
+				id: "00AF2528ED3C89BE"
+				type: "item"
+				item: "botania:gaia_ingot"
+			}]
+		}
+		{
+			x: 19.0d
+			y: 7.0d
+			subtitle: "Botaniaは工業mod"
+			description: ["説明書にもそう書いてある"]
+			dependencies: ["4DFB97BF13391AA5"]
+			id: "3A81569204024B72"
+			tasks: [{
+				id: "0A38807BDC115FBC"
+				type: "item"
+				item: "botanicalmachinery:mana_battery"
+			}]
+		}
+		{
+			title: "Botanical Machinery"
+			x: 19.0d
+			y: 9.0d
+			subtitle: "そうだ、自動化、しよう"
+			description: ["テラスチール作るやつ以外はずっと使う"]
+			dependencies: ["3A81569204024B72"]
+			id: "375979B28B93FF1C"
+			tasks: [{
+				id: "1946698C343A8A0E"
+				type: "item"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "botanicalmachinery:alfheim_market"
+								Count: 1b
+							}
+							{
+								id: "botanicalmachinery:industrial_agglomeration_factory"
+								Count: 1b
+							}
+							{
+								id: "botanicalmachinery:mechanical_runic_altar"
+								Count: 1b
+							}
+							{
+								id: "botanicalmachinery:mechanical_brewery"
+								Count: 1b
+							}
+							{
+								id: "botanicalmachinery:mechanical_apothecary"
+								Count: 1b
+							}
+							{
+								id: "botanicalmachinery:mechanical_mana_pool"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			x: 16.5d
+			y: 9.0d
+			shape: "square"
+			subtitle: "当たるまで回せば100%"
+			description: ["目押しガチャなので楽。"]
+			dependencies: ["4DFB97BF13391AA5"]
+			optional: true
+			id: "0104B7BBD3928803"
+			tasks: [{
+				id: "6D30D507CDF18F22"
+				type: "item"
+				item: "botania:dice"
+			}]
+		}
+		{
+			x: 16.5d
+			y: 11.0d
+			shape: "square"
+			subtitle: "クリエ飛行ができるよ!!"
+			description: ["マナ切れには注意しよう"]
+			dependencies: ["0104B7BBD3928803"]
+			optional: true
+			id: "64BF06CF4A95F991"
+			tasks: [
+				{
+					id: "6BC6F39FF558756E"
+					type: "item"
+					item: "botania:flugel_eye"
+				}
+				{
+					id: "44AD991C27F3B472"
+					type: "item"
+					item: {
+						id: "botania:flight_tiara"
+						Count: 1b
+						tag: {
+							variant: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 14.0d
+			y: 9.0d
+			shape: "square"
+			subtitle: "本日の被害者"
+			description: ["エレメンチウムの斧で倒すと確率で頭が落ちる"]
+			dependencies: ["633EDE814F8653FF"]
+			optional: true
+			id: "7F14DEDAB97A3200"
+			tasks: [
+				{
+					id: "761157D9FCCF2B5D"
+					type: "item"
+					item: "botania:gaia_head"
+				}
+				{
+					id: "7C10D9E7BD423909"
+					type: "item"
+					item: {
+						id: "botania:elementium_axe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 9.5d
+			y: 9.0d
+			subtitle: "&1★&2に&3じ&4い&5ろ&6ス&7タ&8ー&9★"
+			description: ["魔改造するか凄い迷って結果やめたやつです"]
+			dependencies: ["069B8529C5E0BB79"]
+			id: "07F0ADB6463AD8F5"
+			tasks: [
+				{
+					id: "747C25CD365EDC77"
+					type: "item"
+					item: "botania:rainbow_rod"
+				}
+				{
+					id: "2AD0721D643AAB43"
+					type: "item"
+					item: "botania:bifrost_perm"
+				}
+			]
+		}
+		{
+			x: -2.5d
+			y: 8.0d
+			subtitle: "アフロフンコロガシの略"
+			description: ["ＡＦＫアリーナ"]
+			dependencies: ["36B010812DBAFF66"]
+			id: "401E9073A3FB8BD8"
+			tasks: [{
+				id: "6C2AC9AA0730A45E"
+				type: "item"
+				item: "valine_s1ex:arc_element_crystal"
+			}]
+		}
+	]
+	quest_links: [{
+		linked_quest: "0232420D44BC062D"
+		x: -3.5d
+		y: 0.0d
+		shape: "diamond"
+		size: 1.5d
+		id: "3E957626478EEA51"
+	}]
+}

@@ -1,0 +1,9 @@
+{
+    "mekanism.client.gui.GuiChemicalTank": {
+        "buttonHints": {
+            "MOVE_TO_CONTAINER": {
+                "bottom": 9
+            }
+        }
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "name": "Mechanical Visor Upgrade",
+    "colors": ["FFD700", "FFD700"],
+    "ingredient": {
+        "item": "compressedcreativity:mechanical_visor_upgrade"
+    },
+    "materialCount": 500
+}

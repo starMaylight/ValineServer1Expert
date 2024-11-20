@@ -1,0 +1,8 @@
+{
+    "name": "Ender Cell",
+    "colors": ["191970", "00ff7f"],
+    "ingredient": {
+        "item": "exponentialpower:ender_cell"
+    },
+    "materialCount": 50
+}

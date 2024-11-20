@@ -1,0 +1,8 @@
+{
+    "name": "Polyvinyl Chloride Plate",
+    "colors": ["00ffff", "00bfff"],
+    "ingredient": {
+        "item": "chemlib:polyvinyl_chloride_plate"
+    },
+    "materialCount": 1000
+}

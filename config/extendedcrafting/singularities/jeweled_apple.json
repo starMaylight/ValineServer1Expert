@@ -1,0 +1,9 @@
+{
+    "name": "Jeweled Apple",
+    "colors": ["00ffff", "00bfff"],
+    "ingredient": {
+          "item": "tconstruct:jeweled_apple"
+          
+    },
+    "materialCount": 100000
+}

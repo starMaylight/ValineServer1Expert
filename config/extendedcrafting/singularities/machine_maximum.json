@@ -1,0 +1,8 @@
+{
+    "name": "Compact Machine Maximum",
+    "colors": ["000000", "696969"],
+    "ingredient": {
+        "item": "compactmachines:machine_maximum"
+    },
+    "materialCount": 100
+}

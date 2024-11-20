@@ -1,0 +1,801 @@
+{
+	id: "2B125CE984D3EEB8"
+	group: "7ACDCF71AFEABB00"
+	order_index: 4
+	filename: "4exu"
+	title: "4.ExtraUtilities"
+	subtitle: [
+		"GPを失った巨人"
+		"「一人歩く。荒野を歩く。水を求めて、卵を求めて。」"
+		"「失ったものは大きい。家の電源も、隠し倉庫もすべて失った。」"
+		"「それでも歩く。巨大いなる者が必要とされる限り、どこまでも。」"
+	]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -4.5d
+			y: 0.0d
+			subtitle: "ResonatorでのクラフトはJEIに表示されない"
+			description: [
+				""
+				"EXUR関連はJEIが信用できない"
+			]
+			id: "4A819EDDC7E96C83"
+			tasks: [{
+				id: "0043C74D84F14E49"
+				type: "item"
+				item: "extrautilitiesrebirth:resonator"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 0.0d
+			subtitle: "GP...どこ?"
+			description: ["mill系がなくなって使い道がほぼなくなってしまった可愛そうな子"]
+			dependencies: ["4A819EDDC7E96C83"]
+			id: "44B6D95E6D94B490"
+			tasks: [
+				{
+					id: "0F992F7EFDAF5B46"
+					type: "item"
+					item: "extrautilitiesrebirth:stoneburnt"
+				}
+				{
+					id: "1899AA7E91DC4590"
+					type: "item"
+					item: "extrautilitiesrebirth:polished_stone"
+				}
+			]
+		}
+		{
+			x: -4.5d
+			y: -1.5d
+			subtitle: "使い道なんてないよ？建築に使おう"
+			dependencies: ["4A819EDDC7E96C83"]
+			id: "7070E1F0316C7466"
+			tasks: [
+				{
+					id: "3F6871B94D78AE63"
+					type: "item"
+					item: "extrautilitiesrebirth:rainbow_stone"
+				}
+				{
+					id: "14A961F72CA1CF4F"
+					type: "item"
+					item: "extrautilitiesrebirth:stoneburnt"
+				}
+			]
+		}
+		{
+			x: -3.0d
+			y: 1.5d
+			subtitle: "stoneburntの代わりに出番が増えた"
+			description: ["何だこの地味に面倒な指定は"]
+			dependencies: ["4A819EDDC7E96C83"]
+			id: "6FFAC74376F29E33"
+			tasks: [
+				{
+					id: "298D5EA1C00C5978"
+					type: "item"
+					item: "extrautilitiesrebirth:quartzburnt"
+				}
+				{
+					id: "749AA1D0A4F087FB"
+					type: "item"
+					item: "minecraft:smooth_quartz"
+				}
+			]
+		}
+		{
+			x: -4.5d
+			y: 1.5d
+			subtitle: "なぜかダイナモ系の素材になっている"
+			description: ["アプグレ無限に足りないよぉ"]
+			dependencies: ["4A819EDDC7E96C83"]
+			id: "4DFB2E640D502362"
+			tasks: [
+				{
+					id: "3769454864E9344C"
+					type: "item"
+					item: "extrautilitiesrebirth:upgrade_base"
+				}
+				{
+					id: "509FFD9D544E6C94"
+					type: "item"
+					item: "minecraft:light_weighted_pressure_plate"
+				}
+			]
+		}
+		{
+			x: -6.0d
+			y: 0.0d
+			subtitle: "ちょっとだけ強い石炭"
+			description: ["使い道ぇ"]
+			dependencies: ["4A819EDDC7E96C83"]
+			id: "076BEAC340D7ABE3"
+			tasks: [
+				{
+					id: "388D9406DBC5A81D"
+					type: "item"
+					item: "extrautilitiesrebirth:red_coal"
+				}
+				{
+					id: "0D3365D699DFF713"
+					type: "item"
+					item: "minecraft:coal"
+				}
+			]
+		}
+		{
+			x: -6.0d
+			y: 1.5d
+			subtitle: "月光で発電できるlunarpanelが作れる"
+			description: ["発電はお察し"]
+			dependencies: ["4A819EDDC7E96C83"]
+			id: "55485486E8CD26A6"
+			tasks: [
+				{
+					id: "09484066C76846B2"
+					type: "item"
+					item: "extrautilitiesrebirth:lunar_reactive_dust"
+				}
+				{
+					id: "0C1ADA167C3E9A5E"
+					type: "item"
+					item: "minecraft:lapis_lazuli"
+				}
+			]
+		}
+		{
+			x: 1.5d
+			y: -1.5d
+			subtitle: "何か物足りない"
+			description: ["物量......ですかねぇ？"]
+			id: "533E63E854BF825E"
+			tasks: [{
+				id: "45AF22E00A2A6DFF"
+				type: "item"
+				item: "extrautilitiesrebirth:compressed_cobblestone"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 0.0d
+			subtitle: "丸石だらけの倉庫がすっきり"
+			description: ["ぽっかり空いたのは心か倉庫か在庫か。"]
+			dependencies: ["533E63E854BF825E"]
+			id: "48F9DB2CC1AB0373"
+			tasks: [{
+				id: "51904D6957EA3690"
+				type: "item"
+				item: "extrautilitiesrebirth:double_compressed_cobblestone"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 1.5d
+			subtitle: "とりあえずこれくらいでいいかな？"
+			description: ["そう思ってた時期が私にもあった。"]
+			dependencies: ["18C44C28F8AC315E"]
+			id: "53067AF95BBDD868"
+			tasks: [{
+				id: "51F25F6311AA1079"
+				type: "item"
+				item: "extrautilitiesrebirth:quadruple_compressed_cobblestone"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 1.5d
+			subtitle: "まだまだ圧縮できる"
+			description: ["何個圧縮か見れるの便利"]
+			dependencies: ["48F9DB2CC1AB0373"]
+			id: "18C44C28F8AC315E"
+			tasks: [{
+				id: "6B573486C646D64A"
+				type: "item"
+				item: "extrautilitiesrebirth:triple_compressed_cobblestone"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 1.5d
+			subtitle: "まだ圧縮できる"
+			description: ["これ何で素手で圧縮出来てるの？怪力？"]
+			dependencies: ["53067AF95BBDD868"]
+			id: "744ED985B5F32161"
+			tasks: [{
+				id: "3CAB30B844C25214"
+				type: "item"
+				item: "extrautilitiesrebirth:quintuple_compressed_cobblestone"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 0.0d
+			subtitle: "集めるのも一苦労"
+			description: ["そろそろマター生まれそうでは？"]
+			dependencies: ["744ED985B5F32161"]
+			id: "3ED99E815E1030AD"
+			tasks: [{
+				id: "26878F978A47500C"
+				type: "item"
+				item: "extrautilitiesrebirth:sextuple_compressed_cobblestone"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -1.5d
+			subtitle: "そろそろ止まってもいいんじゃない？"
+			description: ["止まれない止まらない。だってもう爆走開始しちゃったんだから。"]
+			dependencies: ["3ED99E815E1030AD"]
+			id: "06BB95A0C203D835"
+			tasks: [{
+				id: "33721B39DF2205EF"
+				type: "item"
+				item: "extrautilitiesrebirth:septuple_compressed_cobblestone"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -1.5d
+			subtitle: "これは...丸石?"
+			description: ["ブラックホールの間違いでは？"]
+			dependencies: ["06BB95A0C203D835"]
+			id: "14DA16988B3A4E76"
+			tasks: [{
+				id: "408FBCE91A040505"
+				type: "item"
+				item: "extrautilitiesrebirth:octuple_compressed_cobblestone"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 4.5d
+			subtitle: "&cド&6派&e手&aな&b発&9電&d機&fの下の部分"
+			description: ["意味深にするとbanされるぞ☆"]
+			dependencies: [
+				"791654A3468D4978"
+				"0BA870653FC4EE68"
+				"536244B29DBB2909"
+				"666C45F8F56DAEFF"
+				"512F40EEC234E05C"
+				"7C01A8ACF847D3C0"
+				"524091B9DBCA1809"
+				"1E715EE30AB769C9"
+			]
+			id: "7344086ABA2FABE5"
+			tasks: [{
+				id: "4056301B41E27531"
+				type: "item"
+				item: "extrautilitiesrebirth:rainbow_generator_bottom"
+			}]
+		}
+		{
+			x: -4.5d
+			y: 4.5d
+			subtitle: "&cド&6派&e手&aな&b発&9電&d機&fの上の部分"
+			description: ["上半身……なんかのカードゲームでありそう"]
+			dependencies: [
+				"63114911DA725292"
+				"220C98E2E2C87132"
+				"1F53292F2C4D6044"
+				"054F641FC9E332E4"
+				"76DBCB0F8A5A4306"
+				"1273814D9A7DA0AF"
+				"322A648813F2848E"
+				"7E5735A28F5D6717"
+			]
+			id: "62D64BBC47D65A50"
+			tasks: [{
+				id: "26C854C42CCE9BFB"
+				type: "item"
+				item: "extrautilitiesrebirth:rainmbow_generator_top"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 3.0d
+			subtitle: "ネザースターで発電できる"
+			description: ["ウィザーコロコロ"]
+			id: "7C01A8ACF847D3C0"
+			tasks: [{
+				id: "2C433C698B949CFD"
+				type: "item"
+				item: "extrautilitiesrebirth:netherstar_generator"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 3.0d
+			subtitle: "かまど燃料で発電できる"
+			description: ["消費が早すぎる！！！！！！"]
+			id: "524091B9DBCA1809"
+			tasks: [{
+				id: "5A73C755A7534783"
+				type: "item"
+				item: "extrautilitiesrebirth:overclocked_generator"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 3.0d
+			subtitle: "ピンク色の物で発電できる"
+			description: ["なんだこの、なんだ？"]
+			id: "791654A3468D4978"
+			tasks: [{
+				id: "2D8D169579A51847"
+				type: "item"
+				item: "extrautilitiesrebirth:pink_generator"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 4.5d
+			subtitle: "ポーションで発電できる"
+			description: ["ポショーン"]
+			id: "1E715EE30AB769C9"
+			tasks: [{
+				id: "07545EE2787B9A90"
+				type: "item"
+				item: "extrautilitiesrebirth:potion_generator_1"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 4.5d
+			subtitle: "レッドストーンダストで発電できる"
+			description: ["お客様！今は大量にあるからって適当に赤石を突っ込まないでくださいまし！"]
+			id: "512F40EEC234E05C"
+			tasks: [{
+				id: "114EDBCD64AB67DD"
+				type: "item"
+				item: "extrautilitiesrebirth:redstone_generator"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 6.0d
+			subtitle: "スライムボールとブロックで発電できる"
+			description: ["地味に面倒なもの"]
+			id: "666C45F8F56DAEFF"
+			tasks: [{
+				id: "5A526A6F7A005C2D"
+				type: "item"
+				item: "extrautilitiesrebirth:slimey_generator"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 6.0d
+			subtitle: "かまど燃料で発電できる"
+			description: ["遅い代わりに燃焼効率がいいんだっけ？"]
+			id: "0BA870653FC4EE68"
+			tasks: [{
+				id: "2069D472512023AB"
+				type: "item"
+				item: "extrautilitiesrebirth:survival_generator"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 6.0d
+			subtitle: "TNTで発電できる"
+			description: ["ちゅどーん！"]
+			id: "536244B29DBB2909"
+			tasks: [{
+				id: "45712A28AFD9AE1F"
+				type: "item"
+				item: "extrautilitiesrebirth:tnt_generator"
+			}]
+		}
+		{
+			x: -6.0d
+			y: 3.0d
+			subtitle: "かまど燃料で発電できる"
+			description: ["うーん微妙！"]
+			id: "220C98E2E2C87132"
+			tasks: [{
+				id: "1A48B9257ABFE07C"
+				type: "item"
+				item: "extrautilitiesrebirth:furnace_generator"
+			}]
+		}
+		{
+			x: -4.5d
+			y: 3.0d
+			subtitle: "骨系とゾン肉で発電できる"
+			description: ["廃品処理"]
+			id: "322A648813F2848E"
+			tasks: [{
+				id: "5AF230C44F9FABBF"
+				type: "item"
+				item: "extrautilitiesrebirth:death_generator"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 3.0d
+			subtitle: "ドラゴンブレスで発電できる"
+			description: ["またなんて面倒な素材を要求してやがる"]
+			id: "1F53292F2C4D6044"
+			tasks: [{
+				id: "02E7A786227958A4"
+				type: "item"
+				item: "extrautilitiesrebirth:halitosis_generator"
+			}]
+		}
+		{
+			x: -6.0d
+			y: 4.5d
+			subtitle: "エンチャ本で発電できる"
+			description: ["エンチャ本以外でも発電できた気がしたんだが..."]
+			id: "7E5735A28F5D6717"
+			tasks: [{
+				id: "022D87201B988DF3"
+				type: "item"
+				item: "extrautilitiesrebirth:disenchantment_generator"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 4.5d
+			subtitle: "エンダーパールとエンダーアイで発電できる"
+			id: "63114911DA725292"
+			tasks: [{
+				id: "269ACD74CC37C0B3"
+				type: "item"
+				item: "extrautilitiesrebirth:ender_generator"
+			}]
+		}
+		{
+			x: -6.0d
+			y: 6.0d
+			subtitle: "えっ2つもいらないって？"
+			description: ["レシピ通りにしたかったんだ"]
+			id: "1273814D9A7DA0AF"
+			tasks: [{
+				id: "343D6CBA46E2041D"
+				type: "item"
+				item: "extrautilitiesrebirth:furnace_generator"
+			}]
+		}
+		{
+			x: -4.5d
+			y: 6.0d
+			subtitle: "雪系と氷系で発電できる"
+			description: ["かき氷発電……？"]
+			id: "76DBCB0F8A5A4306"
+			tasks: [{
+				id: "2A10651065F6C8B7"
+				type: "item"
+				item: "extrautilitiesrebirth:frosty_generator_1"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 6.0d
+			subtitle: "溶岩で発電できる"
+			description: ["君より優秀な子いるしリストラで。"]
+			id: "054F641FC9E332E4"
+			tasks: [{
+				id: "302327923A11403E"
+				type: "item"
+				item: "extrautilitiesrebirth:magma_generator"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 6.0d
+			subtitle: "&cド&6派&e手&aな&b発&9電&d機"
+			description: ["稼働がめんどくさすぎる"]
+			dependencies: [
+				"7344086ABA2FABE5"
+				"62D64BBC47D65A50"
+			]
+			id: "6270F07D0D42A3C6"
+			tasks: [{
+				id: "579357BAB1F095D0"
+				type: "item"
+				item: "extrautilitiesrebirth:rainbow_generator"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 0.0d
+			subtitle: "EnchanterでのクラフトはJEIに表示されない"
+			description: ["また面倒なことをしてくれる……"]
+			id: "513367936828674F"
+			tasks: [{
+				id: "7BAD39B0F5318671"
+				type: "item"
+				item: "extrautilitiesrebirth:enchanter"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 1.5d
+			subtitle: "+シルクタッチのエンチャントが付いたツール"
+			description: ["使い道は熟練者にしかわからない"]
+			dependencies: ["513367936828674F"]
+			id: "26E6030877F5073F"
+			tasks: [
+				{
+					id: "45D1AF04F6CFCF25"
+					type: "item"
+					item: "extrautilitiesrebirth:ender_quarry_silk_touch_upgrade"
+				}
+				{
+					id: "738AB1B80BB2217B"
+					type: "item"
+					item: "extrautilitiesrebirth:ender_quarry_upgrade_base"
+				}
+			]
+		}
+		{
+			x: 6.0d
+			y: 1.5d
+			subtitle: "+効率強化5以上が付いたツール"
+			description: ["シンプルイズベスト"]
+			dependencies: ["513367936828674F"]
+			id: "7CE3B2DA821AC70C"
+			tasks: [
+				{
+					id: "75A6C04998D8C695"
+					type: "item"
+					item: "extrautilitiesrebirth:ender_quarry_silk_touch_upgrade_3"
+				}
+				{
+					id: "38B43C1AC660A5C5"
+					type: "item"
+					item: "extrautilitiesrebirth:ender_quarry_upgrade_base"
+				}
+			]
+		}
+		{
+			x: 4.5d
+			y: 1.5d
+			subtitle: "+効率強化3,4が付いたツール"
+			description: ["地味に面倒なの要求するな"]
+			dependencies: ["513367936828674F"]
+			id: "23E7E0E79A406A65"
+			tasks: [
+				{
+					id: "770C5AF970C04688"
+					type: "item"
+					item: "extrautilitiesrebirth:ender_quarry_silk_touch_upgrade_2"
+				}
+				{
+					id: "21B8BDDC48F088C5"
+					type: "item"
+					item: "extrautilitiesrebirth:ender_quarry_upgrade_base"
+				}
+			]
+		}
+		{
+			x: 3.0d
+			y: 0.0d
+			subtitle: "ほぼアップグレードのためだけのインゴット"
+			description: ["きらきら光る、緑の棒ヨ"]
+			dependencies: ["513367936828674F"]
+			id: "4AC3DA49F80DAA33"
+			tasks: [
+				{
+					id: "66D807F4ABA1F56B"
+					type: "item"
+					item: "extrautilitiesrebirth:enchanted_ingot"
+				}
+				{
+					id: "3858C6CCE998E7E3"
+					type: "item"
+					item: "minecraft:gold_ingot"
+				}
+				{
+					id: "28F3921736DC727A"
+					type: "item"
+					item: "minecraft:lapis_lazuli"
+				}
+			]
+		}
+		{
+			x: 6.0d
+			y: 0.0d
+			subtitle: "ほぼアップグレードのためだけのインゴット"
+			description: ["どんだけウィザー倒せばいいんだ"]
+			dependencies: ["513367936828674F"]
+			id: "49FF70F9C5FBB227"
+			tasks: [
+				{
+					id: "66B78605B2B17CFA"
+					type: "item"
+					item: "extrautilitiesrebirth:evil_infused_iron_ingot"
+				}
+				{
+					id: "1A453A485E6ABE83"
+					type: "item"
+					item: "minecraft:iron_ingot"
+					count: 8L
+				}
+				{
+					id: "6C32BA432C030F0A"
+					type: "item"
+					item: "minecraft:nether_star"
+				}
+			]
+		}
+		{
+			x: 3.0d
+			y: -1.5d
+			subtitle: "これはおいしいのか？何かの経験を得るようだ"
+			description: ["青りんごかな？"]
+			dependencies: ["513367936828674F"]
+			id: "09EC7FC9325DB3E9"
+			tasks: [
+				{
+					id: "41B32C0CCFE46835"
+					type: "item"
+					item: "extrautilitiesrebirth:magical_apple"
+				}
+				{
+					id: "0BE18224CE9F103F"
+					type: "item"
+					item: "minecraft:lapis_lazuli"
+				}
+				{
+					id: "70678C6F74F0231F"
+					type: "item"
+					item: "minecraft:apple"
+					count: 16L
+				}
+			]
+		}
+		{
+			x: 6.0d
+			y: -1.5d
+			subtitle: "本棚の代わりになる"
+			description: ["なお素材は本棚"]
+			dependencies: ["513367936828674F"]
+			id: "1BDCA9EEE2600159"
+			tasks: [
+				{
+					id: "345D15874E3DD912"
+					type: "item"
+					item: "extrautilitiesrebirth:magical_wood"
+				}
+				{
+					id: "25FAE20D7E19C9B9"
+					type: "item"
+					item: "minecraft:bookshelf"
+				}
+				{
+					id: "760F143E6D6082AC"
+					type: "item"
+					item: "minecraft:lapis_lazuli"
+				}
+			]
+		}
+		{
+			x: -1.5d
+			y: 6.0d
+			subtitle: "クールタイムが長いのが玉に瑕"
+			description: [
+				""
+				"ながーーーーーーーーーーーーーーーーーーーーーーーーい"
+			]
+			dependencies: ["638B62D119A8D73A"]
+			id: "1791DB150341ED2D"
+			tasks: [{
+				id: "663C5EAE2F229D0D"
+				type: "item"
+				item: "extrautilitiesrebirth:portable_globe"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 4.5d
+			subtitle: "拠点に帰ろう"
+			description: ["母なる大地"]
+			id: "638B62D119A8D73A"
+			tasks: [{
+				id: "7DDF94FA82C43034"
+				type: "item"
+				item: "extrautilitiesrebirth:overworld_portal"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 0.0d
+			subtitle: "岩盤は作れる！"
+			description: ["うぉ、おっも"]
+			dependencies: ["53067AF95BBDD868"]
+			id: "2F63F94F3897B8B1"
+			tasks: [{
+				id: "5A3AFFDA3B7DE3EC"
+				type: "item"
+				item: "extrautilitiesrebirth:bedrockium_ingot"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 3.0d
+			subtitle: "本来何に使われていたのだろうか"
+			description: ["誰も知る由はない。"]
+			dependencies: ["6FFAC74376F29E33"]
+			id: "6A28E14373B9F4F3"
+			tasks: [{
+				id: "61474CF97E6B6B9C"
+				type: "item"
+				item: "extrautilitiesrebirth:diamond_edged_computational_matrix"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 3.0d
+			subtitle: "全部いなくなれ"
+			description: ["コストが重すぎますぅ！"]
+			dependencies: [
+				"6A28E14373B9F4F3"
+				"56BB5AB5AF23682F"
+			]
+			id: "3A888D669008698A"
+			tasks: [{
+				id: "01E3B2813112454A"
+				type: "item"
+				item: "valine_s1ex:eliminated_core"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 4.5d
+			subtitle: "安定しろ"
+			description: ["突然の100000FE要求やめろ"]
+			dependencies: ["3A888D669008698A"]
+			id: "0232420D44BC062D"
+			tasks: [{
+				id: "56D3CD588A297357"
+				type: "item"
+				item: "valine_s1ex:stabilized_core"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 3.0d
+			subtitle: "4枚積めるアップグレード"
+			description: ["ノーコスト速度上昇"]
+			id: "621EE7F2DFF0748A"
+			tasks: [{
+				id: "02BA9DF99AC3CDE2"
+				type: "item"
+				item: "extrautilitiesrebirth:speed_upgrade"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 4.5d
+			subtitle: "16枚積めるアップグレード、性能は変わらず"
+			description: ["GP要らないからシンプルに強い"]
+			dependencies: ["621EE7F2DFF0748A"]
+			id: "5C818DB325A0B8F2"
+			tasks: [{
+				id: "0924958488DE8223"
+				type: "item"
+				item: "extrautilitiesrebirth:enchanted_speed_upgrade"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 6.0d
+			subtitle: "64枚積めるアップグレード、これも性能は変わらず"
+			description: ["スタック単位で積むのが常識らしい"]
+			dependencies: ["5C818DB325A0B8F2"]
+			id: "208CBA1BEE95A94E"
+			tasks: [{
+				id: "1B5D802110A44EA7"
+				type: "item"
+				item: "extrautilitiesrebirth:super_speed_upgrade"
+			}]
+		}
+	]
+	quest_links: [ ]
+}
