@@ -26,7 +26,7 @@ onEvent("recipes", (event) => {
           "item": "chemlib:polyvinyl_chloride_dust"
         },
         "pressure":4.0,
-        "time": 4000
+        "time": 40
       })
     event.recipes.create.compacting('chemlib:polyvinyl_chloride_plate','8x chemlib:polyvinyl_chloride_dust')
     event.shaped('alchemistry:combiner', [
@@ -51,4 +51,6 @@ onEvent("recipes", (event) => {
       D:'lazierae2:fluix_steel_ingot',
       S:'rftoolsbase:machine_frame'
       })
+event.recipes.mekanism.enriching('8x chemlib:polyvinyl_chloride_dust', '64x chemlib:polyvinyl_chloride')
+event.recipes.mekanism.enriching('8x chemlib:polyvinyl_chloride_plate', '64x chemlib:polyvinyl_chloride_dust')
 })

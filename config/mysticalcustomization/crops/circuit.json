@@ -1,0 +1,14 @@
+{
+  "name": "Circuit",
+  "type": "mysticalagriculture:resource",
+  "tier": "mysticalcustomization:7",
+  "ingredient": {
+    "item": "mekaevolution:qio_drive_infinite"
+  },
+  "color": "eb7a34",
+  "textures": {
+    "flower": "mysticalagriculture:block/flower_dust",
+    "essence": "mysticalagriculture:item/essence_dust"
+  },
+  "crux": "extendedcrafting:the_ultimate_block"
+}

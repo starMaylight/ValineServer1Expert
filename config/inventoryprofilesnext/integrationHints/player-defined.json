@@ -5,5 +5,12 @@
                 "bottom": 9
             }
         }
+    },
+    "org.cyclops.integrateddynamics.core.client.gui.container.ContainerScreenAspectSettings": {
+        "buttonHints": {
+            "MOVE_TO_PLAYER": {
+                "top": -11
+            }
+        }
     }
 }

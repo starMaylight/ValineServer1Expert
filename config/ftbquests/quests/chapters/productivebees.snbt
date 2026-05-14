@@ -555,6 +555,7 @@
 			title: "ちょっとずつ蜂増やしていきます"
 			x: 0.0d
 			y: 2.5d
+			optional: true
 			invisible: true
 			id: "51A24F0170A06DE0"
 			tasks: [{

@@ -322,7 +322,7 @@ onEvent('worldgen.add', event => {
               anchors.aboveBottom(0),
               anchors.absolute(256)
           )
-      ore.size = 15
+      ore.size = 20
       ore.noSurface = 0
       ore.worldgenLayer = "underground_ores"
       ore.chance = 0

@@ -1,0 +1,11 @@
+{
+    "primaryColor": "#db7093",
+    "secondaryColor": "#9400d3",
+    "particleColor": "#9400d3",
+    "renderer": "translucent_with_center",
+    "attributes": {
+        "endurance": 0
+    },
+    "slimy": true,
+    "flowerBlock": "valine_s1ex:eternal_block"
+}

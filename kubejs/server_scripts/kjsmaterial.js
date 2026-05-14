@@ -1,7 +1,7 @@
-//const BlueprintCraftingRecipe = java("blusunrize.immersiveengineering.api.crafting.BlueprintCraftingRecipe")
+//
 onEvent("recipes", (event) => {
-  if (!BlueprintCraftingRecipe.recipeCategories.contains("circuit")) {
-    BlueprintCraftingRecipe.recipeCategories.add("circuit")}
+  //if (!BlueprintCraftingRecipe.recipeCategories.contains("circuit")) {
+    //}
     event.shaped('valine_s1ex:andesite_with_iron', [
         'SA ',
         'AS ',
@@ -54,7 +54,6 @@ onEvent("recipes", (event) => {
       "inputs": [{"type": "pneumaticcraft:stacked_item","count": 2,"tag": "forge:storage_blocks/redstone"},
         {"item": "minecraft:copper_ingot"}],"pressure": 2.5,
       "results": [{"item": "valine_s1ex:redalloy_ingot"}]})
-      event.recipes.create.emptying([Fluid.of('valine_s1ex:liquefied_compressed_air',30000), 'pneumaticcraft:air_canister'], Item.of('pneumaticcraft:air_canister', '{"pneumaticcraft:air":30000}'))
       event.custom({
         "type": "pneumaticcraft:refinery",
         "input": {
@@ -182,7 +181,7 @@ onEvent("recipes", (event) => {
       "ingredients": [
         {
           "fluid": "valine_s1ex:unknown_darkmatter",
-          "amount": 4000
+          "amount": 250
         },
         {
           "item": "valine_s1ex:mysterious_mixture"
@@ -203,6 +202,7 @@ onEvent("recipes", (event) => {
     event.custom({
       "type": "extendedcrafting:combination",
       "powerCost": 100000,
+      "powerRate": 100000,
       "input": {
         "item": "minecraft:lapis_block"
       },
@@ -254,7 +254,7 @@ onEvent("recipes", (event) => {
       "ingredients": [
         {
           "fluid": "industrialforegoing:ether_gas",
-          "amount": 4000
+          "amount": 250
         },
         {
           "item": "valine_s1ex:empty_crystal"
@@ -355,6 +355,7 @@ onEvent("recipes", (event) => {
     event.recipes.immersiveengineering.metal_press('2x valine_s1ex:terrasteel_wire', 'botania:terrasteel_ingot','immersiveengineering:mold_wire')
     event.custom({
       "type": "extendedcrafting:shaped_ender_crafter",
+      "craftingTime":5,
       "pattern": [
         "AB ",
         "B  ",
@@ -445,6 +446,7 @@ event.shaped('valine_s1ex:mekanism_upgrade_base',[
 event.custom({
   "type": "extendedcrafting:combination",
   "powerCost": 100000,
+  "powerRate": 100000,
   "input": {
     "item": "extendedcrafting:luminessence"
   },
@@ -562,6 +564,7 @@ event.custom({
 })
 event.custom({
   "type": "extendedcrafting:shaped_ender_crafter",
+  "craftingTime":5,
   "pattern": [
     "AAA",
     "ABA",
@@ -581,6 +584,7 @@ event.custom({
 })
 event.custom({
   "type": "extendedcrafting:shaped_ender_crafter",
+  "craftingTime":5,
   "pattern": [
     "AAA",
     "ABA",
@@ -600,6 +604,7 @@ event.custom({
 })
 event.custom({
   "type": "extendedcrafting:shaped_ender_crafter",
+  "craftingTime":5,
   "pattern": [
     "AAA",
     "ABA",
@@ -665,6 +670,7 @@ event.shaped('valine_s1ex:nichrome_coil_block', [
   event.custom({
     "type": "extendedcrafting:combination",
     "powerCost": 10000000000,
+    "powerRate": 100000000,
     "input": {
       "item": "draconicevolution:dragon_heart"
     },
@@ -1141,6 +1147,7 @@ event.custom({
 event.custom({
   "type": "extendedcrafting:combination",
   "powerCost": 100000,
+  "powerRate": 100000,
   "input": {
     "item": "pipez:ultimate_upgrade"
   },
@@ -1175,7 +1182,7 @@ event.custom({
   }
 })
 draconicFusion(event,'overdrive:server_eater',null,4,2147483647,'botania:corporea_spark_creative',
-  [Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker')])
+  [Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker'),Item.of('overdrive:apex_seeker')])
   event.recipes.immersiveengineering.arc_furnace('2x valine_s1ex:chrome_ingot','#forge:ores/chrome','fluxnetworks:flux_dust','thermal:rich_slag', 200, 100000)
   event.shaped('valine_s1ex:ash_chip', [
     'ABC',
@@ -1200,4 +1207,236 @@ draconicFusion(event,'overdrive:server_eater',null,4,2147483647,'botania:corpore
     D: 'valine_s1ex:empowered_lapis'
   })
   event.recipes.create.compacting([Fluid.of('valine_s1ex:liquefied_compressed_air',1000),'pneumaticcraft:air_canister'],Item.of('pneumaticcraft:air_canister', '{"pneumaticcraft:air":30000}'))
+  
+  event.recipes.create.emptying([Fluid.of('valine_s1ex:liquefied_compressed_air', 1000), 'pneumaticcraft:air_canister'],Item.of('pneumaticcraft:air_canister', '{"pneumaticcraft:air":30000}'));
+  event.recipes.mekanism.sawing('2x valine_s1ex:terrasteel_wire', 'botania:terrasteel_ingot')
+  event.recipes.mekanism.sawing('2x valine_s1ex:nichrome_wire', 'valine_s1ex:nichrome_ingot')
+  
+  event.custom({"type":"mekanism:chemical_infusing","leftInput":{"amount":2,"gas":"mek1000:saltless_dried_soysouce"},"rightInput":{"amount":1,"gas":"mekanism:brine"},"output":{"gas":"mek1000:soysauce","amount":3}})
+    event.custom({"type":"mekanism:reaction",
+        "itemInput":{"item":"mekanism:bio_fuel"},
+        "fluidInput":{"amount":10000,"tag": "minecraft:water"},
+        "gasInput":{"amount":1,"gas":"mek1000:valine3g"},
+        "energyRequired":1,"duration":1,
+        "gasOutput":{"gas":"mek1000:valine3g","amount":10000},
+        "itemOutput":{"item":"mekanism:bio_fuel"}
+    })
+
+    event.custom({"type":"mekanism:reaction",
+        "itemInput":{"amount": 32,"item":"minecraft:hay_block"},
+        "fluidInput":{"amount":3642,"tag": "minecraft:water"},
+        "gasInput":{"amount":7,"gas":"mek1000:valine3g"},
+        "energyRequired":1000,"duration":1000,
+        "gasOutput":{"gas":"mek1000:saltless_dried_soysouce","amount":1000}
+    })
+
+    event.custom({"type":"mekanism:chemical_infusing","leftInput":{"amount":1,"gas":"mekanism:fissile_fuel"},"rightInput":{"amount":1,"gas":"mekanism:ethene"},"output":{"gas":"mek1000:valine3g","amount":2}})
+  event.custom({
+    "type": "mekanism:chemical_infusing",
+    "leftInput": {
+      "amount": 10,
+      "gas": "mekanismgenerators:fusion_fuel"
+    },
+    "rightInput": {
+      "amount": 50,
+      "gas": "mek1000:valine3g"
+    },
+    "output": {
+      "gas": "mek1000:dvt",
+      "amount": 1
+    }
+  }).id('mek1000:dvt_fuel')
+event.custom({
+  "type": "mekanism:chemical_infusing",
+  "leftInput": {
+    "amount": 1000,
+    "gas": "mek1000:dvt"
+  },
+  "rightInput": {
+    "amount": 1,
+    "gas": "mek1000:soysauce"
+  },
+  "output": {
+    "gas": "mek1000:ultimate_valine3g",
+    "amount": 1
+  }
+}).id('mek1000:ultimate_valine3g')
+event.custom({
+      "type": "extendedcrafting:combination",
+      "powerCost": 10000000,
+      "powerRate": 10000000,
+      "input": {
+        "item": "valine_s1ex:tungstain_carbite_plate"
+      },
+      "ingredients": [
+        {
+          "item": "valine_s1ex:arc_element_crystal"
+        },
+        {
+          "item": "valine_s1ex:arc_element_crystal"
+        },
+        {
+          "item": "valine_s1ex:arc_element_crystal"
+        },
+        {
+          "item": "valine_s1ex:arc_element_crystal"
+        },
+        {
+          "item": "valine_s1ex:arc_element_crystal"
+        },
+        {
+          "item": "valine_s1ex:arc_element_crystal"
+        },
+        {
+          "item": "valine_s1ex:arc_element_crystal"
+        },
+        {
+          "item": "valine_s1ex:arc_element_crystal"
+        },
+        {
+          "item": "valine_s1ex:arc_element_crystal"
+        },
+        {
+          "item": "valine_s1ex:arc_element_crystal"
+        },
+        {
+          "item": "valine_s1ex:arc_element_crystal"
+        },
+        {
+          "item": "valine_s1ex:arc_element_crystal"
+        }
+      ],
+      "result": {
+        "item": "valine_s1ex:energized_plate"
+      }
+    })
+    event.custom({
+  "type": "extendedcrafting:shaped_ender_crafter",
+  "craftingTime":1,
+  "pattern": [
+    "AAA",
+    "A A",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": "valine_s1ex:energized_plate"
+    }
+  },
+  "result": {
+    "item": "valine_s1ex:machine_casing"
+  }
+})
+  event.shaped('v1ex_extended:item_input', [
+    'A',
+    'D',
+  ], {
+    A: 'minecraft:chest',
+    D: 'valine_s1ex:machine_casing'
+  })
+  event.shaped('v1ex_extended:item_output', [
+    'D',
+    'A',
+  ], {
+    A: 'minecraft:chest',
+    D: 'valine_s1ex:machine_casing'
+  })
+  event.shaped('v1ex_extended:assembler_machine_casing', [
+    'A',
+    'D',
+    'B'
+  ], {
+    A: 'draconicevolution:chaotic_core',
+    B: 'draconicadditions:chaos_heart',
+    D: 'valine_s1ex:machine_casing'
+  })
+  event.shaped('v1ex_extended:auto_maintenance_hatch', [
+    'A',
+    'D',
+    'B'
+  ], {
+    A: 'ae2:network_tool',
+    B: 'mekanism:meka_tool',
+    D: 'valine_s1ex:machine_casing'
+  })
+  event.shaped('v1ex_extended:energy_io', [
+    'A',
+    'D'
+  ], {
+    A: Item.of('integrateddynamics:energy_battery', '{capacity:655000000,energy:0}'),
+    D: 'v1ex_extended:high_voltage_machine_casingg'
+  })
+  event.custom({
+      "type": "extendedcrafting:combination",
+      "powerCost": 10000000,
+      "powerRate": 10000000,
+      "input": {
+        "item": "valine_s1ex:machine_casing"
+      },
+      "ingredients": [
+        {
+          "item": "mekanismmatter:universal_mass"
+        },
+        {
+          "item": "mekanismmatter:universal_mass"
+        },
+        {
+          "item": "mekanismmatter:universal_mass"
+        },
+        {
+          "item": "mekanismmatter:universal_mass"
+        },
+        {
+          "item": "mekanismmatter:universal_mass"
+        },
+        {
+          "item": "mekanismmatter:universal_mass"
+        },
+        {
+          "item": "mekanismmatter:universal_mass"
+        },
+        {
+          "item": "mekanismmatter:universal_mass"
+        },
+        {
+          "item": "mekanismmatter:universal_mass"
+        },
+        {
+          "item": "mekanismmatter:universal_mass"
+        },
+        {
+          "item": "mekanismmatter:universal_mass"
+        },
+        {
+          "item": "mekanismmatter:universal_mass"
+        },
+        {
+          "item": "mekanismmatter:universal_mass"
+        },
+        {
+          "item": "mekanismmatter:universal_mass"
+        },
+        {
+          "item": "mekanismmatter:universal_mass"
+        },
+        {
+          "item": "mekanismmatter:universal_mass"
+        },
+        {
+          "item": "mekanismmatter:universal_mass"
+        },
+        {
+          "item": "mekanismmatter:universal_mass"
+        },
+        {
+          "item": "mekanismmatter:universal_mass"
+        },
+        {
+          "item": "mekanismmatter:universal_mass"
+        },
+      ],
+      "result": {
+        "item": "v1ex_extended:high_voltage_machine_casingg"
+      }
+    })
 })

@@ -1,3 +1,4 @@
+//priority:10
 onEvent('recipes', event => {
     let removebyids = [
         'draconicevolution:draconium_ingot',
@@ -87,7 +88,7 @@ let AIO3 = 'valine_s1ex:valine_de';
     event.recipes.createDeploying(DEC,[DEC,'valine_s1ex:stabilized_core']),
   ]).transitionalItem(DEC).loops(4)
   fusion_crafting('draconicevolution:awakened_crafting_injector','draconicevolution:wyvern_crafting_injector',['draconicevolution:awakened_draconium_block','draconicevolution:awakened_draconium_block','draconicevolution:awakened_draconium_block','draconicevolution:awakened_draconium_block','draconicevolution:awakened_core','draconicevolution:awakened_core','draconicevolution:awakened_core','draconicevolution:awakened_core','mekaevolution:cosmic_control_circuit','mekaevolution:cosmic_control_circuit','mekaevolution:cosmic_control_circuit','mekaevolution:cosmic_control_circuit','valine_s1ex:souls_of_different_orders_of_magnitude','valine_s1ex:souls_of_different_orders_of_magnitude','valine_s1ex:souls_of_different_orders_of_magnitude','valine_s1ex:souls_of_different_orders_of_magnitude','mekaevolution:qio_drive_cosmic','valine_s1ex:connector'],"WYVERN",10000000000)
-  fusion_crafting('draconicevolution:chaotic_core','draconicevolution:draconic_energy_core',['draconicevolution:awakened_draconium_block','draconicevolution:awakened_draconium_block','draconicevolution:awakened_draconium_block','draconicevolution:awakened_draconium_block','draconicevolution:awakened_core','draconicevolution:awakened_core','draconicevolution:awakened_core','draconicevolution:awakened_core','mekaevolution:infinite_control_circuit','mekaevolution:infinite_control_circuit','mekaevolution:infinite_control_circuit','mekaevolution:infinite_control_circuit','extendedcrafting:the_ultimate_catalyst','extendedcrafting:the_ultimate_catalyst','extendedcrafting:the_ultimate_catalyst','extendedcrafting:the_ultimate_catalyst','mekaevolution:infinite_energy_cube','mekaevolution:infinite_energy_cube','mekaevolution:infinite_energy_cube','mekaevolution:infinite_energy_cube','draconicevolution:large_chaos_frag','draconicevolution:large_chaos_frag','draconicevolution:large_chaos_frag','draconicevolution:large_chaos_frag'],"DRACONIC",500000000)
+  fusion_crafting('draconicevolution:chaotic_core','draconicevolution:draconic_energy_core',['draconicevolution:awakened_draconium_block','draconicevolution:awakened_draconium_block','draconicevolution:awakened_draconium_block','draconicevolution:awakened_draconium_block','draconicevolution:awakened_core','draconicevolution:awakened_core','draconicevolution:awakened_core','draconicevolution:awakened_core','mekaevolution:infinite_control_circuit','mekaevolution:infinite_control_circuit','mekaevolution:infinite_control_circuit','mekaevolution:infinite_control_circuit','extendedcrafting:the_ultimate_catalyst','extendedcrafting:the_ultimate_catalyst','extendedcrafting:the_ultimate_catalyst','extendedcrafting:the_ultimate_catalyst','mekaevolution:infinite_energy_cube','mekaevolution:infinite_energy_cube','avaritia:neutronium_block','avaritia:neutronium_block','draconicevolution:large_chaos_frag','draconicevolution:large_chaos_frag','draconicevolution:large_chaos_frag','draconicevolution:large_chaos_frag'],"DRACONIC",500000000)
   event.custom({
     "type": "immersiveengineering:blueprint",
     "inputs": [
@@ -234,6 +235,7 @@ fusion_crafting('draconicevolution:chaotic_sword','draconicevolution:draconic_sw
 event.custom({
   "type": "extendedcrafting:combination",
   "powerCost": 100000,
+  "powerRate": 100000,
   "input": {
     "item": "rftoolsdim:knowledge_holder"
   },

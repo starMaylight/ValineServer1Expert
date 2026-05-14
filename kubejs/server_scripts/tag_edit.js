@@ -12,7 +12,8 @@ onEvent('item.tags', event => {
     event.add('forge:dusts/chrome', 'chemlib:chromium_dust')
     event.add('forge:nuggets/chrome', 'chemlib:chromium_nugget')
     event.add('forge:plates/chrome', 'chemlib:chromium_plate')
-    event.add('valine_s1ex:graphite_electrode','immersiveengineering:graphite_electrode')
+    event.add('forge:plates/chrome', 'chemlib:chromium_plate')
+    event.add('thermal:crafting/casts','extendedcrafting:black_iron_slate')
 })
 onEvent('fluid.tags', event => {
     event.add('valine_s1ex:unknown_darkmatter', 'valine_s1ex:unknown_darkmatter')

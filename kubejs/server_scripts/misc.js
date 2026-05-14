@@ -115,6 +115,7 @@ onEvent("recipes", (event) => {
   })
   event.custom({
     "type": "extendedcrafting:shaped_ender_crafter",
+    "craftingTime":5,
     "pattern": [
       "ABC",
       "BDB",
@@ -224,10 +225,11 @@ onEvent("recipes", (event) => {
     A:'extrautilitiesrebirth:dropof_evil',
     B:'industrialforegoing:mob_crusher',
     C:'valine_s1ex:handmade_circuit',
-    D:Item.of('thermal:flux_capacitor', '{Active:0b,Augments:[{Count:1b,id:"thermal_extra:upgrade_augment"},{Count:1b,id:"thermal_extra:rf_coil_storage_augment_5"},{Count:0b,id:"minecraft:air"}],Energy:58500000,Properties:{BaseMod:4.5f,RFMax:26.0f,RFXfer:12.0f}}')
+    D:'hostilenetworks:empty_prediction'
   })
   event.custom({
     "type": "extendedcrafting:shaped_ender_crafter",
+    "craftingTime":0,
     "pattern": [
       "ABA",
       "CDC",
@@ -319,6 +321,7 @@ onEvent("recipes", (event) => {
   event.custom({
     "type": "extendedcrafting:combination",
     "powerCost": 100000,
+    "powerRate": 100000,
     "input": {
       "item": "valine_s1ex:souls_of_different_orders_of_magnitude"
     },
@@ -360,5 +363,183 @@ onEvent("recipes", (event) => {
     S: 'integrateddynamics:cable',
     A: 'minecraft:iron_ingot',
     B:Item.of('compactmachines:tunnel', '{definition:{id:"compactmachines:fluid"}}')
+  })
+  event.custom({
+    "type": "extendedcrafting:shaped_table",
+    "pattern": [
+      "ABCDA",
+      "DEFEB",
+      "CGHGC",
+      "BEFED",
+      "ADCBA"
+    ],
+    "key": {
+      "A": {
+        "item": "draconicevolution:basic_relay_crystal"
+      },
+      "B": {
+        "item": "thermal_extra:dragonsteel_gear"
+      },
+      "C": {
+        "item": "pipez:ultimate_upgrade"
+      },
+      "D": {
+        "item": "thermal_extra:twinite_gear"
+      },
+      "E": {
+        "item": "draconicevolution:draconium_ingot"
+      },
+      "F": {
+        "item": "draconicevolution:awakened_draconium_ingot"
+      },
+      "G": {
+        "item": "mekanismadditions:white_plastic_fence"
+      },
+      "H": {
+        "item": "productivebees:heated_centrifuge"
+      }
+    },
+    "result": {
+      "item": 'centrifugetiersreproduced:high_end_centrifuge'
+    }
+  })
+  event.custom({
+    "type": "extendedcrafting:shaped_table",
+    "pattern": [
+      "ABCDCBA",
+      "EFGHGFE",
+      "EIJDJIE",
+      "DHDKDHD",
+      "EIJDJIE",
+      "EFGHGFE",
+      "ABCDCBA"
+    ],
+    "key": {
+      "A": {
+        "item": 'extendedcrafting:redstone_catalyst'
+      },
+      "B": {
+        "item": 'powah:solar_panel_nitro'
+      },
+      "C": {
+        "item": 'botania:conjuration_catalyst'
+      },
+      "D": {
+        "item": "extendedcrafting:the_ultimate_ingot"
+      },
+      "E": {
+        "item": 'mekanism:teleportation_core'
+      },
+      "F": {
+        "item": 'extrautilitiesrebirth:rainbow_stone'
+      },
+      "G": {
+        "item": 'mekanism:pellet_antimatter'
+      },
+      "H": {
+        "item": 'mekanism:pellet_polonium'
+      },
+      "I": {
+        "item": 'compactmachines:machine_maximum'
+      },
+      "J": {
+        "item": 'mysticalagriculture:fertilized_essence'
+      },
+      "K": {
+        "item": "centrifugetiersreproduced:high_end_centrifuge"
+      }
+    },
+    "result": {
+      "item": 'centrifugetiersreproduced:nuclear_centrifuge'
+    }
+  })
+  event.custom({
+    "type": "extendedcrafting:shaped_table",
+    "pattern": [
+      "ABBBABBBA",
+      "BCCCCCCCB",
+      "BCDDDDDCB",
+      "BCDEFEDCB",
+      "ACDFGFDCA",
+      "BCDEFEDCB",
+      "BCDDDDDCB",
+      "BCCCCCCCB",
+      "ABBBABBBA"
+    ],
+    "key": {
+      "A": {
+        "item": 'immersiveengineering:ingot_hop_graphite'
+      },
+      "B": {
+        "item": "avaritia:crystal_matrix_ingot"
+      },
+      "C": {
+        "item": "valine_s1ex:eternal_ingot"
+      },
+      "D": {
+        "item": 'exponentialpower:ender_cell'
+      },
+      "E": {
+        "item": "overdrive:chaotic_breath"
+      },
+      "F": {
+        "item": "valine_s1ex:enriched_antimatter_eternal_ingot"
+      },
+      "G": {
+        "item": "centrifugetiersreproduced:cosmic_centrifuge"
+      }
+    },
+    "result": {
+      "item": 'centrifugetiersreproduced:creative_centrifuge'
+    }
+  })
+  event.custom({
+    "type": "extendedcrafting:shaped_table",
+    "pattern": [
+      "AABCDCBAA",
+      "AEBCDCBEA",
+      "BBFFGFFBB",
+      "HHFGIGFHH",
+      "DDGIJIGDD",
+      "HHFGIGFHH",
+      "BBFFGFFBB",
+      "AEBCDCBEA",
+      "AABCDCBAA"
+    ],
+    "key": {
+      "A": {
+        "item": "draconicevolution:chaos_shard"
+      },
+      "B": {
+        "item": "valine_s1ex:highend_circuit"
+      },
+      "C": {
+        "item": "valine_s1ex:industrial_tnt"
+      },
+      "D": {
+        "item": "draconicevolution:chaotic_energy_core"
+      },
+      "E": {
+        "item": "draconicevolution:chaotic_core"
+      },
+      "F": {
+        "item": "mekanism:ultimate_induction_cell"
+      },
+      "G": {
+        "item": "mekanism:ultimate_induction_provider"
+      },
+      "H": {
+        "item": "valine_s1ex:polonium_pellet_block"
+      },
+      "I": {
+        "item": "mekaevolution:infinite_energy_cube"
+      },
+      "J": {
+        "item": "centrifugetiersreproduced:nuclear_centrifuge"
+      }
+    },
+    "result": {
+      "item": 'centrifugetiersreproduced:cosmic_centrifuge'
+    }
   })
 })

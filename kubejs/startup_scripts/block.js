@@ -2,7 +2,7 @@ onEvent('block.registry', event => {
     event.create('valine_s1ex:sturdy_sheet_block')
           .material('metal')
           .hardness(5.0)
-          .displayName('Sturdy Sheet Slock') // No longer required in 1.18.2+
+          .displayName('Sturdy Sheet Block') // No longer required in 1.18.2+
           .tagBlock('minecraft:mineable/pickaxe') // Make it mine faster using a pickaxe in 1.18.2+
           .tagBlock('minecraft:needs_iron_tool') // Make it require an iron or higher level tool on 1.18.2+
           .requiresTool(true) // Make it require a tool to drop ay loot
@@ -115,7 +115,7 @@ onEvent('block.registry', event => {
           event.create('valine_s1ex:nichrome_coil_block')
           .material('metal')
           .hardness(5.0)
-          .displayName('Nichrome Coil Blok') // No longer required in 1.18.2+
+          .displayName('Nichrome Coil Block') // No longer required in 1.18.2+
           .tagBlock('minecraft:mineable/pickaxe') // Make it mine faster using a pickaxe in 1.18.2+
           .tagBlock('minecraft:needs_iron_tool') // Make it require an iron or higher level tool on 1.18.2+
           .requiresTool(true)
@@ -129,5 +129,13 @@ onEvent('block.registry', event => {
           .texture('up','valine_s1ex:block/industrial_tnt_top')
           .texture('down','valine_s1ex:block/industrial_tnt_down')
     event.create('valine_s1ex:polonium_pellet_block')
+    event.create('valine_s1ex:machine_casing')
+          .material('metal')
+          .hardness(5.0)
+          .displayName('Solid Energetic Machine Casing') // No longer required in 1.18.2+
+          .tagBlock('minecraft:mineable/pickaxe') // Make it mine faster using a pickaxe in 1.18.2+
+          .tagBlock('minecraft:needs_iron_tool') // Make it require an iron or higher level tool on 1.18.2+
+          .textureAll('valine_s1ex:block/metallugic_form')
+          .requiresTool(true)
 
 })

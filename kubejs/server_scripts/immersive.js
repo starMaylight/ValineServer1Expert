@@ -159,4 +159,42 @@ removebyids.forEach((name) => {
     C:'industrialforegoing:machine_frame_pity'
       })
   event.shapeless('immersiveengineering:graphite_electrode',Item.of('immersiveengineering:graphite_electrode', '{Unbreakable:1b,graphDmg:0}'))
+  event.custom({
+  "type": "extendedcrafting:shaped_ender_crafter",
+  "pattern": [
+    "A B",
+    "CCC",
+    "D E"
+  ],
+  "key": {
+    "A": {
+      "type": "forge:nbt",
+      "item": "immersiveengineering:grindingdisk",
+      "count": 1,
+      "nbt": "{Damage:0}"
+    },
+    "B": {
+      "item": "chemlib:polyvinyl_chloride_plate"
+    },
+    "C": {
+      "item": "immersiveengineering:slab_treated_wood_horizontal"
+    },
+    "D": {
+      "item": "immersiveengineering:craftingtable"
+    },
+    "E": {
+      "item": "immersiveengineering:treated_fence"
+    }
+  },
+  "result": {
+    "item": 'immersiveengineering:workbench'
+  }
+})
+event.recipes.mekanism.sawing('4x immersiveengineering:plate_duroplast','immersiveengineering:duroplast', 'immersiveengineering:plate_duroplast')
+event.recipes.mekanism.combining('immersiveengineering:circuit_board', 'immersiveengineering:plate_duroplast', '#forge:plates/copper')
+  event.recipes.mekanism.sawing('2x immersiveengineering:wire_electrum', '#forge:ingots/electrum')
+  event.recipes.mekanism.sawing('2x immersiveengineering:wire_copper', '#forge:ingots/copper')
+  event.recipes.mekanism.sawing('2x immersiveengineering:wire_lead', '#forge:ingots/lead')
+  event.recipes.mekanism.sawing('2x immersiveengineering:wire_aluminum', '#forge:ingots/aluminum')
+  event.recipes.mekanism.sawing('2x immersiveengineering:wire_steel', '#forge:ingots/steel')
 })

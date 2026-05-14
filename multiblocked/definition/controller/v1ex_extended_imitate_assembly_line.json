@@ -1,0 +1,219 @@
+{
+  "version": 3,
+  "location": "v1ex_extended:imitate_assembly_line",
+  "traits": {
+    "recipe_progress": {
+      "cIO": 2,
+      "gIO": 2,
+      "mbdIO": 2,
+      "slotName": "",
+      "x": 51,
+      "y": 122,
+      "width": 60,
+      "height": 18,
+      "texture": "multiblocked:textures/gui/energy_bar.png",
+      "fillDirection": "LEFT_TO_RIGHT"
+    }
+  },
+  "properties": {
+    "rotationState": "ALL",
+    "showInJei": true,
+    "isOpaque": true,
+    "hasDynamicShape": false,
+    "hasCollision": true,
+    "destroyTime": 1.5,
+    "explosionResistance": 6.0,
+    "speedFactor": 1.0,
+    "jumpFactor": 1.0,
+    "friction": 0.6,
+    "harvestLevel": 0,
+    "stackSize": 64,
+    "tabGroup": "multiblocked.all"
+  },
+  "status": {
+    "unformed": {
+      "renderer": {
+        "baseTexture": "multiblocked:metallugic_form",
+        "frontTexture": "multiblocked:blocks/gregtech_front",
+        "type": "gregtech",
+        "postRenderer": false
+      }
+    },
+    "idle": {
+      "parent": "unformed"
+    },
+    "working": {
+      "parent": "idle"
+    },
+    "suspend": {
+      "parent": "working"
+    }
+  },
+  "recipeMap": "line",
+  "basePattern": {
+    "structureDir": [
+      "LEFT",
+      "UP",
+      "BACK"
+    ],
+    "pattern": [
+      [
+        "ABBBBBBBBBBBBBBB",
+        "CCCCCCCCCCCCCCCC",
+        "@DDDDDDDDDDDDDDD",
+        "                "
+      ],
+      [
+        "EEEEEEEEEEEEEEEE",
+        "BBBBBBBBBBBBBBBF",
+        "CCCCCCCCCCCCCCCC",
+        "GGBBBBBBBBBBBBBB"
+      ],
+      [
+        "BBBBBBBBBBBBBBBB",
+        "CCCCCCCCCCCCCCCC",
+        "DDDDDDDDDDDDDDDD",
+        "                "
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "A": {
+        "blocks": [
+          {
+            "id": "v1ex_extended:energy_io"
+          }
+        ],
+        "type": "blocks",
+        "minCount": 2,
+        "maxCount": 2,
+        "previewCount": 2,
+        "io": "IN"
+      },
+      "controller": {
+        "location": "v1ex_extended:imitate_assembly_line",
+        "type": "component"
+      },
+      "B": {
+        "blocks": [
+          {
+            "id": "valine_s1ex:machine_casing"
+          }
+        ],
+        "type": "blocks"
+      },
+      "C": {
+        "blocks": [
+          {
+            "id": "ae2:quartz_vibrant_glass"
+          }
+        ],
+        "type": "blocks"
+      },
+      "D": {
+        "blocks": [
+          {
+            "id": "v1ex_extended:item_input"
+          }
+        ],
+        "type": "blocks",
+        "minCount": 16,
+        "maxCount": 16,
+        "previewCount": 16,
+        "io": "IN"
+      },
+      "E": {
+        "blocks": [
+          {
+            "id": "v1ex_extended:item_output"
+          }
+        ],
+        "type": "blocks",
+        "minCount": 1,
+        "maxCount": 1,
+        "previewCount": 1,
+        "io": "OUT"
+      },
+      "H": {
+        "location": "v1ex_extended:assembler_machine_casing",
+        "type": "component"
+      },
+      "I": {
+        "location": "v1ex_extended:auto_maintenance_hatch",
+        "type": "component"
+      },
+      "J": {
+        "capability": "item",
+        "type": "capability",
+        "minCount": 16,
+        "maxCount": 16,
+        "previewCount": 16,
+        "io": "IN"
+      },
+      "K": {
+        "capability": "item",
+        "type": "capability",
+        "minCount": 1,
+        "maxCount": 1,
+        "previewCount": 1,
+        "io": "OUT"
+      },
+      "L": {
+        "capability": "forge_energy",
+        "type": "capability",
+        "minCount": 2,
+        "maxCount": 2,
+        "previewCount": 2,
+        "io": "IN"
+      },
+      "any": {
+        "type": "any"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      " ": [
+        "any"
+      ],
+      "A": [
+        "I"
+      ],
+      "B": [
+        "B"
+      ],
+      "C": [
+        "C"
+      ],
+      "D": [
+        "H"
+      ],
+      "E": [
+        "D",
+        "J"
+      ],
+      "F": [
+        "E",
+        "K"
+      ],
+      "G": [
+        "A",
+        "L"
+      ]
+    }
+  }
+}

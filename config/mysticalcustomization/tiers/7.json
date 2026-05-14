@@ -1,0 +1,8 @@
+{
+  "name": "evolution",
+  "value": 7,
+  "essence": "mysticalagradditions:creative_essence",
+  "farmland": "mysticalagradditions:insanium_farmland",
+  "fertilizable": false,
+  "secondarySeedDrop": false
+}

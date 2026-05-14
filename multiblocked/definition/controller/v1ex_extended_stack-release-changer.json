@@ -1,0 +1,163 @@
+{
+  "version": 3,
+  "location": "v1ex_extended:stack-release-changer",
+  "traits": {
+    "recipe_progress": {
+      "cIO": 2,
+      "gIO": 2,
+      "mbdIO": 2,
+      "slotName": "",
+      "x": 48,
+      "y": 114,
+      "width": 60,
+      "height": 18,
+      "texture": "multiblocked:textures/gui/energy_bar.png",
+      "fillDirection": "LEFT_TO_RIGHT"
+    }
+  },
+  "properties": {
+    "rotationState": "ALL",
+    "showInJei": true,
+    "isOpaque": true,
+    "hasDynamicShape": false,
+    "hasCollision": true,
+    "destroyTime": 1.5,
+    "explosionResistance": 6.0,
+    "speedFactor": 1.0,
+    "jumpFactor": 1.0,
+    "friction": 0.6,
+    "harvestLevel": 0,
+    "stackSize": 64,
+    "tabGroup": "multiblocked.all"
+  },
+  "status": {
+    "unformed": {
+      "renderer": {
+        "state": {
+          "id": "immersiveengineering:sheetmetal_colored_green",
+          "meta": 0
+        },
+        "type": "blockstate",
+        "postRenderer": true
+      }
+    },
+    "idle": {
+      "parent": "unformed"
+    },
+    "working": {
+      "parent": "idle"
+    },
+    "suspend": {
+      "parent": "working"
+    }
+  },
+  "recipeMap": "cr_change",
+  "basePattern": {
+    "structureDir": [
+      "RIGHT",
+      "UP",
+      "FRONT"
+    ],
+    "pattern": [
+      [
+        "AAA",
+        "ABA",
+        "AAA"
+      ],
+      [
+        "AAA",
+        "C D",
+        "AAA"
+      ],
+      [
+        "AAA",
+        "A@A",
+        "AAA"
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "A": {
+        "blocks": [
+          {
+            "id": "avaritia:neutronium_block"
+          }
+        ],
+        "type": "blocks"
+      },
+      "controller": {
+        "location": "v1ex_extended:stack-release-changer",
+        "type": "component"
+      },
+      "B": {
+        "blocks": [
+          {
+            "id": "integrateddynamics:energy_battery"
+          }
+        ],
+        "type": "blocks"
+      },
+      "C": {
+        "blocks": [
+          {
+            "id": "functionalstorage:oak_1"
+          }
+        ],
+        "type": "blocks"
+      },
+      "d": {
+        "capability": "item",
+        "type": "capability",
+        "io": "IN"
+      },
+      "e": {
+        "capability": "forge_energy",
+        "type": "capability"
+      },
+      "f": {
+        "capability": "item",
+        "type": "capability",
+        "io": "OUT"
+      },
+      "any": {
+        "type": "any"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      " ": [
+        "any"
+      ],
+      "A": [
+        "A"
+      ],
+      "B": [
+        "B",
+        "e"
+      ],
+      "C": [
+        "C",
+        "d"
+      ],
+      "D": [
+        "C",
+        "f"
+      ]
+    }
+  }
+}

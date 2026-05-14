@@ -48,7 +48,7 @@
 [dimensionbuilder]
 	#Maximum RF storage that the dimension builder can receive per side
 	#Range: > 0
-	generatorMaxRF = 20000
+	generatorMaxRF = 2147483647
 	#Maximum RF storage that the phased field generator item can hold
 	#Range: 0 ~ 9223372036854775807
 	phasedFieldMaxRF = 1000000
@@ -63,7 +63,7 @@
 [dimensioneditor]
 	#Maximum RF storage that the dimension editor can receive per side
 	#Range: > 0
-	generatorMaxRF = 20000
+	generatorMaxRF = 2147483647
 	#Set to true to allow the dimension editor to destroy dimensions using tnt
 	tntCanDestroyDimension = true
 
@@ -76,7 +76,7 @@
 [dimletworkbench]
 	#Maximum amount of power the researcher can store
 	#Range: > 0
-	researcherMaxPower = 100000
+	researcherMaxPower = 2147483647
 	#Amount of RF per tick input (per side) for the researcher
 	#Range: > 0
 	researcherRFPerTick = 10000

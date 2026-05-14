@@ -83,6 +83,7 @@ onEvent("recipes", (event) => {
         event.remove({output: name})
         })
     let removebyids = [
+      'mekanism:cardboard_box',
     'tconstruct:smeltery/melting/metal/osmium/dust',
     'tconstruct:smeltery/melting/metal/osmium/ore_singular',
     'tconstruct:smeltery/melting/metal/osmium/raw',
@@ -299,6 +300,7 @@ removebyids.forEach((name) => {
       })
   event.custom({
     "type": "extendedcrafting:shaped_ender_crafter",
+    "craftingTime":5,
     "pattern": [
       "ABA",
       "CDC",
@@ -382,6 +384,7 @@ event.shaped('mekanism:combiner', [
   })
   event.custom({
     "type": "extendedcrafting:shaped_ender_crafter",
+    "craftingTime":5,
     "pattern": [
       "ABA",
       "CDC",
@@ -452,7 +455,7 @@ event.shaped('mekanism:combiner', [
     n:N
 })
     }
-    qio('mekanism:qio_drive_base','#forge:plates/invar','lazierae2:parallel_processor','chemlib:polyvinyl_chloride_plate')
+    qio('mekanism:qio_drive_base','#forge:plates/invar','rebornstorage:super_advanced_processor','chemlib:polyvinyl_chloride_plate')
     qio('mekanism:qio_drive_hyper_dense','laserio:logic_chip','mekanism:qio_drive_base','productivebees:inactive_dragon_egg')
     qio('mekanism:qio_drive_time_dilating','mekanism:pellet_polonium','mekanism:qio_drive_hyper_dense','pneumaticcraft:solar_compressor')
     qio('mekanism:qio_drive_supermassive','valine_s1ex:sturdy_sheet_block','mekanism:qio_drive_time_dilating','mekanism:pellet_antimatter')
@@ -514,15 +517,16 @@ event.shaped('mekanism:combiner', [
       }
         
     })
-    Mekcircuit('mekanism:advanced_control_circuit','mekanism:basic_control_circuit','extrautilitiesrebirth:redstone_crystal','refinedstorage:destruction_core','mekanism:alloy_infused')
-    Mekcircuit('mekanism:elite_control_circuit','mekanism:advanced_control_circuit','thermal_extra:dragonsteel_gear','valine_s1ex:resister','mekanism:alloy_reinforced')
-    Mekcircuit('mekanism:ultimate_control_circuit','mekanism:elite_control_circuit','valine_s1ex:osmiridium_plate','botania:gaia_ingot','mekanism:alloy_atomic')
-    Mekcircuit('mekaevolution:absolute_control_circuit','mekanism:ultimate_control_circuit','compressedcreativity:brass_gilded_lapis_lazuli','#forge:ingots/soul_infused','#forge:pellets/antimatter')
-    Mekcircuit('mekaevolution:supreme_control_circuit','mekaevolution:absolute_control_circuit','createoreexcavation:raw_redstone','#forge:pellets/antimatter','powah:battery_nitro')
-    Mekcircuit('mekaevolution:cosmic_control_circuit','mekaevolution:supreme_control_circuit','valine_s1ex:nichrome_plate','mekanism:pellet_antimatter','mekanismmatter:universal_mass')
+    Mekcircuit('2x mekanism:advanced_control_circuit','mekanism:basic_control_circuit','extrautilitiesrebirth:redstone_crystal','refinedstorage:destruction_core','mekanism:alloy_infused')
+    Mekcircuit('2x mekanism:elite_control_circuit','mekanism:advanced_control_circuit','thermal_extra:dragonsteel_gear','valine_s1ex:resister','mekanism:alloy_reinforced')
+    Mekcircuit('2x mekanism:ultimate_control_circuit','mekanism:elite_control_circuit','valine_s1ex:osmiridium_plate','botania:gaia_ingot','mekanism:alloy_atomic')
+    Mekcircuit('2x mekaevolution:absolute_control_circuit','mekanism:ultimate_control_circuit','compressedcreativity:brass_gilded_lapis_lazuli','#forge:ingots/soul_infused','#forge:pellets/antimatter')
+    Mekcircuit('2x mekaevolution:supreme_control_circuit','mekaevolution:absolute_control_circuit','createoreexcavation:raw_redstone','#forge:pellets/antimatter','powah:battery_nitro')
+    Mekcircuit('2x mekaevolution:cosmic_control_circuit','mekaevolution:supreme_control_circuit','valine_s1ex:nichrome_plate','mekanism:pellet_antimatter','mekanismmatter:universal_mass')
     event.custom({
   "type": "extendedcrafting:combination",
   "powerCost": 100000000,
+  "powerRate": 10000000,
   "input": {
     "item": "draconicevolution:module_core"
   },
@@ -594,6 +598,7 @@ event.shaped('mekanism:combiner', [
 })
 event.custom({
   "type": "extendedcrafting:shaped_ender_crafter",
+  "craftingTime":5,
   "pattern": [
     "ABA",
     "CDC",
@@ -619,6 +624,7 @@ event.custom({
 })
 event.custom({
   "type": "extendedcrafting:shaped_ender_crafter",
+  "craftingTime":5,
   "pattern": [
     "ABA",
     "CDC",
@@ -644,6 +650,7 @@ event.custom({
 })
 event.custom({
   "type": "extendedcrafting:shaped_ender_crafter",
+  "craftingTime":5,
   "pattern": [
     "ABA",
     "CDC",
@@ -669,6 +676,7 @@ event.custom({
 })
 event.custom({
   "type": "extendedcrafting:shaped_ender_crafter",
+  "craftingTime":5,
   "pattern": [
     "ABA",
     "CDC",
@@ -1164,6 +1172,7 @@ event.shaped('mekanism:induction_port', [
   event.shapeless('mekanism:upgrade_anchor',['valine_s1ex:mekanism_upgrade_base','chickenchunks:chunk_loader'])
   event.custom({
     "type": "extendedcrafting:shaped_ender_crafter",
+    "craftingTime":5,
     "pattern": [
       "ABA",
       "CDC",
@@ -1187,4 +1196,9 @@ event.shaped('mekanism:induction_port', [
       "item": "mekanism:teleportation_core"
     }
   })
+  event.shaped('mekanism:cardboard_box',
+    ['AA','AA'],{
+      A:['immersiveengineering:dust_wood','immersiveengineering:fiberboard']
+    }
+  ).id('mekanism:cardboard_box')
 })

@@ -500,7 +500,7 @@ onEvent("recipes", event => {
 			"item": "extendedcrafting:ultimate_singularity"
 		  },
 		  {
-			"item": "extendedcrafting:ultimate_singularity"
+			"item":"extendedcrafting:ultimate_singularity"
 		  },
 		  {
 			"item": "extendedcrafting:ultimate_singularity"
@@ -516,6 +516,7 @@ onEvent("recipes", event => {
 	event.custom({
 		"type": "extendedcrafting:combination",
 		"powerCost": 10000000000,
+		"powerRate": 1000000000,
 		"input": {
 		  "item": "torcherino:torcherino"
 		},
@@ -552,6 +553,7 @@ onEvent("recipes", event => {
 	event.custom({
 		"type": "extendedcrafting:combination",
 		"powerCost": 10000000000,
+		"powerRate": 1000000000,
 		"input": {
 		  "item": "torcherino:compressed_torcherino"
 		},
@@ -1205,6 +1207,7 @@ onEvent("recipes", event => {
 	event.custom({
 		"type": "extendedcrafting:combination",
 		"powerCost": 10000000000,
+		"powerRate": 100000000,
 		"input": {
 		  "item": "modularrouters:blank_module"
 		},
@@ -1503,6 +1506,7 @@ draconicFusion(event,'overdrive:chaotic_breath',null,4,2147483647,'minecraft:dra
 event.custom({
 	"type": "extendedcrafting:combination",
 	"powerCost": 100000,
+	"powerRate": 100000,
 	"input": {
 	  "item": "thermal:machine_catalyst_creative_augment"
 	},

@@ -208,15 +208,144 @@
 		}
 		{
 			x: 10.0d
-			y: 0.0d
+			y: -1.0d
+			shape: "heart"
 			subtitle: "legendary"
 			description: ["これcommonから作るよりかは見つけ出してから沸かせた方がいいやつでは？"]
 			dependencies: ["0B3ED8A35804FA97"]
+			size: 1.5d
 			id: "0C927A4F588AC9A5"
 			tasks: [{
 				id: "057AAC50A51B3EA3"
 				type: "item"
 				item: "rftoolsdim:legendary_essence"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 2.0d
+			shape: "square"
+			subtitle: "Fluxある定期"
+			dependencies: ["387B406E0F7CFFD4"]
+			optional: true
+			id: "6609BAFDA6236F3F"
+			tasks: [
+				{
+					id: "4BD09637A263133D"
+					type: "item"
+					item: "rftoolspower:dimensionalcell_advanced"
+				}
+				{
+					id: "371D5C26D21ECBFA"
+					type: "item"
+					item: "rftoolspower:powercell_card"
+				}
+			]
+			rewards: [{
+				id: "5CA029BD2272EA01"
+				type: "xp_levels"
+				xp_levels: 20
+			}]
+		}
+		{
+			x: -8.5d
+			y: 0.0d
+			shape: "square"
+			subtitle: "レッドストーン制御には割と有用"
+			optional: true
+			id: "0667F95240B0066A"
+			tasks: [{
+				id: "0136A9414C342D42"
+				type: "item"
+				item: "rftoolsbase:machine_base"
+			}]
+			rewards: [{
+				id: "592C03E5D38067B1"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: -10.0d
+			y: 2.5d
+			shape: "square"
+			subtitle: "createのとどっちがいいのか"
+			dependencies: ["0667F95240B0066A"]
+			optional: true
+			id: "0D66E1F79D654A1E"
+			tasks: [
+				{
+					id: "1C3BBD71609C42C9"
+					type: "item"
+					item: "rftoolsutility:redstone_receiver"
+				}
+				{
+					id: "51D0FB04FFCCD742"
+					type: "item"
+					item: "rftoolsutility:redstone_transmitter"
+				}
+			]
+			rewards: [{
+				id: "5B1F228414E98781"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: -7.0d
+			y: 2.5d
+			shape: "square"
+			subtitle: "idsコスト高いし..."
+			dependencies: ["0667F95240B0066A"]
+			optional: true
+			id: "09C9C74896972119"
+			tasks: [{
+				id: "4F5531004E652322"
+				type: "item"
+				item: "rftoolsutility:invchecker"
+			}]
+			rewards: [{
+				id: "5D94CD59E789215F"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: -10.0d
+			y: -2.5d
+			shape: "square"
+			subtitle: "使い勝手が割といい"
+			dependencies: ["0667F95240B0066A"]
+			optional: true
+			id: "69BFD66D81C91379"
+			tasks: [{
+				id: "3E6F26A728DAE29E"
+				type: "item"
+				item: "rftoolsutility:timer"
+			}]
+			rewards: [{
+				id: "7BEE868A7C0B23AB"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: -7.0d
+			y: -2.5d
+			shape: "square"
+			subtitle: "多分便利"
+			dependencies: ["0667F95240B0066A"]
+			optional: true
+			id: "4E26313C7D82ADB0"
+			tasks: [{
+				id: "585D82A7FA1035AC"
+				type: "item"
+				item: "rftoolsutility:wire"
+			}]
+			rewards: [{
+				id: "4A7A46A35B99136F"
+				type: "xp_levels"
+				xp_levels: 5
 			}]
 		}
 	]

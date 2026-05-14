@@ -190,6 +190,11 @@
 				type: "item"
 				item: "botania:alchemy_catalyst"
 			}]
+			rewards: [{
+				id: "2D0D9A9AC3FFC13A"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
 		}
 		{
 			x: 11.0d
@@ -204,6 +209,11 @@
 				id: "45157B4E871E9CFD"
 				type: "item"
 				item: "botania:marimorphosis"
+			}]
+			rewards: [{
+				id: "6B57C815D5D3EBCD"
+				type: "xp_levels"
+				xp_levels: 5
 			}]
 		}
 		{
@@ -272,6 +282,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "3869C2E60FB37C2B"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
 		}
 		{
 			title: "Five Runes"
@@ -338,6 +353,11 @@
 				id: "4187CC51A384B678"
 				type: "item"
 				item: "botania:mana_cookie"
+			}]
+			rewards: [{
+				id: "351DEF837B817847"
+				type: "xp_levels"
+				xp_levels: 5
 			}]
 		}
 		{
@@ -546,6 +566,11 @@
 				advancement: "botania:challenge/alf_portal_bread"
 				criterion: ""
 			}]
+			rewards: [{
+				id: "6D4024DAFF0F4427"
+				type: "xp_levels"
+				xp_levels: 15
+			}]
 		}
 		{
 			x: 16.5d
@@ -637,6 +662,11 @@
 				type: "item"
 				item: "botania:dice"
 			}]
+			rewards: [{
+				id: "04027BD51116A335"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
 		}
 		{
 			x: 16.5d
@@ -665,6 +695,11 @@
 					}
 				}
 			]
+			rewards: [{
+				id: "7226FEF3A863096E"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
 		}
 		{
 			x: 14.0d
@@ -693,6 +728,11 @@
 					}
 				}
 			]
+			rewards: [{
+				id: "7295541A30FCF46B"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
 		}
 		{
 			x: 9.5d
@@ -725,6 +765,331 @@
 				id: "6C2AC9AA0730A45E"
 				type: "item"
 				item: "valine_s1ex:arc_element_crystal"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 10.5d
+			shape: "square"
+			subtitle: "合法採掘"
+			dependencies: ["63DA9CE25D1227F4"]
+			optional: true
+			id: "0D1C17715EF06A19"
+			tasks: [{
+				id: "6C9EDA6DB27AABB8"
+				type: "item"
+				item: {
+					id: "botania:terra_pick"
+					Count: 1b
+					tag: {
+						mana: 2147483646
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "552ABF7A595A52F1"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+		}
+		{
+			x: 5.5d
+			y: 10.5d
+			shape: "square"
+			subtitle: "zenith"
+			dependencies: ["63DA9CE25D1227F4"]
+			optional: true
+			id: "317522D3AE361CDE"
+			tasks: [{
+				id: "4467DA9344C00F38"
+				type: "item"
+				item: {
+					id: "botania:terra_sword"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "1848B212C9D8BAEA"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+		}
+		{
+			x: 7.0d
+			y: 10.5d
+			shape: "square"
+			subtitle: "とても強い"
+			description: ["コストに見合うかは別"]
+			dependencies: ["63DA9CE25D1227F4"]
+			hide_text_until_complete: true
+			optional: true
+			id: "0D030BC5C8E76186"
+			tasks: [
+				{
+					id: "1D047C7AE1AE2263"
+					type: "item"
+					item: {
+						id: "botania:terrasteel_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "5AE06FC9FFBCCB2F"
+					type: "item"
+					item: {
+						id: "botania:terrasteel_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "4F514192DDBEEA51"
+					type: "item"
+					item: {
+						id: "botania:terrasteel_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "1CBF55F06F17BDE7"
+					type: "item"
+					item: {
+						id: "botania:terrasteel_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "2187CCF082D855ED"
+				type: "item"
+				team_reward: true
+				item: {
+					id: "botania:water_bowl"
+					Count: 1b
+					tag: {
+						Fluid: {
+							FluidName: "minecraft:water"
+							Amount: 1000
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "Horse Virus"
+			x: 8.0d
+			y: 5.0d
+			shape: "square"
+			subtitle: "今になって馬...いる?"
+			dependencies: ["069B8529C5E0BB79"]
+			optional: true
+			id: "25D04F4E45B6EDB8"
+			tasks: [{
+				id: "48A6F138FFBA0805"
+				type: "item"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "botania:virus_necrodermal"
+								Count: 1b
+							}
+							{
+								id: "botania:virus_nullodermal"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "23ED6688BAD16900"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+		}
+		{
+			x: 11.0d
+			y: 5.0d
+			shape: "square"
+			subtitle: "実質的ソウルバウンド"
+			dependencies: ["069B8529C5E0BB79"]
+			optional: true
+			id: "47CD840256E28EF5"
+			tasks: [{
+				id: "08514824B49A34E8"
+				type: "item"
+				item: "botania:keep_ivy"
+			}]
+			rewards: [{
+				id: "22D3EFBC0A35DCC0"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+		}
+		{
+			x: 9.5d
+			y: 11.0d
+			shape: "square"
+			subtitle: "光るよ!!!すごいね！"
+			dependencies: ["07F0ADB6463AD8F5"]
+			optional: true
+			id: "2825293B94435E99"
+			tasks: [{
+				id: "698F0C1DC65E199E"
+				type: "item"
+				item: "botania:fabulous_pool"
+			}]
+			rewards: [{
+				id: "0106C5CE4F14E121"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+		}
+		{
+			x: 11.0d
+			y: -2.0d
+			shape: "square"
+			subtitle: "supplementaries"
+			dependencies: ["449D582C9D5DB0B5"]
+			optional: true
+			id: "14A370321D841C60"
+			tasks: [
+				{
+					id: "14D256DB1114F2B5"
+					type: "item"
+					item: "botania:slingshot"
+				}
+				{
+					id: "1A6B3692F98F0D0A"
+					type: "item"
+					item: "botania:vine_ball"
+					count: 3L
+				}
+			]
+			rewards: [{
+				id: "216AA2812DC97A90"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 3.5d
+			y: -3.0d
+			shape: "square"
+			subtitle: "知らない方がいい"
+			dependencies: ["0DB61FC3E7339B77"]
+			optional: true
+			invisible: true
+			id: "1404AB3CA898A326"
+			tasks: [{
+				id: "31A9D103020E84FA"
+				type: "item"
+				item: "botania:ender_hand"
+			}]
+			rewards: [{
+				id: "21256FD42F67A1B5"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 4.5d
+			y: -4.0d
+			shape: "square"
+			subtitle: "きっと楽になるから"
+			dependencies: ["0DB61FC3E7339B77"]
+			optional: true
+			id: "2BD99F3C90153A31"
+			tasks: [{
+				id: "01E44DAC8F6C95E0"
+				type: "item"
+				item: "botania:teru_teru_bozu"
+			}]
+			rewards: [{
+				id: "3AF18A61FA0E7590"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 8.5d
+			y: 4.0d
+			shape: "square"
+			subtitle: "短距離輸送には最適"
+			dependencies: ["069B8529C5E0BB79"]
+			optional: true
+			id: "3975D0537EF44DD9"
+			tasks: [{
+				id: "1D46985FC035B58F"
+				type: "item"
+				item: "botania:light_relay"
+				count: 2L
+			}]
+			rewards: [{
+				id: "03ACB792B3DD333E"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+		}
+		{
+			x: 10.0d
+			y: 4.0d
+			shape: "square"
+			subtitle: "すごいお宝だよ!!ワトソン君!!"
+			dependencies: ["069B8529C5E0BB79"]
+			optional: true
+			id: "39E6F15AE6D5767E"
+			tasks: [{
+				id: "0373F8559AC83DB7"
+				type: "item"
+				item: "botania:loonium"
+			}]
+		}
+		{
+			x: 14.0d
+			y: 5.0d
+			shape: "square"
+			subtitle: "天空の城バシリア"
+			description: ["バルス!!(Ifnukeの音)"]
+			dependencies: ["633EDE814F8653FF"]
+			hide_text_until_complete: true
+			optional: true
+			id: "016748E9D6CCEC1C"
+			tasks: [{
+				id: "4013F5EBA6639312"
+				type: "item"
+				item: {
+					id: "botania:laputa_shard"
+					Count: 1b
+					tag: {
+						level: 19
+					}
+				}
+			}]
+			rewards: [{
+				id: "167B163E54C0E69C"
+				type: "item"
+				title: "nuke"
+				team_reward: true
+				item: "mekanismadditions:obsidian_tnt"
 			}]
 		}
 	]

@@ -116,4 +116,21 @@ onEvent('worldgen.add', event => {
         ore.chance = 0
         ore.biomes = "^nether"
     })
+    //prosperaty
+    event.addOre((ore) => {
+        ore.id = 'kubejs:nether_prosp_vein'
+
+        ore.addTarget('minecraft:netherrack', 'mysticalagradditions:nether_prosperity_ore')
+        ore.count([1, 5])
+            .squared()
+            .uniformHeight(
+                anchors.aboveBottom(0),
+                anchors.absolute(256)
+            )
+        ore.size = 15
+        ore.noSurface = netherSurfaceChance
+        ore.worldgenLayer = "underground_ores"
+        ore.chance = 0
+        ore.biomes = "^nether"
+    })
 })

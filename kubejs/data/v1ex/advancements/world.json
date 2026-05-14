@@ -1,0 +1,24 @@
+{
+    "display": {
+      "icon": {
+        "item": "valine_s1ex:mysterious_mixture"
+      },
+      "title": "4元素は踊る、されど廻らず。",
+      "description": "ひどく脆くなったこの空の下で、僕はまだ息をする"
+    },
+    "parent": "v1ex:plastic",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": [
+                "valine_s1ex:mysterious_mixture"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }

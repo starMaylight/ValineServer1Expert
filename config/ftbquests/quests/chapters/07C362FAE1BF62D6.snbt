@@ -10,342 +10,2180 @@
 		"のみーに影響された進捗です。"
 		"猪突猛進に爆走したい方向けの案内"
 	]
-	default_quest_shape: "diamond"
-	default_hide_dependency_lines: true
+	default_quest_shape: "rsquare"
+	default_hide_dependency_lines: false
+	progression_mode: "linear"
 	quests: [
 		{
-			x: -15.0d
-			y: -2.0d
-			subtitle: "このクエストページは2.5で大規模に修正しました。"
-			id: "13473F8A55330743"
-			tasks: [{
-				id: "75EC3457A7AF08D8"
-				type: "checkmark"
-				title: "あっぷでーてっど！"
-			}]
-		}
-		{
-			title: "Tutorial [0]"
-			x: -15.0d
-			y: 0.0d
-			subtitle: "「ようこそ！」"
-			description: [""]
-			hide_dependency_lines: true
-			dependencies: ["233812AD903DA6FD"]
+			title: "Tutorial"
+			icon: "minecraft:grass_block"
+			x: -4.0d
+			y: -12.0d
+			subtitle: "いらっしゃいませ！"
+			dependencies: ["02A9C637460AAE57"]
 			size: 2.0d
-			id: "54F354B9D15C55D9"
+			id: "12F2155A3B0A1970"
 			tasks: [{
-				id: "2DF92D6C61E15E27"
-				type: "checkmark"
-				title: "＞＜"
+				id: "4708E1482C374264"
+				type: "gamestage"
+				title: "Stage0: Activate"
+				stage: "stage0_act"
 			}]
 		}
 		{
-			title: "-. Minecraft"
-			x: -15.0d
-			y: 2.0d
-			subtitle: "「まずマイクラをクリアしないとね！」"
-			id: "233812AD903DA6FD"
+			title: "0. Minecraft"
+			icon: "minecraft:grass_block"
+			x: -2.0d
+			y: -12.0d
+			subtitle: "まずはこれぐらいやってもらわないと！"
+			dependencies: ["12F2155A3B0A1970"]
+			id: "788A45819FCFE0FB"
 			tasks: [
 				{
-					id: "690C73475E5DA896"
+					id: "0F55089D0293EC6E"
 					type: "item"
-					item: "minecraft:copper_block"
+					item: "minecraft:cobblestone"
+					count: 128L
 				}
 				{
-					id: "0577A4D0854A6552"
+					id: "24B44436498D84AE"
+					type: "item"
+					title: "Any #minecraft:logs"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "minecraft:logs"
+						}
+					}
+					count: 128L
+				}
+				{
+					id: "4F7509575CE7CBE9"
 					type: "item"
 					item: "minecraft:iron_block"
+					count: 64L
 				}
 				{
-					id: "74E68F14E46FA071"
+					id: "625CFC7DB176C114"
 					type: "item"
 					item: "minecraft:gold_block"
+					count: 64L
 				}
 				{
-					id: "5FD9799CB734E6F9"
+					id: "11A883951BDD6C2D"
 					type: "item"
 					item: "minecraft:diamond_block"
+					count: 16L
 				}
 				{
-					id: "4739C3264D6040A3"
+					id: "33162145C8A0428A"
 					type: "item"
-					item: "minecraft:netherite_block"
-				}
-				{
-					id: "4CE815F483D4009F"
-					type: "item"
-					item: "minecraft:nether_star"
-				}
-				{
-					id: "5E5264F764453A9E"
-					type: "item"
-					item: "minecraft:blackstone"
-				}
-				{
-					id: "23077A906E83F1F8"
-					type: "item"
-					item: "minecraft:end_stone"
+					item: "draconicevolution:dragon_heart"
 				}
 			]
 		}
 		{
-			x: -12.5d
-			y: 0.0d
-			dependencies: [
-				"54F354B9D15C55D9"
-				"768A3B2034497CE1"
-				"4ED8096D16B281B0"
-				"23D3B8FF1251F125"
-				"5817963FDFE1FC82"
-				"76D526BE84BC040B"
-				"152409A7093634C8"
-				"7FE894D5B4362BE5"
-			]
-			size: 2.0d
-			id: "0C64F67F6AAFE39F"
+			title: "このページの説明"
+			x: -4.0d
+			y: -14.0d
+			description: ["&7This is Progression-CheckSheet, inspired by NomiFactory. \\n&6Nomifactory&fのような進捗チェックリストです 進行状況をチェックしたい方へ！"]
+			id: "02A9C637460AAE57"
 			tasks: [{
-				id: "22C1DFFEF78E07BC"
+				id: "29302EE931BAB99C"
 				type: "checkmark"
-				title: "Step [1]"
+				title: "Activate"
+			}]
+			rewards: [{
+				id: "3B9E4A3006FF796D"
+				type: "gamestage"
+				title: "Stage0: Activate"
+				auto: "invisible"
+				ignore_reward_blocking: true
+				stage: "stage0_act"
 			}]
 		}
 		{
-			title: "ぼーなす #1"
-			icon: {
-				id: "minecraft:potion"
-				Count: 1b
-				tag: {
-					Potion: "minecraft:long_night_vision"
-				}
-			}
-			x: -12.5d
-			y: -2.0d
-			shape: "circle"
-			subtitle: "ガチャを実装する話はなくなったよ！\\nかわりにネタポーションがばらまかれるのだ！"
+			title: "1. STEP"
+			icon: "minecraft:cobblestone"
+			x: -4.0d
+			y: -10.0d
+			subtitle: "長い道のりの、最初の一歩(?)"
 			dependencies: [
-				"0C64F67F6AAFE39F"
-				"768A3B2034497CE1"
-				"4ED8096D16B281B0"
-				"23D3B8FF1251F125"
-				"5817963FDFE1FC82"
-				"76D526BE84BC040B"
-				"49BFE4095E17454D"
-				"152409A7093634C8"
-				"7FE894D5B4362BE5"
+				"12F2155A3B0A1970"
+				"42D2F1E2AF83BCEB"
 			]
 			hide: true
+			size: 2.0d
+			id: "7147D6B7D49719F2"
+			tasks: [{
+				id: "0A36BC8E4D977740"
+				type: "gamestage"
+				title: "Stage1: Activate"
+				stage: "stage1_act"
+			}]
+		}
+		{
+			title: "Append 1: Minecraft"
+			icon: "minecraft:podzol"
+			x: -1.5d
+			y: -2.0d
+			shape: "circle"
+			subtitle: "ついでの続きだよー &a[納品クエスト]"
+			hide_dependency_lines: true
+			dependencies: ["788A45819FCFE0FB"]
+			hide: true
 			optional: true
-			can_repeat: true
-			id: "63D1DA98A76B840E"
+			id: "68336C6DE6D720DD"
 			tasks: [
 				{
-					id: "4BF0117EA29A9F88"
-					type: "forge_energy"
-					value: 1000000000L
-					max_input: 1000L
+					id: "617BDE7C67D0766A"
+					type: "item"
+					item: "minecraft:cobblestone"
+					count: 1024L
 				}
 				{
-					id: "0E735E990F3F78B9"
-					type: "xp"
-					value: 10L
-					points: false
+					id: "3DA2445C3046BE8C"
+					type: "item"
+					item: "minecraft:cobbled_deepslate"
+					count: 128L
+				}
+				{
+					id: "4BA8FDE413BF5645"
+					type: "item"
+					item: "minecraft:iron_block"
+					count: 512L
+				}
+				{
+					id: "22DC4E3EFD98F6BC"
+					type: "item"
+					item: "minecraft:copper_block"
+					count: 128L
+				}
+				{
+					id: "1D6EA21D42A7B6C3"
+					type: "item"
+					item: "minecraft:gold_block"
+					count: 256L
+				}
+				{
+					id: "36C1D1CD067E5D59"
+					type: "item"
+					item: "minecraft:diamond_block"
+					count: 256L
+				}
+				{
+					id: "0D5ED8CB4037836E"
+					type: "item"
+					item: "minecraft:netherite_block"
+					count: 16L
+				}
+				{
+					id: "4E4FA11B67D17472"
+					type: "item"
+					title: "Any #minecraft:logs"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "minecraft:logs"
+						}
+					}
+					count: 1024L
+				}
+				{
+					id: "221C9B95E170FC21"
+					type: "item"
+					title: "Any #forge:glass"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:glass"
+						}
+					}
+					count: 1024L
+				}
+			]
+		}
+		{
+			title: "Update Note 2.5 -> 2.6?"
+			x: -1.0d
+			y: -14.0d
+			subtitle: "まーたまた大改造しやがったよあいつ(HardSmoothy)"
+			description: ["旧バージョンと違い見やすくしました。 挑戦状も結構増えました。"]
+			dependencies: ["02A9C637460AAE57"]
+			id: "7A16A04832864387"
+			tasks: [{
+				id: "41CC4ACB814A2376"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "1-1. Pneumatic Craft"
+			x: -2.0d
+			y: -10.0d
+			subtitle: "ぷしゅー... ってこれ5Barまでじゃんばｋ((("
+			dependencies: ["7147D6B7D49719F2"]
+			id: "0DC3897863C5F373"
+			tasks: [{
+				id: "164C42788BD0C72A"
+				type: "item"
+				item: "pneumaticcraft:advanced_air_compressor"
+			}]
+		}
+		{
+			title: "1-2. Create"
+			x: -1.0d
+			y: -10.0d
+			subtitle: "出番がない？ 負荷が高い？ うるさいっロマンがすべてじゃ！"
+			dependencies: ["7147D6B7D49719F2"]
+			id: "5439B2763A633D98"
+			tasks: [{
+				id: "2DF032CC48D41AD9"
+				type: "item"
+				item: "createoreexcavation:drilling_machine"
+			}]
+		}
+		{
+			title: "1-3. Botania"
+			x: 0.0d
+			y: -10.0d
+			subtitle: "Botaniaは工業modであるかどうか その真相を探るべく 我々はエルフに尋ねた。"
+			dependencies: ["7147D6B7D49719F2"]
+			id: "261CB13459BEC987"
+			tasks: [{
+				id: "52CCE359D833356F"
+				type: "item"
+				item: "botania:runic_altar"
+			}]
+		}
+		{
+			title: "1-4. Extra Utilities"
+			x: 1.0d
+			y: -10.0d
+			subtitle: "なんで圧縮丸石を要求したんですか??"
+			dependencies: ["7147D6B7D49719F2"]
+			id: "06BC76DF3A5E7F7B"
+			tasks: [
+				{
+					id: "3814890F7F12187F"
+					type: "item"
+					item: "extrautilitiesrebirth:quintuple_compressed_cobblestone"
+					consume_items: true
+				}
+				{
+					id: "6DE98EA3034F737A"
+					type: "item"
+					item: "extrautilitiesrebirth:rainbow_generator"
+				}
+			]
+		}
+		{
+			title: "1-5. Immersive Engineering"
+			icon: {
+				id: "immersiveengineering:hammer"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 2.0d
+			y: -10.0d
+			subtitle: "ガシャーン！ずどーん！"
+			dependencies: ["7147D6B7D49719F2"]
+			id: "5E42A16595783DEE"
+			tasks: [
+				{
+					id: "70213CC64EA9462B"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+				}
+				{
+					id: "1496BD1F5B857BBB"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+				}
+			]
+		}
+		{
+			title: "1-6. Cyclic"
+			icon: "cyclic:magic_net"
+			x: 4.0d
+			y: -10.0d
+			subtitle: "なんとかの伝説じゃないんだから..."
+			dependencies: ["7147D6B7D49719F2"]
+			id: "1D0D9F1C3F4C2A3E"
+			tasks: [{
+				id: "450D00745CE97643"
+				type: "item"
+				item: "cyclic:heart"
+			}]
+		}
+		{
+			title: "Info: Progression"
+			x: -2.0d
+			y: -14.0d
+			subtitle: "ちょこっと説明"
+			description: [
+				"&e四角いクエスト&fは、 そのmodを十分進めるとクリアできるように 条件が設定されています。 それぞれ該当チャプターの開始が必要です。"
+				"&a丸いクエスト&fは、 ある程度必要な資材や modへの知識を深めることにつながりそうな クエストを登録しています。 必ずやる必要はないですが、 すべてクリアするとアシストアイテムが購入できます。"
+				"&cギアのクエスト&fは難易度の高い納品クエストです 資材を整えてから取り組ましょう。"
+				"&6それ以外のクエスト&fは製作者からの挑戦状です。 クリエアイテムを使わずにやってみてください。"
+			]
+			dependencies: ["02A9C637460AAE57"]
+			id: "0B5F5EECAB3E8A90"
+			tasks: [{
+				id: "36D406A52D89E36F"
+				type: "checkmark"
+				title: "Check"
+			}]
+		}
+		{
+			title: "2: MYTHOROGY"
+			icon: "minecraft:iron_block"
+			x: -4.0d
+			y: -8.0d
+			subtitle: "調べたら神話のことらしいね。 神話...なのかな？"
+			dependencies: [
+				"7147D6B7D49719F2"
+				"7ACC960A6E8B5C38"
+			]
+			hide: true
+			size: 2.0d
+			id: "37B15D64BD56D89C"
+			tasks: [{
+				id: "765BA8A41DFE11D3"
+				type: "gamestage"
+				title: "Stage2: Activate"
+				stage: "stage2_act"
+			}]
+		}
+		{
+			title: "1-5. Thermal Expansion"
+			icon: {
+				id: "thermal:energy_cell"
+				Count: 1b
+				tag: {
+					BlockEntityTag: {
+						EnergyMax: 1000000
+						EnergySend: 1000
+						Energy: 0
+						EnergyRecv: 1000
+					}
+				}
+			}
+			x: 3.0d
+			y: -10.0d
+			subtitle: "はいそこ 別のmodでいいとか言わない！"
+			dependencies: ["7147D6B7D49719F2"]
+			id: "470FE5092385E94A"
+			tasks: [
+				{
+					id: "4D2B84E0BBD1C5F9"
+					type: "item"
+					item: "thermal:enderium_ingot"
+				}
+				{
+					id: "7FDED105E57EA90A"
+					type: "item"
+					item: "thermal:signalum_ingot"
+				}
+				{
+					id: "149282163949BBA2"
+					type: "item"
+					item: "thermal:lumium_ingot"
+				}
+			]
+		}
+		{
+			title: "3. RAGNAROK"
+			icon: "minecraft:gold_block"
+			x: -4.0d
+			y: -6.0d
+			subtitle: "世界の限界が近いのかもね..."
+			dependencies: [
+				"37B15D64BD56D89C"
+				"7C6DADDBC1A07F07"
+			]
+			hide: true
+			size: 2.0d
+			id: "42B31C472A1E7CAC"
+			tasks: [{
+				id: "5A13C20993FE4D8B"
+				type: "gamestage"
+				title: "Stage3: Activate"
+				stage: "stage3_act"
+			}]
+		}
+		{
+			title: "2-1. Industrial Foregoing"
+			x: -2.0d
+			y: -8.0d
+			subtitle: "むしゃむしゃ... ピンクスライムっておいしそうよね。"
+			dependencies: ["37B15D64BD56D89C"]
+			id: "20960455789001AD"
+			tasks: [{
+				id: "5297489A487F9D84"
+				type: "item"
+				item: "industrialforegoing:pink_slime_ingot"
+			}]
+		}
+		{
+			title: "2-2. Powah!"
+			x: -1.0d
+			y: -8.0d
+			subtitle: "原子炉強いけど、 配線も当たり判定がないっていう強さ。 性能では負けるけどねぇ..."
+			dependencies: ["37B15D64BD56D89C"]
+			id: "171078A9A4344B57"
+			tasks: [{
+				id: "2DED3FED570C2F75"
+				type: "item"
+				item: "powah:reactor_nitro"
+			}]
+		}
+		{
+			title: "2-3. RftoolsBuilder / RftoolsDimensions"
+			x: 0.0d
+			y: -8.0d
+			subtitle: "つよつよ世界破壊ぴーぽー"
+			dependencies: ["37B15D64BD56D89C"]
+			id: "5FCD7CC99D14803C"
+			tasks: [
+				{
+					id: "0EAB15FF36ACFF9F"
+					type: "item"
+					item: "rftoolsbuilder:builder"
+				}
+				{
+					id: "564C9A7AB538B665"
+					type: "item"
+					item: "rftoolsdim:dimension_builder"
+				}
+			]
+		}
+		{
+			title: "2-4. Alchemistry"
+			x: 1.0d
+			y: -8.0d
+			subtitle: "※前提クエスト:25種類以上の元素を集める"
+			min_required_dependencies: 26
+			dependencies: [
+				"37B15D64BD56D89C"
+				"017D4C72AD82628F"
+				"0B50CC88EBDE990F"
+				"723DC1A0526951FD"
+				"4E6B965A2963095E"
+				"7DEEC4910F462F37"
+				"165670CF2DC7D64C"
+				"046FE42210B407EB"
+				"6894A3FE2CDC4EA4"
+				"58483952D43C8235"
+				"633077C8B7754B99"
+				"3C339D53C2734307"
+				"4110480687514651"
+				"4BF6B6DDDD11BD2D"
+				"2DA2AC9F14C878E2"
+				"1D663A8BF7EAB01F"
+				"038DC6665A2649D4"
+				"2C745A3898EA2DBF"
+				"6D9171AB7E21ED00"
+				"7AB58B75E3AB4A77"
+				"7616A37E4BD06CA6"
+				"78880F8D1CDE28C4"
+				"2D6655A5EFD6220A"
+				"7DE466180080775C"
+				"556D95F222893B35"
+				"20E4F45D47B7822B"
+				"61F9A7806A35016B"
+				"2D65E0BA4CF68100"
+				"177B7B9CCE12BBDC"
+				"7373CBED5D0B36BC"
+				"59323AD230CBF800"
+				"461BCC31CED8D6C2"
+				"7108CD339C53385B"
+				"65ACF0A3CBB99882"
+				"6282252448162589"
+				"17C7FB4A1C6EB1D9"
+				"52CDCF073E02BCF3"
+				"3D0BD48F3DA4411C"
+				"59A3ABE5608790FF"
+				"25FE4A818FACD592"
+				"09EFA94823C6022A"
+				"207E74F2612C17ED"
+				"17B680613684D01D"
+				"455D36C9EDB15B77"
+				"4A3F0728FAD6649B"
+				"28ABBAD0D004C824"
+				"5A7817752E027053"
+				"659FC26F6DD7257A"
+				"6C1243D6EEC39567"
+				"4BB765123BEFC428"
+				"632E4A3CEE59BF2F"
+				"7733DD678A8423B5"
+				"697E57E54FF18E0F"
+				"34A24F18F92D16F0"
+				"5BC246A8A0468344"
+				"281F29EBA937F7AB"
+				"3BF4DD21811D1DA2"
+				"244D65D237CEE53B"
+				"3F31E2C59F3180A9"
+				"0F28A0E69B7927C7"
+				"7229F00F9382EED5"
+				"60476D4A7F6AFB14"
+				"5AD5AD0AAA1DC7B7"
+				"3D056EA021A8817A"
+				"7848569F434CBCE1"
+				"195067F12D84365E"
+				"60C7FC53234EE6A6"
+				"5B0AB1E622D3CE42"
+				"3F75B3CB88587360"
+				"483706AD1A101E02"
+				"7CFE0B5EAD7F3557"
+				"75ED3D098C032C69"
+				"5BDE770E1081FEDE"
+				"7A34CCDA31473D39"
+				"163AD7635AA6226B"
+				"17C3882144EAD19D"
+				"6EDC6239106DE31D"
+				"0501B704A6E9C576"
+				"0B727E8058B8ADD0"
+				"2A6843CE92E0D1DB"
+				"6456386BC76706C4"
+				"1F4A074C9B809C26"
+				"683587B6613AF318"
+				"4C8E94CDDE2389C5"
+				"4FD027950D1C48F3"
+				"60152054716C769D"
+				"4E9BBD3CB9664775"
+				"393DF4FD2D4AAB3C"
+				"254E1E9B3585C9E6"
+				"1A0AD80C4F6767D6"
+				"44A31A259ADC08E2"
+				"4316981EDBF98148"
+				"2691F997D3BB417D"
+				"03BA46B4A1005CCC"
+				"69E196A48CB51633"
+				"2FC3D4AA13DA0270"
+				"5818EA484A89841D"
+				"69D9CA99EE6D37E8"
+				"7D27A2B2F9E8EBBA"
+				"06F88FCED039BAC2"
+				"6090D377B66CC05B"
+				"30BEDACF02707FD5"
+				"3E8C4E3EC1EDC88A"
+				"21399EC3E6BA7F98"
+				"406991C997EB2492"
+				"676A0BE1C7C31294"
+				"4974D6EBC1DFCE9C"
+				"0D2BEDCE51319934"
+				"597F028013CE97D1"
+				"0B778F57197299B0"
+				"02593AB594E5A8EB"
+				"306AEC1A93CE055C"
+				"5D496DF885883CDD"
+				"36A667F52B43F2E3"
+				"32A7F79118E7042A"
+				"6875F06137A1F449"
+				"1D0A777029F0B577"
+				"0E5C743C03F7D26A"
+				"49CD71A7EF83BF17"
+			]
+			hide: true
+			id: "73AC3EA80C8FD150"
+			tasks: [{
+				id: "0066B34A91D8B889"
+				type: "checkmark"
+				title: "Check"
+			}]
+		}
+		{
+			title: "2-5. Refined Storage / Reborn Storage"
+			x: 2.0d
+			y: -8.0d
+			subtitle: "私はこっちのほうが好きなんだけどねぇ..."
+			dependencies: ["37B15D64BD56D89C"]
+			id: "04D5B87EFEAF456E"
+			tasks: [
+				{
+					id: "1C76B4013C2724FC"
+					type: "item"
+					item: "refinedstorage:disk_drive"
+				}
+				{
+					id: "202D7171A2183BF1"
+					type: "item"
+					item: "refinedstorage:controller"
+				}
+				{
+					id: "2EC40C702BC797EE"
+					type: "item"
+					item: "refinedstorage:external_storage"
+				}
+				{
+					id: "4514E115DDC12A4F"
+					type: "item"
+					item: "rebornstorage:multiblock_cpu"
+					count: 16L
+				}
+			]
+		}
+		{
+			title: "2-6: Applied Enegitics 2"
+			x: 3.0d
+			y: -8.0d
+			subtitle: "ネットワークの再起動を減らそう運動、勃発！"
+			dependencies: ["37B15D64BD56D89C"]
+			id: "0189CED7A3BF3C13"
+			tasks: [
+				{
+					id: "7D7B1A754D0FCBDA"
+					type: "item"
+					item: "ae2:drive"
+				}
+				{
+					id: "25771737486DF64C"
+					type: "item"
+					item: "ae2:controller"
+					count: 16L
+				}
+				{
+					id: "17BDE40796755C35"
+					type: "item"
+					item: "ae2:storage_bus"
+				}
+				{
+					id: "293E6F4FD92694D3"
+					type: "item"
+					item: "ae2:molecular_assembler"
+					count: 16L
+				}
+			]
+		}
+		{
+			title: "3-1: Mekanism"
+			x: -1.5d
+			y: -6.0d
+			subtitle: "おっひさー！ まってた？"
+			dependencies: ["42B31C472A1E7CAC"]
+			id: "4E04B1CD7C16276A"
+			tasks: [
+				{
+					id: "4556BA26E8A4EA81"
+					type: "item"
+					item: "mekanism:alloy_infused"
+				}
+				{
+					id: "62DDA46349EBAAD5"
+					type: "item"
+					item: "mekanism:alloy_reinforced"
+				}
+				{
+					id: "198D0914C99CFD04"
+					type: "item"
+					item: "mekanism:alloy_atomic"
+				}
+				{
+					id: "2BD2D71F18194BCB"
+					type: "item"
+					item: "mekanism:chemical_dissolution_chamber"
+				}
+			]
+		}
+		{
+			title: "3-1a: Mekanism / Mekanism Evolution"
+			x: -0.5d
+			y: -6.0d
+			subtitle: "えっアンタこんなの食べてるの...?"
+			dependencies: [
+				"42B31C472A1E7CAC"
+				"4E04B1CD7C16276A"
+			]
+			id: "09D30B60F7D9ABB5"
+			tasks: [
+				{
+					id: "5CBB43E7A9626A7C"
+					type: "item"
+					item: "mekaevolution:absolute_control_circuit"
+				}
+				{
+					id: "497FEC21D3F44DA6"
+					type: "item"
+					item: "mekaevolution:supreme_control_circuit"
+				}
+				{
+					id: "1236A9B06E64ED0E"
+					type: "item"
+					item: "mekaevolution:cosmic_control_circuit"
+				}
+				{
+					id: "6220169643DA65A4"
+					type: "item"
+					item: "mekaevolution:infinite_control_circuit"
+				}
+				{
+					id: "0858B957F8F5D2B1"
+					type: "item"
+					item: "mekanism:pellet_antimatter"
+				}
+			]
+		}
+		{
+			title: "3-2. Extended Crafting"
+			x: 1.5d
+			y: -6.0d
+			subtitle: "なんでもいいよ、どうせあとでつくるから。"
+			description: ["※Any singuralityはバグを利用して どのsinguralityでも判定が通るようになっています"]
+			dependencies: ["42B31C472A1E7CAC"]
+			id: "62171B9676D89AEA"
+			tasks: [
+				{
+					id: "79330D4943DD4DDA"
+					type: "item"
+					item: "extendedcrafting:ultimate_table"
+				}
+				{
+					id: "4F03166DFDAD0DFE"
+					type: "item"
+					item: "extendedcrafting:ender_crafter"
+				}
+				{
+					id: "62D286BF2605474F"
+					type: "item"
+					item: "extendedcrafting:compressor"
+				}
+				{
+					id: "7BDF4539E9B2ED59"
+					type: "item"
+					title: "Any singurality"
+					icon: "extendedcrafting:ultimate_singularity"
+					item: {
+						id: "extendedcrafting:singularity"
+						Count: 1b
+						tag: {
+							Id: "extendedcrafting:gaia_spirit_ingot"
+						}
+					}
+					match_nbt: false
+				}
+			]
+		}
+		{
+			title: "3-3. Draconic Evolution"
+			x: 3.5d
+			y: -6.0d
+			subtitle: "一か月待ったもんねぇー... えっ一か月もない?マジで?"
+			dependencies: ["42B31C472A1E7CAC"]
+			id: "2B9F88734814A008"
+			tasks: [
+				{
+					id: "318A1ED65DA183D7"
+					type: "item"
+					item: "draconicevolution:crafting_core"
+				}
+				{
+					id: "684FDF5657B12C8E"
+					type: "item"
+					item: "draconicevolution:awakened_draconium_block"
+				}
+				{
+					id: "2364B9348FE02DEC"
+					type: "item"
+					item: "draconicadditions:chaos_heart"
+				}
+			]
+		}
+		{
+			title: "Append 2: Create"
+			x: 0.5d
+			y: -2.0d
+			shape: "circle"
+			subtitle: "もっとケーキを！ あっ組立じゃないとダメだよ★ &a[納品クエスト]"
+			hide_dependency_lines: true
+			dependencies: ["5439B2763A633D98"]
+			hide: true
+			optional: true
+			id: "7062A0C24247C88C"
+			tasks: [
+				{
+					id: "18BE61653BC0D817"
+					type: "item"
+					item: "createaddition:chocolate_cake"
+					count: 16L
+				}
+				{
+					id: "2CBDCFAD93FCFDA2"
+					type: "item"
+					item: "createaddition:honey_cake"
+					count: 16L
+				}
+			]
+		}
+		{
+			title: "Extra1: Resource!"
+			x: -1.5d
+			y: 0.5d
+			shape: "gear"
+			subtitle: "とてつもない資源を食う &a[納品クエスト]&b[報酬あり]"
+			hide_dependency_lines: true
+			dependencies: ["788A45819FCFE0FB"]
+			hide: true
+			optional: true
+			id: "55C3B4FE661EEFEB"
+			tasks: [
+				{
+					id: "66436AF770A48BEB"
+					type: "item"
+					item: "minecraft:cobbled_deepslate"
+					count: 65536L
+					consume_items: true
+				}
+				{
+					id: "69F8684FCB2F7F77"
+					type: "item"
+					item: "minecraft:cobblestone"
+					count: 16777216L
+					consume_items: true
+				}
+				{
+					id: "08BC58376C75ABBE"
+					type: "item"
+					item: "minecraft:iron_block"
+					count: 8192L
+					consume_items: true
+				}
+				{
+					id: "3CF0A754CB527FDF"
+					type: "item"
+					item: "minecraft:copper_block"
+					count: 4096L
+					consume_items: true
+				}
+				{
+					id: "477D478466BB84A3"
+					type: "item"
+					item: "minecraft:gold_block"
+					count: 4096L
+					consume_items: true
+				}
+				{
+					id: "70E57D27BCADC5D1"
+					type: "item"
+					item: "minecraft:diamond_block"
+					count: 2048L
+					consume_items: true
+				}
+				{
+					id: "7DEFD29424E6B509"
+					type: "item"
+					item: "minecraft:netherite_block"
+					count: 512L
+					consume_items: true
+				}
+				{
+					id: "65BD3CFD7C160F61"
+					type: "item"
+					title: "Any #minecraft:logs"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "minecraft:logs"
+						}
+					}
+					count: 16777216L
+					consume_items: true
+				}
+				{
+					id: "7BD505DD8501DE20"
+					type: "item"
+					title: "Any #forge:glass"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:glass"
+						}
+					}
+					count: 65536L
+					consume_items: true
+				}
+				{
+					id: "03695A95AB544892"
+					type: "item"
+					item: "minecraft:lapis_block"
+					count: 2048L
+					consume_items: true
+				}
+				{
+					id: "3BD8460052CE16C2"
+					type: "item"
+					item: "minecraft:emerald_block"
+					count: 1024L
+					consume_items: true
+				}
+				{
+					id: "62641FBBFB66ACF8"
+					type: "item"
+					item: "minecraft:redstone_block"
+					count: 4096L
+					consume_items: true
 				}
 			]
 			rewards: [{
-				id: "3AFAD415AEBC2974"
+				id: "6F191F5CDC2013D3"
 				type: "item"
 				item: {
-					id: "minecraft:potion"
+					id: "minecraft:player_head"
 					Count: 1b
 					tag: {
-						Potion: "minecraft:long_night_vision"
+						SkullOwner: {
+							Id: [I;
+								36186764
+								2105684884
+								-1321887514
+								-1546158721
+							]
+							Name: "valine3g"
+						}
+						AttributeModifiers: [
+							{
+								Slot: "offhand"
+								AttributeName: "generic.armor"
+								UUID: [I;
+									-1241016
+									71728
+									10035
+									-143456
+								]
+								Amount: 50
+								Name: "1731719161269"
+							}
+							{
+								Slot: "offhand"
+								AttributeName: "generic.attack_damage"
+								UUID: [I;
+									-1241016
+									72028
+									10035
+									-144056
+								]
+								Amount: 25
+								Name: "1731719161269"
+							}
+							{
+								Slot: "offhand"
+								AttributeName: "generic.movement_speed"
+								UUID: [I;
+									-1241016
+									72328
+									10035
+									-144656
+								]
+								Amount: 0.5d
+								Name: "1731719161269"
+							}
+							{
+								Slot: "offhand"
+								AttributeName: "generic.max_health"
+								UUID: [I;
+									-1241016
+									72628
+									10035
+									-145256
+								]
+								Amount: 50
+								Name: "1731719161269"
+							}
+						]
+						display: {
+							Lore: [
+								"[\"\",{\"text\":\"Zumomomomomo...\",\"italic\":false}]"
+								"[\"\",{\"text\":\"This includes super-power, so give you power when you hold this in offhand.\",\"italic\":false}]"
+								"[\"\",{\"text\":\"あふれ出る強力なパワーにより、あなたを強化する。\",\"italic\":false}]"
+							]
+							Name: "[\"\",{\"text\":\"Extreme Valine \",\"color\":\"green\",\"bold\":true}]"
+						}
+						Enchantments: [{
+							lvl: 9
+							id: "fortune"
+						}]
 					}
 				}
 			}]
 		}
 		{
-			title: "1. Pneumatic Craft"
-			x: -13.5d
-			y: 2.0d
-			subtitle: "「ぷしゅー！...あっそうじゃんこれ爆発すｒ"
-			dependencies: [
-				"3C72BF0EBCB6F93B"
-				"045C56653D192C6A"
-				"6F88830B8DC1C2CC"
-			]
-			id: "5817963FDFE1FC82"
-			tasks: [
-				{
-					id: "34C26336C993F8FF"
-					type: "item"
-					item: "pneumaticcraft:advanced_air_compressor"
-				}
-				{
-					id: "65B0B68691446259"
-					type: "item"
-					item: "pneumaticcraft:air_compressor"
-				}
-			]
-		}
-		{
-			title: "2. Create"
-			x: -13.0d
-			y: 1.5d
-			subtitle: "「重いけどロマンがあるのがいいよね！ ...って鉄道しかメリットない？そんなぁ...」"
-			dependencies: [
-				"1EE3A5AED8C3F5ED"
-				"391512F49666273E"
-				"09EAE5A45E377433"
-			]
-			id: "7FE894D5B4362BE5"
+			title: "CheckPoint! #1"
+			x: 6.0d
+			y: -12.0d
+			dependencies: ["788A45819FCFE0FB"]
+			id: "42D2F1E2AF83BCEB"
 			tasks: [{
-				id: "0C117750AC96032C"
-				type: "advancement"
-				advancement: "create:speed_controller"
-				criterion: ""
-			}]
-		}
-		{
-			title: "3. Botania [A-side]"
-			x: -12.5d
-			y: 3.0d
-			subtitle: "「...いつになったら エルフさんたちと和解できるのかな」"
-			dependencies: ["449D582C9D5DB0B5"]
-			id: "4ED8096D16B281B0"
-			tasks: [
-				{
-					id: "433DEBB7AFC8673F"
-					type: "item"
-					item: "botania:rune_spring"
-				}
-				{
-					id: "526C0E656D018BBD"
-					type: "item"
-					item: "botania:rune_summer"
-				}
-				{
-					id: "6646D14E80B434E9"
-					type: "item"
-					item: "botania:rune_autumn"
-				}
-				{
-					id: "1D0D8DEAABE4E2E6"
-					type: "item"
-					item: "botania:rune_winter"
-				}
-			]
-		}
-		{
-			title: "4. Extra Utilities"
-			x: -12.5d
-			y: 2.0d
-			subtitle: "「それどうするの？ ...えっ発電の材料にするって？正気なの？」"
-			dependencies: [
-				"6270F07D0D42A3C6"
-				"14DA16988B3A4E76"
-			]
-			id: "76D526BE84BC040B"
-			tasks: [{
-				id: "4FF0F27D1AB11ED3"
+				id: "241B91B4AADEFCF8"
 				type: "observation"
-				title: "レインボー発電機を30秒見つめる"
-				icon: "tconstruct:enderman_head"
-				timer: 600L
+				title: "See 1min TaskScreen (1x1)"
+				icon: "ftbquests:screen_1"
+				timer: 1200L
 				observe_type: 0
-				to_observe: "extrautilitiesrebirth:rainbow_generator"
+				to_observe: "ftbquests:screen_1"
+			}]
+			rewards: [{
+				id: "29AD71B6A811121F"
+				type: "gamestage"
+				title: "Stage1: Activate"
+				auto: "invisible"
+				ignore_reward_blocking: true
+				stage: "stage1_act"
 			}]
 		}
 		{
-			title: "5. Immersive Engineering"
-			x: -12.0d
-			y: 1.5d
-			subtitle: "「がっしゃーん！ やっぱり大型の機械はおいしいね！！」"
+			title: "CheckPoint! #2"
+			x: 6.0d
+			y: -10.0d
+			subtitle: "見つめちゃだめだったらしい"
 			dependencies: [
-				"0F2EC03F06CFE3DA"
-				"3FD914CC5DFE0C4E"
+				"261CB13459BEC987"
+				"5E42A16595783DEE"
+				"1D0D9F1C3F4C2A3E"
+				"5439B2763A633D98"
+				"06BC76DF3A5E7F7B"
+				"470FE5092385E94A"
+				"0DC3897863C5F373"
 			]
-			id: "768A3B2034497CE1"
+			id: "7ACC960A6E8B5C38"
 			tasks: [{
-				id: "1E4577D6BD0F05C8"
+				id: "096344EECD4C1415"
 				type: "item"
-				item: "immersiveengineering:redstone_acid_bucket"
+				item: "ftbquests:screen_1"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "556AE2FF86565F5F"
+				type: "gamestage"
+				title: "Stage2: Activate"
+				auto: "invisible"
+				ignore_reward_blocking: true
+				stage: "stage2_act"
 			}]
 		}
 		{
-			title: "&72. Create - Append"
-			x: -13.0d
-			y: 2.5d
-			subtitle: "「わーい！ケーキだ！」 | &e一部消費クエスト"
-			description: ["Tips: このクエストのようにAppendと書いてるクエストは達成しなくて構いませんが、それぞれのmodにより深く触れてほしいという目的で製作しています。 よければ「ロマンのある工場」にも手を出してみてください。"]
-			hide_dependency_lines: false
-			dependencies: ["7FE894D5B4362BE5"]
+			title: "CheckPoint! #3"
+			x: 6.0d
+			y: -8.0d
+			subtitle: "しまっちゃおうねー^^"
+			dependencies: [
+				"0189CED7A3BF3C13"
+				"171078A9A4344B57"
+				"04D5B87EFEAF456E"
+				"73AC3EA80C8FD150"
+				"5FCD7CC99D14803C"
+				"20960455789001AD"
+				"355E944C0EADE821"
+			]
+			id: "7C6DADDBC1A07F07"
+			tasks: [{
+				id: "7FEF8CADBF6D7EA3"
+				type: "dimension"
+				title: "AE2でしまわれる | Cased into AE2 system"
+				icon: "ae2:spatial_pylon"
+				dimension: "ae2:spatial_storage"
+			}]
+			rewards: [{
+				id: "4425740CB5C7D8E2"
+				type: "gamestage"
+				title: "Stage3: Activate"
+				auto: "invisible"
+				ignore_reward_blocking: true
+				stage: "stage3_act"
+			}]
+		}
+		{
+			title: "CheckPoint! #4"
+			x: 6.0d
+			y: -6.0d
+			subtitle: "このラインはここで終わりです。 詳しくは最終クエスト群をご覧ください。"
+			dependencies: [
+				"2B9F88734814A008"
+				"62171B9676D89AEA"
+				"4E04B1CD7C16276A"
+				"09D30B60F7D9ABB5"
+			]
+			id: "61A37D2BEFB8F6DE"
+			tasks: [{
+				id: "6DF416D0A774BC72"
+				type: "checkmark"
+				title: "Check"
+			}]
+			rewards: [{
+				id: "7B222E969AC9FEBC"
+				type: "gamestage"
+				title: "Stage3: Complete"
+				auto: "invisible"
+				ignore_reward_blocking: true
+				stage: "stage3_end"
+			}]
+		}
+		{
+			title: "-. ERROR"
+			icon: "minecraft:diamond_block"
+			x: -4.0d
+			y: -4.0d
+			subtitle: "ところで、ここまで来た人は何%なのかな？"
+			description: ["ようこそ、こちら側へ。\\n行き詰ったらよくよく資源の生産状況を確認するのだ。"]
+			dependencies: [
+				"42B31C472A1E7CAC"
+				"61A37D2BEFB8F6DE"
+				"24A5440DECC23ECA"
+				"739EFDC592FA6132"
+				"3802AAECA4207B76"
+			]
+			hide: true
+			size: 2.0d
+			id: "37B601F436305C5E"
+			tasks: [{
+				id: "2BAB7DDF6204C3B9"
+				type: "gamestage"
+				title: "Stage?: ?????"
+				stage: "stage3_end"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -4.0d
+			subtitle: "無限のかなたへ！"
+			dependencies: ["37B601F436305C5E"]
+			hide: true
+			id: "0B31FEC95B62ECFC"
+			tasks: [{
+				id: "1B3D24FA749118BE"
+				type: "item"
+				item: "avaritia:infinity_catalyst"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -4.0d
+			subtitle: "おわりのはじまり、ようやく。"
+			dependencies: ["0B31FEC95B62ECFC"]
+			hide: true
+			id: "2DCFEF27E6FDB0BB"
+			tasks: [{
+				id: "2CAB182F918D534E"
+				type: "item"
+				item: "avaritia:infinity_ingot"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -4.0d
+			subtitle: "まずはInfinityIngotの熔融液をぶち込みましょう。 話はそれからです。"
+			dependencies: ["2DCFEF27E6FDB0BB"]
+			hide: true
+			id: "4785A9A1B19ECFF2"
+			tasks: [{
+				id: "50327105895512E5"
+				type: "item"
+				item: "mekanism:creative_fluid_tank"
+			}]
+		}
+		{
+			title: "CheckPoint! #5"
+			x: 2.0d
+			y: -4.0d
+			subtitle: "Re&kc&rip&ke&r Brok&ke&rn."
+			dependencies: [
+				"4785A9A1B19ECFF2"
+				"5ADA0225D618BE17"
+				"09B3B2C1D7A9A7F9"
+				"5189CBA4EA33AD3D"
+				"5E7AF4ADAB4680AD"
+				"2D7C0913365F216F"
+				"2FB224E659B5F59E"
+			]
+			hide: true
+			id: "09FD978921841C51"
+			tasks: [{
+				id: "6731062345E48D9B"
+				type: "checkmark"
+				title: "Error"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -4.0d
+			subtitle: "Recipe Detected."
+			dependencies: ["09FD978921841C51"]
+			hide: true
+			id: "3EF7F04C66188655"
+			tasks: [{
+				id: "1C711421B7015FD3"
+				type: "item"
+				item: "overdrive:administrator_authority"
+			}]
+			rewards: [{
+				id: "4338C9A980733E62"
+				type: "item"
+				exclude_from_claim_all: true
+				item: "valine_s1ex:tuna"
+				count: 16
+				random_bonus: 16
+			}]
+		}
+		{
+			x: 5.5d
+			y: -4.0d
+			subtitle: "おしまい。"
+			dependencies: ["3EF7F04C66188655"]
+			hide: true
+			size: 2.0d
+			id: "64F311BC3AB86ADF"
+			tasks: [{
+				id: "0482E2219008503D"
+				type: "item"
+				item: {
+					id: "modularrouters:creative_module"
+					Count: 1b
+					tag: {
+						modularrouters: {
+							ModuleFilter: { }
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "3A972928BD79EA7C"
+				type: "item"
+				item: "storagedrawers:creative_vending_upgrade"
+			}]
+		}
+		{
+			title: "1-3+. botania @2ndPhase"
+			x: 4.0d
+			y: -8.0d
+			subtitle: "そろそろ工業化したほうがいいんじゃない？"
+			hide_dependency_lines: true
+			dependencies: [
+				"37B15D64BD56D89C"
+				"261CB13459BEC987"
+			]
+			id: "355E944C0EADE821"
+			tasks: [{
+				id: "2CBAABDC4C21BEB0"
+				type: "item"
+				item: "botanicalmachinery:alfheim_market"
+			}]
+		}
+		{
+			title: "挑戦状"
+			icon: "minecraft:amethyst_block"
+			x: -4.0d
+			y: 0.5d
+			shape: "hexagon"
+			subtitle: "気が向いたときにでも..."
+			hide_dependency_lines: true
+			dependencies: ["788A45819FCFE0FB"]
+			hide: true
+			dependency_requirement: "one_completed"
+			id: "7B1D1BC89FC02156"
+			tasks: [{
+				id: "6FCB1DEC7AEB1217"
+				type: "checkmark"
+				title: "Check"
+			}]
+		}
+		{
+			title: "追加クエスト群"
+			icon: "minecraft:ancient_debris"
+			x: -4.0d
+			y: -2.0d
+			shape: "circle"
+			subtitle: "これちぇっくしてもなにもでないよ"
+			hide_dependency_lines: true
+			dependencies: [
+				"261CB13459BEC987"
+				"5439B2763A633D98"
+				"788A45819FCFE0FB"
+			]
+			hide: true
+			dependency_requirement: "one_completed"
+			id: "0AA829053BCEF8CD"
+			tasks: [{
+				id: "67DF806C27FA1388"
+				type: "checkmark"
+				title: "Check"
+			}]
+		}
+		{
+			title: "Extra1 Reward"
+			x: -1.5d
+			y: 1.5d
+			shape: "gear"
+			subtitle: "報酬をなくしたとき用"
+			dependencies: ["55C3B4FE661EEFEB"]
+			size: 0.6d
 			optional: true
-			id: "49BFE4095E17454D"
+			can_repeat: true
+			id: "6A8257CC2F6ECCD2"
+			tasks: [{
+				id: "153C1039713FFF0A"
+				type: "xp"
+				value: 250L
+				points: false
+			}]
+			rewards: [{
+				id: "6CCB5F0618D5EF4C"
+				type: "item"
+				item: {
+					id: "minecraft:player_head"
+					Count: 1b
+					tag: {
+						SkullOwner: {
+							Id: [I;
+								36186764
+								2105684884
+								-1321887514
+								-1546158721
+							]
+							Name: "valine3g"
+						}
+						AttributeModifiers: [
+							{
+								Slot: "offhand"
+								AttributeName: "generic.armor"
+								UUID: [I;
+									-1241016
+									71728
+									10035
+									-143456
+								]
+								Amount: 50
+								Name: "1731719161269"
+							}
+							{
+								Slot: "offhand"
+								AttributeName: "generic.attack_damage"
+								UUID: [I;
+									-1241016
+									72028
+									10035
+									-144056
+								]
+								Amount: 25
+								Name: "1731719161269"
+							}
+							{
+								Slot: "offhand"
+								AttributeName: "generic.movement_speed"
+								UUID: [I;
+									-1241016
+									72328
+									10035
+									-144656
+								]
+								Amount: 0.5d
+								Name: "1731719161269"
+							}
+							{
+								Slot: "offhand"
+								AttributeName: "generic.max_health"
+								UUID: [I;
+									-1241016
+									72628
+									10035
+									-145256
+								]
+								Amount: 50
+								Name: "1731719161269"
+							}
+						]
+						display: {
+							Lore: [
+								"[\"\",{\"text\":\"Zumomomomomo...\",\"italic\":false}]"
+								"[\"\",{\"text\":\"This includes super-power, so give you power when you hold this in offhand.\",\"italic\":false}]"
+								"[\"\",{\"text\":\"あふれ出る強力なパワーにより、あなたを強化する。\",\"italic\":false}]"
+							]
+							Name: "[\"\",{\"text\":\"Extreme Valine \",\"color\":\"green\",\"bold\":true}]"
+						}
+						Enchantments: [{
+							lvl: 9
+							id: "fortune"
+						}]
+					}
+				}
+			}]
+		}
+		{
+			title: "Extra2: Robit"
+			x: 0.0d
+			y: 0.5d
+			shape: "hexagon"
+			subtitle: "電力切れでも倒れないのに...? &c[討伐クエスト]&b[報酬あり]"
+			hide_dependency_lines: true
+			dependencies: [
+				"4E04B1CD7C16276A"
+				"788A45819FCFE0FB"
+			]
+			hide: true
+			optional: true
+			id: "0567B5612F3A0F06"
+			tasks: [{
+				id: "6A214F44CAC550AE"
+				type: "kill"
+				title: "Kill: ロビット"
+				icon: "mekanism:robit"
+				entity: "mekanism:robit"
+				value: 1L
+			}]
+			rewards: [{
+				id: "62F5B44F4ED32BAD"
+				type: "item"
+				item: {
+					id: "tconstruct:creative_slot"
+					Count: 1b
+					tag: {
+						slot: "upgrades"
+					}
+				}
+			}]
+		}
+		{
+			title: "Extra2 Reward"
+			x: 0.0d
+			y: 1.5d
+			shape: "hexagon"
+			subtitle: "報酬がもう一度ほしいなら"
+			dependencies: ["0567B5612F3A0F06"]
+			size: 0.5d
+			optional: true
+			can_repeat: true
+			id: "2DF5F85571B67116"
+			tasks: [{
+				id: "71D5D87B1D1879D0"
+				type: "kill"
+				title: "Kill: 4 ロビット"
+				icon: {
+					id: "mekanism:robit"
+					Count: 1b
+					tag: {
+						mekData: {
+							EnergyContainers: [{
+								Container: 0b
+								stored: "100000"
+							}]
+						}
+					}
+				}
+				entity: "mekanism:robit"
+				value: 4L
+			}]
+			rewards: [{
+				id: "522C4970156C789A"
+				type: "item"
+				item: {
+					id: "tconstruct:creative_slot"
+					Count: 1b
+					tag: {
+						slot: "upgrades"
+					}
+				}
+			}]
+		}
+		{
+			title: "Extra3: The Energy"
+			x: 1.5d
+			y: 0.5d
+			shape: "gear"
+			subtitle: "電気の使い過ぎには十分ご注意ください"
+			hide_dependency_lines: true
+			dependencies: ["4E04B1CD7C16276A"]
+			hide: true
+			optional: true
+			id: "0643F6557BF8AA88"
+			tasks: [{
+				id: "034282DD73BD3A99"
+				type: "item"
+				item: {
+					id: "solarpanels:photonic_energy_tablet"
+					Count: 1b
+					tag: {
+						mekData: {
+							EnergyContainers: [{
+								Container: 0b
+								stored: "729000000"
+							}]
+						}
+					}
+				}
+				count: 16L
+				consume_items: true
+				match_nbt: true
+			}]
+			rewards: [
+				{
+					id: "6263B325C2B085A5"
+					type: "item"
+					item: {
+						id: "rebornstorage:creative_super_wireless_crafting_grid"
+						Count: 1b
+						tag: {
+							Energy: 100000
+						}
+					}
+				}
+				{
+					id: "331B5A611BC9FF80"
+					type: "item"
+					title: "返却"
+					team_reward: true
+					item: "solarpanels:photonic_energy_tablet"
+					count: 16
+				}
+			]
+		}
+		{
+			title: "Append 3: Botanical Machinery"
+			x: 2.5d
+			y: -2.0d
+			shape: "circle"
+			subtitle: "魔術を自動化したいあなたへ！"
+			hide_dependency_lines: true
+			dependencies: ["261CB13459BEC987"]
+			hide: true
+			id: "08E192EE733DFD65"
 			tasks: [
 				{
-					id: "41C3A3708281BDCE"
+					id: "477918AB6EFF1EC8"
 					type: "item"
-					item: "createaddition:cake_base_baked"
+					item: "botanicalmachinery:alfheim_market"
 				}
 				{
-					id: "06B7E29265DB4009"
+					id: "3B844AA13A307117"
 					type: "item"
-					item: "createaddition:honey_cake"
-					count: 16L
-					consume_items: true
+					item: "botanicalmachinery:industrial_agglomeration_factory"
 				}
 				{
-					id: "5F4482D1993B8053"
+					id: "04C3E4E1644FD988"
 					type: "item"
-					item: "createaddition:chocolate_cake"
-					count: 16L
-					consume_items: true
+					item: "botanicalmachinery:mechanical_apothecary"
+				}
+				{
+					id: "7AAD4AF4D8F985A4"
+					type: "item"
+					item: "botanicalmachinery:mechanical_brewery"
+				}
+				{
+					id: "02412E9EFDC4A70B"
+					type: "item"
+					item: "botanicalmachinery:mechanical_daisy"
+				}
+				{
+					id: "49462DC9DB50B4B9"
+					type: "item"
+					item: "botanicalmachinery:mechanical_mana_pool"
+				}
+				{
+					id: "3E26FE825E0ED87F"
+					type: "item"
+					item: "botanicalmachinery:mechanical_runic_altar"
 				}
 			]
 		}
 		{
-			title: "5. Thermal Expansion"
-			x: -12.0d
-			y: 2.5d
-			subtitle: "「このこ、5kRF/tも輸送できるの！ ...えっよわいって？」"
-			dependencies: [
-				"327A7772D048D1A2"
-				"5019300A675A67EC"
-				"519C46A5E7375B85"
-				"74EE669BFD5A9C64"
-				"146D9F008B0EE9CE"
-				"674DAE8D75271AF6"
-				"0C72591E62125DCF"
-				"0B12A299BE908969"
-				"3191BEF6E32BF399"
-				"4ED0F139FDF2816C"
-				"39249FD0CD57485B"
-				"2B74757CFFB65E67"
-			]
-			id: "23D3B8FF1251F125"
+			title: "Extra4: Kilo Gaia"
+			x: 3.0d
+			y: 0.5d
+			shape: "hexagon"
+			subtitle: "単純に多いだけという簡単なクエスト &c[討伐クエスト]&b[報酬あり]"
+			description: ["※この大剣は再入手できません。大切に使ってください..."]
+			hide_dependency_lines: true
+			dependencies: ["261CB13459BEC987"]
+			hide: true
+			optional: true
+			id: "4F6FFF3816D15268"
 			tasks: [{
-				id: "76F3E3F17E982D49"
+				id: "05D018AD279600AF"
+				type: "kill"
+				icon: "botania:gaia_head"
+				entity: "botania:doppleganger"
+				value: 1024L
+			}]
+			rewards: [{
+				id: "499E1857F2D32608"
 				type: "item"
-				item: "createaddition:electrum_spool"
+				item: {
+					id: "tconstruct:cleaver"
+					Count: 1b
+					tag: {
+						tic_multipliers: {
+							"tconstruct:mining_speed": 0.25f
+							"tconstruct:attack_damage": 1.5f
+							"tconstruct:durability": 3.5f
+						}
+						tic_stats: {
+							"tconstruct:attack_speed": 1.0f
+							"tconstruct:mining_speed": 0.5f
+							"tconstruct:attack_damage": 4.7250004f
+							"tconstruct:harvest_tier": "minecraft:wood"
+							"tconstruct:durability": 192.5f
+						}
+						tic_broken: 0b
+						tic_modifiers: [
+							{
+								name: "tconstruct:creative_slot"
+								level: 1s
+							}
+							{
+								name: "tconstruct:melee_protection"
+								level: 10s
+							}
+							{
+								name: "tconstruct:severing"
+								level: 2s
+							}
+							{
+								name: "tconstruct:cultivated"
+								level: 3s
+							}
+							{
+								name: "tconstruct:jagged"
+								level: 1s
+							}
+							{
+								name: "tconstruct:silky_aoe_shears"
+								level: 1s
+							}
+						]
+						display: {
+							Lore: ["[\"\",{\"text\":\"Powah!!!\",\"italic\":false}]"]
+						}
+						tic_upgrades: [
+							{
+								name: "tconstruct:creative_slot"
+								level: 1s
+							}
+							{
+								name: "tconstruct:melee_protection"
+								level: 10s
+							}
+						]
+						Damage: 0
+						tic_materials: [
+							"tconstruct:wood"
+							"tconstruct:wood"
+							"tconstruct:flint"
+							"tconstruct:wood"
+						]
+						tic_volatile_data: {
+							abilities: 9
+							souls: 10
+							defense: 20
+							upgrades: 8
+						}
+						AttributeModifiers: [
+							{
+								Slot: "offhand"
+								AttributeName: "generic.armor"
+								UUID: [I;
+									-1241116
+									36656
+									1523
+									-73312
+								]
+								Amount: 99.99d
+								Name: "1734329010859"
+							}
+							{
+								Slot: "mainhand"
+								AttributeName: "generic.attack_damage"
+								UUID: [I;
+									-1241116
+									36956
+									1523
+									-73912
+								]
+								Amount: 9999
+								Name: "1734329010859"
+							}
+						]
+						tic_persistent_data: {
+							abilities: 1
+							"tconstruct:creative": {
+								abilities: 9
+								souls: 10
+								defense: 20
+								upgrades: 8
+							}
+							"tconstruct:melee_protection": 20
+							defense: -10
+							upgrades: 2
+						}
+					}
+				}
 			}]
 		}
 		{
-			title: "6. Cyclic"
-			x: -11.5d
-			y: 2.0d
-			subtitle: "「それは...また今度でいいよ」"
+			title: "Extra5: 最後の挑戦状"
+			x: 4.5d
+			y: 0.5d
+			shape: "gear"
+			subtitle: "Infiniteでちまちま... &a[&l&e超大量&r&a納品クエスト]&b[報酬あり]"
+			hide_dependency_lines: true
 			dependencies: [
-				"768C5304B3BBC451"
-				"51188E3CF76CA75B"
-				"0A9C623C67279B63"
-				"297F3FB20EFCA3E7"
+				"20960455789001AD"
+				"09D30B60F7D9ABB5"
 			]
-			id: "152409A7093634C8"
-			tasks: [{
-				id: "77B82AB657BF6CFD"
+			optional: true
+			id: "134D1ADE493AD035"
+			tasks: [
+				{
+					id: "51B2464CB0794165"
+					type: "item"
+					item: {
+						id: "industrialforegoing:infinity_drill"
+						Count: 1b
+						tag: {
+							CanCharge: 1b
+							Special: 0b
+							Selected: "POOR"
+							Energy: 0L
+							Fluid: {
+								FluidName: "biofuel"
+								Amount: 0
+							}
+						}
+					}
+					count: 1024L
+					consume_items: true
+				}
+				{
+					id: "4900E39804658D1D"
+					type: "item"
+					item: {
+						id: "industrialforegoing:infinity_saw"
+						Count: 1b
+						tag: {
+							CanCharge: 1b
+							Special: 0b
+							Selected: "POOR"
+							Energy: 0L
+							Fluid: {
+								FluidName: "biofuel"
+								Amount: 0
+							}
+						}
+					}
+					count: 1024L
+					consume_items: true
+				}
+				{
+					id: "2E87968A20B17FCB"
+					type: "item"
+					item: {
+						id: "industrialforegoing:infinity_hammer"
+						Count: 1b
+						tag: {
+							CanCharge: 1b
+							Energy: 0L
+							Fluid: {
+								FluidName: "biofuel"
+								Amount: 0
+							}
+							Special: 0b
+							Selected: "POOR"
+							Beheading: 0
+						}
+					}
+					count: 1024L
+					consume_items: true
+				}
+				{
+					id: "359D6EBAFD7E369A"
+					type: "item"
+					item: {
+						id: "industrialforegoing:infinity_backpack"
+						Count: 1b
+						tag: {
+							CanCharge: 1b
+							Special: 0b
+							Selected: "POOR"
+							Energy: 0L
+						}
+					}
+					count: 1024L
+					consume_items: true
+				}
+				{
+					id: "15FC966F8DAAE637"
+					type: "item"
+					item: "industrialforegoing:infinity_charger"
+					count: 1048576L
+					consume_items: true
+				}
+				{
+					id: "3CF4D37E5B9D0BD5"
+					type: "item"
+					item: {
+						id: "constructionwand:infinity_wand"
+						Count: 1b
+						tag: {
+							wand_options: { }
+						}
+					}
+					count: 1073741824L
+					consume_items: true
+				}
+				{
+					id: "193C6AF9B8BDF0E6"
+					type: "item"
+					item: "extradisks:infinite_storage_block"
+					count: 1024L
+					consume_items: true
+				}
+				{
+					id: "45FD1617239C80A6"
+					type: "item"
+					item: "mekaevolution:infinite_control_circuit"
+					count: 1024L
+					consume_items: true
+				}
+			]
+			rewards: [
+				{
+					id: "2776078F92D3B0B0"
+					type: "item"
+					item: "minecraft:music_disc_otherside"
+					count: 2
+				}
+				{
+					id: "216D716D46628D0A"
+					type: "item"
+					title: "おまけ (1個だけ)"
+					team_reward: true
+					item: "botanypotstiers:creative_red_glazed_terracotta_hopper_botany_pot"
+				}
+			]
+		}
+		{
+			title: "Append 4: Mekanism"
+			x: 4.5d
+			y: -2.0d
+			shape: "circle"
+			subtitle: "そうそう、これおいしいんだよねー...(-v-) &a[納品クエスト]"
+			hide_dependency_lines: true
+			dependencies: ["4E04B1CD7C16276A"]
+			hide: true
+			optional: true
+			id: "600BBBCBFDC1EFB7"
+			tasks: [
+				{
+					id: "7086F25F9077198C"
+					type: "item"
+					item: "mekanism:alloy_atomic"
+					count: 16384L
+					consume_items: true
+				}
+				{
+					id: "1875EC526BE714AF"
+					type: "item"
+					item: "mekaevolution:absolute_control_circuit"
+					count: 1024L
+					consume_items: true
+				}
+				{
+					id: "46D249400CE3C48A"
+					type: "item"
+					item: "mekaevolution:supreme_control_circuit"
+					count: 1024L
+					consume_items: true
+				}
+				{
+					id: "0EC112376A78BF98"
+					type: "item"
+					item: "mekaevolution:cosmic_control_circuit"
+					count: 512L
+					consume_items: true
+				}
+				{
+					id: "2902995725A527F9"
+					type: "item"
+					item: "mekaevolution:infinite_control_circuit"
+					count: 256L
+					consume_items: true
+				}
+			]
+			rewards: [{
+				id: "446F0214666988D1"
 				type: "item"
-				item: "cyclic:anvil_void"
+				item: {
+					id: "storagedrawers:oak_full_drawers_4"
+					Count: 1b
+					tag: {
+						tile: {
+							Drawers: [
+								{
+									Item: {
+										id: "mekaevolution:absolute_control_circuit"
+										Count: 1b
+									}
+									Count: 16
+								}
+								{
+									Item: {
+										id: "mekaevolution:supreme_control_circuit"
+										Count: 1b
+									}
+									Count: 16
+								}
+								{
+									Item: {
+										id: "mekaevolution:cosmic_control_circuit"
+										Count: 1b
+									}
+									Count: 16
+								}
+								{
+									Item: {
+										id: "mekaevolution:infinite_control_circuit"
+										Count: 1b
+									}
+									Count: 8
+								}
+							]
+							Upgrades: [ ]
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "Bonus1"
+			icon: {
+				id: "tconstruct:creative_slot"
+				Count: 1b
+				tag: {
+					slot: "defense"
+				}
+			}
+			disable_toast: true
+			x: 0.5d
+			y: -1.0d
+			subtitle: "TiC クリエイティブ防具スロット1個を購入"
+			dependencies: [
+				"68336C6DE6D720DD"
+				"600BBBCBFDC1EFB7"
+				"08E192EE733DFD65"
+				"7062A0C24247C88C"
+			]
+			hide: true
+			optional: true
+			can_repeat: true
+			id: "331314670B1375D8"
+			tasks: [
+				{
+					id: "0DB40AFB2D34B16B"
+					type: "item"
+					item: "minecraft:writable_book"
+					consume_items: true
+				}
+				{
+					id: "0B6DD6B453B7ED7F"
+					type: "item"
+					item: "ae2:cell_component_256k"
+					consume_items: true
+				}
+				{
+					id: "54175F1E2338A95A"
+					type: "item"
+					item: {
+						id: "extendedcrafting:singularity"
+						Count: 1b
+						tag: {
+							Id: "extendedcrafting:qio_drive_infinite"
+						}
+					}
+					consume_items: true
+				}
+			]
+			rewards: [
+				{
+					id: "5DC2BBDF37C9A27D"
+					type: "item"
+					team_reward: true
+					item: {
+						id: "tconstruct:creative_slot"
+						Count: 1b
+						tag: {
+							slot: "defense"
+						}
+					}
+				}
+				{
+					id: "78DC31EC281AAAB7"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Bonus2"
+			icon: {
+				id: "tconstruct:creative_slot"
+				Count: 1b
+				tag: {
+					slot: "souls"
+				}
+			}
+			disable_toast: true
+			x: 1.5d
+			y: -1.0d
+			subtitle: "TiC クリエイティブソウルスロット1個を購入"
+			dependencies: [
+				"68336C6DE6D720DD"
+				"600BBBCBFDC1EFB7"
+				"08E192EE733DFD65"
+				"7062A0C24247C88C"
+			]
+			hide: true
+			optional: true
+			can_repeat: true
+			id: "2DA875CA070E285B"
+			tasks: [
+				{
+					id: "6E5FCAD1D330AE47"
+					type: "item"
+					item: "thermal_extra:soul_infused_block"
+					consume_items: true
+				}
+				{
+					id: "35CF7BDBD17EA128"
+					type: "item"
+					item: "ae2:cell_component_256k"
+					consume_items: true
+				}
+				{
+					id: "104158DF54283206"
+					type: "item"
+					item: {
+						id: "extendedcrafting:singularity"
+						Count: 1b
+						tag: {
+							Id: "extendedcrafting:qio_drive_infinite"
+						}
+					}
+					consume_items: true
+				}
+			]
+			rewards: [
+				{
+					id: "368B2372F859E33A"
+					type: "item"
+					team_reward: true
+					item: {
+						id: "tconstruct:creative_slot"
+						Count: 1b
+						tag: {
+							slot: "souls"
+						}
+					}
+				}
+				{
+					id: "5D32D85E8C869186"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Bonus3"
+			icon: {
+				id: "tconstruct:creative_slot"
+				Count: 1b
+				tag: {
+					slot: "abilities"
+				}
+			}
+			disable_toast: true
+			x: 2.5d
+			y: -1.0d
+			subtitle: "TiC クリエイティブアビリティスロット1個を購入"
+			dependencies: [
+				"68336C6DE6D720DD"
+				"600BBBCBFDC1EFB7"
+				"08E192EE733DFD65"
+				"7062A0C24247C88C"
+			]
+			hide: true
+			optional: true
+			can_repeat: true
+			id: "35CE2A2F2C56B6BC"
+			tasks: [
+				{
+					id: "6A1D9D3CFCA73853"
+					type: "item"
+					item: "tconstruct:jeweled_apple"
+					count: 2L
+					consume_items: true
+				}
+				{
+					id: "2EF6E8616FAA2586"
+					type: "item"
+					item: "ae2:cell_component_256k"
+					consume_items: true
+				}
+				{
+					id: "49ED4478C32B7785"
+					type: "item"
+					item: {
+						id: "extendedcrafting:singularity"
+						Count: 1b
+						tag: {
+							Id: "extendedcrafting:qio_drive_infinite"
+						}
+					}
+					consume_items: true
+				}
+			]
+			rewards: [
+				{
+					id: "36D3910DD6AAF712"
+					type: "item"
+					team_reward: true
+					item: {
+						id: "tconstruct:creative_slot"
+						Count: 1b
+						tag: {
+							slot: "abilities"
+						}
+					}
+				}
+				{
+					id: "351459B06BF499E5"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "1-EX. Integrated Dynamics"
+			x: 4.8d
+			y: -9.299999999999999d
+			shape: "square"
+			subtitle: "つよつよ配線mod。 強奪トラップに気を付けて。"
+			hide_dependency_lines: true
+			dependencies: ["7147D6B7D49719F2"]
+			hide: true
+			size: 0.6d
+			id: "6FC6E385D44A7ECD"
+			tasks: [{
+				id: "694A60BC5DCC9340"
+				type: "item"
+				item: {
+					id: "integrateddynamics:energy_battery"
+					Count: 1b
+					tag: {
+						energy: 0
+					}
+				}
 			}]
 		}
 	]

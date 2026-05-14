@@ -1,0 +1,8 @@
+{
+    "packName": "V1EX",
+    "icon": {
+        "path": "kubejs/assets/valine_s1ex/textures/item/valine_3g.jpg",
+        "width": 64,
+        "height": 64
+   }
+}

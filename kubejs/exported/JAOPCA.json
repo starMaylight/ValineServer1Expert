@@ -1,0 +1,191 @@
+[
+    {
+        "type": "document:class",
+        "className": "thelm.jaopca.compat.kubejs.utils.JAOPCA",
+        "fields": [],
+        "methods": [
+            {
+                "type": "document:method",
+                "name": "containsForm",
+                "static": true,
+                "abstract": false,
+                "params": [
+                    {
+                        "type": "property:param",
+                        "name": "formName",
+                        "paramType": {
+                            "type": "type:class",
+                            "name": "java.lang.String"
+                        },
+                        "varArg": false
+                    }
+                ],
+                "returns": {
+                    "type": "type:class",
+                    "name": "boolean"
+                }
+            },
+            {
+                "type": "document:method",
+                "name": "getForm",
+                "static": true,
+                "abstract": false,
+                "params": [
+                    {
+                        "type": "property:param",
+                        "name": "formName",
+                        "paramType": {
+                            "type": "type:class",
+                            "name": "java.lang.String"
+                        },
+                        "varArg": false
+                    }
+                ],
+                "returns": {
+                    "type": "type:class",
+                    "name": "thelm.jaopca.compat.kubejs.utils.Form"
+                }
+            },
+            {
+                "type": "document:method",
+                "name": "containsMaterial",
+                "static": true,
+                "abstract": false,
+                "params": [
+                    {
+                        "type": "property:param",
+                        "name": "materialName",
+                        "paramType": {
+                            "type": "type:class",
+                            "name": "java.lang.String"
+                        },
+                        "varArg": false
+                    }
+                ],
+                "returns": {
+                    "type": "type:class",
+                    "name": "boolean"
+                }
+            },
+            {
+                "type": "document:method",
+                "name": "getModule",
+                "static": true,
+                "abstract": false,
+                "params": [
+                    {
+                        "type": "property:param",
+                        "name": "moduleName",
+                        "paramType": {
+                            "type": "type:class",
+                            "name": "java.lang.String"
+                        },
+                        "varArg": false
+                    }
+                ],
+                "returns": {
+                    "type": "type:class",
+                    "name": "thelm.jaopca.compat.kubejs.utils.Module"
+                }
+            },
+            {
+                "type": "document:method",
+                "name": "getAllMaterials",
+                "static": true,
+                "abstract": false,
+                "params": [],
+                "returns": {
+                    "type": "type:parameterized",
+                    "params": [
+                        {
+                            "type": "type:class",
+                            "name": "thelm.jaopca.compat.kubejs.utils.Material"
+                        }
+                    ],
+                    "base": {
+                        "type": "type:class",
+                        "name": "java.util.List"
+                    }
+                }
+            },
+            {
+                "type": "document:method",
+                "name": "containsModule",
+                "static": true,
+                "abstract": false,
+                "params": [
+                    {
+                        "type": "property:param",
+                        "name": "moduleName",
+                        "paramType": {
+                            "type": "type:class",
+                            "name": "java.lang.String"
+                        },
+                        "varArg": false
+                    }
+                ],
+                "returns": {
+                    "type": "type:class",
+                    "name": "boolean"
+                }
+            },
+            {
+                "type": "document:method",
+                "name": "getMaterialsForType",
+                "static": true,
+                "abstract": false,
+                "params": [
+                    {
+                        "type": "property:param",
+                        "name": "materialType",
+                        "paramType": {
+                            "type": "type:class",
+                            "name": "java.lang.String"
+                        },
+                        "varArg": false
+                    }
+                ],
+                "returns": {
+                    "type": "type:parameterized",
+                    "params": [
+                        {
+                            "type": "type:class",
+                            "name": "thelm.jaopca.compat.kubejs.utils.Material"
+                        }
+                    ],
+                    "base": {
+                        "type": "type:class",
+                        "name": "java.util.List"
+                    }
+                }
+            },
+            {
+                "type": "document:method",
+                "name": "getMaterial",
+                "static": true,
+                "abstract": false,
+                "params": [
+                    {
+                        "type": "property:param",
+                        "name": "materialName",
+                        "paramType": {
+                            "type": "type:class",
+                            "name": "java.lang.String"
+                        },
+                        "varArg": false
+                    }
+                ],
+                "returns": {
+                    "type": "type:class",
+                    "name": "thelm.jaopca.compat.kubejs.utils.Material"
+                }
+            }
+        ],
+        "constructors": [
+            {
+                "type": "document:constructor",
+                "params": []
+            }
+        ]
+    }
+]

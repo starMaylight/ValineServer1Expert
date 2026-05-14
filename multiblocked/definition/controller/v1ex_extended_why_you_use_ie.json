@@ -1,0 +1,410 @@
+{
+  "version": 3,
+  "location": "v1ex_extended:why_you_use_ie",
+  "traits": {
+    "recipe_progress": {
+      "cIO": 2,
+      "gIO": 2,
+      "mbdIO": 2,
+      "slotName": "",
+      "x": 54,
+      "y": 113,
+      "width": 60,
+      "height": 18,
+      "texture": "multiblocked:textures/gui/energy_bar.png",
+      "fillDirection": "LEFT_TO_RIGHT"
+    }
+  },
+  "properties": {
+    "rotationState": "ALL",
+    "showInJei": true,
+    "isOpaque": true,
+    "hasDynamicShape": false,
+    "hasCollision": true,
+    "destroyTime": 1.5,
+    "explosionResistance": 6.0,
+    "speedFactor": 1.0,
+    "jumpFactor": 1.0,
+    "friction": 0.6,
+    "harvestLevel": 0,
+    "stackSize": 64,
+    "tabGroup": "multiblocked.all"
+  },
+  "status": {
+    "unformed": {
+      "renderer": {
+        "state": {
+          "id": "mekanism:formulaic_assemblicator",
+          "meta": 4
+        },
+        "type": "blockstate",
+        "postRenderer": true
+      }
+    },
+    "idle": {
+      "parent": "unformed"
+    },
+    "working": {
+      "parent": "idle"
+    },
+    "suspend": {
+      "parent": "working"
+    }
+  },
+  "recipeMap": "ie",
+  "basePattern": {
+    "structureDir": [
+      "BACK",
+      "UP",
+      "RIGHT"
+    ],
+    "pattern": [
+      [
+        "       ",
+        "       ",
+        "       ",
+        "       ",
+        "       ",
+        "       ",
+        "       ",
+        "  AAA  "
+      ],
+      [
+        "  BCB  ",
+        "  DED  ",
+        "  DDD  ",
+        " FGGGF ",
+        " FGGGF ",
+        "  HHH  ",
+        "   A   ",
+        " AIJIA "
+      ],
+      [
+        " BBCBB ",
+        " KLMLD ",
+        " DLLLD ",
+        " G   G ",
+        " G   G ",
+        " HNNNH ",
+        "  O O  ",
+        "AIJJJIA"
+      ],
+      [
+        " CCCCC ",
+        " @MMMP ",
+        " DLQLD ",
+        " G R G ",
+        " G S G ",
+        " HNNNH ",
+        " A   A ",
+        "AJJJJJA"
+      ],
+      [
+        " BBCBB ",
+        " DLMLD ",
+        " DLLLD ",
+        " G   G ",
+        " G   G ",
+        " HNNNH ",
+        "  O O  ",
+        "AIJJJIA"
+      ],
+      [
+        "  BCB  ",
+        "  DTD  ",
+        "  DDD  ",
+        " FGGGF ",
+        " FGGGF ",
+        "  HHH  ",
+        "   A   ",
+        " AIJIA "
+      ],
+      [
+        "       ",
+        "       ",
+        "       ",
+        "       ",
+        "       ",
+        "       ",
+        "       ",
+        "  AAA  "
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "A": {
+        "blocks": [
+          {
+            "id": "ae2:quartz_vibrant_glass"
+          }
+        ],
+        "type": "blocks"
+      },
+      "B": {
+        "blocks": [
+          {
+            "id": "immersiveengineering:heavy_engineering"
+          }
+        ],
+        "type": "blocks"
+      },
+      "C": {
+        "blocks": [
+          {
+            "id": "valine_s1ex:nichrome_coil_block"
+          }
+        ],
+        "type": "blocks"
+      },
+      "D": {
+        "blocks": [
+          {
+            "id": "thermal_extra:dragonsteel_glass"
+          }
+        ],
+        "type": "blocks"
+      },
+      "E": {
+        "blocks": [
+          {
+            "id": "minecraft:barrel"
+          }
+        ],
+        "type": "blocks"
+      },
+      "F": {
+        "blocks": [
+          {
+            "id": "alchemistry:reactor_glass"
+          }
+        ],
+        "type": "blocks"
+      },
+      "G": {
+        "blocks": [
+          {
+            "id": "draconicevolution:wyvern_crafting_injector"
+          }
+        ],
+        "type": "blocks"
+      },
+      "H": {
+        "blocks": [
+          {
+            "id": "rftoolsbuilder:space_chamber"
+          }
+        ],
+        "type": "blocks"
+      },
+      "I": {
+        "blocks": [
+          {
+            "id": "immersiveengineering:slag_glass"
+          }
+        ],
+        "type": "blocks"
+      },
+      "J": {
+        "blocks": [
+          {
+            "id": "tconstruct:clear_glass"
+          }
+        ],
+        "type": "blocks"
+      },
+      "K": {
+        "blocks": [
+          {
+            "id": "immersiveengineering:rs_engineering"
+          }
+        ],
+        "type": "blocks"
+      },
+      "L": {
+        "blocks": [
+          {
+            "id": "immersiveengineering:light_engineering"
+          }
+        ],
+        "type": "blocks"
+      },
+      "M": {
+        "blocks": [
+          {
+            "id": "immersiveengineering:conveyor_basic"
+          }
+        ],
+        "type": "blocks"
+      },
+      "N": {
+        "blocks": [
+          {
+            "id": "cyclic:ghost"
+          }
+        ],
+        "type": "blocks"
+      },
+      "O": {
+        "blocks": [
+          {
+            "id": "industrialforegoing:dark_glass"
+          }
+        ],
+        "type": "blocks"
+      },
+      "P": {
+        "blocks": [
+          {
+            "id": "mekanism:ultimate_energy_cube"
+          }
+        ],
+        "type": "blocks"
+      },
+      "Q": {
+        "blocks": [
+          {
+            "id": "minecraft:piston"
+          }
+        ],
+        "type": "blocks"
+      },
+      "R": {
+        "blocks": [
+          {
+            "id": "botania:mana_bomb"
+          }
+        ],
+        "type": "blocks"
+      },
+      "S": {
+        "blocks": [
+          {
+            "id": "draconicevolution:crafting_core"
+          }
+        ],
+        "type": "blocks"
+      },
+      "T": {
+        "capability": "forge_energy",
+        "type": "capability"
+      },
+      "U": {
+        "capability": "item",
+        "type": "capability",
+        "io": "IN"
+      },
+      "V": {
+        "capability": "item",
+        "type": "capability",
+        "io": "OUT"
+      },
+      "controller": {
+        "location": "v1ex_extended:why_you_use_ie",
+        "type": "component"
+      },
+      "any": {
+        "type": "any"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      " ": [
+        "any"
+      ],
+      "A": [
+        "A"
+      ],
+      "B": [
+        "B"
+      ],
+      "C": [
+        "C"
+      ],
+      "D": [
+        "D"
+      ],
+      "E": [
+        "E",
+        "U"
+      ],
+      "F": [
+        "F"
+      ],
+      "G": [
+        "G"
+      ],
+      "H": [
+        "H"
+      ],
+      "I": [
+        "I"
+      ],
+      "J": [
+        "J"
+      ],
+      "K": [
+        "K"
+      ],
+      "L": [
+        "L"
+      ],
+      "M": [
+        "M"
+      ],
+      "N": [
+        "N"
+      ],
+      "O": [
+        "O"
+      ],
+      "P": [
+        "P",
+        "T"
+      ],
+      "Q": [
+        "Q"
+      ],
+      "R": [
+        "R"
+      ],
+      "S": [
+        "S"
+      ],
+      "T": [
+        "E",
+        "V"
+      ]
+    }
+  }
+}

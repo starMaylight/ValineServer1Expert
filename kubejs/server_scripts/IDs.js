@@ -1,9 +1,9 @@
 onEvent('recipes', event=>{
     //Lace add
-    event.remove({output: 'integrateddynamics:energy_battery'})
+    event.remove({id: 'integrateddynamics:crafting/energy_battery'})
 
     event.remove({output: 'integrateddynamics:cable'})
-    event.remove({output: 'integrateddynamics:variable'})
+    event.remove({id: 'integrateddynamics:crafting/variable'})
     event.remove({output: 'integrateddynamics:variable_transformer_output'})
     event.remove({output: 'integrateddynamics:variable_transformer_input'})
     event.remove({output: 'integrateddynamics:logic_programmer'})

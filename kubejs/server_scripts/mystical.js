@@ -92,6 +92,7 @@ onEvent("recipes", (event) => {
   event.custom({
     "type": "extendedcrafting:combination",
     "powerCost": 1000000,
+    "powerRate": 1000000,
     "input": {
       "item": "cyclic:soulstone"
     },
@@ -347,6 +348,7 @@ onEvent("recipes", (event) => {
 event.custom({
   "type": "extendedcrafting:combination",
   "powerCost": 9999999999,
+  "powerCost": 100000000,
   "input": {
     "item": "mysticalagriculture:infusion_crystal"
   },
@@ -394,6 +396,7 @@ event.custom({
 })
 event.custom({
   "type": "extendedcrafting:shaped_ender_crafter",
+  "craftingTime":5,
   "pattern": [
     "ABA",
     "CDC",
@@ -422,6 +425,7 @@ event.custom({
 })
 event.custom({
   "type": "extendedcrafting:shaped_ender_crafter",
+  "craftingTime":5,
   "pattern": [
     "ABA",
     "BCB",
@@ -447,6 +451,7 @@ event.custom({
 })
 event.custom({
   "type": "extendedcrafting:shaped_ender_crafter",
+  "craftingTime":5,
   "pattern": [
     "ABA",
     "BCB",
@@ -472,6 +477,7 @@ event.custom({
 })
 event.custom({
   "type": "extendedcrafting:shaped_ender_crafter",
+  "craftingTime":5,
   "pattern": [
     "ABA",
     "CDC",
@@ -500,6 +506,7 @@ event.custom({
 })
 event.custom({
   "type": "extendedcrafting:shaped_ender_crafter",
+  "craftingTime":5,
   "pattern": [
     "ABA",
     "BCB",
@@ -525,6 +532,7 @@ event.custom({
 })
 event.custom({
   "type": "extendedcrafting:shaped_ender_crafter",
+  "craftingTime":5,
   "pattern": [
     "ABA",
     "CDC",

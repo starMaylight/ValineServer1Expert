@@ -12,7 +12,7 @@ onEvent("recipes", (event) => {
   event.remove({ output:'extendedcrafting:basic_component'})
   event.remove({ output:'extendedcrafting:ultimate_component'})
   event.remove({ output:'extendedcrafting:luminessence'})
-  event.remove({ output:'avaritia:crystal_matrix_ingot'})
+  event.remove({ id:'avaritia:crystal_matrix_ingot'})
   event.remove({ output:'avaritia:diamond_lattice'})
   event.remove({ output:'extendedcrafting:ender_ingot'})
   event.remove({ output:'extendedcrafting:ender_star'})
@@ -21,6 +21,7 @@ onEvent("recipes", (event) => {
   event.remove({ output:'packagedexcrafting:elite_crafter'})
   event.remove({ output:'packagedexcrafting:ultimate_crafter'})
   event.remove({ output:'extendedcrafting:crystaltine_ingot'})
+  event.shapeless('9x avaritia:crystal_matrix_ingot' ,'avaritia:crystal_matrix_block')
   
   event.shaped('extendedcrafting:crafting_core' ,
     [
@@ -323,6 +324,7 @@ onEvent("recipes", (event) => {
     event.custom({
       "type": "extendedcrafting:combination",
       "powerCost": 100000,
+      "powerRate": 100000,
       "input": {
         "item": "valine_s1ex:enritched_sunnarium_alloy"
       },
@@ -360,6 +362,7 @@ onEvent("recipes", (event) => {
     event.custom({
       "type": "extendedcrafting:combination",
       "powerCost": 100000000,
+      "powerRate": 10000000,
       "input": {
         "item": "extendedcrafting:elite_component"
       },
@@ -384,6 +387,7 @@ onEvent("recipes", (event) => {
     event.custom({
       "type": "extendedcrafting:combination",
       "powerCost": 100000000,
+      "powerRate": 10000000,
       "input": {
         "item": "extendedcrafting:black_iron_slate"
       },
@@ -408,6 +412,7 @@ onEvent("recipes", (event) => {
     event.custom({
       "type": "extendedcrafting:combination",
       "powerCost": 100000000,
+      "powerRate": 10000000,
       "input": {
         "item": "extendedcrafting:basic_component"
       },
@@ -432,6 +437,7 @@ onEvent("recipes", (event) => {
     event.custom({
       "type": "extendedcrafting:combination",
       "powerCost": 100000000,
+      "powerRate": 10000000,
       "input": {
         "item": "extendedcrafting:advanced_component"
       },
@@ -483,6 +489,7 @@ onEvent("recipes", (event) => {
   })
   event.custom({
     "type": "extendedcrafting:shaped_ender_crafter",
+    "craftingTime":5,
     "pattern": [
       "ABA",
       "BCB",
@@ -505,6 +512,7 @@ onEvent("recipes", (event) => {
   })
   event.custom({
     "type": "extendedcrafting:shapeless_ender_crafter",
+    "craftingTime":5,
     "ingredients": [
       {
         "item": "ae2:singularity"
@@ -522,6 +530,7 @@ onEvent("recipes", (event) => {
   })
   event.custom({
     "type": "extendedcrafting:shaped_ender_crafter",
+    "craftingTime":5,
     "pattern": [
       "ABA",
       "BCB",

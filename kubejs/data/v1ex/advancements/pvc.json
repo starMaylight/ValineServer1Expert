@@ -1,0 +1,24 @@
+{
+    "display": {
+      "icon": {
+        "item": "chemlib:polyvinyl_chloride_plate"
+      },
+      "title": "PVC!",
+      "description": "（心臓発作）"
+    },
+    "parent": "v1ex:eliminated",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": [
+                "chemlib:polyvinyl_chloride_plate"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }

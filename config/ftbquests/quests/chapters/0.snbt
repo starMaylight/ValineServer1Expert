@@ -240,6 +240,7 @@
 						"patchouli:book": "alchemistry:alchemistry_book"
 					}
 				}
+				match_nbt: true
 				weak_nbt_match: true
 			}]
 		}
@@ -257,6 +258,7 @@
 						"patchouli:book": "productivebees:guide"
 					}
 				}
+				match_nbt: true
 				weak_nbt_match: true
 			}]
 		}
@@ -274,6 +276,7 @@
 						"patchouli:book": "rebornstorage:rs_book"
 					}
 				}
+				match_nbt: true
 				weak_nbt_match: true
 			}]
 		}
@@ -291,6 +294,7 @@
 						"patchouli:book": "cyclic:cyclic_guide_book"
 					}
 				}
+				match_nbt: true
 				weak_nbt_match: true
 			}]
 		}
@@ -308,6 +312,7 @@
 						"patchouli:book": "extendedcrafting:guide"
 					}
 				}
+				match_nbt: true
 				weak_nbt_match: true
 			}]
 		}
@@ -325,6 +330,7 @@
 						"patchouli:book": "industrialforegoing:industrial_foregoing"
 					}
 				}
+				match_nbt: true
 				weak_nbt_match: true
 			}]
 		}
@@ -342,6 +348,7 @@
 						"patchouli:book": "laserio:laseriobook"
 					}
 				}
+				match_nbt: true
 				weak_nbt_match: true
 			}]
 		}
@@ -359,6 +366,7 @@
 						"patchouli:book": "modularrouters:book"
 					}
 				}
+				match_nbt: true
 				weak_nbt_match: true
 			}]
 		}
@@ -376,6 +384,7 @@
 						"patchouli:book": "mysticalagriculture:guide"
 					}
 				}
+				match_nbt: true
 				weak_nbt_match: true
 			}]
 		}
@@ -393,6 +402,7 @@
 						"patchouli:book": "pneumaticcraft:book"
 					}
 				}
+				match_nbt: true
 				weak_nbt_match: true
 			}]
 		}
@@ -410,6 +420,7 @@
 						"patchouli:book": "thermal:guidebook"
 					}
 				}
+				match_nbt: true
 				weak_nbt_match: true
 			}]
 		}

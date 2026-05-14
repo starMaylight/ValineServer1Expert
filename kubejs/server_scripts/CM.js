@@ -13,6 +13,7 @@ onEvent("recipes", (event) => {
     event.custom({
         "type": "extendedcrafting:combination",
         "powerCost": 100000,
+        "powerRate": 100000,
         "input": {
           "item": "compactmachines:wall"
         },
@@ -49,6 +50,7 @@ onEvent("recipes", (event) => {
       event.custom({
         "type": "extendedcrafting:combination",
         "powerCost": 200000,
+        "powerRate": 200000,
         "input": {
           "item": "compactmachines:machine_tiny"
         },
@@ -85,6 +87,7 @@ onEvent("recipes", (event) => {
     event.custom({
         "type": "extendedcrafting:combination",
         "powerCost": 400000,
+        "powerRate": 400000,
         "input": {
           "item": "compactmachines:machine_small"
         },
@@ -121,6 +124,7 @@ onEvent("recipes", (event) => {
     event.custom({
         "type": "extendedcrafting:combination",
         "powerCost": 800000,
+        "powerRate": 800000,
         "input": {
           "item": "compactmachines:machine_normal"
         },
@@ -157,6 +161,7 @@ onEvent("recipes", (event) => {
     event.custom({
         "type": "extendedcrafting:combination",
         "powerCost": 1600000,
+        "powerRate": 1600000,
         "input": {
           "item": "compactmachines:machine_large"
         },
@@ -193,6 +198,7 @@ onEvent("recipes", (event) => {
     event.custom({
         "type": "extendedcrafting:combination",
         "powerCost": 100000,
+        "powerRate": 100000,
         "input": {
           "item": "compactmachines:machine_giant"
         },

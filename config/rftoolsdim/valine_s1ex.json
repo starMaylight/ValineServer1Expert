@@ -68,5 +68,95 @@
         "ticks": 10000,
         "worldgen": true,
         "dimlet": true
+    },
+    {
+        "type": "block",
+        "key": "immersiveengineering:duroplast",
+        "rarity": "rare",
+        "create": 1000,
+        "maintain": 1000,
+        "ticks": 1000,
+        "worldgen": true,
+        "dimlet": true
+    },
+    {
+        "type": "block",
+        "key": "pneumaticcraft:smooth_plastic_brick_white",
+        "rarity": "rare",
+        "create": 1000,
+        "maintain": 1000,
+        "ticks": 1000,
+        "worldgen": true,
+        "dimlet": true
+    },
+    {
+        "type": "block",
+        "key": "avaritia:crystal_matrix_block",
+        "rarity": "legendary",
+        "create": 1000,
+        "maintain": 1000,
+        "ticks": 1000,
+        "worldgen": true,
+        "dimlet": true
+    },
+    {
+        "type": "block",
+        "key": "extrautilitiesrebirth:octuple_compressed_cobblestone",
+        "rarity": "rare",
+        "create": 1000,
+        "maintain": 1000,
+        "ticks": 1000,
+        "worldgen": true,
+        "dimlet": true
+    },
+    {
+        "type": "block",
+        "key": "fluxnetworks:flux_block",
+        "rarity": "legendary",
+        "create": 1000,
+        "maintain": 1000,
+        "ticks": 1000,
+        "worldgen": true,
+        "dimlet": true
+    },
+    {
+        "type": "block",
+        "key": "thermal_extra:dragonsteel_block",
+        "rarity": "legendary",
+        "create": 1000,
+        "maintain": 1000,
+        "ticks": 1000,
+        "worldgen": true,
+        "dimlet": true
+    },
+    {
+        "type": "block",
+        "key": "thermal_extra:twinite_block",
+        "rarity": "legendary",
+        "create": 1000,
+        "maintain": 1000,
+        "ticks": 1000,
+        "worldgen": true,
+        "dimlet": true
+    },
+    {
+        "type": "block",
+        "key": "thermal_extra:shellite_block",
+        "rarity": "legendary",
+        "create": 1000,
+        "maintain": 1000,
+        "ticks": 1000,
+        "worldgen": true,
+        "dimlet": true
+    },
+    {
+        "type": "block",
+        "key": "thermal_extra:soul_infused_block",
+        "rarity": "legendary",
+        "create": 1000,
+        "maintain": 1000,
+        "ticks": 1000,
+        "worldgen": true,
+        "dimlet": true
     }
 ]

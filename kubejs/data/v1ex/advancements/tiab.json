@@ -1,0 +1,24 @@
+{
+    "display": {
+      "icon": {
+        "item": "tiab:time_in_a_bottle"
+      },
+      "title": "早すぎじゃない！？（ノルマ達成）",
+      "description": "時は加速する。加速しすぎても工業はできない。"
+    },
+    "parent": "v1ex:eliminated",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": [
+                "tiab:time_in_a_bottle"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }

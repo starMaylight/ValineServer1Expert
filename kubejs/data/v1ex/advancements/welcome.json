@@ -1,0 +1,18 @@
+{
+    "display": {
+        "icon": {
+            "item": "valine_s1ex:valine_hvm"
+        },
+        "title": "V1EXへようこそ!!",
+        "description": "Valine3gのチャンネル登録、高評価をよろしくお願いします!",
+        "background": "valine_s1ex:textures/block/eternal_block.png",
+        "frame": "task"
+    },
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+            }
+        }
+    }
+}

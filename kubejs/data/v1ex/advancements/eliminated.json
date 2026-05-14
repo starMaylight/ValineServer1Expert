@@ -1,0 +1,24 @@
+{
+    "display": {
+      "icon": {
+        "item": "valine_s1ex:eliminated_core"
+      },
+      "title": "自然淘汰と経験値",
+      "description": "経験を、記憶を。すべてを注ぎ込む。"
+    },
+    "parent": "v1ex:plastic",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": [
+                "valine_s1ex:eliminated_core"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }

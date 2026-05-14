@@ -91,7 +91,6 @@
 			subtitle: "なんだか急にピザが食べたくなってきましたね"
 			dependencies: ["20C76E4F2AE82E8A"]
 			optional: true
-			can_repeat: true
 			id: "77F6DD699E91767F"
 			tasks: [{
 				id: "45E0F956D5917F70"
@@ -1060,8 +1059,9 @@
 			subtitle: "スタッフドパンプキンパイを崇めよ"
 			dependencies: ["77F6DD699E91767F"]
 			hide: true
+			dependency_requirement: "all_started"
 			optional: true
-			can_repeat: true
+			progression_mode: "flexible"
 			id: "0ADB7F9C98775F26"
 			tasks: [{
 				id: "3D058CDF4DBF8ADB"
@@ -2234,6 +2234,116 @@
 				id: "0EC756E3BE9D7819"
 				type: "item"
 				item: "mysticalagradditions:creative_essence"
+			}]
+		}
+		{
+			x: 10.5d
+			y: 3.0d
+			shape: "square"
+			subtitle: "どっかでみたやつ"
+			description: ["最初は40000個の予定だった"]
+			dependencies: ["6E23930D39966149"]
+			hide_text_until_complete: true
+			optional: true
+			id: "5FF371214FBBC391"
+			tasks: [{
+				id: "60046AD85840ED64"
+				type: "item"
+				item: "mysticalagriculture:draconium_seeds"
+				count: 13099L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "2BB821B0157DFC30"
+				type: "item"
+				team_reward: true
+				item: {
+					id: "mekanism:ultimate_chemical_tank"
+					Count: 1b
+					tag: {
+						mekData: {
+							GasTanks: [{
+								Tank: 0b
+								stored: {
+									gasName: "mekanism:oxygen"
+									amount: 8192000L
+								}
+							}]
+						}
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Mythic\"}"
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "1LC TomatoSauce"
+			x: 1.5d
+			y: -2.0d
+			shape: "square"
+			subtitle: "そろそろ飲み物が欲しくなってくるころ"
+			dependencies: ["77F6DD699E91767F"]
+			hide: true
+			optional: true
+			can_repeat: true
+			id: "31D5A823F98590D6"
+			tasks: [
+				{
+					id: "6E324F8FD0BC62CC"
+					type: "item"
+					item: "thermal:tomato_sauce"
+					count: 3456L
+					consume_items: true
+				}
+				{
+					id: "060A53B4C1805AB3"
+					type: "fluid"
+					icon: "minecraft:milk_bucket"
+					fluid: "minecraft:flowing_milk"
+					amount: 500000L
+				}
+			]
+			rewards: [{
+				id: "23D31AC5D3B1A0E5"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+		}
+		{
+			title: "1LC Stuffed Pumpkin"
+			x: 1.5d
+			y: -5.0d
+			shape: "square"
+			subtitle: "とても優雅な生活"
+			dependencies: ["0ADB7F9C98775F26"]
+			hide: true
+			dependency_requirement: "all_started"
+			optional: true
+			can_repeat: true
+			progression_mode: "flexible"
+			id: "2410F2FCA1B6829E"
+			tasks: [
+				{
+					id: "7DE39E0EC4148AFE"
+					type: "item"
+					item: "thermal:stuffed_pumpkin"
+					count: 3456L
+					consume_items: true
+				}
+				{
+					id: "27B41852B265349F"
+					type: "fluid"
+					icon: "create:builders_tea"
+					fluid: "create:tea"
+					amount: 500000L
+				}
+			]
+			rewards: [{
+				id: "7B5E66A1FDD3B866"
+				type: "xp_levels"
+				xp_levels: 30
 			}]
 		}
 	]

@@ -1,0 +1,24 @@
+{
+    "display": {
+      "icon": {
+        "item": "pneumaticcraft:plastic"
+      },
+      "title": "プラスチック!",
+      "description": "原油処理から得られるプラスチック。Gregみたいだね。"
+    },
+    "parent": "v1ex:tutorial",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": [
+                "pneumaticcraft:plastic"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }

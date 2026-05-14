@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "immersiveengineering:heavy_engineering"
+    },
+    "title": "重機械群のかなめたち",
+    "description": "でっかい機械が重低音を響かせながら動くのはなんかいいよね。"
+  },
+  "parent": "v1ex:pvc",
+  "criteria": {
+    "heavyengineering": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "immersiveengineering:heavy_engineering"
+            ]
+          }
+        ]
+      }
+    },
+    "lightengineering": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "immersiveengineering:light_engineering"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

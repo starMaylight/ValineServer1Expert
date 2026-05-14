@@ -267,4 +267,7 @@ onEvent("recipes", (event) => {
   gearprocessing('shellite')
   gearprocessing('twinite')
   gearprocessing('dragonsteel')
+  
+event.recipes.thermal.crucible(Fluid.of('tconstruct:molten_lumium',90), 'thermal:lumium_ingot')
+event.recipes.thermal.crucible(Fluid.of('tconstruct:molten_lumium',810), 'thermal:lumium_block')
 })

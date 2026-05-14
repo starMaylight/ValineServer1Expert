@@ -41,7 +41,7 @@ onEvent('recipes', (event) => {
         ],
         dimensions: ['minecraft:overworld'],
         weight: 40,
-        fail_chance: 0.5,
+        fail_chance: 0.05,
         sample_background: back,
       })
       .id(`valine_s1ex:mineral/${orevein}`);
@@ -62,7 +62,7 @@ onEvent('recipes', (event) => {
         ],
         dimensions: ['minecraft:the_nether'],
         weight: 20,
-        fail_chance: 0.5,
+        fail_chance: 0.05,
         sample_background: back,
       })
       .id(`valine_s1ex:mineral/${orevein}`);
@@ -86,7 +86,7 @@ onEvent('recipes', (event) => {
         ],
         dimensions: ['minecraft:the_end'],
         weight: 20,
-        fail_chance: 0.5,
+        fail_chance: 0.05,
         sample_background: back,
       })
       .id(`valine_s1ex:mineral/${orevein}`);

@@ -1,4 +1,4 @@
-const BlueprintCraftingRecipe = java("blusunrize.immersiveengineering.api.crafting.BlueprintCraftingRecipe")
+
 onEvent("recipes", (event) => {
 let removebyname = [
     'botania:runic_altar',
@@ -14,7 +14,6 @@ let removebyname = [
     'botania:rune_air',
     'botania:third_eye',
     'botania:terra_plate',
-    'botania:terrasteel_ingot',
     'botanicalmachinery:mechanical_daisy',
     'botanicalmachinery:mechanical_runic_altar',
     'botanicalmachinery:mana_battery',
@@ -22,21 +21,22 @@ let removebyname = [
     'botanicalmachinery:mechanical_brewery',
     'botanicalmachinery:mechanical_apothecary',
     'botanicalmachinery:industrial_agglomeration_factory',
-    'botanicalmachinery:alfheim_market'
+    'botanicalmachinery:alfheim_market',
+    'botania:apothecary_mossy'
 ]
 removebyname.forEach((name) => {
     event.remove({output: name})
     })
 let removebyids = [
     'botania:pure_daisy/livingwood',
+    'botania:terra_plate/terrasteel_ingot',
     'botania:mana_infusion/manasteel',
     'botania:mana_infusion/manasteel_block'
 ]
 removebyids.forEach((name) => {
     event.remove({id: name})
     })
-    if (!BlueprintCraftingRecipe.recipeCategories.contains("miscs")) {
-      BlueprintCraftingRecipe.recipeCategories.add("miscs")}
+      
 event.shaped('botania:apothecary_default', [
       'ABA',
       ' A ',

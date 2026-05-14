@@ -1,0 +1,8 @@
+{
+    "primaryColor": "#e0ffff",
+    "secondaryColor": "#afeeee",
+    "particleColor": "#e0ffff",
+    "flowerFluid": "industrialforegoing:ether_gas",
+    "waterproof": true,
+    "renderer": "thicc"
+}

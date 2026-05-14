@@ -80,7 +80,7 @@
 			x: 3.0d
 			y: 0.0d
 			subtitle: "便利な道具"
-			description: ["必需品です。作るのを戸惑わないこと。"]
+			description: ["必需品です。作るのを躊躇わないこと。"]
 			dependencies: ["16A192BD1E868B21"]
 			id: "6224BF05B2FC4DE4"
 			tasks: [
@@ -279,7 +279,10 @@
 			x: 1.5d
 			y: 6.0d
 			subtitle: "食べてないよ？"
-			description: ["ねぇ！赤石素材じゃないんだけど！"]
+			description: [
+				"ねぇ！赤石素材じゃないんだけど！"
+				"※辰砂蜂を作るのが一番手っ取り早いです。"
+			]
 			id: "7A88B6E2B787B289"
 			tasks: [{
 				id: "57D37EB3FFDEA9D2"

@@ -68,4 +68,7 @@ event.custom({
       }
     ]
   })
+  event.recipes.create.crushing('thermal:netherite_dust', 'minecraft:netherite_ingot')
+  event.recipes.mekanism.sawing('2x createaddition:iron_wire', 'minecraft:iron_ingot')
+  event.recipes.mekanism.sawing('2x createaddition:gold_wire', 'minecraft:gold_ingot')
 })

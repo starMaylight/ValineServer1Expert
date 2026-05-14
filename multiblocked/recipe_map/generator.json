@@ -1,0 +1,99 @@
+{
+  "name": "generator",
+  "progressTexture": "multiblocked:textures/gui/progress_bar_arrow.png",
+  "fuelTexture": "multiblocked:textures/gui/progress_bar_fuel.png",
+  "recipes": [
+    {
+      "uid": "generator",
+      "duration": 2000,
+      "tickInputs": {
+        "mek_gas": [
+          {
+            "content": {
+              "type": "mek1000:dvt",
+              "amount": 200
+            },
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickOutputs": {
+        "forge_energy": [
+          {
+            "content": 2147483647,
+            "chance": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "uid": "saltless_soysauce",
+      "duration": 2000,
+      "tickInputs": {
+        "mek_gas": [
+          {
+            "content": {
+              "type": "mek1000:saltless_dried_soysouce",
+              "amount": 1
+            },
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickOutputs": {
+        "forge_energy": [
+          {
+            "content": 4382750,
+            "chance": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "uid": "ultimate_valine",
+      "duration": 20000,
+      "inputs": {
+        "mek_gas": [
+          {
+            "content": {
+              "type": "mek1000:ultimate_valine3g",
+              "amount": 1000
+            },
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickOutputs": {
+        "forge_energy": [
+          {
+            "content": 2147483647,
+            "chance": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "uid": "valine",
+      "duration": 2000,
+      "tickInputs": {
+        "mek_gas": [
+          {
+            "content": {
+              "type": "mek1000:valine3g",
+              "amount": 1
+            },
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickOutputs": {
+        "forge_energy": [
+          {
+            "content": 57729,
+            "chance": 1.0
+          }
+        ]
+      }
+    }
+  ]
+}

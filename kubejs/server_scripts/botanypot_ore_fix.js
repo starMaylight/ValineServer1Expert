@@ -61,23 +61,11 @@ onEvent('recipes', event => {
         "categories": ["customtier5"],
         "growthModifier": 1})
         event.custom({
-          "type": "botanypots:soil",
-          "input": {"item": "mysticalagradditions:insanium_farmland"},
-          "display": {"block": "mysticalagradditions:insanium_farmland"},
-          "categories": ["customtier6"],
-          "growthModifier": 1})
-    event.custom({
-          "type": "botanypotstiers:soil",
-          "input": {"item": "mysticalagradditions:insanium_farmland"},
-          "display": {"block": "mysticalagradditions:insanium_farmland"},
-          "categories": ["customtier6"],
-          "growthModifier": 1})
-    event.custom({
-      "type": "botanypots:soil",
-      "input": {"item": "mysticalagradditions:insanium_farmland"},
-      "display": {"block": "mysticalagradditions:insanium_farmland"},
-      "categories": ["customtier6"],
-      "growthModifier": 1})
+        "type": "botanypotstiers:soil",
+        "input": {"item": "extendedcrafting:the_ultimate_block"},
+        "display": {"block": "extendedcrafting:the_ultimate_block"},
+        "categories": ["customtier7"],
+        "growthModifier": 1})
     function crop(seeds,output,categories,oredisplay,growthTicks){
         event.custom({"type": "botanypots:crop",
             "seed": seeds,
@@ -98,6 +86,25 @@ onEvent('recipes', event => {
                     },
                     "drops": [{"chance": 1.00,"output": {"item": output}}]})
        }
+    function soil(inputsoil,names){
+    event.custom({
+      "type": "botanypots:soil",
+      "input": {"item": inputsoil},
+      "display": {"block": inputsoil},
+      "categories": [names],
+      "growthModifier": 1.5})
+    
+    event.custom({
+        "type": "botanypotstiers:soil",
+        "input": {"item": inputsoil},
+        "display": {"block": inputsoil},
+        "categories": [names],
+        "growthModifier": 1.5})}
+    //soil
+    soil('mysticalagradditions:neutronium_crux',"neutro")
+    soil('mysticalagradditions:nitro_crystal_crux',"nitro")
+    soil('mysticalagradditions:gaia_spirit_crux',"gaia")
+    soil('mysticalagradditions:awakened_draconium_crux',"draconic")
     //tier1
     crop('mysticalagriculture:prosperity_ingot','mysticalagriculture:prosperity_shard',"customtier1",'mysticalagriculture:prosperity_ore',1200)
     crop('mysticalagriculture:soulium_ingot','mysticalagriculture:soulium_dust',"customtier1",'mysticalagriculture:soulium_ore',1200)
@@ -119,9 +126,9 @@ onEvent('recipes', event => {
     crop('immersiveengineering:ingot_lead','mekanism:raw_lead',"customtier3",'immersiveengineering:ore_lead',1200)
     crop('chemlib:lead_ingot','mekanism:raw_lead',"customtier3",'immersiveengineering:ore_lead',1200)
 
-    crop('minecraft:quartz','minecraft:quartz','tier3quartz','minecraft:nether_quartz_ore',1200)
-    crop('minecraft:copper_ingot','minecraft:raw_copper','tier3copper','minecraft:copper_ore',1200)
-    crop('mysticalagriculture:tertium_ingot','mysticalagriculture:tertium_essence','tier3teri','mysticalagriculture:tertium_ingot_block',1600)
+    crop('minecraft:quartz','minecraft:quartz',"customtier3",'minecraft:nether_quartz_ore',1200)
+    crop('minecraft:copper_ingot','minecraft:raw_copper',"customtier3",'minecraft:copper_ore',1200)
+    crop('mysticalagriculture:tertium_ingot','mysticalagriculture:tertium_essence',"customtier3",'mysticalagriculture:tertium_ingot_block',1600)
     //tier4
     crop('minecraft:lapis_lazuli','minecraft:lapis_lazuli',"customtier4",'minecraft:lapis_ore',1200)
     crop('chemlib:nickel_ingot','thermal:raw_nickel',"customtier4",'thermal:nickel_ore',1200)
@@ -142,5 +149,10 @@ onEvent('recipes', event => {
     crop('minecraft:netherite_ingot','minecraft:ancient_debris',"customtier5",'minecraft:ancient_debris',1200)
     crop('mysticalagriculture:supremium_ingot','mysticalagriculture:supremium_essence',"customtier5",'mysticalagriculture:supremium_ingot_block',2800)
     //overtier
-    crop('mysticalagradditions:insanium_ingot','mysticalagradditions:insanium_essence',"customtier6",'mysticalagradditions:insanium_ingot_block',3000)
+    crop('mysticalagradditions:insanium_ingot','mysticalagradditions:insanium_essence',"insanium",'mysticalagradditions:insanium_ingot_block',3000)
+    crop('mysticalagriculture:circuit_seeds','mysticalagriculture:circuit_essence',"customtier7",'extendedcrafting:the_ultimate_block',3000)
+    crop('mysticalagriculture:neutronium_seeds','mysticalagriculture:neutronium_essence',"neutro",'avaritia:neutronium_block',3000)
+    crop('mysticalagriculture:nitro_crystal_seeds','mysticalagriculture:nitro_crystal_essence',"nitro",'powah:nitro_crystal_block',3000)
+    crop('mysticalagriculture:gaia_spirit_seeds','mysticalagriculture:gaia_spirit_essence',"gaia",'mysticalagradditions:gaia_spirit_crux',3000)
+    crop('mysticalagriculture:awakened_draconium_seeds','mysticalagriculture:awakened_draconium_essence',"draconic",'draconicevolution:awakened_draconium_block',3000)
 })

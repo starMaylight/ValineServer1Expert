@@ -29,16 +29,16 @@
 	#Amount of heat each Boiler heating element produces.
 	superheatingHeatTransfer = 1.6E7
 	#Peak processing rate for the Solar Neutron Activator. Note: It can go higher than this value in some extreme environments.
-	maxSolarNeutronActivatorRate = 64
+	maxSolarNeutronActivatorRate = 65535
 
 	#Dynamic Tank Settings
 	[general.dynamic_tank]
 		#Amount of fluid (mB) that each block of the dynamic tank contributes to the volume. Max = volume * fluidPerTank
 		#Range: 1 ~ 368224
-		fluidPerTank = 350000
+		fluidPerTank = 368224
 		#Amount of chemical (mB) that each block of the dynamic tank contributes to the volume. Max = volume * chemicalPerTank
 		#Range: 1 ~ 1581510980256305
-		chemicalPerTank = 16000000
+		chemicalPerTank = 16000000000
 
 	#Auto Eject Settings
 	[general.auto_eject]
@@ -75,9 +75,9 @@
 		#Disables Forge Energy (FE,RF,IF,uF,CF) power integration. Requires world restart (server-side option in SMP).
 		blacklistForge = false
 		#Conversion multiplier from Forge Energy to Joules (FE * JoulePerForgeEnergy = Joules)
-		JoulePerForgeEnergy = "50.000"
+		JoulePerForgeEnergy = "25.000"
 		#Conversion multiplier from Joules to Forge Energy (Joules * ForgeEnergyPerJoule = FE)
-		ForgeEnergyPerJoule = "0.02000"
+		ForgeEnergyPerJoule = "0.04000"
 		#Disables Flux Networks higher throughput Forge Energy (FE,RF,IF,uF,CF) power integration. Requires world restart (server-side option in SMP). Note: Disabling Forge Energy integration also disables this.
 		blacklistFluxNetworks = false
 		#How much energy is produced per mB of Hydrogen, also affects Electrolytic Separator usage, Ethylene burn rate and Gas generator energy capacity.
@@ -86,7 +86,7 @@
 		#Range: > 1
 		EthyleneBurnTime = 400
 		#Maximum Joules per mB of Steam. Also affects Thermoelectric Boiler.
-		maxEnergyPerSteam = "10"
+		maxEnergyPerSteam = "10000"
 
 	#Radiation Settings
 	[general.radiation]
@@ -118,10 +118,10 @@
 		silkMultiplier = 20
 		#Maximum radius in blocks that the Digital Miner can reach. (Increasing this may have negative effects on stability and/or performance. We strongly recommend you leave it at the default value).
 		#Range: > 1
-		maxRadius = 128
+		maxRadius = 8192
 		#Number of ticks required to mine a single block with a Digital Miner (without any upgrades).
 		#Range: > 1
-		ticksPerMine = 2
+		ticksPerMine = 16
 
 	#Laser Settings
 	[general.laser]

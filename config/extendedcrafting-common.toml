@@ -10,7 +10,7 @@
 	enabled = true
 	#How much FE the Crafting Core should hold.
 	#Range: > 0
-	powerCapacity = 5000000
+	powerCapacity = 2147483647
 	#How much FE/t the Crafting Core should use when crafting by default.
 	#Range: > 0
 	powerRate = 50000
@@ -50,7 +50,7 @@
 	enabled = true
 	#How long a single Ender Crafter crafting operation should take (in seconds) by default.
 	#Range: > 1
-	defaultTimeRequired = 60
+	defaultTimeRequired = 5
 	#How much a single Ender Alternator should speed up a craft. This is a percentage of the time required.
 	#Range: 0.0 ~ 1.0
 	alternatorEffectiveness = 0.01

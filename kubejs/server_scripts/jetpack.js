@@ -8,6 +8,7 @@ onEvent("recipes", (event) => {
     })
     event.custom({
         "type": "extendedcrafting:shaped_ender_crafter",
+        "craftingTime":5,
         "pattern": [
           " AB",
           "ACA",
@@ -30,6 +31,7 @@ onEvent("recipes", (event) => {
       })
       event.custom({
         "type": "extendedcrafting:shaped_ender_crafter",
+        "craftingTime":5,
         "pattern": [
           " AB",
           "ACA",
@@ -52,6 +54,7 @@ onEvent("recipes", (event) => {
       })
     event.custom({
         "type": "extendedcrafting:shaped_ender_crafter",
+        "craftingTime":5,
         "pattern": [
           " AB",
           "ACA",
@@ -74,6 +77,7 @@ onEvent("recipes", (event) => {
       })
     event.custom({
         "type": "extendedcrafting:shaped_ender_crafter",
+        "craftingTime":5,
         "pattern": [
           " AB",
           "ACA",

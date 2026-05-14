@@ -1,0 +1,24 @@
+{
+    "display": {
+      "icon": {
+        "item": "botania:third_eye"
+      },
+      "title": "汝従順のマシン為りて",
+      "description": "無情 明日の日は 君のためにはあらずと 隅々に地を覆い 逃亡の夢をも砕く"
+    },
+    "parent": "v1ex:world",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": [
+                "botania:third_eye"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }

@@ -359,6 +359,8 @@
 		{
 			x: -6.0d
 			y: 1.5d
+			subtitle: "凄い茶色"
+			description: ["用途が少ないのにその少ない用途の先が馬鹿ほど使う"]
 			dependencies: [
 				"351A78B5973C0BDB"
 				"4ABB24AA1FB1FBEA"
@@ -622,6 +624,8 @@
 		{
 			x: -6.0d
 			y: 0.0d
+			subtitle: "凝固反応"
+			description: ["粉……？いや粉か。"]
 			dependencies: [
 				"11A56876CA12762D"
 				"7E7F50A3FE652AE1"
@@ -1144,6 +1148,8 @@
 			icon: "immersiveengineering:squeezer"
 			x: -7.5d
 			y: 3.0d
+			subtitle: "ガンガン絞る"
+			description: ["押し潰して絞る。残るのはカス。まるで社会構造。"]
 			hide_dependency_lines: true
 			dependencies: [
 				"0E83561DE99169BF"
@@ -1827,6 +1833,63 @@
 				id: "2C07A817CD4F2008"
 				type: "item"
 				item: "valine_s1ex:fermented_biodiesel_bucket"
+			}]
+		}
+		{
+			title: "ご友人！サプライズをさせてくれないのですか？"
+			x: -3.0d
+			y: -4.5d
+			subtitle: "隠しクエストを見つけ出すだなんて、素敵だ♡"
+			description: [
+				"バリン5g「様子のおかしい人です」"
+				"バリン4g「私はなんだか混乱してきました」"
+				"バリン3g「静かにさせてもらえると助かります」"
+			]
+			hide_dependency_lines: true
+			dependencies: ["4D7C163DD1235108"]
+			optional: true
+			invisible: true
+			id: "01EBE37802761EB1"
+			tasks: [{
+				id: "773AA2CE4A860A8D"
+				type: "item"
+				item: {
+					id: "immersiveengineering:chemthrower"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							Size: 4
+							Items: [ ]
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "Only My Railgun"
+			x: -1.5d
+			y: -4.5d
+			subtitle: "光よ！"
+			description: ["だいたい一撃で吹き飛ぶスーパーノヴァ"]
+			hide_dependency_lines: true
+			dependencies: ["6FD87028F491C52C"]
+			optional: true
+			invisible: true
+			hide_details_until_startable: true
+			id: "7A7767EE15E78233"
+			tasks: [{
+				id: "7D0580A4CF73BAA7"
+				type: "item"
+				item: {
+					id: "immersiveengineering:railgun"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							Size: 3
+							Items: [ ]
+						}
+					}
+				}
 			}]
 		}
 	]

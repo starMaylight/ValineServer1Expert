@@ -91,6 +91,7 @@
 						Id: "extendedcrafting:the_ultimate_ingot"
 					}
 				}
+				match_nbt: true
 				weak_nbt_match: true
 			}]
 		}
@@ -108,6 +109,7 @@
 						Id: "extendedcrafting:machine_frame_supreme"
 					}
 				}
+				match_nbt: true
 				weak_nbt_match: true
 			}]
 		}
@@ -125,6 +127,7 @@
 						Id: "extendedcrafting:salmon_tempura"
 					}
 				}
+				match_nbt: true
 				weak_nbt_match: true
 			}]
 		}
@@ -142,6 +145,7 @@
 						Id: "extendedcrafting:gaia_spirit_ingot"
 					}
 				}
+				match_nbt: true
 				weak_nbt_match: true
 			}]
 		}
@@ -159,6 +163,7 @@
 						Id: "extendedcrafting:raw_emerald"
 					}
 				}
+				match_nbt: true
 				weak_nbt_match: true
 			}]
 		}
@@ -176,6 +181,7 @@
 						Id: "extendedcrafting:nitro_crystal_block"
 					}
 				}
+				match_nbt: true
 				weak_nbt_match: true
 			}]
 		}
@@ -193,6 +199,7 @@
 						Id: "extendedcrafting:netherite_upgrade"
 					}
 				}
+				match_nbt: true
 				weak_nbt_match: true
 			}]
 		}
@@ -210,6 +217,7 @@
 						Id: "extendedcrafting:mechanical_visor_upgrade"
 					}
 				}
+				match_nbt: true
 				weak_nbt_match: true
 			}]
 		}
@@ -227,6 +235,7 @@
 						Id: "extendedcrafting:jeweled_apple"
 					}
 				}
+				match_nbt: true
 				weak_nbt_match: true
 			}]
 		}
@@ -244,6 +253,7 @@
 						Id: "extendedcrafting:qio_drive_infinite"
 					}
 				}
+				match_nbt: true
 				weak_nbt_match: true
 			}]
 		}
@@ -261,6 +271,7 @@
 						Id: "extendedcrafting:infinite_fluid_storage_block"
 					}
 				}
+				match_nbt: true
 				weak_nbt_match: true
 			}]
 		}
@@ -278,6 +289,7 @@
 						Id: "extendedcrafting:high_voltage_module"
 					}
 				}
+				match_nbt: true
 				weak_nbt_match: true
 			}]
 		}
@@ -295,6 +307,7 @@
 						Id: "extendedcrafting:polyvinyl_chloride_plate"
 					}
 				}
+				match_nbt: true
 				weak_nbt_match: true
 			}]
 		}
@@ -312,6 +325,7 @@
 						Id: "extendedcrafting:rainbow_plating"
 					}
 				}
+				match_nbt: true
 				weak_nbt_match: true
 			}]
 		}
@@ -329,6 +343,7 @@
 						Id: "extendedcrafting:flux_block"
 					}
 				}
+				match_nbt: true
 				weak_nbt_match: true
 			}]
 		}
@@ -348,6 +363,7 @@
 						Id: "extendedcrafting:ender_cell"
 					}
 				}
+				match_nbt: true
 				weak_nbt_match: true
 			}]
 		}
@@ -365,6 +381,7 @@
 						Id: "extendedcrafting:emerald_storage_upgrade"
 					}
 				}
+				match_nbt: true
 				weak_nbt_match: true
 			}]
 		}
@@ -382,6 +399,7 @@
 						Id: "extendedcrafting:emerald_capasitor"
 					}
 				}
+				match_nbt: true
 				weak_nbt_match: true
 			}]
 		}
@@ -399,6 +417,7 @@
 						Id: "extendedcrafting:upgrade_augment"
 					}
 				}
+				match_nbt: true
 				weak_nbt_match: true
 			}]
 		}
@@ -416,6 +435,7 @@
 						Id: "extendedcrafting:construction_block_dense"
 					}
 				}
+				match_nbt: true
 				weak_nbt_match: true
 			}]
 		}
@@ -433,6 +453,7 @@
 						Id: "extendedcrafting:gem_obsidian"
 					}
 				}
+				match_nbt: true
 				weak_nbt_match: true
 			}]
 		}
@@ -450,6 +471,7 @@
 						Id: "extendedcrafting:logic_chip"
 					}
 				}
+				match_nbt: true
 				weak_nbt_match: true
 			}]
 		}
@@ -467,6 +489,7 @@
 						Id: "extendedcrafting:legendary_essence"
 					}
 				}
+				match_nbt: true
 				weak_nbt_match: true
 			}]
 		}
@@ -484,6 +507,7 @@
 						Id: "extendedcrafting:crystal_matrix_ingot"
 					}
 				}
+				match_nbt: true
 				weak_nbt_match: true
 			}]
 		}
@@ -501,6 +525,7 @@
 						Id: "extendedcrafting:machine_maximum"
 					}
 				}
+				match_nbt: true
 				weak_nbt_match: true
 			}]
 		}
@@ -518,6 +543,7 @@
 						Id: "extendedcrafting:chaos_heart"
 					}
 				}
+				match_nbt: true
 				weak_nbt_match: true
 			}]
 		}
@@ -535,6 +561,7 @@
 						Id: "extendedcrafting:bedrockium"
 					}
 				}
+				match_nbt: true
 				weak_nbt_match: true
 			}]
 		}
@@ -552,6 +579,7 @@
 						Id: "extendedcrafting:256m_crafting_storage"
 					}
 				}
+				match_nbt: true
 				weak_nbt_match: true
 			}]
 		}
@@ -569,6 +597,7 @@
 						Id: "extendedcrafting:ultimate_upgrade"
 					}
 				}
+				match_nbt: true
 				weak_nbt_match: true
 			}]
 		}
@@ -586,6 +615,7 @@
 						Id: "extendedcrafting:universal_mass"
 					}
 				}
+				match_nbt: true
 				weak_nbt_match: true
 			}]
 		}
@@ -603,6 +633,7 @@
 						Id: "extendedcrafting:upgrade_productivity"
 					}
 				}
+				match_nbt: true
 				weak_nbt_match: true
 			}]
 		}
@@ -620,6 +651,7 @@
 						Id: "extendedcrafting:variablestore"
 					}
 				}
+				match_nbt: true
 				weak_nbt_match: true
 			}]
 		}
@@ -630,6 +662,7 @@
 			description: [
 				"レシピ制作：takoito"
 				"fix:Lace"
+				"tips:実はブロックがRFT:Dに対応してる"
 			]
 			dependencies: [
 				"7DF7712FD9FD022F"
@@ -664,6 +697,7 @@
 						Id: "extendedcrafting:eternal"
 					}
 				}
+				match_nbt: true
 			}]
 		}
 		{

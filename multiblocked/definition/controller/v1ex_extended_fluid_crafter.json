@@ -1,0 +1,375 @@
+{
+  "version": 3,
+  "location": "v1ex_extended:fluid_crafter",
+  "traits": {
+    "recipe_progress": {
+      "cIO": 2,
+      "gIO": 2,
+      "mbdIO": 2,
+      "slotName": "",
+      "x": 53,
+      "y": 122,
+      "width": 60,
+      "height": 18,
+      "texture": "multiblocked:textures/gui/energy_bar.png",
+      "fillDirection": "LEFT_TO_RIGHT"
+    }
+  },
+  "properties": {
+    "rotationState": "ALL",
+    "showInJei": true,
+    "isOpaque": true,
+    "hasDynamicShape": false,
+    "hasCollision": true,
+    "destroyTime": 1.5,
+    "explosionResistance": 6.0,
+    "speedFactor": 1.0,
+    "jumpFactor": 1.0,
+    "friction": 0.6,
+    "harvestLevel": 0,
+    "stackSize": 64,
+    "tabGroup": "multiblocked.all"
+  },
+  "status": {
+    "unformed": {
+      "renderer": {
+        "baseTexture": "multiblocked:empowered_lapis",
+        "frontTexture": "multiblocked:blocks/gregtech_front",
+        "type": "gregtech",
+        "postRenderer": false
+      }
+    },
+    "idle": {
+      "parent": "unformed"
+    },
+    "working": {
+      "parent": "idle"
+    },
+    "suspend": {
+      "parent": "working"
+    }
+  },
+  "recipeMap": "mixer",
+  "basePattern": {
+    "structureDir": [
+      "BACK",
+      "UP",
+      "RIGHT"
+    ],
+    "pattern": [
+      [
+        "ABCBD",
+        "ABBBD",
+        "ABBBD",
+        "AEEED"
+      ],
+      [
+        "FGHGB",
+        "IJKKB",
+        "F KKB",
+        "EBBBE"
+      ],
+      [
+        "FGHGB",
+        "L KKB",
+        "F KKB",
+        "EBBBE"
+      ],
+      [
+        "CMHNO",
+        "PM NB",
+        "@   B",
+        "EBQBE"
+      ],
+      [
+        "FGHGB",
+        "L KKB",
+        "F KKB",
+        "EBBBE"
+      ],
+      [
+        "FGHGB",
+        "I KKB",
+        "F KKB",
+        "EBBBE"
+      ],
+      [
+        "RBCBS",
+        "RBBBS",
+        "RBBBS",
+        "REEES"
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "A": {
+        "blocks": [
+          {
+            "id": "tconstruct:sky_slime_crystal_block"
+          }
+        ],
+        "type": "blocks"
+      },
+      "B": {
+        "blocks": [
+          {
+            "id": "ae2:quartz_vibrant_glass"
+          }
+        ],
+        "type": "blocks"
+      },
+      "C": {
+        "blocks": [
+          {
+            "id": "cyclic:tank"
+          }
+        ],
+        "type": "blocks"
+      },
+      "D": {
+        "blocks": [
+          {
+            "id": "tconstruct:ender_slime_crystal_block"
+          }
+        ],
+        "type": "blocks"
+      },
+      "E": {
+        "blocks": [
+          {
+            "id": "mekanismgenerators:fission_reactor_casing"
+          }
+        ],
+        "type": "blocks"
+      },
+      "F": {
+        "blocks": [
+          {
+            "id": "integratedterminals:menril_glass"
+          }
+        ],
+        "type": "blocks"
+      },
+      "G": {
+        "blocks": [
+          {
+            "id": "immersiveengineering:steel_scaffolding_standard"
+          }
+        ],
+        "type": "blocks"
+      },
+      "H": {
+        "blocks": [
+          {
+            "id": "immersiveengineering:fluid_pipe"
+          }
+        ],
+        "type": "blocks"
+      },
+      "I": {
+        "blocks": [
+          {
+            "id": "avaritia:neutronium_block"
+          }
+        ],
+        "type": "blocks"
+      },
+      "J": {
+        "blocks": [
+          {
+            "id": "immersiveengineering:rs_engineering"
+          }
+        ],
+        "type": "blocks"
+      },
+      "K": {
+        "blocks": [
+          {
+            "id": "immersiveengineering:sheetmetal_iron"
+          }
+        ],
+        "type": "blocks"
+      },
+      "L": {
+        "blocks": [
+          {
+            "id": "integratedterminals:chorus_glass"
+          }
+        ],
+        "type": "blocks"
+      },
+      "M": {
+        "blocks": [
+          {
+            "id": "immersiveengineering:heavy_engineering"
+          }
+        ],
+        "type": "blocks"
+      },
+      "N": {
+        "blocks": [
+          {
+            "id": "immersiveengineering:light_engineering"
+          }
+        ],
+        "type": "blocks"
+      },
+      "O": {
+        "blocks": [
+          {
+            "id": "mekaevolution:infinite_energy_cube"
+          }
+        ],
+        "type": "blocks"
+      },
+      "P": {
+        "blocks": [
+          {
+            "id": "functionalstorage:oak_1"
+          }
+        ],
+        "type": "blocks"
+      },
+      "Q": {
+        "blocks": [
+          {
+            "id": "extradisks:infinite_storage_block"
+          }
+        ],
+        "type": "blocks"
+      },
+      "R": {
+        "blocks": [
+          {
+            "id": "tconstruct:ichor_slime_crystal_block"
+          }
+        ],
+        "type": "blocks"
+      },
+      "S": {
+        "blocks": [
+          {
+            "id": "tconstruct:earth_slime_crystal_block"
+          }
+        ],
+        "type": "blocks"
+      },
+      "T": {
+        "capability": "fluid",
+        "type": "capability"
+      },
+      "U": {
+        "capability": "item",
+        "type": "capability"
+      },
+      "V": {
+        "capability": "forge_energy",
+        "type": "capability"
+      },
+      "controller": {
+        "location": "v1ex_extended:fluid_crafter",
+        "type": "component"
+      },
+      "any": {
+        "type": "any"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      " ": [
+        "any"
+      ],
+      "A": [
+        "A"
+      ],
+      "B": [
+        "B"
+      ],
+      "C": [
+        "C",
+        "T"
+      ],
+      "D": [
+        "D"
+      ],
+      "E": [
+        "E"
+      ],
+      "F": [
+        "F"
+      ],
+      "G": [
+        "G"
+      ],
+      "H": [
+        "H"
+      ],
+      "I": [
+        "I"
+      ],
+      "J": [
+        "J"
+      ],
+      "K": [
+        "K"
+      ],
+      "L": [
+        "L"
+      ],
+      "M": [
+        "M"
+      ],
+      "N": [
+        "N"
+      ],
+      "O": [
+        "V",
+        "O"
+      ],
+      "P": [
+        "P",
+        "U"
+      ],
+      "Q": [
+        "Q"
+      ],
+      "R": [
+        "R"
+      ],
+      "S": [
+        "S"
+      ]
+    }
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "version": 3,
+  "location": "extraordinary_energy:gt_generator",
+  "traits": {
+    "recipe_progress": {
+      "cIO": 2,
+      "gIO": 2,
+      "mbdIO": 2,
+      "slotName": "",
+      "x": 52,
+      "y": 126,
+      "width": 60,
+      "height": 18,
+      "texture": "multiblocked:textures/gui/energy_bar.png",
+      "fillDirection": "LEFT_TO_RIGHT"
+    },
+    "mek_gas": [
+      {
+        "cIO": 0,
+        "gIO": 2,
+        "mIO": 0,
+        "x": 78,
+        "y": 73,
+        "autoIO": false,
+        "tankCapability": 2147483647
+      }
+    ]
+  },
+  "properties": {
+    "rotationState": "ALL",
+    "showInJei": true,
+    "isOpaque": true,
+    "hasDynamicShape": false,
+    "hasCollision": true,
+    "destroyTime": 1.5,
+    "explosionResistance": 6.0,
+    "speedFactor": 1.0,
+    "jumpFactor": 1.0,
+    "friction": 0.6,
+    "harvestLevel": 0,
+    "stackSize": 64,
+    "tabGroup": "multiblocked.all"
+  },
+  "status": {
+    "unformed": {
+      "renderer": {
+        "baseTexture": "multiblocked:electricity_resistant_reinforced_casing",
+        "frontTexture": "multiblocked:blocks/gregtech_front",
+        "type": "gregtech",
+        "postRenderer": false
+      }
+    },
+    "idle": {
+      "parent": "unformed"
+    },
+    "working": {
+      "parent": "idle"
+    },
+    "suspend": {
+      "parent": "working"
+    }
+  },
+  "recipeMap": "generator",
+  "basePattern": {
+    "structureDir": [
+      "BACK",
+      "UP",
+      "RIGHT"
+    ],
+    "pattern": [
+      [
+        "ABBA",
+        "ABBA",
+        "ABBA"
+      ],
+      [
+        "ABBA",
+        "@CCD",
+        "ABBA"
+      ],
+      [
+        "ABBA",
+        "ABBA",
+        "ABBA"
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "A": {
+        "blocks": [
+          {
+            "id": "v1ex_extended:high_voltage_machine_casingg"
+          }
+        ],
+        "type": "blocks"
+      },
+      "controller": {
+        "location": "extraordinary_energy:gt_generator",
+        "type": "component"
+      },
+      "B": {
+        "blocks": [
+          {
+            "id": "valine_s1ex:nichrome_coil_block"
+          }
+        ],
+        "type": "blocks"
+      },
+      "C": {
+        "blocks": [
+          {
+            "id": "mekanismgenerators:electromagnetic_coil"
+          }
+        ],
+        "type": "blocks"
+      },
+      "D": {
+        "blocks": [
+          {
+            "id": "v1ex_extended:energy_io"
+          }
+        ],
+        "type": "blocks",
+        "minCount": 1,
+        "maxCount": 1,
+        "previewCount": 1
+      },
+      "E": {
+        "capability": "forge_energy",
+        "type": "capability",
+        "minCount": 1,
+        "maxCount": 1,
+        "previewCount": 1
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      "A": [
+        "A"
+      ],
+      "B": [
+        "B"
+      ],
+      "C": [
+        "C"
+      ],
+      "D": [
+        "D",
+        "E"
+      ]
+    }
+  }
+}

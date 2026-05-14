@@ -23,8 +23,6 @@ onEvent("recipes", (event) => {
     removebyname.forEach((name) => {
         event.remove({output: name})
         })
-        if (!BlueprintCraftingRecipe.recipeCategories.contains("cell")) {
-          BlueprintCraftingRecipe.recipeCategories.add("cell")}
 		event.custom({
 		  "type": "pneumaticcraft:assembly_laser",
 		  "input": {
